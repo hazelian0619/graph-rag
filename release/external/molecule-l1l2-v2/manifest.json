@@ -1,0 +1,121 @@
+{
+  "tag": "molecule-l1l2-v2",
+  "asset_count": 23,
+  "assets": [
+    {
+      "name": "molecule_3d_registry_v1.build.json",
+      "size_bytes": 2636,
+      "sha256": "3cfc8906016cdf3523da5e5c893abf7fffbafa5f085ca79bc0b18fcc44ad10d2"
+    },
+    {
+      "name": "molecule_3d_registry_v1.coverage.json",
+      "size_bytes": 966,
+      "sha256": "f6f657bfa2406f5d0e7f0b52d0a84d474ee881014afdc53159d47055aee4bcf6"
+    },
+    {
+      "name": "molecule_3d_registry_v1.qa.json",
+      "size_bytes": 2171,
+      "sha256": "fe34efc0765ed20c58b9954e829f602f032d8db705c48144732b2ea52bd914af"
+    },
+    {
+      "name": "molecule_3d_registry_v1.tsv.gz",
+      "size_bytes": 369442,
+      "sha256": "e8f38c0b9550a9102af702783542720fba1a48ab57daf46bdafa14ec3f3f5e85"
+    },
+    {
+      "name": "molecule_3d_registry_v1.validation.json",
+      "size_bytes": 3327,
+      "sha256": "cedffe232fcf7beb5ec4123d3d75edc73f6cb611e5305d9939b926814e64eac8"
+    },
+    {
+      "name": "molecule_activity_conflict_audit_v2.json",
+      "size_bytes": 392,
+      "sha256": "d947d72cb85e31eb134b6afa5d1c080398782d8546ec061d1ee1286bc2391d04"
+    },
+    {
+      "name": "molecule_activity_conflict_audit_v2.tsv.gz",
+      "size_bytes": 769366,
+      "sha256": "080d73805474fcca4449fcc0623228a2657b0364c1bd0956f787e110f3eec514"
+    },
+    {
+      "name": "molecule_activity_evidence_v2.tsv.gz",
+      "size_bytes": 161194766,
+      "sha256": "6cae3b67bc0ab6b0303a434974c01af0ae1f6403a7652a24cc06552803f2c982"
+    },
+    {
+      "name": "molecule_activity_evidence_v2.validation.json",
+      "size_bytes": 3815,
+      "sha256": "72f6acf515be8fad1700274bb91ee90cb185ae1d7cd0b95378809ff87fde9894"
+    },
+    {
+      "name": "molecule_activity_fusion_v2.build.json",
+      "size_bytes": 2306,
+      "sha256": "f020fa9908b3ef1dc1fe528f3e8e8bc08d0572f2c632827d8788147637fb2d64"
+    },
+    {
+      "name": "molecule_activity_fusion_v2.qa.json",
+      "size_bytes": 3822,
+      "sha256": "0e726398c22ed073aa603943d6cf66eaf8dc67a8e821e8cdd8199452cb147b97"
+    },
+    {
+      "name": "molecule_semantic_tags_v1.build.json",
+      "size_bytes": 1950,
+      "sha256": "2c1c7e5188b2f2ba4d6a878f4a495e94c9022f28a29e37048dd2d3ab587724ae"
+    },
+    {
+      "name": "molecule_semantic_tags_v1.coverage.json",
+      "size_bytes": 897,
+      "sha256": "1a6ae0bce72dcca752f7007cf876df736220c77d4b95f84b6c16feaf593b4806"
+    },
+    {
+      "name": "molecule_semantic_tags_v1.hierarchy.json",
+      "size_bytes": 13880,
+      "sha256": "36bcb093963e754ebe718d700f5528ef958b58071333e62fc17b960dc8d18b77"
+    },
+    {
+      "name": "molecule_semantic_tags_v1.qa.json",
+      "size_bytes": 2144,
+      "sha256": "7103733d53ec26a93d28e12106051f6a8cdfcb230af6614339e1524ff68d6a6a"
+    },
+    {
+      "name": "molecule_semantic_tags_v1.tsv.gz",
+      "size_bytes": 725042,
+      "sha256": "151f87cc8d747a4013ff12f6ca6cc5db128a52ae147a94179b2f3f56438f846d"
+    },
+    {
+      "name": "molecule_semantic_tags_v1.validation.json",
+      "size_bytes": 2927,
+      "sha256": "bd56564776a745b6889342d529bc3167da5cb0542d2f02e8a13852e354fa897e"
+    },
+    {
+      "name": "molecule_target_edges_v2.tsv.gz",
+      "size_bytes": 109824653,
+      "sha256": "c7460bc442b54b37a07ef790224dffcf64fb8133641f456e1a62f6829abf5218"
+    },
+    {
+      "name": "molecule_target_edges_v2.validation.json",
+      "size_bytes": 3713,
+      "sha256": "395dca3c261a5b4661fda1f75af7d9326875517a16d453940ae612e2cf292128"
+    },
+    {
+      "name": "molecule_xref_core_v2.build.json",
+      "size_bytes": 2389,
+      "sha256": "75811013d05e89c33757835b851e02bd1595f34124365eba2871536e1d10e61e"
+    },
+    {
+      "name": "molecule_xref_core_v2.qa.json",
+      "size_bytes": 3565,
+      "sha256": "6a82ab25c38e1d73368c4f77af2be343c56541fac352d8fd1584c5aefdad3727"
+    },
+    {
+      "name": "molecule_xref_core_v2.tsv.gz",
+      "size_bytes": 443112,
+      "sha256": "a7fdc8d750a0e515160affb933ec51f24a36045f87225dee17034afea61ee088"
+    },
+    {
+      "name": "molecule_xref_core_v2.validation.json",
+      "size_bytes": 2235,
+      "sha256": "7daadb3a7939a400688db1c0aa3f134c2fe7ad5574b2bea4b33d99a83a5b076f"
+    }
+  ]
+}

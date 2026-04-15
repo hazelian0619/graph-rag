@@ -1,0 +1,137 @@
+{
+  "table": "data/output/edges/rna_protein_edges_v1.tsv",
+  "contract": "rna_protein_edges_v1",
+  "row_count": 16489,
+  "columns": [
+    "edge_id",
+    "src_type",
+    "src_id",
+    "dst_type",
+    "dst_id",
+    "predicate",
+    "directed",
+    "best_score",
+    "source",
+    "source_version",
+    "fetch_date"
+  ],
+  "schema": {
+    "required_columns": [
+      "edge_id",
+      "src_type",
+      "src_id",
+      "dst_type",
+      "dst_id",
+      "predicate",
+      "directed",
+      "best_score",
+      "source",
+      "source_version",
+      "fetch_date"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "edge_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "edge_id_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "src_type_is_rna",
+      "type": "equals_value_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "src_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "dst_type_is_protein",
+      "type": "equals_value_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "dst_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "predicate_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "directed_bool",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "best_score_numeric_or_empty",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_iso",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 16489,
+      "passed_count": 16489,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

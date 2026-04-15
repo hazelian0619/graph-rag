@@ -1,0 +1,177 @@
+{
+  "table": "data/output/rna_rrna_loci_v1.tsv",
+  "contract": "rna_rrna_loci_v1",
+  "row_count": 69005,
+  "columns": [
+    "rrna_locus_id",
+    "rna_id",
+    "urs_id",
+    "taxon_id",
+    "rrna_type",
+    "seq_accession",
+    "locus_start",
+    "locus_end",
+    "strand",
+    "source_db",
+    "external_id",
+    "gene_symbol",
+    "source",
+    "source_version",
+    "fetch_date"
+  ],
+  "schema": {
+    "required_columns": [
+      "rrna_locus_id",
+      "rna_id",
+      "urs_id",
+      "taxon_id",
+      "rrna_type",
+      "seq_accession",
+      "locus_start",
+      "locus_end",
+      "strand",
+      "source_db",
+      "external_id",
+      "gene_symbol",
+      "source",
+      "source_version",
+      "fetch_date"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "rrna_locus_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "rrna_locus_id_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "rna_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "rna_id_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "urs_id_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "taxon_human",
+      "type": "equals_value_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "rrna_type_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "seq_accession_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "locus_start_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "locus_end_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "strand_enum",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "source_db_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "external_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_iso",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 69005,
+      "passed_count": 69005,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

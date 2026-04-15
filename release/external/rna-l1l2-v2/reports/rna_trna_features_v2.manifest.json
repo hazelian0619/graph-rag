@@ -1,0 +1,13 @@
+{
+  "data_version": "kg-rna-trna-features-v2",
+  "created_at": "2026-04-12T16:38:37.020944+00:00",
+  "git_commit": "a650536b258bd5dd351ad5fd2550d6f75bdfb0d4",
+  "artifacts": [
+    {
+      "path": "data/output/rna_trna_features_v2.tsv",
+      "size_bytes": 696551,
+      "sha256": "b7fdd7dee9b68556605ffeae372c66a0531c5ed42be39ff2c337385632023604",
+      "modified_time": "2026-04-12T16:38:36.705179+00:00"
+    }
+  ]
+}
