@@ -1,0 +1,26 @@
+{
+  "release": "interaction-l2-v1",
+  "generated_at": "2026-04-16",
+  "chunked_assets": [
+    {
+      "target": "tables/integrated/interaction_aggregate_score_v2.tsv.zst",
+      "parts_glob": "tables/integrated/chunks/interaction_aggregate_score_v2.tsv.zst.part.*",
+      "part_count": 4
+    },
+    {
+      "target": "tables/integrated/interaction_cross_validation_v2.tsv.zst",
+      "parts_glob": "tables/integrated/chunks/interaction_cross_validation_v2.tsv.zst.part.*",
+      "part_count": 4
+    },
+    {
+      "target": "tables/psi/psi_activity_context_v2.tsv.zst",
+      "parts_glob": "tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.*",
+      "part_count": 10
+    },
+    {
+      "target": "tables/psi/psi_structure_evidence_v2.tsv.zst",
+      "parts_glob": "tables/psi/chunks/psi_structure_evidence_v2.tsv.zst.part.*",
+      "part_count": 3
+    }
+  ]
+}

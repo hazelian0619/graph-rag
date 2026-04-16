@@ -16,3 +16,10 @@ cat interaction_cross_validation_v2.tsv.zst.part.* > interaction_cross_validatio
 cat psi_activity_context_v2.tsv.zst.part.* > psi_activity_context_v2.tsv.zst
 cat psi_structure_evidence_v2.tsv.zst.part.* > psi_structure_evidence_v2.tsv.zst
 ```
+
+
+## 快速重组脚本
+
+```bash
+bash scripts/reassemble_from_chunks.sh
+```

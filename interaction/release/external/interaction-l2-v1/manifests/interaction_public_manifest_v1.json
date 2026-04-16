@@ -2,17 +2,22 @@
   "release": "interaction-l2-v1",
   "domain": "interaction",
   "generated_at": "2026-04-16",
-  "asset_count": 115,
+  "asset_count": 117,
   "assets": [
     {
       "path": "interaction/release/external/interaction-l2-v1/README.md",
-      "bytes": 181,
-      "sha256": "378f881580f0429a6424698c4b483f2af2f21aab216bab162ddf7f5a01644480"
+      "bytes": 911,
+      "sha256": "2ca117e9bd26730a63c5f93e61c2ab34df84ff8ea47fcd4490f85ac14dea718c"
     },
     {
       "path": "interaction/release/external/interaction-l2-v1/RELEASE_NOTES_interaction_l2_v1.md",
       "bytes": 1143,
       "sha256": "547f499e06505397e4d96b9fe9e1760a7a3b0188922f7b63d8cc4b26852af190"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/manifests/interaction_chunk_index_v1.json",
+      "bytes": 866,
+      "sha256": "3e86c88e58f26a8a8f99ec115228ff8208f0d1bb83a4c2edfe7fa687a3deff48"
     },
     {
       "path": "interaction/release/external/interaction-l2-v1/manifests/interaction_doc_alignment_v1.json",
@@ -413,6 +418,11 @@
       "path": "interaction/release/external/interaction-l2-v1/reports/upstream_rpi_site_domain_enrichment_v2.gates.json",
       "bytes": 922,
       "sha256": "992f142575a596efe95557376d2cf869ced056ebbcb417b81ba9dc5ae2bd49fd"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/scripts/reassemble_from_chunks.sh",
+      "bytes": 730,
+      "sha256": "952879121305bcbadfd36bba4a6ae3d22c7fe4493fd55fa77572a459deee9afd"
     },
     {
       "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_aggregate_score_v2.tsv.zst.part.000",
