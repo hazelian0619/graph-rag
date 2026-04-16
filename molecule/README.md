@@ -1,7 +1,13 @@
-# Placeholder
+# Molecule Domain
 
-该类目目录已预留，后续按与 protein 相同的结构填充：
-- data/
-- release/
-- pipelines/
-- products/
+Molecule 类目骨架已就绪。
+当前已从 protein 区域拆分出的分子相关输出位于：
+
+- `data/output/molecules/`
+
+后续按与 protein 同标准继续补齐：
+
+- `data/{raw,processed,output}`
+- `pipelines/molecule`
+- `products/molecule`
+- `release/{external,internal,schema}`

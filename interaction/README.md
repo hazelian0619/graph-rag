@@ -1,7 +1,8 @@
-# Placeholder
+# Interaction Domain
 
-该类目目录已预留，后续按与 protein 相同的结构填充：
-- data/
-- release/
-- pipelines/
-- products/
+Interaction 类目骨架已就绪，后续按与 protein 同标准填充：
+
+- `data/{raw,processed,output}`
+- `pipelines/interaction`
+- `products/interaction`
+- `release/{external,internal,schema}`
