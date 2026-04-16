@@ -1,29 +1,21 @@
-# Graph-RAG Public Repository Standards
+# Protein Public Repository Standards
 
-本仓库定位：**对外结果产物仓库（Result-first）**。
+本仓库只服务 Protein 数据产品对外交付。
 
-## 1. 收录标准（必须）
-- 可复用：对外用户可直接下载、验证、消费
-- 可追溯：必须能关联到 manifest / checksum / QA 报告
-- 可维护：路径稳定（release/index.json + products/*/current.json）
+## 收录
+- Protein 对外可下载结果表（按功能分区）
+- 对应 manifest / checksum / validation / QA 报告
+- 可复现的 protein pipelines、contracts、脚本
 
-## 2. 不收录标准（禁止）
-- 过程性协作材料（复盘草稿、分工记录、会议纪要）
-- 临时中间产物、缓存、实验脚本副本
-- 无法复现来源或未通过验证门禁的数据
+## 不收录
+- RNA / Molecule / Interaction 资产
+- 过程协作文档、复盘草稿、中间缓存
 
-## 3. 数据分发规则
-- <=100MB 且稳定核心表：可放 Git
-- >100MB 或高频变更大文件：放 GitHub Release 资产
-- 仓库内仅保留 Release 元数据（manifest / checksums / QA JSON）
+## 分发规则
+- 稳定且中等体量：可直接入 Git
+- 超大资产：优先 GitHub Release（本仓只保留元数据）
 
-## 4. 结构主线（四产品）
-- protein
-- rna
-- molecule
-- interaction
-
-## 5. 对外检查清单（发布前）
-1. `python3 scripts/validate_release_index.py ...` PASS
-2. `python3 scripts/check_release_consistency.py ...` PASS
-3. `pytest -q tests/release` PASS
+## 发布前检查
+1. release index 校验通过
+2. consistency 校验通过
+3. tests/release 全绿

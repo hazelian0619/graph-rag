@@ -1,6 +1,8 @@
 # Release Metadata
 
-- `index.json`: unified release entrypoint generated from `products/*/current.json`
-- `schema/index.schema.json`: schema contract of `index.json`
-- `consistency_report.json`: output from `scripts/check_release_consistency.py`
-- `schema/`: JSON schemas for release metadata structures
+Protein-only 发布元数据：
+
+- `index.json`: 统一入口（当前仅 protein）
+- `schema/index.schema.json`: index schema
+- `consistency_report.json`: 一致性检查输出
+- `external/protein-v6/`: protein 对外交付包（tables/reports/manifests）

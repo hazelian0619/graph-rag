@@ -177,9 +177,9 @@ def load_index_product(index_path: Path, product: str) -> Dict[str, Any]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Download bio-entity KG dataset assets")
-    parser.add_argument("--product", required=True, choices=["protein", "rna", "molecule", "interaction"])
+    parser.add_argument("--product", required=True, choices=["protein"])
     parser.add_argument("--version", default="latest", help="Version to fetch (currently supports latest)")
-    parser.add_argument("--repo", default="hazelian0619/protian-entity", help="GitHub repo owner/name")
+    parser.add_argument("--repo", default="hazelian0619/graph-rag", help="GitHub repo owner/name")
     parser.add_argument("--index", default="release/index.json", help="Unified release index")
     parser.add_argument("--dest", default="downloads", help="Destination directory")
     parser.add_argument("--asset-glob", action="append", default=[], help="Filter assets by glob pattern")

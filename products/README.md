@@ -1,13 +1,5 @@
 # Products
 
-Each product folder provides two machine-readable files:
-
-- `product.json`: ownership and product-level metadata
-- `current.json`: latest externally consumable version pointer
-
-Current public product lines:
+当前仅保留一个公开产品线：
 
 - `protein`
-- `rna`
-- `molecule`
-- `interaction`
