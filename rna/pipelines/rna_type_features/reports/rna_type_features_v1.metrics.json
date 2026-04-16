@@ -1,0 +1,103 @@
+{
+  "pipeline": "rna_type_features_v1",
+  "generated_at_utc": "2026-04-12T11:03:54.429740+00:00",
+  "inputs": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "gtf": "data/raw/rna/ensembl/Homo_sapiens.GRCh38.115.chr.gtf.gz",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz"
+  },
+  "outputs": {
+    "rna_lnc_entries_v1": "data/output/rna_lnc_entries_v1.tsv",
+    "rna_trna_features_v1": "data/output/rna_trna_features_v1.tsv",
+    "rna_rrna_loci_v1": "data/output/rna_rrna_loci_v1.tsv"
+  },
+  "row_count": {
+    "rna_lnc_entries_v1": 189152,
+    "rna_trna_features_v1": 4078,
+    "rna_rrna_loci_v1": 69005
+  },
+  "acceptance_metrics": {
+    "lnc_traceable_rate_ensembl_transcript_id": 1.0,
+    "trna_traceable_rate_rna_id": 1.0,
+    "rrna_traceable_rate_locus_id": 1.0,
+    "lnc_master_overlap": {
+      "matched": 0,
+      "total": 189152,
+      "rate": 0.0
+    },
+    "trna_master_overlap": {
+      "matched": 0,
+      "total": 4078,
+      "rate": 0.0
+    },
+    "rrna_master_overlap": {
+      "matched": 0,
+      "total": 69005,
+      "rate": 0.0
+    },
+    "trna_anticodon_non_empty_rate": 0.11378126532614026
+  },
+  "non_empty_rates": {
+    "lnc": {
+      "rna_id": 1.0,
+      "ensembl_transcript_id": 1.0,
+      "ensembl_gene_id": 1.0,
+      "gene_symbol": 0.4690989257316867
+    },
+    "trna": {
+      "rna_id": 1.0,
+      "trna_label": 1.0,
+      "anticodon": 0.11378126532614026,
+      "seq_accession": 0.8587542913192742
+    },
+    "rrna": {
+      "rrna_locus_id": 1.0,
+      "rna_id": 1.0,
+      "seq_accession": 1.0,
+      "locus_start": 1.0,
+      "locus_end": 1.0
+    }
+  },
+  "distributions": {
+    "lnc_mapping_status": {
+      "fallback_enst": 9061,
+      "mapped_enst_version": 180091
+    },
+    "trna_anticodon_source": {
+      "none": 3614,
+      "symbol_inference": 442,
+      "gtrnadb": 22
+    },
+    "trna_locus_type": {
+      "tRNA": 4078
+    },
+    "rrna_type": {
+      "rRNA": 68890,
+      "16S_rRNA": 107,
+      "18S_rRNA": 1,
+      "5S_rRNA": 2,
+      "28S_rRNA": 5
+    },
+    "rrna_source_db": {
+      "ENA": 69005
+    }
+  },
+  "scan_stats": {
+    "id_mapping": {
+      "idmap_lines_scanned": 185344236,
+      "taxon_pass": 3394073,
+      "lnc_enst_links": 367589,
+      "trna_rows": 1376567,
+      "rrna_rows": 73272,
+      "rrna_with_locus": 69005
+    },
+    "gtf_lnc": {
+      "gtf_lines_scanned": 7746576,
+      "gtf_transcript_rows": 507365,
+      "gtf_lnc_transcripts": 189152,
+      "mapped_enst_version": 180091,
+      "mapped_enst_base": 0,
+      "fallback_enst": 9061
+    }
+  }
+}

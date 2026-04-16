@@ -1,0 +1,55 @@
+{
+  "data_version": "kg-rna-structure-models-v1",
+  "created_at": "2026-04-12T10:23:46.838618+00:00",
+  "git_commit": "36720ce7f189e424fafcd56c87e0ab5a85b1d4e7",
+  "artifacts": [
+    {
+      "path": "data/output/rna_covariance_models_index_v1.tsv",
+      "size_bytes": 318160,
+      "sha256": "2da811c575d5b0835f5e414e70dc4a10fc8aa16e2de8f303df62add0a7789dab",
+      "modified_time": "2026-04-12T10:23:44.986050+00:00"
+    },
+    {
+      "path": "data/output/rna_predicted_structures_v1.tsv",
+      "size_bytes": 478054,
+      "sha256": "59c5be197361ba904839830b9dc6a5c21215478578508a59924ed2f7184bc86f",
+      "modified_time": "2026-04-12T10:23:45.007631+00:00"
+    },
+    {
+      "path": "pipelines/rna_structure_models/contracts/rna_covariance_models_index_v1.json",
+      "size_bytes": 1212,
+      "sha256": "50e7fe43bef368fedfab38fbbb20d8f79e04be29cfcf69d9cafcc0ae3fc8cbf2",
+      "modified_time": "2026-04-12T10:02:38.107666+00:00"
+    },
+    {
+      "path": "pipelines/rna_structure_models/contracts/rna_predicted_structures_v1.json",
+      "size_bytes": 1435,
+      "sha256": "7afeeff1d797ea860a621a569b2510b9280eeef9b3d7e25d9feded07f1548b89",
+      "modified_time": "2026-04-12T10:02:50.979999+00:00"
+    },
+    {
+      "path": "pipelines/rna_structure_models/reports/rna_structure_models_v1.metrics.json",
+      "size_bytes": 995,
+      "sha256": "a1934e1f4ea9c128cceb6138f7f61ca6764a863d20cf83e25de3305caa7f7ca9",
+      "modified_time": "2026-04-12T10:23:45.008449+00:00"
+    },
+    {
+      "path": "pipelines/rna_structure_models/reports/rna_covariance_models_index_v1.validation.json",
+      "size_bytes": 1690,
+      "sha256": "203ce5a74985a3eb41e9a15d8a8ce7775786ebf46dcf60940dc22d41d4cf4c3e",
+      "modified_time": "2026-04-12T10:23:45.334949+00:00"
+    },
+    {
+      "path": "pipelines/rna_structure_models/reports/rna_predicted_structures_v1.validation.json",
+      "size_bytes": 1961,
+      "sha256": "efc4da0527c088940d2528f580792ce32e5bec954ef35c19c3edb48b119d485e",
+      "modified_time": "2026-04-12T10:23:45.634542+00:00"
+    },
+    {
+      "path": "pipelines/rna_structure_models/reports/rna_structure_models_v1.file_existence.json",
+      "size_bytes": 816,
+      "sha256": "4476882aaf210a84e24b15599186a59dacdcd6937fa81733a1c0b8711f1d3b16",
+      "modified_time": "2026-04-12T10:23:46.561582+00:00"
+    }
+  ]
+}

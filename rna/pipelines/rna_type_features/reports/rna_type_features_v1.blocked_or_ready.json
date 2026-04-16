@@ -1,0 +1,10 @@
+{
+  "pipeline": "rna_type_features_v1",
+  "status": "inputs_ready",
+  "inputs": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "gtf": "data/raw/rna/ensembl/Homo_sapiens.GRCh38.115.chr.gtf.gz",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz"
+  },
+  "generated_at_utc": "2026-04-12T10:56:46.810021+00:00"
+}

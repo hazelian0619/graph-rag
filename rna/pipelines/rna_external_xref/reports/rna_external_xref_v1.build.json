@@ -1,0 +1,188 @@
+{
+  "name": "rna_external_xref_v1.build",
+  "generated_at": "2026-04-12T10:27:04+00:00",
+  "inputs": {
+    "master": "data/output/rna_master_v1.tsv",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+    "aux_dir": "data/raw/rna/aux_xref",
+    "source": "RNAcentral:id_mapping.tsv",
+    "source_version": "RNAcentral:25",
+    "fetch_date": "2026-04-12",
+    "sample_mode": false,
+    "max_master_rows": null,
+    "max_idmap_lines": null
+  },
+  "master_stats": {
+    "master_rows_scanned": 292274,
+    "master_type_mrna": 289642,
+    "master_type_mirna": 2632,
+    "master_rows_used": 292274
+  },
+  "aux_summary": {
+    "aux_dir": "data/raw/rna/aux_xref",
+    "files_total": 4,
+    "files_used": 1,
+    "enst_keys": 53896,
+    "enst_refseq_pairs": 74768,
+    "files": [
+      {
+        "file": "data/raw/rna/aux_xref/ensembl_transcript_refseq_mrna.tsv",
+        "status": "unsupported_header",
+        "parsed_rows": 0,
+        "mapped_rows": 0,
+        "required_columns": {
+          "ensembl": [
+            "ensembl_transcript_id",
+            "enst",
+            "enst_id",
+            "transcript_id"
+          ],
+          "refseq": [
+            "refseq_mrna",
+            "refseq_accession",
+            "rna_nucleotide_accession.version",
+            "rna_nucleotide_accession",
+            "insdc_mrna",
+            "ena_mrna",
+            "mrna_accession"
+          ]
+        },
+        "header": [
+          "Transcript stable ID",
+          "RefSeq mRNA ID"
+        ]
+      },
+      {
+        "file": "data/raw/rna/aux_xref/ensembl_transcript_version_refseq_mrna.tsv",
+        "status": "unsupported_header",
+        "parsed_rows": 0,
+        "mapped_rows": 0,
+        "required_columns": {
+          "ensembl": [
+            "ensembl_transcript_id",
+            "enst",
+            "enst_id",
+            "transcript_id"
+          ],
+          "refseq": [
+            "refseq_mrna",
+            "refseq_accession",
+            "rna_nucleotide_accession.version",
+            "rna_nucleotide_accession",
+            "insdc_mrna",
+            "ena_mrna",
+            "mrna_accession"
+          ]
+        },
+        "header": [
+          "Query ERROR: caught BioMart::Exception::Database: Could not connect to mysql database ensembl_mart_115: DBI connect('database=ensembl_mart_115;host=127.0.0.1;port=5316','ensro',...) failed: Can't connect to MySQL server on '127.0.0.1' (111) at /nfs/public/ro/ensweb/live/mart/www_115/biomart-perl/lib/BioMart/Configuration/DBLocation.pm line 98."
+        ]
+      },
+      {
+        "file": "data/raw/rna/aux_xref/ensembl_transcript_xref_grch38_r115.tsv.gz",
+        "status": "used",
+        "parsed_rows": 74768,
+        "mapped_rows": 74768,
+        "skipped_rows": 0
+      },
+      {
+        "file": "data/raw/rna/aux_xref/ensembl_transcript_xref_hsapiens.tsv",
+        "status": "unsupported_header",
+        "parsed_rows": 0,
+        "mapped_rows": 0,
+        "required_columns": {
+          "ensembl": [
+            "ensembl_transcript_id",
+            "enst",
+            "enst_id",
+            "transcript_id"
+          ],
+          "refseq": [
+            "refseq_mrna",
+            "refseq_accession",
+            "rna_nucleotide_accession.version",
+            "rna_nucleotide_accession",
+            "insdc_mrna",
+            "ena_mrna",
+            "mrna_accession"
+          ]
+        },
+        "header": [
+          "Query ERROR: caught BioMart::Exception::Usage: Too many attributes selected for External References"
+        ]
+      }
+    ]
+  },
+  "id_mapping_stats": {
+    "idmap_lines_scanned": 185344236,
+    "idmap_lines_taxon_pass": 3394073,
+    "idmap_direct_enst_rows": 375772,
+    "idmap_refseq_rows": 17173,
+    "idmap_lines_scanned_pass2": 185344236
+  },
+  "mapping": {
+    "rna_to_urs_assigned": 2642,
+    "strategy_counts": {
+      "unmapped": 289632,
+      "direct_rna_id_base": 10,
+      "legacy_urs": 2632
+    },
+    "direct_enst_ambiguous_keys": {
+      "count": 0,
+      "items": []
+    },
+    "unresolved_examples": [
+      "ENST00000000233_9606",
+      "ENST00000000412_9606",
+      "ENST00000000442_9606",
+      "ENST00000001008_9606",
+      "ENST00000001146_9606",
+      "ENST00000002125_9606",
+      "ENST00000002165_9606",
+      "ENST00000002501_9606",
+      "ENST00000002596_9606",
+      "ENST00000002829_9606",
+      "ENST00000003084_9606",
+      "ENST00000003100_9606",
+      "ENST00000003302_9606",
+      "ENST00000003583_9606",
+      "ENST00000003912_9606",
+      "ENST00000004103_9606",
+      "ENST00000004531_9606",
+      "ENST00000004982_9606",
+      "ENST00000005082_9606",
+      "ENST00000005178_9606",
+      "ENST00000005180_9606",
+      "ENST00000005226_9606",
+      "ENST00000005257_9606",
+      "ENST00000005259_9606",
+      "ENST00000005260_9606",
+      "ENST00000005284_9606",
+      "ENST00000005286_9606",
+      "ENST00000005340_9606",
+      "ENST00000005374_9606",
+      "ENST00000005386_9606"
+    ]
+  },
+  "output": {
+    "rows": 297813,
+    "db_counts": {
+      "ENSEMBL": 289643,
+      "ENSEMBL_GENCODE": 9,
+      "MIRBASE": 2656,
+      "REFSEQ": 2873,
+      "RNACENTRAL": 2632
+    },
+    "source_counts": {
+      "rna_master_v1.tsv": 292264,
+      "RNAcentral:id_mapping.tsv": 5549
+    }
+  },
+  "gates": {
+    "backlink_rate_gate": {
+      "required": 0.99,
+      "actual": 1.0,
+      "passed": true
+    }
+  }
+}

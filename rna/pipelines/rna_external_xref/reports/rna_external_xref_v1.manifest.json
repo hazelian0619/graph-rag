@@ -1,0 +1,55 @@
+{
+  "data_version": "kg-rna-external-xref-v1",
+  "created_at": "2026-04-12T10:27:08.862772+00:00",
+  "git_commit": "36720ce7f189e424fafcd56c87e0ab5a85b1d4e7",
+  "artifacts": [
+    {
+      "path": "data/output/rna_external_xref_v1.tsv",
+      "size_bytes": 30375074,
+      "sha256": "4d336c58498c63477d0a0fa2b1659e0ecb6007404deedb90e46e753b21ba9456",
+      "modified_time": "2026-04-12T10:27:01.087657+00:00"
+    },
+    {
+      "path": "data/output/rna_master_v1.tsv",
+      "size_bytes": 744099663,
+      "sha256": "02dd496132bc5b5a5e6ec92c1842b0c1c91b8c57bf4ca294e1e71f736de582a4",
+      "modified_time": "2026-04-11T16:00:58.100863+00:00"
+    },
+    {
+      "path": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+      "size_bytes": 1847299737,
+      "sha256": "7db2ee0decea9b1cd28ad1c3d3debe0028ce8574cee622dff5b148c117e12ade",
+      "modified_time": "2026-04-11T16:03:36.267118+00:00"
+    },
+    {
+      "path": "pipelines/rna_external_xref/contracts/rna_external_xref_v1.json",
+      "size_bytes": 1854,
+      "sha256": "d00ea149c976e0d9efba789ac4c056f665c1e64d08452dde4850753e446eeba0",
+      "modified_time": "2026-04-12T10:05:53.288948+00:00"
+    },
+    {
+      "path": "pipelines/rna_external_xref/reports/rna_external_xref_v1.build.json",
+      "size_bytes": 5337,
+      "sha256": "af22924876182f4db6a0630a2162cfe5d5df42f53c0e18c1fbcf9df75d682b1d",
+      "modified_time": "2026-04-12T10:27:04.112134+00:00"
+    },
+    {
+      "path": "pipelines/rna_external_xref/reports/rna_external_xref_v1.coverage.json",
+      "size_bytes": 1622,
+      "sha256": "f0e57ace0bdeafaed0db76fc5f402ddaa965f06a0637c88939a968d6e0423776",
+      "modified_time": "2026-04-12T10:27:04.112574+00:00"
+    },
+    {
+      "path": "pipelines/rna_external_xref/reports/rna_external_xref_v1.conflicts.json",
+      "size_bytes": 26295,
+      "sha256": "e5e02897e1c251a36a60ab90fd5c3ecaa1a178046f3f6effc820bc6b7f57d0a7",
+      "modified_time": "2026-04-12T10:27:04.113489+00:00"
+    },
+    {
+      "path": "pipelines/rna_external_xref/reports/rna_external_xref_v1.validation.json",
+      "size_bytes": 2069,
+      "sha256": "60e08913aca337362151ea7f8e9417e5f5ee6365f1948112ec2d18e501164f25",
+      "modified_time": "2026-04-12T10:27:08.474717+00:00"
+    }
+  ]
+}

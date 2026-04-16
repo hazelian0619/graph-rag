@@ -1,0 +1,11 @@
+rna_id	rna_type	taxon_id	xref_db	xref_id	xref_level	match_strategy	source	fetch_date	source_version
+ENST00000514884_9606	mrna	9606	RNAcentral	URS00002EBCD8_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000587128_9606	mrna	9606	RNAcentral	URS0000395063_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000591815_9606	mrna	9606	RNAcentral	URS000017FAA6_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000592747_9606	mrna	9606	RNAcentral	URS0000578634_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000597158_9606	mrna	9606	RNAcentral	URS00008B2D27_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000611965_9606	mrna	9606	RNAcentral	URS0002618346_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000753349_9606	mrna	9606	RNAcentral	URS0002A5136C_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000753350_9606	mrna	9606	RNAcentral	URS0002A59F34_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000753351_9606	mrna	9606	RNAcentral	URS0002A44508_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25
+ENST00000776869_9606	mrna	9606	RNAcentral	URS0002A186DA_9606	urs_id	exact_rna_id_base	RNAcentral:id_mapping.tsv	2026-04-12	RNAcentral:25

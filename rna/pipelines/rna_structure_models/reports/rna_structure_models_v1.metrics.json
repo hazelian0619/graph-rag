@@ -1,0 +1,35 @@
+{
+  "pipeline": "rna_structure_models_v1",
+  "generated_at_utc": "2026-04-12T10:23:43.794902+00:00",
+  "input": {
+    "rfam_family": "data/raw/rna/rfam/family.txt.gz",
+    "rfam_cm_bundle": "data/raw/rna/rfam/Rfam.cm.gz",
+    "rfam_cm_dir": "data/raw/rna/rfam/cm",
+    "predicted_root": "data/raw/rna/predicted_structures",
+    "predicted_manifest": "data/raw/rna/predicted_structures/manifest.tsv"
+  },
+  "status": "completed",
+  "output": {
+    "covariance_table": "data/output/rna_covariance_models_index_v1.tsv",
+    "predicted_table": "data/output/rna_predicted_structures_v1.tsv"
+  },
+  "covariance": {
+    "parsed_family_rows": 4178,
+    "unique_rfam_ids": 4178,
+    "rows_emitted": 4178,
+    "rows_missing_cm": 0,
+    "cm_mode": "bundle"
+  },
+  "predicted": {
+    "rows_emitted": 3617,
+    "raw_rows_before_dedup": 3617,
+    "detection_mode": "manifest",
+    "tools": [
+      "RNAfold"
+    ]
+  },
+  "acceptance": {
+    "covariance_rows_gt_0": true,
+    "predicted_rows_gt_0": true
+  }
+}

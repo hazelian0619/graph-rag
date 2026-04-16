@@ -1,0 +1,26 @@
+{
+  "pipeline": "rna_rpi_v1",
+  "generated_at_utc": "2026-04-12T04:26:11.070176+00:00",
+  "input": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "protein_master": "data/processed/protein_master_v6_clean.tsv",
+    "rpi_input": "data/raw/rpi/starbase_human.tsv"
+  },
+  "status": "inputs_ready",
+  "detected_source": "starBase",
+  "lookup_stats": {
+    "rna": {
+      "rows": 292274,
+      "canonical": 292274,
+      "aliases": 659493,
+      "ambiguous_aliases": 0
+    },
+    "protein": {
+      "rows": 19135,
+      "canonical": 19135,
+      "aliases": 158960,
+      "ambiguous_aliases": 2269
+    }
+  },
+  "message": "输入检查通过。"
+}

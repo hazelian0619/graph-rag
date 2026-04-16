@@ -1,0 +1,30 @@
+{
+  "pipeline": "rna_expression_rbp_v1_preparation",
+  "generated_at_utc": "2026-04-11T17:18:51.856104+00:00",
+  "input": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "expression_quant": ".tmp/ENCFF937GQE.tsv",
+    "rbp_peak_bed": ".tmp/ENCFF593RED.bed.gz",
+    "gtf": "data/raw/rna/ensembl/Homo_sapiens.GRCh38.115.chr.gtf.gz"
+  },
+  "output": {
+    "expression_input": "data/raw/rna/encode/expression_evidence.tsv.gz",
+    "rbp_input": "data/raw/rna/encode/rbp_sites.tsv.gz"
+  },
+  "stats": {
+    "master_ids": 292274,
+    "master_genes_for_mrna": 19011,
+    "transcripts_with_gtf_coords": 289620,
+    "expression_rows": 289614,
+    "matched_genes": 19004,
+    "quant_genes": 62656,
+    "rbp_rows": 31084,
+    "unique_rna_with_peaks": 31084,
+    "peaks_total": 4592,
+    "peak_transcript_overlaps": 70384
+  },
+  "notes": [
+    "Expression input is ENCODE RNA-seq gene quant (ENCSR140GZF / ENCFF937GQE) expanded to transcript-level via ensembl_gene_id join.",
+    "RBP input is ENCODE eCLIP peak overlap (ENCSR720BJU / ENCFF593RED) intersected with Ensembl transcript intervals (GRCh38.115)."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "rna_external_xref_v1.coverage",
+  "generated_at": "2026-04-12T10:27:04+00:00",
+  "inputs": {
+    "master": "data/output/rna_master_v1.tsv",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+    "aux_dir": "data/raw/rna/aux_xref",
+    "sample_mode": false,
+    "max_master_rows": null,
+    "max_idmap_lines": null
+  },
+  "summary": {
+    "rows_output": 297813,
+    "unique_output_rna_ids": 292274,
+    "master_rna_ids": 292274,
+    "master_rna_ids_covered": 292274,
+    "master_coverage_rate": 1.0,
+    "backlink_hits": 292274,
+    "backlink_rate": 1.0,
+    "min_backlink_rate_required": 0.99,
+    "backlink_passed": true
+  },
+  "per_xref_db": {
+    "ENSEMBL": {
+      "rows": 289643,
+      "covered_rna_ids": 289642,
+      "master_total_rna_ids": 292274,
+      "coverage_rate": 0.9909947515003045,
+      "unique_xref_ids": 289643
+    },
+    "ENSEMBL_GENCODE": {
+      "rows": 9,
+      "covered_rna_ids": 9,
+      "master_total_rna_ids": 292274,
+      "coverage_rate": 3.079302298528094e-05,
+      "unique_xref_ids": 9
+    },
+    "MIRBASE": {
+      "rows": 2656,
+      "covered_rna_ids": 2632,
+      "master_total_rna_ids": 292274,
+      "coverage_rate": 0.009005248499695492,
+      "unique_xref_ids": 2656
+    },
+    "REFSEQ": {
+      "rows": 2873,
+      "covered_rna_ids": 2628,
+      "master_total_rna_ids": 292274,
+      "coverage_rate": 0.008991562711702032,
+      "unique_xref_ids": 1913
+    },
+    "RNACENTRAL": {
+      "rows": 2632,
+      "covered_rna_ids": 2632,
+      "master_total_rna_ids": 292274,
+      "coverage_rate": 0.009005248499695492,
+      "unique_xref_ids": 2632
+    }
+  }
+}

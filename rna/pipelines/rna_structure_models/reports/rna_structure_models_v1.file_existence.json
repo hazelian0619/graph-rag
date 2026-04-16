@@ -1,0 +1,30 @@
+{
+  "pipeline": "rna_structure_models_v1",
+  "generated_at_utc": "2026-04-12T10:23:46.560911+00:00",
+  "input": {
+    "cov_table": "data/output/rna_covariance_models_index_v1.tsv",
+    "pred_table": "data/output/rna_predicted_structures_v1.tsv"
+  },
+  "covariance": {
+    "checked_column": "cm_file",
+    "total_rows": 4178,
+    "unique_references": 4178,
+    "existing_references": 4178,
+    "missing_references": 0,
+    "existing_rate": 1.0,
+    "missing_examples": []
+  },
+  "predicted": {
+    "checked_column": "structure_file",
+    "total_rows": 3617,
+    "unique_references": 3617,
+    "existing_references": 3617,
+    "missing_references": 0,
+    "existing_rate": 1.0,
+    "missing_examples": []
+  },
+  "acceptance": {
+    "covariance_file_refs_resolved": true,
+    "predicted_file_refs_resolved": true
+  }
+}

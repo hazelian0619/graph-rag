@@ -1,0 +1,85 @@
+{
+  "table": "data/output/rna_covariance_models_index_v1.tsv",
+  "contract": "rna_covariance_models_index_v1",
+  "row_count": 4178,
+  "columns": [
+    "rfam_id",
+    "cm_file",
+    "ga_threshold",
+    "source_version",
+    "fetch_date"
+  ],
+  "schema": {
+    "required_columns": [
+      "rfam_id",
+      "cm_file",
+      "ga_threshold",
+      "source_version",
+      "fetch_date"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "rfam_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 4178,
+      "passed_count": 4178,
+      "rate": 1.0
+    },
+    {
+      "id": "rfam_id_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 4178,
+      "passed_count": 4178,
+      "rate": 1.0
+    },
+    {
+      "id": "rfam_id_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 4178,
+      "passed_count": 4178,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "cm_file_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 4178,
+      "passed_count": 4178,
+      "rate": 1.0
+    },
+    {
+      "id": "ga_threshold_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 4178,
+      "passed_count": 4178,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 4178,
+      "passed_count": 4178,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_iso",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 4178,
+      "passed_count": 4178,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

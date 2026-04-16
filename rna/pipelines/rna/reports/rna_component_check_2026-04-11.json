@@ -1,0 +1,609 @@
+{
+  "pipeline": "rna_component_check_2026-04-11",
+  "generated_at_utc": "2026-04-11T14:36:14.865195+00:00",
+  "scope": [
+    "序列数据：RNA 序列、URS、RNA 类型、物种来源",
+    "结构数据：二级结构、Rfam 家族、协方差模型、三维结构、预测结构",
+    "功能注释：miRNA、lncRNA、表达与证据",
+    "类型特征：tRNA 反密码子、rRNA 位点",
+    "互作锚点：RBP 位点",
+    "标识映射：外部 ID 映射"
+  ],
+  "constraints": {
+    "no_new_large_fetch": true,
+    "status_only": true
+  },
+  "local_file_checks": [
+    {
+      "path": "data/raw/rna/rnacentral/id_mapping.tsv",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/raw/rna/mirbase/mature.fa.gz",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/raw/rna/ensembl/Homo_sapiens.GRCh38.cdna.all.fa",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/processed/rna/mirna_with_gene.tsv",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/processed/rna/mrna_with_sequence.tsv",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/output/rna_master_mirna_v1.tsv",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/output/rna_master_mrna_v1.tsv",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/output/rna_master_v1.tsv",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/output/rna_xref_mrna_enst_urs_v1.tsv",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/output/mrna_enst_urs_coverage.txt",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/output/rna_xref_mirna_v1.tsv",
+      "exists": false,
+      "size_bytes": 0
+    }
+  ],
+  "summary": {
+    "component_count": 17,
+    "gap_level_count": {
+      "阻塞级": 5,
+      "可延期": 6,
+      "仅文档追踪": 6
+    },
+    "local_files_missing": 12,
+    "local_files_total": 12
+  },
+  "components": [
+    {
+      "组件": "序列数据",
+      "属性字段": "RNA 序列 (sequence)",
+      "数据类型": "String",
+      "获取方式": "miRNA 用 mature.fa+RNAcentral；mRNA 用 Ensembl cDNA 解析",
+      "存储形式": "rna_master_v1.tsv 列",
+      "示例": "UAGCUUAUC...",
+      "用途/指标": "序列完整性与下游比对",
+      "指标": "非空率=100%，字符集=ACGUN",
+      "层次结构": "L1 实体主表",
+      "语义关系": "rna_id-has_sequence->sequence",
+      "数据来源": "RNAcentral/miRBase/Ensembl",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随版本重跑",
+      "当前状态": "代码层已实现，产物层未验证（本地无 RNA 输出）",
+      "缺失项分级": "阻塞级",
+      "优先级": "P0",
+      "证据路径": [
+        "pipelines/rna/scripts/04_finalize_mirna_table_v3.py:96-99,123-127",
+        "pipelines/rna/scripts/08_finalize_mrna_table.py:103-106,129-134",
+        "pipelines/rna/contracts/rna_master_v1.json:51-61"
+      ]
+    },
+    {
+      "组件": "序列数据",
+      "属性字段": "URS 主键一致性 (rna_id)",
+      "数据类型": "String(PK)",
+      "获取方式": "miRNA 用 URS；mRNA 当前 ENST 派生",
+      "存储形式": "主表 rna_id",
+      "示例": "URS..._9606 / ENST..._9606",
+      "用途/指标": "统一主键与跨库 join",
+      "指标": "目标：主表 canonical URS",
+      "层次结构": "L1 主键层",
+      "语义关系": "legacy_id->canonical_id",
+      "数据来源": "RNAcentral + Ensembl",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随版本重跑",
+      "当前状态": "规范要求 URS，但 mRNA 实现仍为 ENST_9606 临时键",
+      "缺失项分级": "阻塞级",
+      "优先级": "P0",
+      "证据路径": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:3-5,11",
+        "pipelines/rna/scripts/07_extract_mrna_from_ensembl.py:173-180",
+        "pipelines/rna/contracts/rna_master_v1.json:91-96",
+        "pipelines/rna/scripts/11_mrna_enst_to_urs_xref.py:96-109"
+      ]
+    },
+    {
+      "组件": "序列数据",
+      "属性字段": "RNA 类型 (rna_type)",
+      "数据类型": "Enum",
+      "获取方式": "脚本写入固定类型",
+      "存储形式": "主表 rna_type",
+      "示例": "mirna,mrna",
+      "用途/指标": "类型分层统计",
+      "指标": "枚举约束",
+      "层次结构": "L1 分类层",
+      "语义关系": "RNA subclass-of RNA type",
+      "数据来源": "RNAcentral/Ensembl",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随版本重跑",
+      "当前状态": "已实现 mirna/mrna；lncrna 未落地",
+      "缺失项分级": "可延期",
+      "优先级": "P1",
+      "证据路径": [
+        "pipelines/rna/contracts/rna_master_v1.json:44-49",
+        "docs/rna/DATA_DICTIONARY_RNA.md:12"
+      ]
+    },
+    {
+      "组件": "序列数据",
+      "属性字段": "物种来源 (taxon_id)",
+      "数据类型": "Integer",
+      "获取方式": "脚本固定 9606 + contract 校验",
+      "存储形式": "主表 taxon_id",
+      "示例": "9606",
+      "用途/指标": "物种一致性",
+      "指标": "目标：100% human",
+      "层次结构": "L1 元数据层",
+      "语义关系": "RNA belongs_to taxon",
+      "数据来源": "RNAcentral/Ensembl",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随版本重跑",
+      "当前状态": "代码层就绪；需产物验证",
+      "缺失项分级": "阻塞级",
+      "优先级": "P0",
+      "证据路径": [
+        "pipelines/rna/scripts/04_finalize_mirna_table_v3.py:100",
+        "pipelines/rna/scripts/08_finalize_mrna_table.py:106",
+        "pipelines/rna/contracts/rna_master_v1.json:37-42"
+      ]
+    },
+    {
+      "组件": "结构数据",
+      "属性字段": "二级结构 (secondary_structure)",
+      "数据类型": "Dot-bracket/String",
+      "获取方式": "当前未抓取，仅预留",
+      "存储形式": "主表预留空列",
+      "示例": "(((...)))",
+      "用途/指标": "结构层分析",
+      "指标": "v2 目标非空率",
+      "层次结构": "L1 扩展列",
+      "语义关系": "RNA-has_secondary_structure",
+      "数据来源": "Rfam（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随 Rfam 扩展",
+      "当前状态": "字段存在但脚本置空",
+      "缺失项分级": "可延期",
+      "优先级": "P1",
+      "证据路径": [
+        "pipelines/rna/scripts/04_finalize_mirna_table_v3.py:111-113",
+        "pipelines/rna/scripts/08_finalize_mrna_table.py:117-119"
+      ]
+    },
+    {
+      "组件": "结构数据",
+      "属性字段": "Rfam 家族 (rfam_id)",
+      "数据类型": "String",
+      "获取方式": "当前未抓取，仅预留",
+      "存储形式": "主表预留空列",
+      "示例": "RF00001",
+      "用途/指标": "家族归类/结构推断",
+      "指标": "目标格式 RF\\d+",
+      "层次结构": "L1 扩展列",
+      "语义关系": "RNA-member_of-Rfam",
+      "数据来源": "Rfam",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随 Rfam 扩展",
+      "当前状态": "字段存在但置空",
+      "缺失项分级": "可延期",
+      "优先级": "P1",
+      "证据路径": [
+        "pipelines/rna/scripts/04_finalize_mirna_table_v3.py:111",
+        "pipelines/rna/scripts/08_finalize_mrna_table.py:117",
+        "docs/rna/RNA_SOURCES_AND_VERSIONS.md:10,23"
+      ]
+    },
+    {
+      "组件": "结构数据",
+      "属性字段": "协方差模型 (covariance_model)",
+      "数据类型": "String/ModelRef",
+      "获取方式": "未实现",
+      "存储形式": "无",
+      "示例": "RFxxxxx.cm",
+      "用途/指标": "家族级结构比对",
+      "指标": "命中阈值待定义",
+      "层次结构": "L2 结构模型层",
+      "语义关系": "RNA-scored_by-CM",
+      "数据来源": "Rfam CM（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "未定义",
+      "当前状态": "仓库无字段、无脚本、无 contract",
+      "缺失项分级": "仅文档追踪",
+      "优先级": "P2",
+      "证据路径": [
+        "pipelines/rna/contracts/rna_master_v1.json（无该字段）",
+        "pipelines/rna/scripts（无 CM 步骤）"
+      ]
+    },
+    {
+      "组件": "结构数据",
+      "属性字段": "三维结构 (pdb_ids)",
+      "数据类型": "String(list)",
+      "获取方式": "当前未抓取，仅预留",
+      "存储形式": "主表预留空列",
+      "示例": "1A34;2KOC",
+      "用途/指标": "3D 结构引用",
+      "指标": "格式校验待定义",
+      "层次结构": "L1 扩展列",
+      "语义关系": "RNA-mapped_to-PDB",
+      "数据来源": "PDB/wwPDB（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "未定义",
+      "当前状态": "字段存在但置空",
+      "缺失项分级": "可延期",
+      "优先级": "P1",
+      "证据路径": [
+        "pipelines/rna/scripts/04_finalize_mirna_table_v3.py:113",
+        "pipelines/rna/scripts/08_finalize_mrna_table.py:119",
+        "docs/rna/DATA_DICTIONARY_RNA.md:49"
+      ]
+    },
+    {
+      "组件": "结构数据",
+      "属性字段": "预测结构 (predicted_structure_ref)",
+      "数据类型": "String/URI",
+      "获取方式": "未实现",
+      "存储形式": "无",
+      "示例": "rhofold://...",
+      "用途/指标": "结构补全",
+      "指标": "覆盖率待定义",
+      "层次结构": "L2 预测层",
+      "语义关系": "RNA-predicted_structure->model",
+      "数据来源": "预测模型（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "未定义",
+      "当前状态": "无字段、无脚本、无规范",
+      "缺失项分级": "仅文档追踪",
+      "优先级": "P2",
+      "证据路径": [
+        "pipelines/rna/contracts/rna_master_v1.json（无该字段）",
+        "docs/rna/*（无预测结构规范）"
+      ]
+    },
+    {
+      "组件": "功能注释",
+      "属性字段": "miRNA 注释 (mirbase_id,mimat/xref)",
+      "数据类型": "String",
+      "获取方式": "mature.fa + id_mapping；附加 xref 脚本",
+      "存储形式": "主表列 + xref 表",
+      "示例": "hsa-miR-21-5p, MIMAT0000076",
+      "用途/指标": "miRNA 精确检索",
+      "指标": "mirbase_id 非空率目标",
+      "层次结构": "L1 功能标签层",
+      "语义关系": "miRNA-linked_to-miRBase ID",
+      "数据来源": "RNAcentral/miRBase",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随版本重跑",
+      "当前状态": "主表字段已实现；xref 未纳入主 run/contract",
+      "缺失项分级": "阻塞级",
+      "优先级": "P0",
+      "证据路径": [
+        "pipelines/rna/scripts/04_finalize_mirna_table_v3.py:97,109",
+        "pipelines/rna/scripts/10_mirna_xref_and_conflicts.py:50-63",
+        "pipelines/rna/run.sh（未调用 script10）"
+      ]
+    },
+    {
+      "组件": "功能注释",
+      "属性字段": "lncRNA 注释",
+      "数据类型": "String/Enum",
+      "获取方式": "未实现",
+      "存储形式": "无",
+      "示例": "lncrna",
+      "用途/指标": "功能扩展",
+      "指标": "类型覆盖率待定义",
+      "层次结构": "L1 类型扩展",
+      "语义关系": "RNA-instance_of-lncRNA",
+      "数据来源": "Ensembl/RNAcentral（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "未定义",
+      "当前状态": "文档提及但 contract/run 未落地",
+      "缺失项分级": "可延期",
+      "优先级": "P1",
+      "证据路径": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:12",
+        "pipelines/rna/contracts/rna_master_v1.json:44-49",
+        "pipelines/rna/run.sh:8-18"
+      ]
+    },
+    {
+      "组件": "功能注释",
+      "属性字段": "表达与证据",
+      "数据类型": "Numeric/Text",
+      "获取方式": "未抓取（文档明确暂不抓）",
+      "存储形式": "无",
+      "示例": "TPM,evidence_level",
+      "用途/指标": "组织特异性解释",
+      "指标": "覆盖率/证据分级待定义",
+      "层次结构": "L2 证据层",
+      "语义关系": "RNA-supported_by-expression evidence",
+      "数据来源": "ENCODE 等（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "未定义",
+      "当前状态": "当前明确 out-of-scope",
+      "缺失项分级": "仅文档追踪",
+      "优先级": "P2",
+      "证据路径": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:56"
+      ]
+    },
+    {
+      "组件": "类型特征",
+      "属性字段": "tRNA 反密码子",
+      "数据类型": "String",
+      "获取方式": "未实现",
+      "存储形式": "无",
+      "示例": "GAA",
+      "用途/指标": "小 RNA 类型特征",
+      "指标": "非空率待定义",
+      "层次结构": "L2 特征层",
+      "语义关系": "tRNA-has_anticodon",
+      "数据来源": "RNAcentral/Rfam（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "未定义",
+      "当前状态": "当前 out-of-scope",
+      "缺失项分级": "仅文档追踪",
+      "优先级": "P2",
+      "证据路径": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:58",
+        "pipelines/rna/run.sh:8-18"
+      ]
+    },
+    {
+      "组件": "类型特征",
+      "属性字段": "rRNA 位点",
+      "数据类型": "String/Coordinate",
+      "获取方式": "未实现",
+      "存储形式": "无",
+      "示例": "18S:...",
+      "用途/指标": "rRNA 定位",
+      "指标": "覆盖率待定义",
+      "层次结构": "L2 特征层",
+      "语义关系": "rRNA-has_site",
+      "数据来源": "RNAcentral/Rfam（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "未定义",
+      "当前状态": "当前 out-of-scope",
+      "缺失项分级": "仅文档追踪",
+      "优先级": "P2",
+      "证据路径": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:58",
+        "pipelines/rna/run.sh:8-18"
+      ]
+    },
+    {
+      "组件": "互作锚点",
+      "属性字段": "RBP 位点",
+      "数据类型": "BED-like/Coordinate",
+      "获取方式": "未实现",
+      "存储形式": "无",
+      "示例": "ELAVL1@chr...",
+      "用途/指标": "RNA-蛋白互作锚点",
+      "指标": "位点覆盖率待定义",
+      "层次结构": "L2 关系锚点层",
+      "语义关系": "RNA-binds-RBP@site",
+      "数据来源": "ENCODE/eCLIP（计划）",
+      "维护机构": "文档未显式登记",
+      "更新频率": "未定义",
+      "当前状态": "当前 out-of-scope（RPI 不进主表）",
+      "缺失项分级": "仅文档追踪",
+      "优先级": "P2",
+      "证据路径": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:55"
+      ]
+    },
+    {
+      "组件": "标识映射",
+      "属性字段": "miRNA 外部 ID 映射（miRBase）",
+      "数据类型": "TSV relation",
+      "获取方式": "脚本生成 xref + 冲突审计",
+      "存储形式": "rna_xref_mirna_v1.tsv（计划）",
+      "示例": "URS... ↔ MIMAT...",
+      "用途/指标": "跨库检索与冲突审计",
+      "指标": "一对多冲突可审计",
+      "层次结构": "L1.5 映射层",
+      "语义关系": "RNA-xref-miRBase",
+      "数据来源": "RNAcentral/miRBase",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随版本重跑",
+      "当前状态": "脚本存在但未并入 run/contract；本地无产物",
+      "缺失项分级": "可延期",
+      "优先级": "P1",
+      "证据路径": [
+        "pipelines/rna/scripts/10_mirna_xref_and_conflicts.py:8-14,50-89",
+        "pipelines/rna/run.sh:8-21",
+        "pipelines/rna/contracts/（无 xref contract）"
+      ]
+    },
+    {
+      "组件": "标识映射",
+      "属性字段": "mRNA ENST↔URS 映射",
+      "数据类型": "TSV relation",
+      "获取方式": "可选脚本扫描 id_mapping 输出 xref/coverage",
+      "存储形式": "rna_xref_mrna_enst_urs_v1.tsv",
+      "示例": "ENST..._9606 ↔ URS..._9606",
+      "用途/指标": "主键统一兼容层",
+      "指标": "覆盖率目标建议 >=70%",
+      "层次结构": "L1.5 映射层",
+      "语义关系": "legacy ENST -> canonical URS",
+      "数据来源": "RNAcentral",
+      "维护机构": "文档未显式登记",
+      "更新频率": "随版本重跑",
+      "当前状态": "run 为 optional 且无 contract/validation，主键统一风险高",
+      "缺失项分级": "阻塞级",
+      "优先级": "P0",
+      "证据路径": [
+        "pipelines/rna/run.sh:20-21",
+        "pipelines/rna/scripts/11_mrna_enst_to_urs_xref.py:8-18,96-127",
+        "pipelines/rna/contracts/（无 xref contract）"
+      ]
+    }
+  ],
+  "top10_gaps": [
+    {
+      "rank": 1,
+      "gap": "mRNA 主键未统一为 URS canonical",
+      "缺失项分级": "阻塞级",
+      "priority": "P0",
+      "effort": "M",
+      "evidence": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:3-5",
+        "pipelines/rna/scripts/07_extract_mrna_from_ensembl.py:177-180"
+      ]
+    },
+    {
+      "rank": 2,
+      "gap": "ENST↔URS 映射链路 optional 且缺 contract/validation",
+      "缺失项分级": "阻塞级",
+      "priority": "P0",
+      "effort": "M",
+      "evidence": [
+        "pipelines/rna/run.sh:20-21",
+        "pipelines/rna/scripts/11_mrna_enst_to_urs_xref.py:96-127"
+      ]
+    },
+    {
+      "rank": 3,
+      "gap": "缺 RNA 原始输入文件，无法重跑",
+      "缺失项分级": "阻塞级",
+      "priority": "P0",
+      "effort": "S",
+      "evidence": [
+        "local_file_checks"
+      ]
+    },
+    {
+      "rank": 4,
+      "gap": "缺 RNA 输出产物，覆盖率不可审计",
+      "缺失项分级": "阻塞级",
+      "priority": "P0",
+      "effort": "S",
+      "evidence": [
+        "local_file_checks"
+      ]
+    },
+    {
+      "rank": 5,
+      "gap": "rfam_id/secondary_structure 仅预留空列",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "M",
+      "evidence": [
+        "pipelines/rna/scripts/04_finalize_mirna_table_v3.py:111-113",
+        "pipelines/rna/scripts/08_finalize_mrna_table.py:117-119"
+      ]
+    },
+    {
+      "rank": 6,
+      "gap": "协方差模型（CM）无字段无流程",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "M",
+      "evidence": [
+        "pipelines/rna/contracts/rna_master_v1.json（无 CM 字段）"
+      ]
+    },
+    {
+      "rank": 7,
+      "gap": "3D 结构映射（PDB/mmCIF）未实现",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "M",
+      "evidence": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:49"
+      ]
+    },
+    {
+      "rank": 8,
+      "gap": "lncRNA 类型未落地（仅文档提及）",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "M",
+      "evidence": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:12",
+        "pipelines/rna/contracts/rna_master_v1.json:44-49"
+      ]
+    },
+    {
+      "rank": 9,
+      "gap": "表达证据层未建设",
+      "缺失项分级": "仅文档追踪",
+      "priority": "P2",
+      "effort": "L",
+      "evidence": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:56"
+      ]
+    },
+    {
+      "rank": 10,
+      "gap": "RBP/tRNA/rRNA 特征与锚点未建设",
+      "缺失项分级": "仅文档追踪",
+      "priority": "P2",
+      "effort": "L",
+      "evidence": [
+        "docs/rna/DATA_DICTIONARY_RNA.md:55,58"
+      ]
+    }
+  ],
+  "download_checklist": [
+    {
+      "file": "RNAcentral id_mapping.tsv.gz",
+      "suggested_version": "Release 25",
+      "target_path": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+      "sha256_command": "sha256sum data/raw/rna/rnacentral/id_mapping.tsv.gz"
+    },
+    {
+      "file": "miRBase mature.fa.gz",
+      "suggested_version": "22.1",
+      "target_path": "data/raw/rna/mirbase/mature.fa.gz",
+      "sha256_command": "sha256sum data/raw/rna/mirbase/mature.fa.gz"
+    },
+    {
+      "file": "Ensembl Homo_sapiens.GRCh38.cdna.all.fa.gz",
+      "suggested_version": "current release aligned with source lock",
+      "target_path": "data/raw/rna/ensembl/Homo_sapiens.GRCh38.cdna.all.fa.gz",
+      "sha256_command": "sha256sum data/raw/rna/ensembl/Homo_sapiens.GRCh38.cdna.all.fa.gz"
+    }
+  ],
+  "evidence_anchor_files": [
+    "docs/rna/DATA_DICTIONARY_RNA.md",
+    "docs/rna/RNA_SOURCES_AND_VERSIONS.md",
+    "pipelines/rna/run.sh",
+    "pipelines/rna/contracts/rna_master_v1.json",
+    "pipelines/rna/scripts/04_finalize_mirna_table_v3.py",
+    "pipelines/rna/scripts/07_extract_mrna_from_ensembl.py",
+    "pipelines/rna/scripts/08_finalize_mrna_table.py",
+    "pipelines/rna/scripts/10_mirna_xref_and_conflicts.py",
+    "pipelines/rna/scripts/11_mrna_enst_to_urs_xref.py"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "rna_master_v1.tsv",
+  "source": "/Users/pluviophile/graph/protian-entity/data/output/rna_master_v1.tsv",
+  "row_count_including_header": 292275,
+  "data_rows": 292274,
+  "columns": [
+    "rna_id",
+    "rna_type",
+    "rna_name",
+    "sequence",
+    "sequence_len",
+    "taxon_id",
+    "symbol",
+    "source",
+    "fetch_date",
+    "source_version",
+    "hgnc_id",
+    "ensembl_gene_id",
+    "ncbi_gene_id",
+    "mirbase_id",
+    "ensembl_transcript_id",
+    "rfam_id",
+    "secondary_structure",
+    "pdb_ids"
+  ],
+  "sample_rows_written": 5000,
+  "note": "Full table exceeds GitHub 100MB single-file limit; sample is tracked in git."
+}

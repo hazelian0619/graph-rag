@@ -1,0 +1,1085 @@
+{
+  "name": "rna_external_xref_v1.conflicts",
+  "generated_at": "2026-04-12T10:27:04+00:00",
+  "per_xref_db": {
+    "ENSEMBL": {
+      "covered_rna_ids": 289642,
+      "unique_xref_ids": 289643,
+      "rna_to_many_xref_count": 1,
+      "rna_to_many_conflict_rate": 3.452537960654877e-06,
+      "xref_to_many_rna_count": 0,
+      "xref_to_many_conflict_rate": 0.0,
+      "samples": {
+        "rna_to_many": [
+          {
+            "rna_id": "ENST00000611965_9606",
+            "xref_ids": [
+              "ENST00000611047",
+              "ENST00000611965"
+            ],
+            "count": 2
+          }
+        ],
+        "xref_to_many": []
+      }
+    },
+    "ENSEMBL_GENCODE": {
+      "covered_rna_ids": 9,
+      "unique_xref_ids": 9,
+      "rna_to_many_xref_count": 0,
+      "rna_to_many_conflict_rate": 0.0,
+      "xref_to_many_rna_count": 0,
+      "xref_to_many_conflict_rate": 0.0,
+      "samples": {
+        "rna_to_many": [],
+        "xref_to_many": []
+      }
+    },
+    "MIRBASE": {
+      "covered_rna_ids": 2632,
+      "unique_xref_ids": 2656,
+      "rna_to_many_xref_count": 16,
+      "rna_to_many_conflict_rate": 0.0060790273556231,
+      "xref_to_many_rna_count": 0,
+      "xref_to_many_conflict_rate": 0.0,
+      "samples": {
+        "rna_to_many": [
+          {
+            "rna_id": "URS00005ECFE5_9606",
+            "xref_ids": [
+              "MIMAT0002831",
+              "MIMAT0005449",
+              "MIMAT0005450",
+              "MIMAT0005451",
+              "MIMAT0005452",
+              "MIMAT0005454"
+            ],
+            "count": 6
+          },
+          {
+            "rna_id": "URS0000087207_9606",
+            "xref_ids": [
+              "MIMAT0002845",
+              "MIMAT0005455",
+              "MIMAT0005456"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00002C02E4_9606",
+            "xref_ids": [
+              "MIMAT0004806",
+              "MIMAT0022738",
+              "MIMAT0022740"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00004BC299_9606",
+            "xref_ids": [
+              "MIMAT0022722",
+              "MIMAT0022733",
+              "MIMAT0022739"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000075D33D_9606",
+            "xref_ids": [
+              "MIMAT0018117",
+              "MIMAT0018180",
+              "MIMAT0019009"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS0000068BEA_9606",
+            "xref_ids": [
+              "MIMAT0002862",
+              "MIMAT0005457"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS00000D4AB5_9606",
+            "xref_ids": [
+              "MIMAT0002852",
+              "MIMAT0002857"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS000012930C_9606",
+            "xref_ids": [
+              "MIMAT0018447",
+              "MIMAT0022730"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS000015188E_9606",
+            "xref_ids": [
+              "MIMAT0018446",
+              "MIMAT0022723"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS0000205A39_9606",
+            "xref_ids": [
+              "MIMAT0002860",
+              "MIMAT0006778"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS000031D186_9606",
+            "xref_ids": [
+              "MIMAT0018989",
+              "MIMAT0022707"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS00003E7283_9606",
+            "xref_ids": [
+              "MIMAT0000710",
+              "MIMAT0022834"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS00003F2D94_9606",
+            "xref_ids": [
+              "MIMAT0000232",
+              "MIMAT0004563"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS000075BB55_9606",
+            "xref_ids": [
+              "MIMAT0018181",
+              "MIMAT0019007"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS000077CDCE_9606",
+            "xref_ids": [
+              "MIMAT0032114",
+              "MIMAT0032115"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS0000D5654E_9606",
+            "xref_ids": [
+              "MIMAT0037325",
+              "MIMAT0037327"
+            ],
+            "count": 2
+          }
+        ],
+        "xref_to_many": []
+      }
+    },
+    "REFSEQ": {
+      "covered_rna_ids": 2628,
+      "unique_xref_ids": 1913,
+      "rna_to_many_xref_count": 173,
+      "rna_to_many_conflict_rate": 0.06582952815829528,
+      "xref_to_many_rna_count": 960,
+      "xref_to_many_conflict_rate": 0.501829587036069,
+      "samples": {
+        "rna_to_many": [
+          {
+            "rna_id": "URS0000442977_9606",
+            "xref_ids": [
+              "NR_031631",
+              "NR_031632",
+              "NR_031633",
+              "NR_031634",
+              "NR_031635",
+              "NR_031636",
+              "NR_031637",
+              "NR_036051",
+              "NR_036266",
+              "NR_036267"
+            ],
+            "count": 11
+          },
+          {
+            "rna_id": "URS00005ECFE5_9606",
+            "xref_ids": [
+              "NR_030188",
+              "NR_030191",
+              "NR_030193",
+              "NR_030209",
+              "NR_030217",
+              "NR_030218"
+            ],
+            "count": 6
+          },
+          {
+            "rna_id": "URS00000B7F84_9606",
+            "xref_ids": [
+              "NR_031642",
+              "NR_031643",
+              "NR_031644",
+              "NR_031645",
+              "NR_031646"
+            ],
+            "count": 5
+          },
+          {
+            "rna_id": "URS00003E16D3_9606",
+            "xref_ids": [
+              "NR_031677",
+              "NR_031678",
+              "NR_031679",
+              "NR_031680",
+              "NR_039610"
+            ],
+            "count": 5
+          },
+          {
+            "rna_id": "URS000050E4BA_9606",
+            "xref_ids": [
+              "NR_030637",
+              "NR_030638",
+              "NR_030639",
+              "NR_040032",
+              "NR_128719"
+            ],
+            "count": 5
+          },
+          {
+            "rna_id": "URS0000087207_9606",
+            "xref_ids": [
+              "NR_030197",
+              "NR_030198",
+              "NR_030208",
+              "NR_030211"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS00001EE4D9_9606",
+            "xref_ids": [
+              "NR_036061",
+              "NR_036062",
+              "NR_036063",
+              "NR_036134"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS0000205A39_9606",
+            "xref_ids": [
+              "NR_030207",
+              "NR_030212",
+              "NR_030220",
+              "NR_030221"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS00003AF4CD_9606",
+            "xref_ids": [
+              "NR_036140",
+              "NR_036143",
+              "NR_036145",
+              "NR_128709"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS00004C1D89_9606",
+            "xref_ids": [
+              "NR_031687",
+              "NR_031688",
+              "NR_031689",
+              "NR_031690"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS0000759D8E_9606",
+            "xref_ids": [
+              "NR_106918",
+              "NR_107062",
+              "NR_107063",
+              "NR_128720"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS000075B58F_9606",
+            "xref_ids": [
+              "NR_036052",
+              "NR_036262",
+              "NR_036263",
+              "NR_128710"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS000075C233_9606",
+            "xref_ids": [
+              "NR_106918",
+              "NR_107062",
+              "NR_107063",
+              "NR_128720"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS000075C82B_9606",
+            "xref_ids": [
+              "NR_106766",
+              "NR_106969",
+              "NR_106970",
+              "NR_106971"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS000075E460_9606",
+            "xref_ids": [
+              "NR_106766",
+              "NR_106969",
+              "NR_106970",
+              "NR_106971"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS000075EB43_9606",
+            "xref_ids": [
+              "NR_037442",
+              "NR_049832",
+              "NR_128712",
+              "NR_128713"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS00007777B8_9606",
+            "xref_ids": [
+              "NR_106782",
+              "NR_128715",
+              "NR_128716",
+              "NR_128717"
+            ],
+            "count": 4
+          },
+          {
+            "rna_id": "URS0000064063_9606",
+            "xref_ids": [
+              "NR_036112",
+              "NR_036153",
+              "NR_036164"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS0000068BEA_9606",
+            "xref_ids": [
+              "NR_030210",
+              "NR_030213",
+              "NR_030219"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00000ADB79_9606",
+            "xref_ids": [
+              "NR_029668",
+              "NR_029669",
+              "NR_029670"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00000EA6BC_9606",
+            "xref_ids": [
+              "NR_049886",
+              "NR_049895",
+              "NR_128721"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000012930C_9606",
+            "xref_ids": [
+              "NR_036093",
+              "NR_037516",
+              "NR_037517"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS0000161522_9606",
+            "xref_ids": [
+              "NR_029605",
+              "NR_029606",
+              "NR_029607"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00001AADF2_9606",
+            "xref_ids": [
+              "NR_030238",
+              "NR_030239",
+              "NR_030240"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00001F14FE_9606",
+            "xref_ids": [
+              "NR_030319",
+              "NR_030320",
+              "NR_039600"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS0000227241_9606",
+            "xref_ids": [
+              "NR_030201",
+              "NR_030205",
+              "NR_030214"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00002C02E4_9606",
+            "xref_ids": [
+              "NR_030347",
+              "NR_039605",
+              "NR_039762"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00002C4233_9606",
+            "xref_ids": [
+              "NR_036141",
+              "NR_036142",
+              "NR_036144"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00002E177F_9606",
+            "xref_ids": [
+              "NR_030236",
+              "NR_030586",
+              "NR_030629"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00003496BE_9606",
+            "xref_ids": [
+              "NR_029691",
+              "NR_029692",
+              "NR_030741"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000038037E_9606",
+            "xref_ids": [
+              "NR_030312",
+              "NR_030317",
+              "NR_030330"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00003AA409_9606",
+            "xref_ids": [
+              "NR_029668",
+              "NR_029669",
+              "NR_029670"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00003F2D94_9606",
+            "xref_ids": [
+              "NR_029586",
+              "NR_029618",
+              "NR_029619"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS0000416056_9606",
+            "xref_ids": [
+              "NR_029476",
+              "NR_029477",
+              "NR_029478"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00004208C5_9606",
+            "xref_ids": [
+              "NR_029691",
+              "NR_029692",
+              "NR_030741"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000042B7FA_9606",
+            "xref_ids": [
+              "NR_030238",
+              "NR_030239",
+              "NR_030240"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00004BC299_9606",
+            "xref_ids": [
+              "NR_031662",
+              "NR_036166",
+              "NR_039674"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS00004EE409_9606",
+            "xref_ids": [
+              "NR_036141",
+              "NR_036142",
+              "NR_036144"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000075A6A9_9606",
+            "xref_ids": [
+              "NR_106828",
+              "NR_107060",
+              "NR_107061"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000075A776_9606",
+            "xref_ids": [
+              "NR_039732",
+              "NR_039733",
+              "NR_039734"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000075B5BA_9606",
+            "xref_ids": [
+              "NR_036049",
+              "NR_036259",
+              "NR_036260"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000075D33D_9606",
+            "xref_ids": [
+              "NR_037460",
+              "NR_037469",
+              "NR_039695"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS000075D6C4_9606",
+            "xref_ids": [
+              "NR_106828",
+              "NR_107060",
+              "NR_107061"
+            ],
+            "count": 3
+          },
+          {
+            "rna_id": "URS0000010C72_9606",
+            "xref_ids": [
+              "NR_031723",
+              "NR_031725"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS0000010D30_9606",
+            "xref_ids": [
+              "NR_031565",
+              "NR_031724"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS0000024ACC_9606",
+            "xref_ids": [
+              "NR_030210",
+              "NR_030213"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS0000030489_9606",
+            "xref_ids": [
+              "NR_031620",
+              "NR_031621"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS0000046A2A_9606",
+            "xref_ids": [
+              "NR_036117",
+              "NR_036118"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS000004F5D8_9606",
+            "xref_ids": [
+              "NR_029476",
+              "NR_029478"
+            ],
+            "count": 2
+          },
+          {
+            "rna_id": "URS000005E7DD_9606",
+            "xref_ids": [
+              "NR_030207",
+              "NR_030212"
+            ],
+            "count": 2
+          }
+        ],
+        "xref_to_many": [
+          {
+            "xref_id": "NR_029476",
+            "rna_ids": [
+              "URS000004F5D8_9606",
+              "URS0000416056_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029477",
+            "rna_ids": [
+              "URS00000157F5_9606",
+              "URS0000416056_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029478",
+            "rna_ids": [
+              "URS000004F5D8_9606",
+              "URS0000416056_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029479",
+            "rna_ids": [
+              "URS0000324096_9606",
+              "URS00005918D5_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029480",
+            "rna_ids": [
+              "URS000050DE77_9606",
+              "URS000060A34C_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029481",
+            "rna_ids": [
+              "URS00000A07C1_9606",
+              "URS000028D142_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029482",
+            "rna_ids": [
+              "URS000000B1C9_9606",
+              "URS0000409B45_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029483",
+            "rna_ids": [
+              "URS00002F8148_9606",
+              "URS00003B7674_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029484",
+            "rna_ids": [
+              "URS00001C04A2_9606",
+              "URS00003B7674_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029485",
+            "rna_ids": [
+              "URS00001C94E0_9606",
+              "URS00003D1AE3_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029486",
+            "rna_ids": [
+              "URS00004BCD9C_9606",
+              "URS000061CB8F_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029487",
+            "rna_ids": [
+              "URS00002075FA_9606",
+              "URS00004636A3_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029488",
+            "rna_ids": [
+              "URS000035CC3E_9606",
+              "URS00004131FE_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029489",
+            "rna_ids": [
+              "URS000006FDD4_9606",
+              "URS00001754CF_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029490",
+            "rna_ids": [
+              "URS000013D17D_9606",
+              "URS00001B9622_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029491",
+            "rna_ids": [
+              "URS000013D17D_9606",
+              "URS000075D58E_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029492",
+            "rna_ids": [
+              "URS0000042E1F_9606",
+              "URS0000574A2C_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029493",
+            "rna_ids": [
+              "URS000009262D_9606",
+              "URS000039ED8D_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029494",
+            "rna_ids": [
+              "URS0000096022_9606",
+              "URS0000142DC3_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029495",
+            "rna_ids": [
+              "URS00005070A9_9606",
+              "URS00005540D2_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029496",
+            "rna_ids": [
+              "URS00002D0FC3_9606",
+              "URS000059273E_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029497",
+            "rna_ids": [
+              "URS00001DEE11_9606",
+              "URS000059273E_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029498",
+            "rna_ids": [
+              "URS00001A9746_9606",
+              "URS00004F9744_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029499",
+            "rna_ids": [
+              "URS00000C0D3F_9606",
+              "URS000019B0F7_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029500",
+            "rna_ids": [
+              "URS000021C6A8_9606",
+              "URS0000316FA5_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029501",
+            "rna_ids": [
+              "URS00001B341F_9606",
+              "URS00003B95DA_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029502",
+            "rna_ids": [
+              "URS00001799A3_9606",
+              "URS00003E47B1_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029503",
+            "rna_ids": [
+              "URS0000076995_9606",
+              "URS00002F4D78_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029504",
+            "rna_ids": [
+              "URS0000065D58_9606",
+              "URS000043D1A9_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029505",
+            "rna_ids": [
+              "URS00002A291B_9606",
+              "URS00005416E3_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029506",
+            "rna_ids": [
+              "URS00002FC5B0_9606",
+              "URS00004C47FB_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029507",
+            "rna_ids": [
+              "URS00003E3B82_9606",
+              "URS0000483184_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029508",
+            "rna_ids": [
+              "URS00001DA458_9606",
+              "URS00003768C5_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029509",
+            "rna_ids": [
+              "URS00003768C5_9606",
+              "URS0000451A59_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029510",
+            "rna_ids": [
+              "URS00000FB1B1_9606",
+              "URS0000149452_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029511",
+            "rna_ids": [
+              "URS00002E2DE7_9606",
+              "URS000075D912_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029512",
+            "rna_ids": [
+              "URS000016FF9C_9606",
+              "URS00005176F0_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029513",
+            "rna_ids": [
+              "URS0000122ED0_9606",
+              "URS00004E0808_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029514",
+            "rna_ids": [
+              "URS0000157026_9606",
+              "URS00005C62FC_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029515",
+            "rna_ids": [
+              "URS00001A405B_9606",
+              "URS000040D674_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029516",
+            "rna_ids": [
+              "URS00001230A0_9606",
+              "URS000017D10B_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029517",
+            "rna_ids": [
+              "URS00001123BD_9606",
+              "URS000024463E_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029518",
+            "rna_ids": [
+              "URS000024463E_9606",
+              "URS0000403C02_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029519",
+            "rna_ids": [
+              "URS0000476BE1_9606",
+              "URS000060A0B0_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029520",
+            "rna_ids": [
+              "URS0000476BE1_9606",
+              "URS00005812A9_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029521",
+            "rna_ids": [
+              "URS00002872CB_9606",
+              "URS0000495F5B_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029522",
+            "rna_ids": [
+              "URS00002872CB_9606",
+              "URS0000495F5B_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029523",
+            "rna_ids": [
+              "URS00003FE4D4_9606",
+              "URS00005F5B9E_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029525",
+            "rna_ids": [
+              "URS00001E9CCB_9606",
+              "URS00004BCD9C_9606"
+            ],
+            "count": 2
+          },
+          {
+            "xref_id": "NR_029578",
+            "rna_ids": [
+              "URS00000B59A2_9606",
+              "URS0000155642_9606"
+            ],
+            "count": 2
+          }
+        ]
+      }
+    },
+    "RNACENTRAL": {
+      "covered_rna_ids": 2632,
+      "unique_xref_ids": 2632,
+      "rna_to_many_xref_count": 0,
+      "rna_to_many_conflict_rate": 0.0,
+      "xref_to_many_rna_count": 0,
+      "xref_to_many_conflict_rate": 0.0,
+      "samples": {
+        "rna_to_many": [],
+        "xref_to_many": []
+      }
+    }
+  }
+}

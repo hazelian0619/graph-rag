@@ -1,0 +1,160 @@
+{
+  "pipeline": "rna_rpi_v1",
+  "generated_at_utc": "2026-04-12T04:26:29.950083+00:00",
+  "input": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "protein_master": "data/processed/protein_master_v6_clean.tsv",
+    "rpi_input": "data/raw/rpi/starbase_human.tsv"
+  },
+  "status": "completed",
+  "input_detected": {
+    "rpi_input": "data/raw/rpi/starbase_human.tsv",
+    "source": "starBase",
+    "delimiter": "\t",
+    "picked_columns": {
+      "rna_col": "geneID",
+      "protein_col": "RBP",
+      "rna_candidates": [
+        "geneID",
+        "geneName"
+      ],
+      "protein_candidates": [
+        "RBP"
+      ],
+      "score_col": null,
+      "method_col": null,
+      "reference_col": "clusterID",
+      "evidence_type_col": null,
+      "predicate_col": null,
+      "directed_col": null,
+      "source_col": null,
+      "source_version_col": null
+    }
+  },
+  "lookup_stats": {
+    "rna": {
+      "rows": 292274,
+      "canonical": 292274,
+      "aliases": 659493,
+      "ambiguous_aliases": 0
+    },
+    "protein": {
+      "rows": 19135,
+      "canonical": 19135,
+      "aliases": 158960,
+      "ambiguous_aliases": 2269
+    }
+  },
+  "output": {
+    "edges": "data/output/edges/rna_protein_edges_v1.tsv",
+    "evidence": "data/output/evidence/rna_protein_evidence_v1.tsv"
+  },
+  "row_count": {
+    "parsed_rows": 101848,
+    "resolved_rows": 100255,
+    "edges": 16489,
+    "evidence": 100255
+  },
+  "acceptance": {
+    "src_join_rate": 1.0,
+    "dst_join_rate": 1.0,
+    "edge_id_unique": true,
+    "self_loop_count": 0,
+    "evidence_method_or_reference_rate": 1.0
+  },
+  "gates": {
+    "passed": true,
+    "checks": {
+      "src_join_rate_ge_0_99": true,
+      "dst_join_rate_ge_0_99": true,
+      "edge_id_unique": true,
+      "self_loop_zero": true,
+      "evidence_method_or_reference_rate_ge_0_99": true
+    }
+  },
+  "missing_audit": {
+    "unresolved_rna_top20": [
+      {
+        "value": "ENSG00000141979",
+        "count": 56
+      },
+      {
+        "value": "ENSG00000026036",
+        "count": 40
+      },
+      {
+        "value": "ENSG00000153113",
+        "count": 28
+      },
+      {
+        "value": "ENSG00000285238",
+        "count": 22
+      },
+      {
+        "value": "ENSG00000277957",
+        "count": 19
+      },
+      {
+        "value": "ENSG00000273734",
+        "count": 18
+      },
+      {
+        "value": "ENSG00000124208",
+        "count": 18
+      },
+      {
+        "value": "ENSG00000144785",
+        "count": 18
+      },
+      {
+        "value": "ENSG00000279765",
+        "count": 18
+      },
+      {
+        "value": "ENSG00000198786",
+        "count": 16
+      },
+      {
+        "value": "ENSG00000198886",
+        "count": 16
+      },
+      {
+        "value": "ENSG00000198804",
+        "count": 16
+      },
+      {
+        "value": "ENSG00000282034",
+        "count": 16
+      },
+      {
+        "value": "ENSG00000150403",
+        "count": 16
+      },
+      {
+        "value": "ENSG00000110696",
+        "count": 15
+      },
+      {
+        "value": "ENSG00000125695",
+        "count": 15
+      },
+      {
+        "value": "ENSG00000286001",
+        "count": 15
+      },
+      {
+        "value": "ENSG00000266086",
+        "count": 14
+      },
+      {
+        "value": "ENSG00000269955",
+        "count": 14
+      },
+      {
+        "value": "ENSG00000156875",
+        "count": 14
+      }
+    ],
+    "unresolved_protein_top20": []
+  }
+}

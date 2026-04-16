@@ -1,0 +1,15 @@
+{
+  "pipeline": "rna_structure_models_v1",
+  "generated_at_utc": "2026-04-12T10:23:41.378233+00:00",
+  "input": {
+    "rfam_family": "data/raw/rna/rfam/family.txt.gz",
+    "rfam_cm_bundle": "data/raw/rna/rfam/Rfam.cm.gz",
+    "rfam_cm_dir": "data/raw/rna/rfam/cm",
+    "predicted_root": "data/raw/rna/predicted_structures",
+    "predicted_manifest": "data/raw/rna/predicted_structures/manifest.tsv"
+  },
+  "status": "inputs_ready",
+  "cm_mode": "bundle",
+  "predicted_detection": "manifest",
+  "message": "输入检查通过。"
+}

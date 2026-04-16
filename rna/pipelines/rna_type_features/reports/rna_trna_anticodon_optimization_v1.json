@@ -1,0 +1,726 @@
+{
+  "generated_at": "2026-04-12",
+  "goal": "diagnose and design anticodon optimization without breaking v1 contract/validation",
+  "baseline": {
+    "rows": 4078,
+    "anticodon_non_empty_rate": 0.113781,
+    "anticodon_source_distribution": {
+      "none": 3614,
+      "symbol_inference": 442,
+      "gtrnadb": 22
+    }
+  },
+  "source_extractability_ceiling": [
+    {
+      "source_db": "ENA",
+      "unique_urs": 3457,
+      "current_parseable_urs": 442,
+      "current_parseable_rate": 0.1279,
+      "enhanced_parseable_urs": 3395,
+      "enhanced_parseable_rate": 0.9821
+    },
+    {
+      "source_db": "RFAM",
+      "unique_urs": 638,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 0,
+      "enhanced_parseable_rate": 0.0
+    },
+    {
+      "source_db": "GENECARDS",
+      "unique_urs": 580,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 466,
+      "enhanced_parseable_rate": 0.8034
+    },
+    {
+      "source_db": "GTRNADB",
+      "unique_urs": 354,
+      "current_parseable_urs": 325,
+      "current_parseable_rate": 0.9181,
+      "enhanced_parseable_urs": 328,
+      "enhanced_parseable_rate": 0.9266
+    },
+    {
+      "source_db": "HGNC",
+      "unique_urs": 348,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 319,
+      "enhanced_parseable_rate": 0.9167
+    },
+    {
+      "source_db": "LNCBOOK",
+      "unique_urs": 213,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 0,
+      "enhanced_parseable_rate": 0.0
+    },
+    {
+      "source_db": "PDB",
+      "unique_urs": 96,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 0,
+      "enhanced_parseable_rate": 0.0
+    },
+    {
+      "source_db": "MALACARDS",
+      "unique_urs": 39,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 9,
+      "enhanced_parseable_rate": 0.2308
+    },
+    {
+      "source_db": "ENSEMBL",
+      "unique_urs": 30,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 0,
+      "enhanced_parseable_rate": 0.0
+    },
+    {
+      "source_db": "EXPRESSION_ATLAS",
+      "unique_urs": 23,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 0,
+      "enhanced_parseable_rate": 0.0
+    },
+    {
+      "source_db": "MODOMICS",
+      "unique_urs": 7,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 7,
+      "enhanced_parseable_rate": 1.0
+    },
+    {
+      "source_db": "REFSEQ",
+      "unique_urs": 7,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 0,
+      "enhanced_parseable_rate": 0.0
+    },
+    {
+      "source_db": "NONCODE",
+      "unique_urs": 2,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 0,
+      "enhanced_parseable_rate": 0.0
+    },
+    {
+      "source_db": "INTACT",
+      "unique_urs": 1,
+      "current_parseable_urs": 0,
+      "current_parseable_rate": 0.0,
+      "enhanced_parseable_urs": 0,
+      "enhanced_parseable_rate": 0.0
+    }
+  ],
+  "none_root_cause_buckets": {
+    "B_symbolic_only_mt_map": 2659,
+    "A_no_extractable_token_any_source": 511,
+    "E_multi_source_conflict_resolvable": 146,
+    "F_multi_source_conflict_unresolved": 156,
+    "C_nonstandard_naming_parseable": 142
+  },
+  "candidate_availability": {
+    "none_rows": 3614,
+    "has_any_candidate": 3103,
+    "no_candidate": 511,
+    "candidate_multiplicity_distribution": {
+      "1": 2801,
+      "0": 511,
+      "2": 296,
+      "3": 6
+    }
+  },
+  "scenarios": {
+    "conservative": {
+      "rule_summary": "仅接收 current/hgnc/trnai 高置信；mt_symbol 需>=3 行或 >=2 DB 支持",
+      "risk": "覆盖提升有限，但误填风险最低",
+      "sample_validation": {
+        "sample_size": 412,
+        "fillable": 92,
+        "fillable_rate": 0.2233,
+        "unresolved_conflict": 0
+      },
+      "full_projection": {
+        "filled_new_rows": 777,
+        "v2_non_empty_rate": 0.304316,
+        "unresolved_conflict_rows": 6,
+        "status_distribution": {
+          "low_conf_filtered": 2320,
+          "no_candidate": 511,
+          "mt_symbol_strict": 634,
+          "high_conf_rule": 143,
+          "conflict_unresolved": 6
+        }
+      }
+    },
+    "balanced": {
+      "rule_summary": "单候选高分通过；冲突需 score 差>=1.0；mt_symbol 需>=2 行或 >=2 DB",
+      "risk": "覆盖与风险平衡，仍有少量冲突待人工/外部数据消解",
+      "sample_validation": {
+        "sample_size": 412,
+        "fillable": 159,
+        "fillable_rate": 0.3859,
+        "unresolved_conflict": 17
+      },
+      "full_projection": {
+        "filled_new_rows": 1268,
+        "v2_non_empty_rate": 0.424718,
+        "unresolved_conflict_rows": 156,
+        "status_distribution": {
+          "low_conf_filtered": 1679,
+          "no_candidate": 511,
+          "weighted_conflict_resolve": 146,
+          "single_or_high_conf": 1122,
+          "conflict_unresolved": 156
+        }
+      }
+    },
+    "aggressive": {
+      "rule_summary": "只要有候选即尽量填充，冲突按加权最高取值",
+      "risk": "覆盖高但潜在误填风险高，不建议直接上线",
+      "sample_validation": {
+        "sample_size": 412,
+        "fillable": 334,
+        "fillable_rate": 0.8107,
+        "unresolved_conflict": 15
+      },
+      "full_projection": {
+        "filled_new_rows": 2959,
+        "v2_non_empty_rate": 0.839382,
+        "unresolved_conflict_rows": 144,
+        "status_distribution": {
+          "single_candidate": 2801,
+          "no_candidate": 511,
+          "weighted_conflict_resolve": 158,
+          "conflict_unresolved": 144
+        }
+      }
+    }
+  },
+  "recommendation": {
+    "preferred": "balanced",
+    "why": "全量预测 non-empty 可达 0.4247(>=0.35) 且冲突仍可审计；风险显著低于 aggressive",
+    "rollout": "先 conservative 影子运行+审计，再切 balanced 全量，保留冲突表与置信分层"
+  },
+  "conflict_audit": {
+    "unresolved_examples_top20": [
+      {
+        "urs_id": "URS00008EF91F_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TGA",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS0000DE31A7_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 679.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "GAA",
+            "score": 679.0,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00008EF175_9606",
+        "candidates": [
+          {
+            "anti": "TGG",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS000038E254_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TCC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00008F50F1_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TAA",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00027089EB_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "GAA",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00002C58F1_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "GAA",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00027003B2_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "GAA",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00019AED07_9606",
+        "candidates": [
+          {
+            "anti": "TTC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS000021D25D_9606",
+        "candidates": [
+          {
+            "anti": "TTG",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS000275E682_9606",
+        "candidates": [
+          {
+            "anti": "TGG",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS0000297DC4_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TGA",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00019E549B_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TGA",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00027B7DC1_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 1.4,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "GAA",
+            "score": 1.4,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS0001A0C6AA_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TCG",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS00002C4A32_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "GCT",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS000277A76C_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "GAA",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS000271DF1E_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 1.4,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "GAA",
+            "score": 1.4,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS000275E9ED_9606",
+        "candidates": [
+          {
+            "anti": "TGG",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      },
+      {
+        "urs_id": "URS000224ADCE_9606",
+        "candidates": [
+          {
+            "anti": "TGC",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          },
+          {
+            "anti": "TAG",
+            "score": 0.7,
+            "methods": [
+              "mt_symbol_map"
+            ],
+            "dbs": [
+              "ENA"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "external_data_availability": {
+    "gtRNAdb_local": false,
+    "genbank_local": false,
+    "trnascan_local": false
+  }
+}

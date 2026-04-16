@@ -1,0 +1,72 @@
+{
+  "name": "mrna_enst_urs_coverage_v2",
+  "generated_at": "2026-04-12T04:11:12+00:00",
+  "inputs": {
+    "master": "data/output/rna_master_v1.tsv",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+    "taxon_id": "9606",
+    "allowed_dbs": [
+      "ENSEMBL",
+      "ENSEMBL_GENCODE",
+      "GENCODE"
+    ],
+    "sample_mode": true,
+    "max_master_rows": 5000,
+    "max_idmap_lines": 2000000
+  },
+  "counts": {
+    "master_rows_scanned": 5000,
+    "master_mrna_rows": 5000,
+    "master_mrna_target_taxon_rows": 5000,
+    "master_mrna_enst_rows": 5000,
+    "idmap_lines_scanned": 2000001,
+    "idmap_pass_taxid": 22730,
+    "idmap_pass_db": 523,
+    "idmap_pass_enst": 523,
+    "xref_rows": 0,
+    "mapped_mrna_enst_rows": 0,
+    "unmapped_mrna_enst_rows": 5000
+  },
+  "coverage": {
+    "mapped": 0,
+    "total": 5000,
+    "rate": 0.0,
+    "percent": 0.0,
+    "strategy_counts": {},
+    "unresolved_examples": [
+      "ENST00000000233_9606",
+      "ENST00000000412_9606",
+      "ENST00000000442_9606",
+      "ENST00000001008_9606",
+      "ENST00000001146_9606",
+      "ENST00000002125_9606",
+      "ENST00000002165_9606",
+      "ENST00000002501_9606",
+      "ENST00000002596_9606",
+      "ENST00000002829_9606",
+      "ENST00000003084_9606",
+      "ENST00000003100_9606",
+      "ENST00000003302_9606",
+      "ENST00000003583_9606",
+      "ENST00000003912_9606",
+      "ENST00000004103_9606",
+      "ENST00000004531_9606",
+      "ENST00000004982_9606",
+      "ENST00000005082_9606",
+      "ENST00000005178_9606"
+    ]
+  },
+  "thresholds": {
+    "minimum": 0.7,
+    "target": 0.9,
+    "met_minimum": false,
+    "met_target": false
+  },
+  "gates": {
+    "status": "LOW_COVERAGE_KPI_NOT_MET",
+    "reason": "coverage below KPI minimum; auxiliary xref files recommended",
+    "recommended_action": "download auxiliary xref files and improve mapping in follow-up run"
+  },
+  "conflicts_report": "pipelines/rna_xref_enst_urs/reports/mrna_enst_urs_conflicts_v2.sample.json",
+  "manual_download_report": "pipelines/rna_xref_enst_urs/reports/mrna_enst_urs_manual_download_v2.sample.json"
+}

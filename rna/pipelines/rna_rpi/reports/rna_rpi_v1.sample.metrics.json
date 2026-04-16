@@ -1,0 +1,112 @@
+{
+  "pipeline": "rna_rpi_v1",
+  "generated_at_utc": "2026-04-12T04:26:20.408319+00:00",
+  "input": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "protein_master": "data/processed/protein_master_v6_clean.tsv",
+    "rpi_input": "data/raw/rpi/starbase_human.tsv"
+  },
+  "status": "completed",
+  "input_detected": {
+    "rpi_input": "data/raw/rpi/starbase_human.tsv",
+    "source": "starBase",
+    "delimiter": "\t",
+    "picked_columns": {
+      "rna_col": "geneID",
+      "protein_col": "RBP",
+      "rna_candidates": [
+        "geneID",
+        "geneName"
+      ],
+      "protein_candidates": [
+        "RBP"
+      ],
+      "score_col": null,
+      "method_col": null,
+      "reference_col": "clusterID",
+      "evidence_type_col": null,
+      "predicate_col": null,
+      "directed_col": null,
+      "source_col": null,
+      "source_version_col": null
+    }
+  },
+  "lookup_stats": {
+    "rna": {
+      "rows": 292274,
+      "canonical": 292274,
+      "aliases": 659493,
+      "ambiguous_aliases": 0
+    },
+    "protein": {
+      "rows": 19135,
+      "canonical": 19135,
+      "aliases": 158960,
+      "ambiguous_aliases": 2269
+    }
+  },
+  "output": {
+    "edges": "data/output/edges/rna_protein_edges_v1.sample.tsv",
+    "evidence": "data/output/evidence/rna_protein_evidence_v1.sample.tsv"
+  },
+  "row_count": {
+    "parsed_rows": 200,
+    "resolved_rows": 186,
+    "edges": 128,
+    "evidence": 186
+  },
+  "acceptance": {
+    "src_join_rate": 1.0,
+    "dst_join_rate": 1.0,
+    "edge_id_unique": true,
+    "self_loop_count": 0,
+    "evidence_method_or_reference_rate": 1.0
+  },
+  "gates": {
+    "passed": true,
+    "checks": {
+      "src_join_rate_ge_0_99": true,
+      "dst_join_rate_ge_0_99": true,
+      "edge_id_unique": true,
+      "self_loop_zero": true,
+      "evidence_method_or_reference_rate_ge_0_99": true
+    }
+  },
+  "missing_audit": {
+    "unresolved_rna_top20": [
+      {
+        "value": "ENSG00000198786",
+        "count": 4
+      },
+      {
+        "value": "ENSG00000266086",
+        "count": 3
+      },
+      {
+        "value": "ENSG00000198763",
+        "count": 2
+      },
+      {
+        "value": "ENSG00000198712",
+        "count": 1
+      },
+      {
+        "value": "ENSG00000198727",
+        "count": 1
+      },
+      {
+        "value": "ENSG00000198886",
+        "count": 1
+      },
+      {
+        "value": "ENSG00000215472",
+        "count": 1
+      },
+      {
+        "value": "ENSG00000255292",
+        "count": 1
+      }
+    ],
+    "unresolved_protein_top20": []
+  }
+}

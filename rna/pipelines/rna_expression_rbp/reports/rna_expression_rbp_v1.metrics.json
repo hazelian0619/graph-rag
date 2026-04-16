@@ -1,0 +1,52 @@
+{
+  "pipeline": "rna_expression_rbp_v1",
+  "generated_at_utc": "2026-04-11T17:19:05.892275+00:00",
+  "input": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "expression_input": "data/raw/rna/encode/expression_evidence.tsv.gz",
+    "rbp_input": "data/raw/rna/encode/rbp_sites.tsv.gz"
+  },
+  "status": "completed",
+  "output": {
+    "expression": "data/output/rna_expression_evidence_v1.tsv",
+    "rbp": "data/output/rna_rbp_sites_v1.tsv"
+  },
+  "row_count": {
+    "expression_rows": 289614,
+    "rbp_rows": 31084
+  },
+  "acceptance": {
+    "rna_id_join_rate_expression": 1.0,
+    "rna_id_join_rate_rbp": 1.0,
+    "metadata_completeness_expression": 1.0,
+    "metadata_completeness_rbp": 1.0,
+    "evidence_level_non_empty_rate_expression": 1.0,
+    "evidence_level_non_empty_rate_rbp": 1.0
+  },
+  "details": {
+    "expression": {
+      "join": {
+        "matched": 289614,
+        "total": 289614,
+        "rate": 1.0
+      },
+      "evidence_level_distribution": {
+        "low": 65579,
+        "medium": 51897,
+        "high": 172138
+      }
+    },
+    "rbp": {
+      "join": {
+        "matched": 31084,
+        "total": 31084,
+        "rate": 1.0
+      },
+      "evidence_level_distribution": {
+        "medium": 6064,
+        "low": 24015,
+        "high": 1005
+      }
+    }
+  }
+}

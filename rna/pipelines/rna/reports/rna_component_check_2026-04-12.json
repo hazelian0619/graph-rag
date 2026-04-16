@@ -1,0 +1,381 @@
+{
+  "pipeline": "rna_component_check_2026-04-12",
+  "generated_at_utc": "2026-04-12T08:24:49.606020+00:00",
+  "background_constraints": {
+    "scheme_b_active": "mRNA canonical=ENST; miRNA canonical=URS",
+    "a_coverage_70_90_is_kpi_not_blocker": true,
+    "strict_mode_blocks_low_coverage_only_when_enabled": true
+  },
+  "scope": [
+    "RNA checklist 现状重刷（仅本地证据）",
+    "主线缺口复盘（含 top10 分级）",
+    "确认 A 低覆盖是否阻塞（默认否）"
+  ],
+  "constraints": {
+    "no_new_large_fetch": true,
+    "status_only": true
+  },
+  "local_file_checks": [
+    {
+      "path": "data/output/rna_master_v1.tsv",
+      "exists": true,
+      "size_bytes": 744099663,
+      "mtime_utc": "2026-04-11T16:00:58.100863+00:00",
+      "line_count": 292275,
+      "data_rows": 292274
+    },
+    {
+      "path": "data/output/rna_xref_mrna_enst_urs_v2.tsv",
+      "exists": true,
+      "size_bytes": 1470,
+      "mtime_utc": "2026-04-12T04:14:03.699746+00:00",
+      "line_count": 11,
+      "data_rows": 10
+    },
+    {
+      "path": "data/output/rna_id_canonical_map_v1.tsv",
+      "exists": true,
+      "size_bytes": 54033961,
+      "mtime_utc": "2026-04-12T04:14:47.778991+00:00",
+      "line_count": 292275,
+      "data_rows": 292274
+    },
+    {
+      "path": "data/output/rna_structure_rfam_v1.tsv",
+      "exists": true,
+      "size_bytes": 224787,
+      "mtime_utc": "2026-04-11T17:22:24.766687+00:00",
+      "line_count": 1097,
+      "data_rows": 1096
+    },
+    {
+      "path": "data/output/rna_expression_evidence_v1.tsv",
+      "exists": true,
+      "size_bytes": 51857745,
+      "mtime_utc": "2026-04-11T17:19:16.638863+00:00",
+      "line_count": 289615,
+      "data_rows": 289614
+    },
+    {
+      "path": "data/output/rna_rbp_sites_v1.tsv",
+      "exists": true,
+      "size_bytes": 4399904,
+      "mtime_utc": "2026-04-11T17:19:16.832139+00:00",
+      "line_count": 31085,
+      "data_rows": 31084
+    },
+    {
+      "path": "data/output/rna_pdb_structures_v1.tsv",
+      "exists": false,
+      "size_bytes": 0,
+      "mtime_utc": null,
+      "line_count": null,
+      "data_rows": null
+    },
+    {
+      "path": "pipelines/rna_xref_enst_urs/reports/mrna_enst_urs_coverage_v2.json",
+      "exists": true,
+      "size_bytes": 2160,
+      "mtime_utc": "2026-04-12T04:14:03.702204+00:00",
+      "line_count": null,
+      "data_rows": null
+    },
+    {
+      "path": "pipelines/rna_xref_enst_urs/run.sh",
+      "exists": true,
+      "size_bytes": 3400,
+      "mtime_utc": "2026-04-12T04:02:34.219863+00:00",
+      "line_count": null,
+      "data_rows": null
+    }
+  ],
+  "master_stats": {
+    "rows_total": 292274,
+    "mrna_rows": 289642,
+    "mirna_rows": 2632,
+    "mrna_rna_id_enst_match": 289642,
+    "mirna_rna_id_urs_match": 2632,
+    "pdb_ids_non_empty": 0,
+    "rfam_id_non_empty": 0,
+    "secondary_structure_non_empty": 0
+  },
+  "xref_coverage_snapshot": {
+    "coverage_percent": 0.0035,
+    "coverage_rate": 3.4525379606548776e-05,
+    "threshold_minimum": 0.7,
+    "threshold_target": 0.9,
+    "met_minimum": false,
+    "met_target": false,
+    "gate_status": "LOW_COVERAGE_KPI_NOT_MET"
+  },
+  "canonical_snapshot": {
+    "mRNA_canonical_changed_count": 10,
+    "mRNA_canonical_changed_rate": 3.4525379606548776e-05,
+    "strategy_counts": {
+      "fallback_legacy_enst": 289632,
+      "xref_enst_to_urs_v2": 10,
+      "legacy_is_urs": 2632
+    },
+    "canonical_system_counts": {
+      "EnsemblTranscript": 289632,
+      "RNAcentral": 2642
+    }
+  },
+  "summary": {
+    "component_count": 10,
+    "gap_level_count": {
+      "阻塞级": 0,
+      "可延期": 5,
+      "仅文档追踪": 5
+    },
+    "local_files_missing": 1,
+    "local_files_total": 9
+  },
+  "checklist": [
+    {
+      "组件": "序列主表",
+      "字段": "rna_master_v1 (rna_id/rna_type/sequence/taxon_id 等)",
+      "获取方式": "RNA 主流程产物（merge 后主表）",
+      "状态": "已落地；主表存在，且 row_count=292,274",
+      "证据路径": [
+        "data/output/rna_master_v1.tsv",
+        "pipelines/rna/contracts/rna_master_v1.json"
+      ]
+    },
+    {
+      "组件": "方案B主键口径",
+      "字段": "mRNA canonical=ENST；miRNA canonical=URS（主表 rna_id）",
+      "获取方式": "按 rna_type 对 rna_id 正则核查",
+      "状态": "已满足：mRNA ENST 命中率=100%；miRNA URS 命中率=100%",
+      "证据路径": [
+        "data/output/rna_master_v1.tsv",
+        "pipelines/rna/contracts/rna_master_v1.json"
+      ]
+    },
+    {
+      "组件": "mRNA ENST↔URS 映射",
+      "字段": "rna_xref_mrna_enst_urs_v2",
+      "获取方式": "rna_xref_enst_urs pipeline（id_mapping 流式 join）",
+      "状态": "已落地；覆盖率0.0035%，未达70%/90% KPI；默认非阻塞",
+      "证据路径": [
+        "data/output/rna_xref_mrna_enst_urs_v2.tsv",
+        "pipelines/rna_xref_enst_urs/reports/mrna_enst_urs_coverage_v2.json",
+        "pipelines/rna_xref_enst_urs/run.sh"
+      ]
+    },
+    {
+      "组件": "RNA canonical 桥接",
+      "字段": "rna_id_canonical_map_v1",
+      "获取方式": "rna_master + xref 规则映射",
+      "状态": "已落地；非空/唯一校验通过；mRNA 中有10条 canonical_changed",
+      "证据路径": [
+        "data/output/rna_id_canonical_map_v1.tsv",
+        "pipelines/rna_id_canonical/reports/rna_id_canonical_map_v1.build.json",
+        "pipelines/rna_id_canonical/reports/rna_id_canonical_map_v1.validation.json"
+      ]
+    },
+    {
+      "组件": "结构补充（Rfam）",
+      "字段": "rna_structure_rfam_v1 (rfam_id, secondary_structure)",
+      "获取方式": "RNAcentral/Rfam 映射 + 启发式补全",
+      "状态": "已落地；row_count=1,096；contract通过",
+      "证据路径": [
+        "data/output/rna_structure_rfam_v1.tsv",
+        "pipelines/rna_rfam_structure/reports/rna_structure_rfam_v1.metrics.json",
+        "pipelines/rna_rfam_structure/reports/rna_structure_rfam_v1.validation.json"
+      ]
+    },
+    {
+      "组件": "表达证据",
+      "字段": "rna_expression_evidence_v1",
+      "获取方式": "ENCODE expression 证据清洗并 join 到 rna_id",
+      "状态": "已落地；row_count=289,614；join_rate=1.0",
+      "证据路径": [
+        "data/output/rna_expression_evidence_v1.tsv",
+        "pipelines/rna_expression_rbp/reports/rna_expression_rbp_v1.metrics.json",
+        "pipelines/rna_expression_rbp/reports/rna_expression_evidence_v1.validation.json"
+      ]
+    },
+    {
+      "组件": "RBP 位点证据",
+      "字段": "rna_rbp_sites_v1",
+      "获取方式": "ENCODE eCLIP 位点清洗并 join 到 rna_id",
+      "状态": "已落地；row_count=31,084；join_rate=1.0",
+      "证据路径": [
+        "data/output/rna_rbp_sites_v1.tsv",
+        "pipelines/rna_expression_rbp/reports/rna_expression_rbp_v1.metrics.json",
+        "pipelines/rna_expression_rbp/reports/rna_rbp_sites_v1.validation.json"
+      ]
+    },
+    {
+      "组件": "RNA 3D 结构",
+      "字段": "rna_pdb_structures_v1",
+      "获取方式": "应由 RNA PDB 子流程产出（当前仓库未见该流程）",
+      "状态": "缺失：目标文件不存在",
+      "证据路径": [
+        "data/output/rna_pdb_structures_v1.tsv",
+        "docs/rna/DATA_DICTIONARY_RNA.md"
+      ]
+    },
+    {
+      "组件": "主表 Tier2 结构列填充",
+      "字段": "rna_master_v1.{rfam_id,secondary_structure,pdb_ids}",
+      "获取方式": "主流程脚本当前保留空列",
+      "状态": "待策略化：主表中3列当前均为空（依赖补充表外连）",
+      "证据路径": [
+        "data/output/rna_master_v1.tsv",
+        "pipelines/rna/scripts/04_finalize_mirna_table_v3.py",
+        "pipelines/rna/scripts/08_finalize_mrna_table.py"
+      ]
+    },
+    {
+      "组件": "文档口径一致性",
+      "字段": "DATA_DICTIONARY 主键口径 vs 方案B",
+      "获取方式": "对比数据字典与现行 pipeline 口径",
+      "状态": "存在偏差：字典仍写“rna_id 必须 URS”，与 mRNA ENST 主线不一致",
+      "证据路径": [
+        "docs/rna/DATA_DICTIONARY_RNA.md",
+        "pipelines/rna/contracts/rna_master_v1.json",
+        "data/output/rna_master_v1.tsv"
+      ]
+    }
+  ],
+  "top10_gaps": [
+    {
+      "rank": 1,
+      "gap": "缺少 RNA 3D 结构产物文件 data/output/rna_pdb_structures_v1.tsv",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "M",
+      "说明": "当前无 RNA PDB 子流程与产物，3D 结构仍为空白能力。",
+      "evidence": [
+        "data/output/rna_pdb_structures_v1.tsv",
+        "docs/rna/DATA_DICTIONARY_RNA.md"
+      ]
+    },
+    {
+      "rank": 2,
+      "gap": "mRNA ENST↔URS 覆盖率仅 0.0035%，未达 70%/90% KPI",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "M",
+      "说明": "目前仅10条映射命中；默认非阻塞，仅在 STRICT_COVERAGE_GATE=1 时阻塞。",
+      "evidence": [
+        "pipelines/rna_xref_enst_urs/reports/mrna_enst_urs_coverage_v2.json",
+        "pipelines/rna_xref_enst_urs/run.sh"
+      ]
+    },
+    {
+      "rank": 3,
+      "gap": "canonical map 中有 10 条 mRNA 被切换为 URS canonical",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "S",
+      "说明": "与“mRNA canonical=ENST”协作口径存在边界歧义，需要明确策略。",
+      "evidence": [
+        "data/output/rna_id_canonical_map_v1.tsv",
+        "pipelines/rna_id_canonical/reports/rna_id_canonical_map_v1.build.json"
+      ]
+    },
+    {
+      "rank": 4,
+      "gap": "DATA_DICTIONARY 仍要求 rna_id 全量 URS，与方案B不一致",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "S",
+      "说明": "文档与实际产物口径不统一，易造成后续实现误判。",
+      "evidence": [
+        "docs/rna/DATA_DICTIONARY_RNA.md",
+        "data/output/rna_master_v1.tsv"
+      ]
+    },
+    {
+      "rank": 5,
+      "gap": "主表 Tier2 结构列（rfam_id/secondary_structure/pdb_ids）仍全空",
+      "缺失项分级": "可延期",
+      "priority": "P1",
+      "effort": "M",
+      "说明": "当前采用“主表空列+外部证据表”模式，需要明确消费约定。",
+      "evidence": [
+        "data/output/rna_master_v1.tsv",
+        "data/output/rna_structure_rfam_v1.tsv"
+      ]
+    },
+    {
+      "rank": 6,
+      "gap": "miRNA xref 独立产物（rna_xref_mirna_v1.tsv）未物化",
+      "缺失项分级": "仅文档追踪",
+      "priority": "P2",
+      "effort": "M",
+      "说明": "已有脚本历史实现，但当前主线未产出该文件。",
+      "evidence": [
+        "data/output/rna_xref_mirna_v1.tsv",
+        "pipelines/rna/scripts/10_mirna_xref_and_conflicts.py"
+      ]
+    },
+    {
+      "rank": 7,
+      "gap": "lncRNA/transcript 类型尚未纳入 v1 主流程",
+      "缺失项分级": "仅文档追踪",
+      "priority": "P2",
+      "effort": "M",
+      "说明": "当前主线以 mirna/mrna 为边界。",
+      "evidence": [
+        "pipelines/rna/contracts/rna_master_v1.json",
+        "docs/rna/DATA_DICTIONARY_RNA.md"
+      ]
+    },
+    {
+      "rank": 8,
+      "gap": "covariance_model 字段与流程未落地",
+      "缺失项分级": "仅文档追踪",
+      "priority": "P2",
+      "effort": "L",
+      "说明": "当前无 contract 字段与构建脚本。",
+      "evidence": [
+        "pipelines/rna/contracts/rna_master_v1.json"
+      ]
+    },
+    {
+      "rank": 9,
+      "gap": "predicted_structure_ref 字段与流程未落地",
+      "缺失项分级": "仅文档追踪",
+      "priority": "P2",
+      "effort": "L",
+      "说明": "预测结构仍处于后续规划。",
+      "evidence": [
+        "pipelines/rna/contracts/rna_master_v1.json",
+        "docs/rna/DATA_DICTIONARY_RNA.md"
+      ]
+    },
+    {
+      "rank": 10,
+      "gap": "旧文件名/旧报告口径仍在部分文档中残留（v1 xref/12-12 缺失结论）",
+      "缺失项分级": "仅文档追踪",
+      "priority": "P2",
+      "effort": "S",
+      "说明": "当前实际主线已切到 v2/v1 新产物，但旧描述未完全清理。",
+      "evidence": [
+        "docs/rna/RNA_COMPONENT_CHECKLIST_2026-04-11.md",
+        "pipelines/rna/reports/rna_component_check_2026-04-11.json",
+        "data/output/rna_xref_mrna_enst_urs_v2.tsv"
+      ]
+    }
+  ],
+  "conclusions": {
+    "mainline_unblocked": true,
+    "only_mainline_blocker": null,
+    "a_low_coverage_blocks": false,
+    "statement": "主线已解卡；当前无阻塞级缺口。A 低覆盖仅为 KPI 告警，默认不阻塞（STRICT_COVERAGE_GATE=0）。",
+    "evidence_paths": [
+      "data/output/rna_master_v1.tsv",
+      "data/output/rna_xref_mrna_enst_urs_v2.tsv",
+      "data/output/rna_id_canonical_map_v1.tsv",
+      "data/output/rna_structure_rfam_v1.tsv",
+      "data/output/rna_expression_evidence_v1.tsv",
+      "data/output/rna_rbp_sites_v1.tsv",
+      "pipelines/rna_xref_enst_urs/reports/mrna_enst_urs_coverage_v2.json",
+      "pipelines/rna_xref_enst_urs/run.sh"
+    ]
+  }
+}

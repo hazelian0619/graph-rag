@@ -1,0 +1,62 @@
+{
+  "name": "rna_id_canonical_map_v1.build",
+  "generated_at": "2026-04-12T04:14:47+00:00",
+  "inputs": {
+    "master": "data/output/rna_master_v1.tsv",
+    "xref": "data/output/rna_xref_mrna_enst_urs_v2.tsv",
+    "sample_mode": false,
+    "max_rows": null
+  },
+  "counts": {
+    "rows_output": 292274,
+    "legacy_coverage_total": 292274,
+    "legacy_unique_rows": 292274,
+    "legacy_duplicate_rows_skipped": 0,
+    "canonical_non_empty_total": 292274,
+    "canonical_non_empty_rate": 1.0
+  },
+  "distribution": {
+    "strategy_counts": {
+      "fallback_legacy_enst": 289632,
+      "xref_enst_to_urs_v2": 10,
+      "legacy_is_urs": 2632
+    },
+    "canonical_system_counts": {
+      "EnsemblTranscript": 289632,
+      "RNAcentral": 2642
+    },
+    "confidence_counts": {
+      "medium": 289632,
+      "high": 2642
+    },
+    "by_rna_type": {
+      "mirna": {
+        "rows": 2632,
+        "canonical_non_empty": 2632,
+        "canonical_non_empty_rate": 1.0,
+        "canonical_changed": 0,
+        "canonical_changed_rate": 0.0
+      },
+      "mrna": {
+        "rows": 289642,
+        "canonical_non_empty": 289642,
+        "canonical_non_empty_rate": 1.0,
+        "canonical_changed": 10,
+        "canonical_changed_rate": 3.4525379606548776e-05
+      }
+    }
+  },
+  "xref_stats": {
+    "xref_rows": 10,
+    "xref_unique_rna_ids": 10,
+    "xref_conflict_count": 0,
+    "xref_conflicts": [],
+    "xref_match_strategy_counts": {
+      "exact_rna_id_base": 10
+    }
+  },
+  "gates": {
+    "legacy_coverage_100": true,
+    "canonical_non_empty_100": true
+  }
+}

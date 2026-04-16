@@ -1,0 +1,55 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-12T09:36:26.188378+00:00",
+  "git_commit": "36720ce7f189e424fafcd56c87e0ab5a85b1d4e7",
+  "artifacts": [
+    {
+      "path": "data/output/rna_pdb_structures_v1.tsv",
+      "size_bytes": 289,
+      "sha256": "a65c7fa3f67942ecab48df43a0349cd11ffcfaf51984b99aac8a8d5951a3cf91",
+      "modified_time": "2026-04-12T09:36:15.922508+00:00"
+    },
+    {
+      "path": "data/output/rna_master_v1.tsv",
+      "size_bytes": 744099663,
+      "sha256": "02dd496132bc5b5a5e6ec92c1842b0c1c91b8c57bf4ca294e1e71f736de582a4",
+      "modified_time": "2026-04-11T16:00:58.100863+00:00"
+    },
+    {
+      "path": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+      "size_bytes": 1847299737,
+      "sha256": "7db2ee0decea9b1cd28ad1c3d3debe0028ce8574cee622dff5b148c117e12ade",
+      "modified_time": "2026-04-11T16:03:36.267118+00:00"
+    },
+    {
+      "path": "pipelines/rna_pdb/contracts/rna_pdb_structures_v1.json",
+      "size_bytes": 1507,
+      "sha256": "e1f5323b44d8030026122c959983ad8dba21804393ed7672ed28a4b56a656c98",
+      "modified_time": "2026-04-12T08:57:08.610941+00:00"
+    },
+    {
+      "path": "pipelines/rna_pdb/reports/rna_pdb_structures_v1.build.json",
+      "size_bytes": 3104,
+      "sha256": "d173d02b3c3f6f2cfc482ea182a59ada183b3fa578da1a45a86355227059891d",
+      "modified_time": "2026-04-12T09:36:15.922936+00:00"
+    },
+    {
+      "path": "pipelines/rna_pdb/reports/rna_pdb_structures_v1.validation.json",
+      "size_bytes": 2025,
+      "sha256": "873deb13cea74312327c10b986e722cd16dc8ae7b2ba445557a19f1343bd253b",
+      "modified_time": "2026-04-12T09:36:16.154821+00:00"
+    },
+    {
+      "path": "pipelines/rna_pdb/reports/rna_pdb_structures_v1.qa.json",
+      "size_bytes": 2474,
+      "sha256": "75f3b2ae729939f9bef04b1a10e98767518a8c01f1fa88e655cb2329e4a06ff7",
+      "modified_time": "2026-04-12T09:36:26.029528+00:00"
+    },
+    {
+      "path": "pipelines/rna_pdb/reports/rna_pdb_structures_v1.api_audit.json",
+      "size_bytes": 1046,
+      "sha256": "629bc5abf944a01cd8f6755a6202fe69246441a2e72f89e7bfa0c2fd27d428e5",
+      "modified_time": "2026-04-12T09:36:15.923068+00:00"
+    }
+  ]
+}

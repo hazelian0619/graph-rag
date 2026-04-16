@@ -1,0 +1,31 @@
+{
+  "data_version": "rna-l1-v1",
+  "created_at": "2025-12-19T15:18:27.981668+00:00",
+  "git_commit": "f82c51d17743b8499795531a8c6051333ca62aab",
+  "artifacts": [
+    {
+      "path": "dist/rna-l1-v1/rna_master_v1.tsv.gz",
+      "size_bytes": 136511019,
+      "sha256": "40ca6bf7e899ea268fa007f5b1baaf12dc43082192180fe04051084cfe8b54e7",
+      "modified_time": "2025-12-19T15:17:28.859342+00:00"
+    },
+    {
+      "path": "dist/rna-l1-v1/rna_master_mirna_v1.tsv.gz",
+      "size_bytes": 66332,
+      "sha256": "fc7bc50829a00d551dfffaa5d25820a79295c369540f7e6602df24ddb1b7e1cf",
+      "modified_time": "2025-12-19T15:17:28.869674+00:00"
+    },
+    {
+      "path": "dist/rna-l1-v1/rna_master_mrna_v1.tsv.gz",
+      "size_bytes": 136444271,
+      "sha256": "c01ebb0aef6fbaf6ee734a32bf727c2238ed0260cf12b4acb4e039ed951c701c",
+      "modified_time": "2025-12-19T15:18:21.776170+00:00"
+    },
+    {
+      "path": "dist/rna-l1-v1/rna_master_v1.validation.json",
+      "size_bytes": 3241,
+      "sha256": "0c27801f1bd62d00e6dbf84ce500209d7999b424a5f63a017b7ad02025636f60",
+      "modified_time": "2025-12-19T15:18:27.925112+00:00"
+    }
+  ]
+}

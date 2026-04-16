@@ -1,0 +1,47 @@
+{
+  "reason": "RNAcentral id_mapping.tsv alone cannot reach ENST↔URS coverage gate for current mRNA universe.",
+  "current_coverage": 0.0,
+  "min_coverage_required": 0.7,
+  "download_checklist": [
+    {
+      "name": "Ensembl transcript xref export (GRCh38 / Ensembl release aligned to mRNA master)",
+      "version": "match mRNA master release (e.g., Ensembl 113)",
+      "suggested_filename": "ensembl_transcript_xref_grch38_r113.tsv.gz",
+      "required_columns": [
+        "ensembl_transcript_id",
+        "refseq_mrna",
+        "insdc_mrna",
+        "ccds_id"
+      ],
+      "purpose": "Bridge ENST to RefSeq/INSDC accessions so RNAcentral REFSEQ/ENA mappings can be joined."
+    },
+    {
+      "name": "NCBI gene2refseq",
+      "version": "latest compatible snapshot",
+      "suggested_filename": "gene2refseq.gz",
+      "required_columns": [
+        "tax_id",
+        "RNA_nucleotide_accession.version",
+        "GeneID"
+      ],
+      "purpose": "Fallback ENST→GeneID→RefSeq bridge for transcripts missing direct xref."
+    },
+    {
+      "name": "RNAcentral release notes / checksum file",
+      "version": "same as local id_mapping.tsv",
+      "suggested_filename": "CHECKSUMS",
+      "required_columns": [],
+      "purpose": "Verify integrity/version alignment of id_mapping and auxiliary files."
+    }
+  ],
+  "place_under": "data/raw/rna/aux_xref/",
+  "checksum": {
+    "method": "sha256",
+    "commands": [
+      "mkdir -p data/raw/rna/aux_xref",
+      "cd data/raw/rna/aux_xref",
+      "shasum -a 256 ensembl_transcript_xref_grch38_r113.tsv.gz gene2refseq.gz > SHA256SUMS.txt",
+      "shasum -a 256 -c SHA256SUMS.txt"
+    ]
+  }
+}

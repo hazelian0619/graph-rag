@@ -1,0 +1,90 @@
+{
+  "table": "data/output/rna_structure_rfam_v1.tsv",
+  "contract": "rna_structure_rfam_v1",
+  "row_count": 1096,
+  "columns": [
+    "rna_id",
+    "rfam_id",
+    "rfam_desc",
+    "secondary_structure",
+    "structure_source",
+    "score",
+    "evalue",
+    "source_version",
+    "fetch_date"
+  ],
+  "schema": {
+    "required_columns": [
+      "rna_id",
+      "rfam_id",
+      "rfam_desc",
+      "secondary_structure",
+      "structure_source",
+      "score",
+      "evalue",
+      "source_version",
+      "fetch_date"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "rna_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 1096,
+      "passed_count": 1096,
+      "rate": 1.0
+    },
+    {
+      "id": "rfam_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 1096,
+      "passed_count": 1096,
+      "rate": 1.0
+    },
+    {
+      "id": "rfam_id_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 1096,
+      "passed_count": 1096,
+      "rate": 1.0
+    },
+    {
+      "id": "secondary_structure_dotbracket_basic",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 1096,
+      "passed_count": 1096,
+      "rate": 1.0
+    },
+    {
+      "id": "structure_source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 1096,
+      "passed_count": 1096,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 1096,
+      "passed_count": 1096,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_iso",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 1096,
+      "passed_count": 1096,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

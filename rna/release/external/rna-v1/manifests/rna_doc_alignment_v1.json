@@ -1,0 +1,37 @@
+{
+  "doc": "组件细节 (1).docx - RNA Entity section",
+  "release": "rna-v1",
+  "covered_components": {
+    "sequence_data": [
+      "rna/release/external/rna-v1/tables/sequence/rna_master_v1.sample.tsv",
+      "rna/release/external/rna-v1/tables/sequence/rna_master_mirna_v1.tsv.gz"
+    ],
+    "id_mapping": [
+      "rna/release/external/rna-v1/tables/reference/rna_id_canonical_map_v1.tsv",
+      "rna/release/external/rna-v1/tables/reference/rna_external_xref_v1.tsv",
+      "rna/release/external/rna-v1/tables/reference/rna_xref_mrna_enst_urs_v2.tsv"
+    ],
+    "type_annotation": [
+      "rna/release/external/rna-v1/tables/annotation/rna_trna_features_v2.tsv",
+      "rna/release/external/rna-v1/tables/annotation/rna_lnc_entries_v1.tsv",
+      "rna/release/external/rna-v1/tables/annotation/rna_rrna_loci_v1.tsv"
+    ],
+    "structure_data": [
+      "rna/release/external/rna-v1/tables/structure/rna_structure_rfam_v1.tsv",
+      "rna/release/external/rna-v1/tables/structure/rna_covariance_models_index_v1.tsv",
+      "rna/release/external/rna-v1/tables/structure/rna_pdb_structures_v1.tsv",
+      "rna/release/external/rna-v1/tables/structure/rna_predicted_structures_v1.tsv"
+    ],
+    "evidence_data": [
+      "rna/release/external/rna-v1/tables/evidence/rna_expression_evidence_v1.tsv",
+      "rna/release/external/rna-v1/tables/evidence/rna_rbp_sites_v1.tsv"
+    ],
+    "quality_reports": [
+      "rna/release/external/rna-v1/reports/*.validation.json"
+    ]
+  },
+  "gaps_or_constraints": [
+    "Full rna_master_v1.tsv and rna_master_v1.tsv.gz are >100MB and excluded from git history due GitHub single-file limit.",
+    "If public full dump is needed, publish via GitHub Release assets / LFS and link in products metadata."
+  ]
+}

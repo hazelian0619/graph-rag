@@ -1,0 +1,103 @@
+{
+  "name": "rna_pdb_structures_v1_qa",
+  "created_at": "2026-04-12T09:36:26.029022+00:00",
+  "inputs": {
+    "master": "data/output/rna_master_v1.tsv",
+    "table": "data/output/rna_pdb_structures_v1.tsv",
+    "build_report": "pipelines/rna_pdb/reports/rna_pdb_structures_v1.build.json"
+  },
+  "metrics": {
+    "master_rows": 292274,
+    "output_rows": 1,
+    "output_unique_pairs": 1,
+    "output_unique_rna_ids": 1,
+    "rna_backlink_coverage_rate": 3.421446998364548e-06,
+    "orphan_rna_rows": 0,
+    "duplicate_pairs": 0,
+    "pdb_format_bad_rows": 0,
+    "release_date_non_empty_rows": 1,
+    "release_date_bad_format": 0,
+    "release_date_bad_range": 0,
+    "resolution_non_empty_rows": 1,
+    "resolution_bad_format": 0,
+    "resolution_bad_range": 0,
+    "api_failure_rate": 0.0,
+    "api_failure_threshold": 0.05,
+    "expected_pairs": 1,
+    "sample_mode": false
+  },
+  "gates": [
+    {
+      "id": "row_count_matches_expected_pairs",
+      "passed": true,
+      "detail": {
+        "output_rows": 1,
+        "expected_pairs": 1,
+        "sample_mode": false
+      }
+    },
+    {
+      "id": "rna_id_traceable_to_master",
+      "passed": true,
+      "detail": {
+        "orphans": 0,
+        "orphan_examples": []
+      }
+    },
+    {
+      "id": "pair_unique",
+      "passed": true,
+      "detail": {
+        "duplicate_pairs": 0
+      }
+    },
+    {
+      "id": "pdb_id_format",
+      "passed": true,
+      "detail": {
+        "bad_rows": 0,
+        "examples": []
+      }
+    },
+    {
+      "id": "release_date_format_and_range",
+      "passed": true,
+      "detail": {
+        "non_empty_release_rows": 1,
+        "bad_format": 0,
+        "bad_range": 0,
+        "observed_min": "2019-08-07",
+        "observed_max": "2019-08-07",
+        "allowed_min": "1970-01-01",
+        "allowed_max": "2026-04-12",
+        "examples": []
+      }
+    },
+    {
+      "id": "resolution_legal_range",
+      "passed": true,
+      "detail": {
+        "non_empty_resolution_rows": 1,
+        "bad_format": 0,
+        "bad_range": 0,
+        "bad_range_non_em": 0,
+        "bad_range_em": 0,
+        "allowed_min": 0.1,
+        "allowed_max_non_em": 25.0,
+        "allowed_max_em": 60.0,
+        "observed_min": 2.5,
+        "observed_max": 2.5,
+        "examples": []
+      }
+    },
+    {
+      "id": "api_failure_rate_below_threshold",
+      "passed": true,
+      "detail": {
+        "api_failure_rate": 0.0,
+        "threshold": 0.05
+      }
+    }
+  ],
+  "passed": true
+}

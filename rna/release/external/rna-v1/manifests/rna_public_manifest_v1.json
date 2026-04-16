@@ -2,7 +2,7 @@
   "release": "rna-v1",
   "domain": "rna",
   "generated_at": "2026-04-16",
-  "asset_count": 19,
+  "asset_count": 39,
   "assets": [
     {
       "path": "rna/release/external/rna-v1/README.md",
@@ -15,9 +15,84 @@
       "sha256": "064da2b3c6e795825f101925cfaec33baaf9481d6c3f9b675916ce6d6a38ba11"
     },
     {
+      "path": "rna/release/external/rna-v1/manifests/rna_doc_alignment_v1.json",
+      "bytes": 1746,
+      "sha256": "3e6826f99c6a043807e12d9d4fd107fb76d88d592e967b45bce48108c3d770f4"
+    },
+    {
+      "path": "rna/release/external/rna-v1/manifests/rna_legacy_manifest_from_local.json",
+      "bytes": 1134,
+      "sha256": "6ab54ce7c03f80f7736bdcccad8ab5db4eff6da02351cd98acf06d237fcc9984"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_covariance_models_index_v1.validation.json",
+      "bytes": 1690,
+      "sha256": "203ce5a74985a3eb41e9a15d8a8ce7775786ebf46dcf60940dc22d41d4cf4c3e"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_expression_evidence_v1.validation.json",
+      "bytes": 2451,
+      "sha256": "211e7f88388045d1bdf6ad80c890a28ef926e704911bb82d3655d6fe232a8a3e"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_external_xref_v1.validation.json",
+      "bytes": 2069,
+      "sha256": "60e08913aca337362151ea7f8e9417e5f5ee6365f1948112ec2d18e501164f25"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_id_canonical_map_v1.validation.json",
+      "bytes": 3004,
+      "sha256": "0c73669c3b1e6f98692edc6d234d42871687c522154d943a56c3cfa54221e9d1"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_lnc_entries_v1.validation.json",
+      "bytes": 3669,
+      "sha256": "3a48f7a6d83c0140085a428809b9e43ae2a4b0c22283666fedb2a32fabfa8dd8"
+    },
+    {
       "path": "rna/release/external/rna-v1/reports/rna_master_v1.validation.json",
       "bytes": 3241,
       "sha256": "0c27801f1bd62d00e6dbf84ce500209d7999b424a5f63a017b7ad02025636f60"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_pdb_structures_v1.validation.json",
+      "bytes": 2025,
+      "sha256": "873deb13cea74312327c10b986e722cd16dc8ae7b2ba445557a19f1343bd253b"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_predicted_structures_v1.validation.json",
+      "bytes": 1961,
+      "sha256": "efc4da0527c088940d2528f580792ce32e5bec954ef35c19c3edb48b119d485e"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_rbp_sites_v1.validation.json",
+      "bytes": 2731,
+      "sha256": "af16f11e6188c0d7014ed7efc8d5df4feca9fcf7350090bbf52ddf9a778e167a"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_rrna_loci_v1.validation.json",
+      "bytes": 3577,
+      "sha256": "2e45b8a5e9647ed22e7a888031b91ca78975bfa3707c568d6c2e201a2407a985"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_structure_rfam_v1.validation.json",
+      "bytes": 1812,
+      "sha256": "323d86f20d9d2e2734861536c9aa8a282ceab93365e6075fab0d7b07f3ecb76a"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_trna_features_v1.validation.json",
+      "bytes": 3969,
+      "sha256": "da49cd29a6acdd75511077f2356b648a062994232f82f5444bda7a879cd8342a"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_trna_features_v2.validation.json",
+      "bytes": 4402,
+      "sha256": "5ea48b6861fe38341eca8707f29157405ac63e30d5ed12ade9b57e0c57d8c8a8"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_xref_mrna_enst_urs_v2.validation.json",
+      "bytes": 2830,
+      "sha256": "89901d07854b6fb69a150058a2cdd4958a0cfaf5eacb176cfd8e2f316bed7bf1"
     },
     {
       "path": "rna/release/external/rna-v1/tables/annotation/rna_lnc_entries_v1.tsv",
@@ -28,6 +103,11 @@
       "path": "rna/release/external/rna-v1/tables/annotation/rna_rrna_loci_v1.tsv",
       "bytes": 13739518,
       "sha256": "0653fbd6b312688951f9f73dea7b4f79f828e04374a5390b703ed74de775026f"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/annotation/rna_trna_features_v1.tsv",
+      "bytes": 726814,
+      "sha256": "6f5fe8565dcbf9052d095b160d8beea620ea48d314ea17f9258cc69ce25d1236"
     },
     {
       "path": "rna/release/external/rna-v1/tables/annotation/rna_trna_features_v2.tsv",
@@ -60,9 +140,29 @@
       "sha256": "4d336c58498c63477d0a0fa2b1659e0ecb6007404deedb90e46e753b21ba9456"
     },
     {
+      "path": "rna/release/external/rna-v1/tables/reference/rna_id_canonical_map_v1.tsv",
+      "bytes": 54033961,
+      "sha256": "00eada835d0d77bac3e04cc93dcdef8bafc9541d5f235ade1e7009cc78975629"
+    },
+    {
       "path": "rna/release/external/rna-v1/tables/reference/rna_xref_mrna_enst_urs_v2.tsv",
       "bytes": 1470,
       "sha256": "cb7503cd298a5d9585daff48380888cd25f49299b773dd50608cb8e654775b60"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/sequence/rna_master_mirna_v1.tsv.gz",
+      "bytes": 66332,
+      "sha256": "fc7bc50829a00d551dfffaa5d25820a79295c369540f7e6602df24ddb1b7e1cf"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/sequence/rna_master_v1.sample.tsv",
+      "bytes": 17929603,
+      "sha256": "3fdd4a8f5b76daa77b149167b675f4b74a2645c8a8736068a6b8c5809cc650c9"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/sequence/rna_master_v1.summary.json",
+      "bytes": 653,
+      "sha256": "46b265cc762a6665c2a1842ef3da3969c9259ceed540a902aae0a9cb4919de8c"
     },
     {
       "path": "rna/release/external/rna-v1/tables/structure/rna_covariance_models_index_v1.sample.tsv",

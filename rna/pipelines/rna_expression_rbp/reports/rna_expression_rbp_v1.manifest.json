@@ -1,0 +1,19 @@
+{
+  "data_version": "kg-rna-expression-rbp-v1",
+  "created_at": "2026-04-11T17:19:19.869200+00:00",
+  "git_commit": "f6fe51448839162777c8152535b037428c8ec2b1",
+  "artifacts": [
+    {
+      "path": "data/output/rna_expression_evidence_v1.tsv",
+      "size_bytes": 51857745,
+      "sha256": "9c87f122af2a554502c0ca03471c0a6522c20926ac5b8ecafcbbd9aa295b5e65",
+      "modified_time": "2026-04-11T17:19:16.638863+00:00"
+    },
+    {
+      "path": "data/output/rna_rbp_sites_v1.tsv",
+      "size_bytes": 4399904,
+      "sha256": "eb34d949c5382c00b26aa77c4f91b79e14b662586451e9c788137bac035dd905",
+      "modified_time": "2026-04-11T17:19:16.832139+00:00"
+    }
+  ]
+}

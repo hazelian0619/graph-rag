@@ -1,0 +1,12 @@
+{
+  "pipeline": "rna_expression_rbp_v1",
+  "generated_at_utc": "2026-04-11T17:18:52.005676+00:00",
+  "input": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "expression_input": "data/raw/rna/encode/expression_evidence.tsv.gz",
+    "rbp_input": "data/raw/rna/encode/rbp_sites.tsv.gz"
+  },
+  "status": "inputs_ready",
+  "rna_master_ids": 292274,
+  "message": "输入检查通过。"
+}

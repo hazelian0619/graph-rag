@@ -1,0 +1,38 @@
+{
+  "name": "rna_pdb_structures_v1_api_audit",
+  "created_at": "2026-04-12T09:32:43.742503+00:00",
+  "inputs": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+    "xref": "data/output/rna_xref_mrna_enst_urs_v2.tsv",
+    "taxon_id": "9606"
+  },
+  "sample_mode": false,
+  "max_unique_pdb": null,
+  "selected_unique_pdb": 1,
+  "selected_pairs": 1,
+  "found_unique_pdb": 1,
+  "missing_unique_pdb": 0,
+  "api_error_unique_pdb": 0,
+  "api_failure_rate": 0.0,
+  "fail_threshold": 0.05,
+  "coverage": {
+    "master_rows": 292274,
+    "resolved_urs_rows": 2642,
+    "resolved_urs_rate": 0.009039462969679137,
+    "rna_rows_with_pdb": 1,
+    "rna_rows_with_pdb_rate": 3.421446998364548e-06
+  },
+  "stats": {
+    "batches_total": 1,
+    "batches_failed": 0,
+    "graphql_requests": 1,
+    "graphql_failures": 0,
+    "core_fallback_requests": 0,
+    "core_fallback_failures": 0
+  },
+  "missing_ids": [],
+  "missing_details": [],
+  "api_error_ids": [],
+  "manual_download_required": false
+}

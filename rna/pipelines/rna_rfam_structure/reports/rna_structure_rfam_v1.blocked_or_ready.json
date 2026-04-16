@@ -1,0 +1,17 @@
+{
+  "pipeline": "rna_rfam_structure_v1",
+  "generated_at_utc": "2026-04-11T17:21:52.190632+00:00",
+  "input": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+    "rfam_annotations": "data/raw/rna/rnacentral/rfam_annotations.tsv.gz",
+    "rfam_family": "data/raw/rna/rfam/family.txt.gz",
+    "rfam_seed": "data/raw/rna/rfam/Rfam.seed.gz",
+    "xref": "data/output/rna_xref_mrna_enst_urs_v2.tsv"
+  },
+  "status": "inputs_ready",
+  "rna_master_rows_checked": 292274,
+  "enst_rows": 289642,
+  "xref_rows": 10,
+  "message": "输入检查通过。"
+}

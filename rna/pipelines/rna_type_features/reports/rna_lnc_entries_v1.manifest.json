@@ -1,0 +1,13 @@
+{
+  "data_version": "kg-rna-lnc-entries-v1",
+  "created_at": "2026-04-12T11:04:04.426094+00:00",
+  "git_commit": "36720ce7f189e424fafcd56c87e0ab5a85b1d4e7",
+  "artifacts": [
+    {
+      "path": "data/output/rna_lnc_entries_v1.tsv",
+      "size_bytes": 43000459,
+      "sha256": "200dbd677caf028d268dbe939ce19527fbcb5b92004bce7230996f1f9b339194",
+      "modified_time": "2026-04-12T11:03:53.051931+00:00"
+    }
+  ]
+}

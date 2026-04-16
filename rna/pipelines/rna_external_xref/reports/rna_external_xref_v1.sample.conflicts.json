@@ -1,0 +1,18 @@
+{
+  "name": "rna_external_xref_v1.conflicts",
+  "generated_at": "2026-04-12T10:15:43+00:00",
+  "per_xref_db": {
+    "ENSEMBL": {
+      "covered_rna_ids": 20000,
+      "unique_xref_ids": 20000,
+      "rna_to_many_xref_count": 0,
+      "rna_to_many_conflict_rate": 0.0,
+      "xref_to_many_rna_count": 0,
+      "xref_to_many_conflict_rate": 0.0,
+      "samples": {
+        "rna_to_many": [],
+        "xref_to_many": []
+      }
+    }
+  }
+}

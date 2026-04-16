@@ -1,0 +1,22 @@
+{
+  "pipeline": "rna_rpi_v1",
+  "generated_at_utc": "2026-04-12T04:26:40.776445+00:00",
+  "gates": {
+    "passed": true,
+    "checks": {
+      "src_join_rate_ge_0_99": true,
+      "dst_join_rate_ge_0_99": true,
+      "edge_id_unique": true,
+      "self_loop_zero": true,
+      "evidence_method_or_reference_rate_ge_0_99": true
+    }
+  },
+  "acceptance": {
+    "src_join_rate": 1.0,
+    "dst_join_rate": 1.0,
+    "edge_id_unique": true,
+    "self_loop_count": 0,
+    "evidence_method_or_reference_rate": 1.0
+  },
+  "status": "PASS"
+}

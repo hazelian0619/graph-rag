@@ -1,7 +1,11 @@
 # RNA Domain
 
-RNA 类目已建立首版公开交付：`rna-v1`。
+RNA 目录已按统一架构填充：
 
-- 产品入口：`rna/products/rna/current.json`
-- 发布目录：`rna/release/external/rna-v1/`
-- 当前策略：优先纳入结果性表格与验证报告；超大主表建议走 Release/LFS
+- `data/output/rna/`：本地可追溯的 RNA 源数据（已纳入可公开部分）
+- `pipelines/`：RNA 相关构建与校验流水线（含 contracts/scripts/json 报告）
+- `products/rna/current.json`：当前版本指针
+- `release/external/rna-v1/`：对外发布包（结果性产物）
+
+已执行 doc 对照自查：
+- `rna/release/external/rna-v1/manifests/rna_doc_alignment_v1.json`

@@ -1,0 +1,54 @@
+{
+  "pipeline": "rna_rfam_structure_v1",
+  "generated_at_utc": "2026-04-11T17:21:59.637380+00:00",
+  "input": {
+    "rna_master": "data/output/rna_master_v1.tsv",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+    "rfam_annotations": "data/raw/rna/rnacentral/rfam_annotations.tsv.gz",
+    "rfam_family": "data/raw/rna/rfam/family.txt.gz",
+    "rfam_seed": "data/raw/rna/rfam/Rfam.seed.gz",
+    "xref": "data/output/rna_xref_mrna_enst_urs_v2.tsv"
+  },
+  "status": "completed",
+  "output": "data/output/rna_structure_rfam_v1.tsv",
+  "row_count": {
+    "rna_master": 292274,
+    "output_rows": 1096,
+    "mapped_unique_rna": 1096
+  },
+  "coverage": {
+    "overall_mapped_rate": 0.003749905910207545,
+    "by_rna_type": {
+      "mirna": {
+        "total": 2632,
+        "mapped": 1096,
+        "mapped_rate": 0.41641337386018235
+      },
+      "mrna": {
+        "total": 289642,
+        "mapped": 0,
+        "mapped_rate": 0.0
+      }
+    }
+  },
+  "quality": {
+    "rfam_id_valid_rows": 1096,
+    "rfam_id_valid_rate": 1.0,
+    "secondary_structure_non_empty_rate": 1.0,
+    "secondary_structure_valid_rate_non_empty": 1.0
+  },
+  "unmatched_analysis": {
+    "no_canonical_urs": 289632,
+    "no_rfam_hits_after_urs_mapping": 1546
+  },
+  "mapping_sources": {
+    "rnacentral_rfam_xref_hits": 0,
+    "rfam_family_name_heuristic_hits": 1096
+  },
+  "acceptance": {
+    "rna_id_joinable": true,
+    "rfam_id_format_pass": true,
+    "coverage_by_type_reported": true,
+    "dot_bracket_validity_pass": true
+  }
+}

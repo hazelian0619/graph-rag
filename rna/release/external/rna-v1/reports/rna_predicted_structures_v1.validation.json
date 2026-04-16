@@ -1,0 +1,97 @@
+{
+  "table": "data/output/rna_predicted_structures_v1.tsv",
+  "contract": "rna_predicted_structures_v1",
+  "row_count": 3617,
+  "columns": [
+    "rna_id",
+    "model_tool",
+    "structure_file",
+    "confidence",
+    "energy",
+    "source_version",
+    "fetch_date"
+  ],
+  "schema": {
+    "required_columns": [
+      "rna_id",
+      "model_tool",
+      "structure_file",
+      "confidence",
+      "energy",
+      "source_version",
+      "fetch_date"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "rna_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3617,
+      "passed_count": 3617,
+      "rate": 1.0
+    },
+    {
+      "id": "model_tool_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3617,
+      "passed_count": 3617,
+      "rate": 1.0
+    },
+    {
+      "id": "structure_file_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3617,
+      "passed_count": 3617,
+      "rate": 1.0
+    },
+    {
+      "id": "structure_file_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 3617,
+      "passed_count": 3617,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "confidence_numeric_or_empty",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 3617,
+      "passed_count": 3617,
+      "rate": 1.0
+    },
+    {
+      "id": "energy_numeric_or_empty",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 3617,
+      "passed_count": 3617,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3617,
+      "passed_count": 3617,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_iso",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 3617,
+      "passed_count": 3617,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

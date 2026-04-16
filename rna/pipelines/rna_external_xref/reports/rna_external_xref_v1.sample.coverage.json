@@ -1,0 +1,32 @@
+{
+  "name": "rna_external_xref_v1.coverage",
+  "generated_at": "2026-04-12T10:15:43+00:00",
+  "inputs": {
+    "master": "data/output/rna_master_v1.tsv",
+    "id_mapping": "data/raw/rna/rnacentral/id_mapping.tsv.gz",
+    "aux_dir": "data/raw/rna/aux_xref",
+    "sample_mode": true,
+    "max_master_rows": 20000,
+    "max_idmap_lines": 3000000
+  },
+  "summary": {
+    "rows_output": 20000,
+    "unique_output_rna_ids": 20000,
+    "master_rna_ids": 20000,
+    "master_rna_ids_covered": 20000,
+    "master_coverage_rate": 1.0,
+    "backlink_hits": 20000,
+    "backlink_rate": 1.0,
+    "min_backlink_rate_required": 0.99,
+    "backlink_passed": true
+  },
+  "per_xref_db": {
+    "ENSEMBL": {
+      "rows": 20000,
+      "covered_rna_ids": 20000,
+      "master_total_rna_ids": 20000,
+      "coverage_rate": 1.0,
+      "unique_xref_ids": 20000
+    }
+  }
+}
