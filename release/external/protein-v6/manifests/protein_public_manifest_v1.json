@@ -1,0 +1,381 @@
+{
+  "release_tag": "protein-v6",
+  "title": "Protein Entity v6 Public Package",
+  "generated_at_utc": "2026-04-16T08:26:46Z",
+  "assets": [
+    {
+      "name": "pathway_members.tsv",
+      "path": "release/external/protein-v6/tables/function/pathway_members.tsv",
+      "bytes": 10959932,
+      "sha256": "6b1e7c00211efdd7268712b1f09458613521005dcc02c21a80dc697cb33111a1",
+      "rows": 127096,
+      "component": "function"
+    },
+    {
+      "name": "protein_domains_interpro_v1.tsv",
+      "path": "release/external/protein-v6/tables/function/protein_domains_interpro_v1.tsv",
+      "bytes": 3685095,
+      "sha256": "9baa05e2e03a0e12af92c17b525ef11e50a46355a9860e5cc2853cee17b13988",
+      "rows": 47430,
+      "component": "function"
+    },
+    {
+      "name": "protein_kegg_pathway_v1.tsv",
+      "path": "release/external/protein-v6/tables/function/protein_kegg_pathway_v1.tsv",
+      "bytes": 4465812,
+      "sha256": "c723224ac15c77bea5aca622cd99d3500d6919257532509df25269f9c6b485d5",
+      "rows": 37409,
+      "component": "function"
+    },
+    {
+      "name": "ptm_sites.tsv",
+      "path": "release/external/protein-v6/tables/function/ptm_sites.tsv",
+      "bytes": 20230670,
+      "sha256": "0bd6cc27e65b2a3cdcdc51a4adf3d66c0a35f1c2d757fe88b6e354ba63f826b1",
+      "rows": 235502,
+      "component": "function"
+    },
+    {
+      "name": "protein_isoform_map_v1.tsv",
+      "path": "release/external/protein-v6/tables/isoform/protein_isoform_map_v1.tsv",
+      "bytes": 7099811,
+      "sha256": "8971ee14b83354006dc393e7a786804e8c9d57e8812d4dbd582a4c41986fb3a9",
+      "rows": 32462,
+      "component": "isoform"
+    },
+    {
+      "name": "protein_isoform_v1.tsv",
+      "path": "release/external/protein-v6/tables/isoform/protein_isoform_v1.tsv",
+      "bytes": 11769798,
+      "sha256": "1542d5539164534f8a914a8a0d680a5e0a65b3347ccf2083fcb366fbf64a9428",
+      "rows": 32462,
+      "component": "isoform"
+    },
+    {
+      "name": "protein_edges.tsv",
+      "path": "release/external/protein-v6/tables/network/protein_edges.tsv",
+      "bytes": 37162869,
+      "sha256": "930e8b25636865366aa2c5162a9f3db90733acef8811c0628edb9b6b6b9d38d2",
+      "rows": 884555,
+      "component": "network"
+    },
+    {
+      "name": "protein_physchem_extended_v1.tsv",
+      "path": "release/external/protein-v6/tables/physicochemical/protein_physchem_extended_v1.tsv",
+      "bytes": 4428279,
+      "sha256": "841dbee364a0d46f2168b5d0303ad90eceda24d20a7521c3325b76ed5874ab00",
+      "rows": 19135,
+      "component": "physicochemical"
+    },
+    {
+      "name": "protein_physchem_v1.tsv",
+      "path": "release/external/protein-v6/tables/physicochemical/protein_physchem_v1.tsv",
+      "bytes": 1189629,
+      "sha256": "feb6e5265d0965dd065711542e10f69593fdf483fbc0e47f457542bc89cd3ad4",
+      "rows": 19135,
+      "component": "physicochemical"
+    },
+    {
+      "name": "protein_source_versions_v1.tsv",
+      "path": "release/external/protein-v6/tables/provenance/protein_source_versions_v1.tsv",
+      "bytes": 1453,
+      "sha256": "f6c2d375ce2f1c5f8fc5971c6df14e527af36228f5090327390da499005a560a",
+      "rows": 6,
+      "component": "provenance"
+    },
+    {
+      "name": "hgnc_core.tsv",
+      "path": "release/external/protein-v6/tables/reference/hgnc_core.tsv",
+      "bytes": 9585006,
+      "sha256": "6fa13d1a3a005b5625a8d51515df3cea2e6393ff419a7e8e2f459bed9b0b9e16",
+      "rows": 19278,
+      "component": "reference"
+    },
+    {
+      "name": "uniprot_seed.json",
+      "path": "release/external/protein-v6/tables/reference/uniprot_seed.json",
+      "bytes": 1696725,
+      "sha256": "6d2188d88953323aee1d254052027f3bb459758ff934b98877a5bba68ddff854",
+      "component": "reference"
+    },
+    {
+      "name": "protein_master_v6_clean.tsv",
+      "path": "release/external/protein-v6/tables/sequence/protein_master_v6_clean.tsv",
+      "bytes": 60891674,
+      "sha256": "e2e7b29d22216f6d0b9111cfcbafde8f9ab33ff8ca5960759acb772a1f324217",
+      "rows": 19135,
+      "component": "sequence"
+    },
+    {
+      "name": "alphafold_quality.tsv",
+      "path": "release/external/protein-v6/tables/structure/alphafold_quality.tsv",
+      "bytes": 1499777,
+      "sha256": "e8eb581748ca7874e9870e7eecdf564bd69b5e9ac69b9b38ad065c5efc216a52",
+      "rows": 23586,
+      "component": "structure"
+    },
+    {
+      "name": "pdb_structures_v1.tsv",
+      "path": "release/external/protein-v6/tables/structure/pdb_structures_v1.tsv",
+      "bytes": 7969651,
+      "sha256": "f6b32aee30a82fc7ab9cda6482043f55ba5b13594ce33b5e994153aa63aaddbf",
+      "rows": 109531,
+      "component": "structure"
+    }
+  ],
+  "reports": [
+    {
+      "name": "pdb_structures_v1.api_audit.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.api_audit.json",
+      "bytes": 1546,
+      "sha256": "4233c2dd674bd06b219c8ce5b24fab4578dc7d5a879cb7d7a2b40ee88fe5330e"
+    },
+    {
+      "name": "pdb_structures_v1.build.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.build.json",
+      "bytes": 850,
+      "sha256": "c17997c76491dda9cc603876535796d127717319017900c041b5e76d4bcf91fc"
+    },
+    {
+      "name": "pdb_structures_v1.manifest.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.manifest.json",
+      "bytes": 1416,
+      "sha256": "5c697a18aaa8a52712149fb60b62f8b0b0df3dd70eb820d511c3d34e138d501a"
+    },
+    {
+      "name": "pdb_structures_v1.qa.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.qa.json",
+      "bytes": 1790,
+      "sha256": "10191922b22bbd09b7228157e2fbd501ae00e8b212260c23d586a5e99071351d"
+    },
+    {
+      "name": "pdb_structures_v1.smoke.api_audit.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.smoke.api_audit.json",
+      "bytes": 757,
+      "sha256": "3bd6381fad9a055c5cd3adc3ebd58ec5a25fc53264e8db4a41bd4bfc97f45ad1"
+    },
+    {
+      "name": "pdb_structures_v1.smoke.build.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.smoke.build.json",
+      "bytes": 855,
+      "sha256": "605c608cda647160fbf235361048c25cee1e31d199fbfe887b543eceb2f78946"
+    },
+    {
+      "name": "pdb_structures_v1.smoke.qa.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.smoke.qa.json",
+      "bytes": 1805,
+      "sha256": "2e0d771186659737cbde3af1d5f4aea71e47a6472e6db737739b0b6da5926e6c"
+    },
+    {
+      "name": "pdb_structures_v1.smoke.validation.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.smoke.validation.json",
+      "bytes": 1813,
+      "sha256": "27977f5240d98661bffcc28af9e277b18dd8d7d1849570c5e52e1535c59c30a9"
+    },
+    {
+      "name": "pdb_structures_v1.validation.json",
+      "path": "release/external/protein-v6/reports/pdb_structures_v1.validation.json",
+      "bytes": 1788,
+      "sha256": "359e0be13ac9f72f5011efc963503c9a521f3cfea34a3800612ee7cef28fac48"
+    },
+    {
+      "name": "protein_domains_interpro_v1.audit.json",
+      "path": "release/external/protein-v6/reports/protein_domains_interpro_v1.audit.json",
+      "bytes": 11356,
+      "sha256": "5365d7a5cb0c1154d21efb9fc118d7e8a234edff2521254b009a79c3190b5d47"
+    },
+    {
+      "name": "protein_domains_interpro_v1.manifest.json",
+      "path": "release/external/protein-v6/reports/protein_domains_interpro_v1.manifest.json",
+      "bytes": 1512,
+      "sha256": "a263839cc914382a2336c8d55fa284815d4b67aa9f19417fd5999a1aa7e6a83b"
+    },
+    {
+      "name": "protein_domains_interpro_v1.metrics.json",
+      "path": "release/external/protein-v6/reports/protein_domains_interpro_v1.metrics.json",
+      "bytes": 2339,
+      "sha256": "50b54a94e7043d23287603e3480365dd1a992d2e93fa5084afd10b7e4e87e590"
+    },
+    {
+      "name": "protein_domains_interpro_v1.sample.audit.json",
+      "path": "release/external/protein-v6/reports/protein_domains_interpro_v1.sample.audit.json",
+      "bytes": 655,
+      "sha256": "70fa1564f6fbe4cea3f657a72387aad34078f6229e4ee143a6a06cbd4d238a85"
+    },
+    {
+      "name": "protein_domains_interpro_v1.sample.metrics.json",
+      "path": "release/external/protein-v6/reports/protein_domains_interpro_v1.sample.metrics.json",
+      "bytes": 1306,
+      "sha256": "5e976b31352980d27595a0d698b786ef3158b9d937f15bbe55ac8190a78efa25"
+    },
+    {
+      "name": "protein_domains_interpro_v1.validation.json",
+      "path": "release/external/protein-v6/reports/protein_domains_interpro_v1.validation.json",
+      "bytes": 2092,
+      "sha256": "b7fef42b51159e18415a185402f1da2cf1f944400fad4b1a9cfeb8732eabc53b"
+    },
+    {
+      "name": "protein_isoform_map_v1.manifest.json",
+      "path": "release/external/protein-v6/reports/protein_isoform_map_v1.manifest.json",
+      "bytes": 1215,
+      "sha256": "bb22292042f2a0738a5d0bdbafa472245d7f865ae2ce24a5f6a1ca410a8482ee"
+    },
+    {
+      "name": "protein_isoform_map_v1.qa.json",
+      "path": "release/external/protein-v6/reports/protein_isoform_map_v1.qa.json",
+      "bytes": 1070,
+      "sha256": "328eedffed5ad8bac9c7df8da6408a3c5bf18cb488ad9cf1272dc22090ad21a9"
+    },
+    {
+      "name": "protein_isoform_map_v1.validation.json",
+      "path": "release/external/protein-v6/reports/protein_isoform_map_v1.validation.json",
+      "bytes": 2878,
+      "sha256": "e16446bad35f1fba947fdde643eeacaa2eeb3d11f9091cd445ea39c154b141c5"
+    },
+    {
+      "name": "protein_isoform_v1.manifest.json",
+      "path": "release/external/protein-v6/reports/protein_isoform_v1.manifest.json",
+      "bytes": 1200,
+      "sha256": "991b1c3bc7e1633723e633b84a4892531d1663ae12030668eec61fec246ad12c"
+    },
+    {
+      "name": "protein_isoform_v1.qa.json",
+      "path": "release/external/protein-v6/reports/protein_isoform_v1.qa.json",
+      "bytes": 2125,
+      "sha256": "76ae459246bbb5c2e3bbdd00122391dd44012f9be0ef9551ff59a979cbbb9cdd"
+    },
+    {
+      "name": "protein_isoform_v1.validation.json",
+      "path": "release/external/protein-v6/reports/protein_isoform_v1.validation.json",
+      "bytes": 3501,
+      "sha256": "3c496a22afe0d5b5dc925ec35a48d4c3044990fd276ff364c81bae5f11f963c7"
+    },
+    {
+      "name": "protein_kegg_pathway_v1.build.json",
+      "path": "release/external/protein-v6/reports/protein_kegg_pathway_v1.build.json",
+      "bytes": 1255,
+      "sha256": "8e0cfbdc88c2ac7b0db4fec0fab9d107c5754787ac03a671ead54e1dcc403673"
+    },
+    {
+      "name": "protein_kegg_pathway_v1.manifest.json",
+      "path": "release/external/protein-v6/reports/protein_kegg_pathway_v1.manifest.json",
+      "bytes": 1446,
+      "sha256": "838b1446362b689fd62531e7b5df84468192b3551a7d1c916a353bef6597ac8e"
+    },
+    {
+      "name": "protein_kegg_pathway_v1.qa.json",
+      "path": "release/external/protein-v6/reports/protein_kegg_pathway_v1.qa.json",
+      "bytes": 1470,
+      "sha256": "b938fc49d527795d92b4659e3ed74d404ab3372a4bc774c78889a9124d25d64a"
+    },
+    {
+      "name": "protein_kegg_pathway_v1.sample.json",
+      "path": "release/external/protein-v6/reports/protein_kegg_pathway_v1.sample.json",
+      "bytes": 1222,
+      "sha256": "209cb0d5cfe538fd7b186b35acfda53973b05f88f02ba0386014e4f014f976d8"
+    },
+    {
+      "name": "protein_kegg_pathway_v1.validation.json",
+      "path": "release/external/protein-v6/reports/protein_kegg_pathway_v1.validation.json",
+      "bytes": 1925,
+      "sha256": "37f2d0345318b17ca68dd3881745837b69c1c84c1a02a9d77a61cf5832529331"
+    },
+    {
+      "name": "protein_master_v6.manifest.json",
+      "path": "release/external/protein-v6/reports/protein_master_v6.manifest.json",
+      "bytes": 416,
+      "sha256": "c66b48dcc55732a6906ceec91038047a9258816f61ed819e04ff59e5b42b8c83"
+    },
+    {
+      "name": "protein_master_v6.validation.json",
+      "path": "release/external/protein-v6/reports/protein_master_v6.validation.json",
+      "bytes": 3483,
+      "sha256": "3ad11e52772914e061201e175faeb3697d0c88caa09bf49d7de411dfca176c2d"
+    },
+    {
+      "name": "protein_physchem_extended_v1.manifest.json",
+      "path": "release/external/protein-v6/reports/protein_physchem_extended_v1.manifest.json",
+      "bytes": 1269,
+      "sha256": "06896063035f4549a065472d1e4c64b85b61d26fc4a2d6941748cc2fd27c58ad"
+    },
+    {
+      "name": "protein_physchem_extended_v1.qa.json",
+      "path": "release/external/protein-v6/reports/protein_physchem_extended_v1.qa.json",
+      "bytes": 2695,
+      "sha256": "ef9bbe493a2073b65967657000eac475907455247909ba88f4cabb3d2d8bae82"
+    },
+    {
+      "name": "protein_physchem_extended_v1.validation.json",
+      "path": "release/external/protein-v6/reports/protein_physchem_extended_v1.validation.json",
+      "bytes": 3690,
+      "sha256": "fbdaff4ce8a0dc04f7676f4b884ec5f14da9609ab7d5c9f5545d5527aaf772bc"
+    },
+    {
+      "name": "protein_physchem_v1.manifest.json",
+      "path": "release/external/protein-v6/reports/protein_physchem_v1.manifest.json",
+      "bytes": 1211,
+      "sha256": "4c17b05c01cc96093fdfcf06dc753ff28226aa3facd3cd1b4401719cd455ea70"
+    },
+    {
+      "name": "protein_physchem_v1.metrics.json",
+      "path": "release/external/protein-v6/reports/protein_physchem_v1.metrics.json",
+      "bytes": 1313,
+      "sha256": "a8051515af60b90530d5552be135a8c81d6d809d5408d69fba510eed4cc9c061"
+    },
+    {
+      "name": "protein_physchem_v1.sample.metrics.json",
+      "path": "release/external/protein-v6/reports/protein_physchem_v1.sample.metrics.json",
+      "bytes": 1283,
+      "sha256": "fa8a8640c89cedba7d6c7fda10303bc411d98a87c10f159501a057f2ceefb5bb"
+    },
+    {
+      "name": "protein_physchem_v1.validation.json",
+      "path": "release/external/protein-v6/reports/protein_physchem_v1.validation.json",
+      "bytes": 2149,
+      "sha256": "7215488899d38080390a7f4114b4e066eaf3d12da1c786abfa179a0e4b7c35ab"
+    },
+    {
+      "name": "protein_source_versions_v1.build.json",
+      "path": "release/external/protein-v6/reports/protein_source_versions_v1.build.json",
+      "bytes": 8676,
+      "sha256": "c372b4bd2825332ff4dce87b7c385a3aa0ebfcb86f0af9569bbf5a894eebca1e"
+    },
+    {
+      "name": "protein_source_versions_v1.manifest.json",
+      "path": "release/external/protein-v6/reports/protein_source_versions_v1.manifest.json",
+      "bytes": 1216,
+      "sha256": "df09cdbca8407eff75e030101aeec0705c154222762c67da14b46f2133260eac"
+    },
+    {
+      "name": "protein_source_versions_v1.qa.json",
+      "path": "release/external/protein-v6/reports/protein_source_versions_v1.qa.json",
+      "bytes": 1373,
+      "sha256": "3e63e28dd65688a6bad7e673568ea8bff37db87795fe52d186fe03e25fa9c223"
+    },
+    {
+      "name": "protein_source_versions_v1.smoke.build.json",
+      "path": "release/external/protein-v6/reports/protein_source_versions_v1.smoke.build.json",
+      "bytes": 8088,
+      "sha256": "de4e7ef4a53fcc323582ccec40f778851d2e53827c3d988e061ef323b68f0f10"
+    },
+    {
+      "name": "protein_source_versions_v1.smoke.qa.json",
+      "path": "release/external/protein-v6/reports/protein_source_versions_v1.smoke.qa.json",
+      "bytes": 1396,
+      "sha256": "dffd72356aa85c204b75eb3fcdd83876575a27ccb1d8313bc055dd3f5eeeec10"
+    },
+    {
+      "name": "protein_source_versions_v1.smoke.validation.json",
+      "path": "release/external/protein-v6/reports/protein_source_versions_v1.smoke.validation.json",
+      "bytes": 2956,
+      "sha256": "bea1c145b8338134c5e0b49df0cda3557d9c225c0f0eb9713c9465a24ca531c7"
+    },
+    {
+      "name": "protein_source_versions_v1.validation.json",
+      "path": "release/external/protein-v6/reports/protein_source_versions_v1.validation.json",
+      "bytes": 2893,
+      "sha256": "ae8e6c91946cb136128e5a50f59420de133e3ee2d71fb8072b593f74501ec3f2"
+    }
+  ],
+  "source_of_truth": "products/protein/current.json"
+}
