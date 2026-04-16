@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at_utc": "2026-04-16T10:16:30Z",
+  "products": [
+    {
+      "product": "protein",
+      "display_name": "Protein Entity",
+      "status": "stable",
+      "metadata": {
+        "product": "protein",
+        "domain": "entity",
+        "owner": "bio-kg-team",
+        "sla": "monthly-release",
+        "contract_roots": [
+          "pipelines/protein/contracts",
+          "pipelines/protein_provenance/contracts"
+        ],
+        "description": "Human protein L1 entity product with provenance sidecar"
+      },
+      "current_path": "protein/products/protein/current.json",
+      "latest": {
+        "version": "protein-v6",
+        "distribution_mode": "repository_snapshot",
+        "release_tag": null,
+        "release_url": null,
+        "manifest_path": "protein/release/external/protein-v6/manifests/protein_public_manifest_v1.json",
+        "artifacts": [
+          {
+            "name": "protein_master_v6_clean.tsv",
+            "path": "protein/release/external/protein-v6/tables/sequence/protein_master_v6_clean.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/sequence/protein_master_v6_clean.tsv"
+          },
+          {
+            "name": "alphafold_quality.tsv",
+            "path": "protein/release/external/protein-v6/tables/structure/alphafold_quality.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/structure/alphafold_quality.tsv"
+          },
+          {
+            "name": "pdb_structures_v1.tsv",
+            "path": "protein/release/external/protein-v6/tables/structure/pdb_structures_v1.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/structure/pdb_structures_v1.tsv"
+          },
+          {
+            "name": "pathway_members.tsv",
+            "path": "protein/release/external/protein-v6/tables/function/pathway_members.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/function/pathway_members.tsv"
+          },
+          {
+            "name": "protein_domains_interpro_v1.tsv",
+            "path": "protein/release/external/protein-v6/tables/function/protein_domains_interpro_v1.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/function/protein_domains_interpro_v1.tsv"
+          },
+          {
+            "name": "protein_kegg_pathway_v1.tsv",
+            "path": "protein/release/external/protein-v6/tables/function/protein_kegg_pathway_v1.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/function/protein_kegg_pathway_v1.tsv"
+          },
+          {
+            "name": "ptm_sites.tsv",
+            "path": "protein/release/external/protein-v6/tables/function/ptm_sites.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/function/ptm_sites.tsv"
+          },
+          {
+            "name": "protein_physchem_extended_v1.tsv",
+            "path": "protein/release/external/protein-v6/tables/physicochemical/protein_physchem_extended_v1.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/physicochemical/protein_physchem_extended_v1.tsv"
+          },
+          {
+            "name": "protein_physchem_v1.tsv",
+            "path": "protein/release/external/protein-v6/tables/physicochemical/protein_physchem_v1.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/physicochemical/protein_physchem_v1.tsv"
+          },
+          {
+            "name": "protein_isoform_map_v1.tsv",
+            "path": "protein/release/external/protein-v6/tables/isoform/protein_isoform_map_v1.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/isoform/protein_isoform_map_v1.tsv"
+          },
+          {
+            "name": "protein_isoform_v1.tsv",
+            "path": "protein/release/external/protein-v6/tables/isoform/protein_isoform_v1.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/isoform/protein_isoform_v1.tsv"
+          },
+          {
+            "name": "protein_source_versions_v1.tsv",
+            "path": "protein/release/external/protein-v6/tables/provenance/protein_source_versions_v1.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/provenance/protein_source_versions_v1.tsv"
+          },
+          {
+            "name": "protein_edges.tsv",
+            "path": "protein/release/external/protein-v6/tables/network/protein_edges.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/network/protein_edges.tsv"
+          },
+          {
+            "name": "hgnc_core.tsv",
+            "path": "protein/release/external/protein-v6/tables/reference/hgnc_core.tsv",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/reference/hgnc_core.tsv"
+          },
+          {
+            "name": "uniprot_seed.json",
+            "path": "protein/release/external/protein-v6/tables/reference/uniprot_seed.json",
+            "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/protein/release/external/protein-v6/tables/reference/uniprot_seed.json"
+          }
+        ],
+        "quality_reports": [
+          "protein/release/external/protein-v6/reports/protein_master_v6.validation.json",
+          "protein/release/external/protein-v6/reports/protein_source_versions_v1.validation.json",
+          "protein/release/external/protein-v6/reports/protein_source_versions_v1.qa.json",
+          "protein/release/external/protein-v6/reports/pdb_structures_v1.validation.json",
+          "protein/release/external/protein-v6/reports/protein_kegg_pathway_v1.validation.json",
+          "protein/release/external/protein-v6/reports/protein_domains_interpro_v1.validation.json",
+          "protein/release/external/protein-v6/reports/protein_physchem_v1.validation.json",
+          "protein/release/external/protein-v6/reports/protein_physchem_extended_v1.validation.json",
+          "protein/release/external/protein-v6/reports/protein_isoform_v1.validation.json",
+          "protein/release/external/protein-v6/reports/protein_isoform_map_v1.validation.json"
+        ]
+      },
+      "checks": {
+        "manifest_exists": true,
+        "quality_report_count": 10
+      }
+    }
+  ]
+}

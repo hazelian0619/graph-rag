@@ -16,8 +16,8 @@ def load_json(path: Path) -> Dict[str, Any]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build unified release index")
-    parser.add_argument("--products-root", default="products", help="Products root directory")
-    parser.add_argument("--out", default="release/index.json", help="Output index path")
+    parser.add_argument("--products-root", default="protein/products", help="Products root directory")
+    parser.add_argument("--out", default="protein/release/index.json", help="Output index path")
     args = parser.parse_args()
 
     products_root = Path(args.products_root)

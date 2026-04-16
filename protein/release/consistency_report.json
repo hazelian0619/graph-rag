@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-04-16T10:16:30Z",
+  "index": "protein/release/index.json",
+  "summary": {
+    "products": 1,
+    "checks": 1,
+    "issues": 0,
+    "status": "PASS"
+  },
+  "checks": [
+    {
+      "product": "protein",
+      "manifest": "protein/release/external/protein-v6/manifests/protein_public_manifest_v1.json",
+      "mode": "strict_local",
+      "tables_checked": 0,
+      "table_issues": 0
+    }
+  ],
+  "issues": []
+}

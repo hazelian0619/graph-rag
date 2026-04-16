@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Download datasets by product/version using release/index.json.
+"""Download datasets by product/version using protein/release/index.json.
 
 Supports:
 - GitHub Release assets download
@@ -180,7 +180,7 @@ def main() -> int:
     parser.add_argument("--product", required=True, choices=["protein"])
     parser.add_argument("--version", default="latest", help="Version to fetch (currently supports latest)")
     parser.add_argument("--repo", default="hazelian0619/graph-rag", help="GitHub repo owner/name")
-    parser.add_argument("--index", default="release/index.json", help="Unified release index")
+    parser.add_argument("--index", default="protein/release/index.json", help="Unified release index")
     parser.add_argument("--dest", default="downloads", help="Destination directory")
     parser.add_argument("--asset-glob", action="append", default=[], help="Filter assets by glob pattern")
     parser.add_argument("--skip-verify", action="store_true", help="Skip sha256 verification")

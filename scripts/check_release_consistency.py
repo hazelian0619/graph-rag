@@ -189,8 +189,8 @@ def check_release_assets_mode(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check release consistency across manifests and validation reports")
-    parser.add_argument("--index", default="release/index.json", help="Unified release index path")
-    parser.add_argument("--out", default="release/consistency_report.json", help="Output report path")
+    parser.add_argument("--index", default="protein/release/index.json", help="Unified release index path")
+    parser.add_argument("--out", default="protein/release/consistency_report.json", help="Output report path")
     parser.add_argument("--allow-issues", action="store_true", help="Return exit code 0 even when issues are found")
     args = parser.parse_args()
 

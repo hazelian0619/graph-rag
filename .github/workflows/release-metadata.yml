@@ -3,8 +3,8 @@ name: Release Metadata
 on:
   pull_request:
     paths:
-      - 'products/**'
-      - 'release/**'
+      - 'protein/products/**'
+      - 'protein/release/**'
       - 'scripts/build_release_index.py'
       - 'scripts/check_release_consistency.py'
       - 'scripts/validate_release_index.py'
@@ -13,8 +13,8 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'products/**'
-      - 'release/**'
+      - 'protein/products/**'
+      - 'protein/release/**'
       - 'scripts/build_release_index.py'
       - 'scripts/check_release_consistency.py'
       - 'scripts/validate_release_index.py'
@@ -34,7 +34,7 @@ jobs:
 
       - name: Build release index
         run: |
-          python3 scripts/build_release_index.py --products-root products --out release/index.json
+          python3 scripts/build_release_index.py --products-root protein/products --out protein/release/index.json
 
       - name: Install validation/test dependencies
         run: |
@@ -44,15 +44,15 @@ jobs:
       - name: Validate release index schema and paths
         run: |
           python3 scripts/validate_release_index.py \
-            --index release/index.json \
-            --schema release/schema/index.schema.json \
+            --index protein/release/index.json \
+            --schema protein/release/schema/index.schema.json \
             --repo-root .
 
       - name: Check release consistency (report mode)
         run: |
           python3 scripts/check_release_consistency.py \
-            --index release/index.json \
-            --out release/consistency_report.json \
+            --index protein/release/index.json \
+            --out protein/release/consistency_report.json \
             --allow-issues
 
       - name: Run release metadata tests
@@ -64,5 +64,5 @@ jobs:
         with:
           name: release-metadata
           path: |
-            release/index.json
-            release/consistency_report.json
+            protein/release/index.json
+            protein/release/consistency_report.json
