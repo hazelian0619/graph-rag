@@ -1,0 +1,61 @@
+{
+  "pipeline": "interaction_readiness",
+  "generated_at_utc": "2026-04-12T09:47:55.816152+00:00",
+  "status": "PASS",
+  "overall_status": "PASS",
+  "gate_pass_count": 6,
+  "gate_total": 6,
+  "blocking_gap_count": 0,
+  "gates": [
+    {
+      "gate_id": "ppi_required_artifacts_ready",
+      "description": "PPI 必需产物（edges/evidence/核心衍生）齐全",
+      "passed": true,
+      "evidence": {
+        "missing_required": []
+      }
+    },
+    {
+      "gate_id": "psi_required_artifacts_ready",
+      "description": "PSI 必需产物（edges/evidence/核心衍生）齐全",
+      "passed": true,
+      "evidence": {
+        "missing_required": []
+      }
+    },
+    {
+      "gate_id": "rpi_required_artifacts_ready",
+      "description": "RPI 必需产物（edges/evidence/核心衍生）齐全",
+      "passed": true,
+      "evidence": {
+        "missing_required": []
+      }
+    },
+    {
+      "gate_id": "rpi_edge_evidence_hierarchy_ge_0_99",
+      "description": "RPI evidence.edge_id 与 edges.edge_id 连接率 >= 0.99",
+      "passed": true,
+      "evidence": {
+        "join_rate": 1.0
+      }
+    },
+    {
+      "gate_id": "interaction_schema_uniformity",
+      "description": "三类互作均满足统一 L2 字段口径",
+      "passed": true,
+      "evidence": {
+        "PPI": "已完成",
+        "PSI": "已完成",
+        "RPI": "已完成"
+      }
+    },
+    {
+      "gate_id": "zero_blocking_gaps",
+      "description": "Top gaps 中阻塞级缺口为 0",
+      "passed": true,
+      "evidence": {
+        "has_blocking_gaps": false
+      }
+    }
+  ]
+}

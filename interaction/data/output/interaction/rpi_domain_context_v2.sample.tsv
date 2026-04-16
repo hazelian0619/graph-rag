@@ -1,0 +1,393 @@
+context_id	edge_id	protein_id	domain_class	interpro_id	pfam_id	domain_name	domain_start	domain_end	source	source_version	fetch_date
+rpi_domain_00804cb92eb46e1dabe7	rpi_13d0d1640d410b45	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0200a32d450de18116b3	rpi_509a7983eb67f03b	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0415ebf1fdfe72b826e2	rpi_8082108859d5335b	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_041e4e4ae9b840e2cde3	rpi_038a28474780857d	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_053a4584cf8b841ce0d8	rpi_e7835fd60eb2f4d4	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0652da527d5ca377ea56	rpi_fbbd2cff5a875a0b	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_06654ecedd7420f79a40	rpi_ab27f293eb69bcb4	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_06f40c35aa5af6366fc8	rpi_aa86709aac3ee0f3	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_07400debc5012b4f7a96	rpi_509a7983eb67f03b	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_07aec57ba287a2f4881b	rpi_396289a51d684f3e	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_08f5436da7472474876e	rpi_52b5964435b19390	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_09a0dd4e66abbec854d8	rpi_69a04c8c7432a1ef	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_09b6a66a53187a10fe0e	rpi_e0fbabac4f1e0520	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0a2621c59942717fcb76	rpi_331995098f7284e3	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0abcd2057158e156229c	rpi_626536749b0430f2	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0b33bee85ce2cb72bf52	rpi_42df163f77d9589d	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0b3c149f794934ed9877	rpi_08018fb45467cbf3	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0bffdd1c35ab385eddd3	rpi_b7c0a8c1e03422da	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0c066ff6d793a467fab9	rpi_d166fd4788beb0df	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0d094310f4a1af669e29	rpi_41da7f885293b6fb	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0e419a143c9bbe058a5c	rpi_7b8ff4a493229012	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0e4815fe1e92b95060f9	rpi_f84bf26032c52379	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0e9e080a83f33a1dff9c	rpi_f0632f115e6cdc5f	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0f998a1d78c4e745f2df	rpi_a412417c778fd9b8	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_0ff2c839b879a0b8f227	rpi_73b352b7f4442247	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_1127569ba156cb396729	rpi_54fa22b6ae36e997	Q92667	PFAM	IPR002999	PF00567	Tudor domain	705	826	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_13ae813b89af70ce49cf	rpi_607d5836af1024f2	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_13ced10a1d6a1a8e8c19	rpi_e618e6d73f06dad6	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_13e217c6e7f99b65a4aa	rpi_9ac6d17963c4980d	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_13ef3e4af0add7bb3cc6	rpi_93dc26db8957aa53	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_14d2d1dc1c992a6e76d1	rpi_7265a660a9a121f0	Q92667	PFAM	IPR002999	PF00567	Tudor domain	705	826	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_15a58edf0f48d45e04bb	rpi_7a74e1c63c13f9c9	Q92667	KH	IPR004088	PF00013	KH domain	610	671	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_15f248fbda82f2de8cd3	rpi_4def7d62e2ca265a	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_188a33b01b920ba9035c	rpi_d1b3b838f7956f42	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_189ecf0a68db8e668780	rpi_4bcbfbc535322f22	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_1937a4655cec5380ab9a	rpi_7d90633def915690	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_1b001ad35875751fa40b	rpi_01e64bd9b7045d0f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_1b0af398fdb46d8905d0	rpi_92a3347d6ab231b5	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_1c3c82ac2089026cc3a6	rpi_6b77a22c2594c057	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_1e3811419f7199c13226	rpi_ce36cc17a67b7406	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_1eb8fda14c4fbd6f08ab	rpi_a06f097ad7e21c60	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_206b720b84664532416c	rpi_93dc26db8957aa53	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_20d7050abade95b529e1	rpi_0d85b819d683c75f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_211f4b5b18595ba587b3	rpi_76af8797c85eda8f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_22000d175e68c9081a76	rpi_6b77a22c2594c057	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_22ccea9734ac95a95895	rpi_698b802b04d3b3ce	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_22d9887f6cc01cc4f805	rpi_0cbf80ef5f19ceb5	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_23b557fe4a6f33aafc98	rpi_2ca1bd2972e44797	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_246ab42106d5f164c823	rpi_869747dd36677f30	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_254b1316f7b930c9ce67	rpi_f12e91df7bee961c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_25ca95034531874a9dca	rpi_8082108859d5335b	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_26604cd260bc3bec348b	rpi_fb8bc9db3994a44a	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_269affeed5ae7e4320a0	rpi_123ee896ec97ed47	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_26a46f231ffeb838fa01	rpi_a1b9d1ce34a3a060	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_26d54b0db3fdbfbca321	rpi_b1da29554f71fe3c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_26decb379dfa5c0fccb0	rpi_9b4119868a618f3f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_27fa2642dfcdeed4bacc	rpi_4341aa35f25d4ab2	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_28374a79858e2ad24702	rpi_24154c2339bbab10	Q92667	PFAM	IPR002999	PF00567	Tudor domain	705	826	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_2909368364c408910a02	rpi_f27f69c9a32b1221	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_29c950e67715a775cf39	rpi_6b5ec6a8afc3277e	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_29cc3b8a4e925b5f90ae	rpi_7d8e74021c6589e2	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_2a112478a13ff5694ed5	rpi_fb8bc9db3994a44a	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_2c965f6f77d772b92dfc	rpi_0b84aaa143a69312	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_2cc934ac7dff94fd8660	rpi_4a26daf75aea5efe	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_2d0c0cb468a2d2eb3e9b	rpi_7b8ff4a493229012	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_2dd9e6b44afe8e8f2423	rpi_80a1abf4bc05f011	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_2ef7d276ea1e9e044fc3	rpi_df6235edc7d9c2e2	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_307d37c08635553e130c	rpi_51479064fb90b24c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3156d959552dab7f5bfb	rpi_83be2c8317e91a11	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3197e0aa4c46c9313f84	rpi_d964f13a0832df52	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_31c047ef2b644abd2e7d	rpi_497bf1906e2d7451	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_330c6f33aae0f3bebeb0	rpi_83be2c8317e91a11	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3359b956ae0756d93dcf	rpi_722b4f15c80c2879	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_344318ced82fe77fdf17	rpi_698b802b04d3b3ce	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_345dc01cc1863696b519	rpi_0cbf80ef5f19ceb5	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_39eebc43b04925e540f9	rpi_956b0082efdbed1a	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_39f2e3ab919f69e16c66	rpi_8b8d4c5f7c0fc8c4	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3a1f447fd96a9fde55de	rpi_d166fd4788beb0df	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3a2cddbe9bb0b9c8dc82	rpi_8bf9f9a8105315ec	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3aaeccc743f66f13991a	rpi_01e64bd9b7045d0f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3ad7509fe864f5135058	rpi_9cd12934a2ceb539	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3bd141ee0a90e2480680	rpi_c81dbe8ad72e3dd0	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3c39b8e85bd55e2d919b	rpi_a612f37ac81d18de	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3c6f91b850b8a1c8e403	rpi_6b5ec6a8afc3277e	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3cf6d189058c1fbb72d4	rpi_41da7f885293b6fb	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3d25f5f44fe0583eb09c	rpi_aa86709aac3ee0f3	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3d7860c22b367c8f43b4	rpi_543e53a1e7d1fc93	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3e8c86447520582d1818	rpi_65fa0d1a8cceffe3	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_3f6d3444b7dc0477dad0	rpi_d1b3b838f7956f42	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_40207e60b4a40ac4b160	rpi_8c6dda35415ead20	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_406c1bb2b7419b6da959	rpi_c9a84430c7c23247	Q13686	PFAM	IPR027450	PF13532	2OG-Fe(II) oxygenase superfamily	101	344	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_41dc6386c1eefc254b4c	rpi_e758225e116a8901	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_425e227e65b77bf296e7	rpi_cf01185a23035ee5	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4282c492dbf0ae9bf1ac	rpi_3eba3b6e23eaaf3f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_44ada215fe769426c513	rpi_0861913335e71416	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_44e5592b16a4354d0d21	rpi_6999b2c7612f70d5	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_46332fd810c61fb97ce6	rpi_9be0f9b3b6710a5e	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4827a3bfc2b542e51910	rpi_5b411afe416d2cc6	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_49303bb364b3c87fbe41	rpi_85101e8bc7cf6a5e	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_49eba82de6efa25c03ea	rpi_dbe702fcc99ef3fc	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4a13ccf542cc6541c400	rpi_1797a9da69d671c8	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4b406c478d056c895311	rpi_147957298f194d00	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4b53de0f03a4a985b6ff	rpi_7eb0ff9afe5902a0	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4bb075ed9dc671e2c1b7	rpi_5dfa4860eb7f644c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4bcafe3ef03cc5d21192	rpi_b7c0a8c1e03422da	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4c3779c68d9f0780616d	rpi_54bd67efdc8f4310	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4ce302c063f0b85764af	rpi_56d7efc4eed47503	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4cee973983f2e902d609	rpi_8a8b6c44fb6f2b11	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4e245d417a365492fcf4	rpi_19247cf7dabccbbc	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4f529b00dcc51a36466f	rpi_f630230becc453e8	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_4fe7b4143d78a4160ba0	rpi_9a70e579a86965f9	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5086a07ed5323cc62e4e	rpi_f7f8903ace832808	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_50dff6d9484e220c1124	rpi_981b9089eb3bf568	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_50e7cfc90d36236c4dba	rpi_531a53dd0be9b063	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_510ce5fd0ffd327e16d3	rpi_1bcec3c360dbd51c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5118e45cf2d2a1483d3a	rpi_869747dd36677f30	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5139d83db4b36784947f	rpi_868420601f76aff2	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_521dd4386a2642470970	rpi_63e4203c0c6bf5ab	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_52b37357e9c614317796	rpi_5287d70229d2c172	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5358f4358b8cc8079de3	rpi_7a74e1c63c13f9c9	Q92667	PFAM	IPR002999	PF00567	Tudor domain	705	826	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_536b32e85ee1f30392a4	rpi_9127eb3db303d3de	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_53921b28c0302be7d212	rpi_057317267154ede2	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_54f83221cc7855ab26e6	rpi_8f4a34db267e6538	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5555e31d25b42c457dd2	rpi_42df163f77d9589d	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_55b3544c98bb62e37914	rpi_6292c5492e23ccc4	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5628d25081bee4dc74fa	rpi_d80547bfb1e3d75e	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_56843d8ba00dec5a50ae	rpi_440fb8542dad0f6b	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_56e70d7dd0783e0fd77a	rpi_a3559b414646e172	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_57083eb5765c6cdd939b	rpi_44a651058a48fe53	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_576541b0dd5644b5d2f2	rpi_7843729c96bfe6f1	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_57ac3800fdd8b4003e4b	rpi_df6235edc7d9c2e2	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_57b96a3095d0e5c413b8	rpi_5a0b11887b00e5dd	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_595dfb6f609923bfd41d	rpi_e49ba493a84ea7a9	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5973df02b99f7daeb81b	rpi_f4ceb21849acec93	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5a414538e1c0247ec715	rpi_004323ce100a168b	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5a5fe00d518115996671	rpi_3ad483ddfe1c05d2	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5a62765e5f8993757942	rpi_9127eb3db303d3de	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5acf3d47a994dd8ce2d5	rpi_ce7436d8c4964f2f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5b034ade1235f9ae5ebe	rpi_5269f0acd18ca0a6	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5bfff98b0c8b9e4517c7	rpi_08018fb45467cbf3	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5c1dfd153c24834d3f1d	rpi_44a651058a48fe53	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5cd2c99955ce95db5105	rpi_cbd0b3f954a0e61c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5d7de9b4466aa16245a1	rpi_86e4489e29c87227	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5f5bfdf516e8012bb14a	rpi_52daf82524c8449c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_5f92b795259b5162a3d1	rpi_8b8d4c5f7c0fc8c4	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_616caa4b54ca24535bdf	rpi_85658c9915e920a6	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_61b705db3ebb57a72af6	rpi_4159cbd10f670714	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_61c81ee398cb65d09ca6	rpi_c6481d0162303e65	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_62b5a9cf07853e257e22	rpi_7265a660a9a121f0	Q92667	KH	IPR004088	PF00013	KH domain	610	671	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_631e2a2034c44b37ab9a	rpi_a412417c778fd9b8	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_64130183d498ef55f865	rpi_f0632f115e6cdc5f	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_64287cc3f92702f4fc14	rpi_540cff7029a39885	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_64ab45b29c82a20c336b	rpi_2c1fa23aaf03593f	Q6P6C2	PFAM	IPR027450	PF13532	2OG-Fe(II) oxygenase superfamily	114	274	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_65ca447f3235c54f14da	rpi_bdca26823e2334b3	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_66086c2e233774d62888	rpi_e5cdcb3ad3b6e7e5	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_66a099f25ee8ad6955c4	rpi_113293cb73e546af	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_66e1b3b1aba65459fddd	rpi_8bf9f9a8105315ec	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6766949ade80e41737f1	rpi_f105cf05b082c37e	Q13686	PFAM	IPR027450	PF13532	2OG-Fe(II) oxygenase superfamily	101	344	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_68a425b0011658c9a106	rpi_497bf1906e2d7451	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_68e9481b955b6eadc8b0	rpi_96b79328fe3380b5	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_69b56ad432a41d4c7a8d	rpi_b656db14ad8459d7	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6a83709746392b1e1061	rpi_44f225974cf5f560	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6aad97cd1eec848db19c	rpi_bdca26823e2334b3	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6afe4dcfe17f48412f85	rpi_51479064fb90b24c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6c1747ea950adbc45c63	rpi_44155c48c7ec5b04	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6dac92abe7915c55db54	rpi_107b5b4d394c3574	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6dd2f027bcf712bfea36	rpi_c04b45b67426b8d9	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6e36437a505a4602d973	rpi_44f225974cf5f560	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6e5415058b5246eea771	rpi_9db42627052ad5d8	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6e7b31133875e5982e2e	rpi_3eba3b6e23eaaf3f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6f08f6dae110d9b769c3	rpi_96b79328fe3380b5	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6f1c56f508b158713bb4	rpi_b2ccb4b810fcf591	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6f78c31751a7e77add40	rpi_f919390c1e87cd25	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6fe617fad3b69bb7b3ca	rpi_d10ebeef36f5eadf	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_6ffc880671b6a5cf3faf	rpi_038a28474780857d	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_70c23b96064abd2aa40f	rpi_20957a483fc5b40a	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_718f76657ea53c6de8b8	rpi_62bc264fcc2db1dd	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_71bdee1828f60f154a91	rpi_8994a0423ccb711d	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_72ac5da5ca7baa76f700	rpi_4bcbfbc535322f22	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_73ac7a6e522409d4653e	rpi_e1c11daa35c60cd5	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_73fd9aef99a52cb79968	rpi_7e30d499c8ce25ae	Q92667	KH	IPR004088	PF00013	KH domain	610	671	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_756937bffa9af7653054	rpi_b332996cce414345	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_75dae79ce6a05b130617	rpi_e7835fd60eb2f4d4	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_76ed526b5e63eee6ac32	rpi_f12e91df7bee961c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7733c4b1c3310fbc9d02	rpi_3ead655276290664	Q92667	KH	IPR004088	PF00013	KH domain	610	671	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7782d1c5447f38b4f5f7	rpi_b0490bf5b1bd7061	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7835400b12bc9b60357a	rpi_5b411afe416d2cc6	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_78b374dd1cc77e5a5860	rpi_7eb0ff9afe5902a0	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_79a8d9d4b2b00efdd81e	rpi_3fed42c7f75bd382	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7ac065bd84c09e7e0327	rpi_e5cdcb3ad3b6e7e5	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7b3c2ba40046326fe891	rpi_d61c667c21ae0516	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7b615a5b581cc583306d	rpi_8c6dda35415ead20	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7b675b788c6fcb5e9519	rpi_19247cf7dabccbbc	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7b8353d4fd825e985e03	rpi_9a70e579a86965f9	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7b9fd0c1379f22e29d07	rpi_f84bf26032c52379	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7d3905fd27be916921ee	rpi_ce7436d8c4964f2f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7e2842c7466abccf452c	rpi_cddd5cfa47c1077d	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7e88b6621bb9cadca16c	rpi_540cff7029a39885	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7ed01c57ebed6ff0fdb8	rpi_ffc1ce6e562332cc	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7f2ebf63a503ccb4db06	rpi_1a7c5647865f9766	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_7f83398b17c620290028	rpi_1797a9da69d671c8	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_807f0d56bf793ba70278	rpi_6999b2c7612f70d5	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8170ba20250ddbd95643	rpi_68b787089a9b94cd	Q6P6C2	PFAM	IPR027450	PF13532	2OG-Fe(II) oxygenase superfamily	114	274	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_81946ddc4a471dc060ed	rpi_123ee896ec97ed47	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_850f207957afb30976a2	rpi_f4ceb21849acec93	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_85c93fed523542400a86	rpi_e5aae65e9ac93ab3	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_86b5d02781cb36b2158e	rpi_06abcd22f76cae30	Q6P6C2	PFAM	IPR027450	PF13532	2OG-Fe(II) oxygenase superfamily	114	274	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_876439a89f7b623dc894	rpi_b1da29554f71fe3c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_87697d5d1a52a4026f20	rpi_7a6a7703c0fd84a1	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_89f0d1dd0b6c6378cdc4	rpi_a06f097ad7e21c60	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8a27828c6780d7950ac2	rpi_9ac6d17963c4980d	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8a5804f0b1ae8a03ea66	rpi_772833847fda75ad	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8aa902ecc4236182e425	rpi_d80547bfb1e3d75e	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8bc2e766a23ac7a7cca4	rpi_a5d3667592bb456c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8bc7066d9cac004fd1aa	rpi_5fd132fb7c656c47	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8bdbd0582157292f6a6c	rpi_83909fddc6820a19	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8bf2df034b44e588e02b	rpi_9510b1e4542974fd	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8c9f5dc67f4ded18e84f	rpi_4341aa35f25d4ab2	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8d1beaee908b25516bb4	rpi_e846251ac4571d16	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8dbf1b71e176c73d5512	rpi_44155c48c7ec5b04	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8ddfa45935cbb67e0071	rpi_b38f893fcc842ce7	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8e3204f7cf46954499dc	rpi_607d5836af1024f2	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_8ed0477f266f48db6ceb	rpi_92a3347d6ab231b5	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_907776a75526f21fc064	rpi_fb5169958967844c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_90b0bf0c8d902ca8b60f	rpi_7000a2f88033b4a8	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_91b1dc8511a2923b17bc	rpi_59192aeaa68f8e0d	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_925cb01e7d82e6eddb64	rpi_7e30d499c8ce25ae	Q92667	PFAM	IPR002999	PF00567	Tudor domain	705	826	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_927263a38546895f6ff5	rpi_c6481d0162303e65	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_927c178672bd4cd44c45	rpi_7d8e74021c6589e2	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_938d611e2dbbae98d7d3	rpi_004323ce100a168b	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_951352498c562c22fd5d	rpi_9be0f9b3b6710a5e	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_95d861161bf4701c8a34	rpi_77ee430887132b45	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9688d5b3dccd4a5f3731	rpi_620cd127d7befab4	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_995e1a77618c685e687b	rpi_27e7fa5ec538061f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_99752bd64f0360f53595	rpi_599aca44a688f45b	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9addbba3b26b304d9b3f	rpi_d10ebeef36f5eadf	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9b3e70f6255a16003cb4	rpi_13d0d1640d410b45	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9cdc5a6eba973e869d19	rpi_e1c11daa35c60cd5	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9d3f94455aec2ed314c6	rpi_e52cfb036824c65f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9d5f7ee94c55b339617e	rpi_b38f893fcc842ce7	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9e1764ea6a5ae63fc485	rpi_981b9089eb3bf568	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9e3cc0fed33ba12f5960	rpi_80a1abf4bc05f011	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9eec2ce56ebd602ca027	rpi_4df0054ab184b29f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_9fffebef3c45940dc69a	rpi_2f1a5726b68271ba	Q92667	KH	IPR004088	PF00013	KH domain	610	671	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a0e33933c411c0b15b19	rpi_dbe702fcc99ef3fc	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a107619b6fe6a6d2ca8c	rpi_1f55cdadb7c5b5e8	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a1d9c418783502337f86	rpi_31897a6be0358a30	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a33e7de01fe0d6dd81aa	rpi_531a53dd0be9b063	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a3bbb9d044de0b55c781	rpi_2f1a5726b68271ba	Q92667	PFAM	IPR002999	PF00567	Tudor domain	705	826	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a580c74535ff6d0bd47f	rpi_b332996cce414345	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a64634a9cf1c29fb9141	rpi_85101e8bc7cf6a5e	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a6ed1b450d39cd19fb44	rpi_1f55cdadb7c5b5e8	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a8d97dab171f526ab17d	rpi_c04b45b67426b8d9	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_a8ea2bb37da4c3444b22	rpi_9db42627052ad5d8	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_abdaefafac3634719603	rpi_3ad483ddfe1c05d2	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ac3fa996c3d62ac4fd98	rpi_ff1aaec499d20467	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_acc7bddec3db2510d138	rpi_113293cb73e546af	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ad6d289ee27ad7a0fc06	rpi_4a26daf75aea5efe	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ae577d366739e201e16e	rpi_26e56f06ef12e6ce	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_aeaec7f6d41bf9f990ff	rpi_cbd0b3f954a0e61c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_aee364c05584f0afb300	rpi_ade002b8adac1400	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_afecd01e05d25705d5f6	rpi_5269f0acd18ca0a6	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_aff080914f07cfdf3c22	rpi_ea73d4ab6290eab6	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b0998c228b26d926bdb2	rpi_f630230becc453e8	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b0b60720e21c62789d96	rpi_6292c5492e23ccc4	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b13f3512e0c330a9fedb	rpi_d964f13a0832df52	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b187b77971a6a1d94b65	rpi_ab27f293eb69bcb4	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b190f27e5b4b576263c2	rpi_c4959e31b7af8924	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b1ae6fec5a03e42b2daa	rpi_615fe8b8a5d79c05	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b24694bac49fd3be1f81	rpi_5287d70229d2c172	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b274fd571658fbffd28a	rpi_a0fa991168e9c049	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b2a3fbd5778ace95a421	rpi_4df0054ab184b29f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b2c951239e4419e0fbf3	rpi_b1d5c033fad4a85d	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b3b6dd06a142d239c005	rpi_615fe8b8a5d79c05	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b3f954a50dbc99be5ebc	rpi_ffc1ce6e562332cc	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b434d135a485477b569b	rpi_56d7efc4eed47503	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b49ee47c87638f86e4ff	rpi_ade002b8adac1400	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b4d90465a85951077dd6	rpi_76af8797c85eda8f	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b6272dcb0282b0385aed	rpi_e11e5bd5ec911f3d	Q92667	KH	IPR004088	PF00013	KH domain	610	671	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b669ee5eadc2b2e3eb06	rpi_4079c0516d9de47b	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b7175bdb4c4ebab9738e	rpi_a0fa991168e9c049	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b7fb46cdecc8799f84b8	rpi_a1b9d1ce34a3a060	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b8687aa5260aedcc7030	rpi_8fb4eff3cb831d89	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b87a59170e4ad27668de	rpi_e52cfb036824c65f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_b99e2cb139620ea41607	rpi_27e7fa5ec538061f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_bba1312210f767e426ca	rpi_626536749b0430f2	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_bbe3e99ee642f6da79ae	rpi_fb5169958967844c	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_bc4805df45710c9581e4	rpi_9db4a40db331f501	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_bc6ec88cd13774b489e7	rpi_83909fddc6820a19	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_be2be4c3bc431fcd29b5	rpi_057317267154ede2	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c03bf0843b161a3d58e7	rpi_d7652979e5f23fcd	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c155f7fb22e082322761	rpi_0d85b819d683c75f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c170571e220f8360abc9	rpi_e618e6d73f06dad6	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c1e989e65b5f8c12b772	rpi_9cd733943bca118b	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c258357a44f43af3060f	rpi_7d90633def915690	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c4f131e13756ae40a042	rpi_54bd67efdc8f4310	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c5c5e20410a777691bd3	rpi_b35195e39d0a922f	Q6P6C2	PFAM	IPR027450	PF13532	2OG-Fe(II) oxygenase superfamily	114	274	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c683985a4594ac44e67f	rpi_107b5b4d394c3574	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c6e22d8d264c50f70640	rpi_722b4f15c80c2879	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c7d9dc8e7203fcf4915a	rpi_cb5c25e2e4302534	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c837f51c61a50998e2b9	rpi_20957a483fc5b40a	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c88f211002bb5b0ec34c	rpi_956b0082efdbed1a	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c9a274d703d66570008d	rpi_e758225e116a8901	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_c9b0b84187a18adcb2d9	rpi_1bcec3c360dbd51c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_cae9dd85048fde63cad2	rpi_31897a6be0358a30	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_caff736c93973c4809d7	rpi_d94c3a6f8c9aa876	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_cc6cc08318e3f26a1126	rpi_6824a0034cbf00b3	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_cc77da2a0bc2a69ed0fd	rpi_5dfa4860eb7f644c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_cdc0cef891b292a79972	rpi_80c2b7b5837a822b	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_cf6aab4b38730a555d76	rpi_e0fbabac4f1e0520	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_cffb14d8e4ebbf1af8e4	rpi_5fd132fb7c656c47	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d008f99ccf75b4979b11	rpi_a3559b414646e172	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d0da0ef9919dc26669ab	rpi_7a6a7703c0fd84a1	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d1583a8034ee69696c0d	rpi_73b352b7f4442247	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d278167d338a1b970f50	rpi_5a0b11887b00e5dd	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d2a416d43602b513a964	rpi_cf01185a23035ee5	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d3c84eb949dd6efefb77	rpi_cb5c25e2e4302534	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d3d3ce1630652865d7c9	rpi_f69830a93b2ec676	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d412b2b70af62dda3273	rpi_8a8b6c44fb6f2b11	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d4ffc808b3bf12e7e9ba	rpi_54fa22b6ae36e997	Q92667	KH	IPR004088	PF00013	KH domain	610	671	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d50d681408ebf72b19a8	rpi_a5d3667592bb456c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d568c1b32764906dff12	rpi_3ead655276290664	Q92667	PFAM	IPR002999	PF00567	Tudor domain	705	826	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d5a163409ff589e81154	rpi_331995098f7284e3	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d61648cfd2beffa62733	rpi_cddd5cfa47c1077d	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d6657eb26706a92c0d57	rpi_69a04c8c7432a1ef	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d7952816724edb5b460a	rpi_ff1aaec499d20467	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d82885a0eb60759d611a	rpi_52b5964435b19390	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d92383dadba32ffa27ec	rpi_b0490bf5b1bd7061	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d9242e6c67f84acc9366	rpi_f7f8903ace832808	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_d9ac849764e519d1c8c3	rpi_f919390c1e87cd25	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_db6fb0d50e61ff1799fd	rpi_b2ccb4b810fcf591	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_db8efff6d5f78758d24f	rpi_b1d5c033fad4a85d	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_dc32274b8d6227c6b84a	rpi_f69830a93b2ec676	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_dd1d2faba5ef6f9b16e1	rpi_c4959e31b7af8924	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_dd87691e1c2800468ef2	rpi_440fb8542dad0f6b	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ddd7657cab6c34b48c07	rpi_6824a0034cbf00b3	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_de5908126d2560838b2b	rpi_396289a51d684f3e	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_dea36001142da13ee60c	rpi_7000a2f88033b4a8	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_df1ddd24356305abc8ee	rpi_9cd733943bca118b	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e26a5303d0db08c8ea4b	rpi_599aca44a688f45b	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e2d64afd6de4230ec02f	rpi_9db4a40db331f501	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e30af01f5ce2b9d3b858	rpi_77ee430887132b45	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e34f7636dbcd967e0c17	rpi_b656db14ad8459d7	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e36c240ed453c65e9934	rpi_e11e5bd5ec911f3d	Q92667	PFAM	IPR002999	PF00567	Tudor domain	705	826	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e40b4700717b6d78a1ee	rpi_d61c667c21ae0516	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e5ada1272a666d767833	rpi_26e56f06ef12e6ce	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e65189b70eb926cb73f2	rpi_d7652979e5f23fcd	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e67cbfea161916a37915	rpi_147957298f194d00	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e6c30d0172a52ab5e287	rpi_525966b67573a0dd	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e6f5b13d3be9beb192d8	rpi_9510b1e4542974fd	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e72374131218cc5d564e	rpi_e5aae65e9ac93ab3	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e73e5ee14c90b937cb4c	rpi_d94c3a6f8c9aa876	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e82da6047cb27808ef86	rpi_ce36cc17a67b7406	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e843f598b32bdc4384ab	rpi_3fed42c7f75bd382	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_e90dd3eb8144dd0a5a53	rpi_e846251ac4571d16	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_eab34898d2c6439a6ca4	rpi_24154c2339bbab10	Q92667	KH	IPR004088	PF00013	KH domain	610	671	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_eb25754086ef5f84f2aa	rpi_0b84aaa143a69312	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_eb27196e47101c5c08c8	rpi_9cd12934a2ceb539	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ec7ac08b8bce1b371ad6	rpi_868420601f76aff2	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ed249ffc1bd87d796331	rpi_65fa0d1a8cceffe3	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ed8553997a0576e4a95c	rpi_2ca1bd2972e44797	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_efa6ad74eaeb42645461	rpi_63e4203c0c6bf5ab	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f0b43c98c130209b2ff8	rpi_8994a0423ccb711d	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f2bb43b50db6a285c626	rpi_8f4a34db267e6538	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f2ca643eccc590dfcdaf	rpi_e49ba493a84ea7a9	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f2ce5be6ea56dd719a4a	rpi_52daf82524c8449c	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f2fdbc1713d5f98f18d6	rpi_7843729c96bfe6f1	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f326f9644312bda05983	rpi_543e53a1e7d1fc93	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f364d885a4dff1ccb4d9	rpi_86e4489e29c87227	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f37a270ff9bd7bdbb149	rpi_62bc264fcc2db1dd	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f4704c44419488c11620	rpi_6f62798074dd27aa	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f49d15d7c086b9ff5940	rpi_525966b67573a0dd	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f5c1de92414157858843	rpi_85658c9915e920a6	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f65ef3d3d24163df9365	rpi_4159cbd10f670714	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f78e7b8df73cc6aa83e2	rpi_c81dbe8ad72e3dd0	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_f8d042fe2b398f87808c	rpi_59192aeaa68f8e0d	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fa5e48fd71f77e732c03	rpi_fbbd2cff5a875a0b	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fa713d813594258f235c	rpi_8fb4eff3cb831d89	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fb864cda675f2545df71	rpi_e402240ed1ef1e55	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fb9b3baf7c573af1debe	rpi_9b4119868a618f3f	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fbce5b796f8213f9fbd7	rpi_e402240ed1ef1e55	Q9UKV3	PFAM	IPR032552	PF16294	RNSP1-SAP18 binding (RSB) motif	1159	1247	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fc20632ac488d9e81218	rpi_4def7d62e2ca265a	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fc398c5e7eaa550dc53f	rpi_6f62798074dd27aa	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fcc417630a52ed642625	rpi_4079c0516d9de47b	Q9UKV3	PFAM	IPR003034	PF02037	SAP domain	72	107	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fcfd4477656f98319414	rpi_ea73d4ab6290eab6	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fd9960e82e51d97a4700	rpi_f27f69c9a32b1221	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_fe2c33993d4d94b12bdd	rpi_a612f37ac81d18de	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ff090b278bb4518c90f8	rpi_0861913335e71416	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ff4d006995795f3bf0d5	rpi_620cd127d7befab4	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ff50342919277a82fd68	rpi_1a7c5647865f9766	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ff5503092810eb3117f9	rpi_772833847fda75ad	Q86V81	PFAM	IPR025715	PF13865	C-terminal duplication domain of Friend of PRMT1	197	253	InterPro/Pfam	108.0	2026-04-12
+rpi_domain_ff79f3deddf2b50a7426	rpi_80c2b7b5837a822b	Q86V81	RRM	IPR000504	PF00076	RNA recognition motif	108	176	InterPro/Pfam	108.0	2026-04-12

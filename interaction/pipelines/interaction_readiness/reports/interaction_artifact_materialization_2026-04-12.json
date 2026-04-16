@@ -1,0 +1,122 @@
+{
+  "pipeline": "interaction_artifact_materialization",
+  "generated_at_utc": "2026-04-12T09:46:07.776218+00:00",
+  "status": "completed",
+  "mode": "full",
+  "source_root": "/Users/pluviophile/graph/1218",
+  "sources": {
+    "ppi_edges": "/Users/pluviophile/graph/1218/pipelines/edges_ppi/data/output/edges/edges_ppi_v1.tsv",
+    "ppi_evidence": "/Users/pluviophile/graph/1218/pipelines/edges_ppi/data/output/evidence/ppi_evidence_v1.tsv",
+    "psi_edges": "/Users/pluviophile/graph/1218/data/output/edges/drug_target_edges_v1.tsv",
+    "psi_evidence": "/Users/pluviophile/graph/1218/data/output/evidence/drug_target_evidence_v1.tsv",
+    "m3_sqlite": "/Users/pluviophile/graph/12182/out/m3/chembl_m3.sqlite"
+  },
+  "outputs": {
+    "ppi_edges": {
+      "path": "/Users/pluviophile/graph/protian-entity/data/output/edges/edges_ppi_v1.tsv",
+      "rows": 884555,
+      "columns": [
+        "edge_id",
+        "src_type",
+        "src_id",
+        "dst_type",
+        "dst_id",
+        "predicate",
+        "directed",
+        "best_score",
+        "source",
+        "source_version",
+        "fetch_date"
+      ]
+    },
+    "ppi_evidence": {
+      "path": "/Users/pluviophile/graph/protian-entity/data/output/evidence/ppi_evidence_v1.tsv",
+      "rows": 884555,
+      "columns": [
+        "evidence_id",
+        "edge_id",
+        "evidence_type",
+        "method",
+        "score",
+        "reference",
+        "source",
+        "source_version",
+        "fetch_date"
+      ],
+      "method_non_empty_rate": 1.0,
+      "method_or_reference_rate": 1.0
+    },
+    "psi_edges": {
+      "path": "/Users/pluviophile/graph/protian-entity/data/output/edges/drug_target_edges_v1.tsv",
+      "rows": 32122,
+      "columns": [
+        "edge_id",
+        "src_type",
+        "src_id",
+        "dst_type",
+        "dst_id",
+        "predicate",
+        "directed",
+        "best_score",
+        "source",
+        "source_version",
+        "fetch_date"
+      ]
+    },
+    "psi_evidence": {
+      "path": "/Users/pluviophile/graph/protian-entity/data/output/evidence/drug_target_evidence_v1.tsv",
+      "rows": 32963,
+      "columns": [
+        "evidence_id",
+        "edge_id",
+        "evidence_type",
+        "method",
+        "score",
+        "reference",
+        "source",
+        "source_version",
+        "fetch_date"
+      ],
+      "missing_edge_id_rows": 0,
+      "edge_join_rate": 1.0,
+      "method_or_reference_rate": 1.0
+    },
+    "m3_psi_edges": {
+      "path": "/Users/pluviophile/graph/protian-entity/data/output/molecules/molecules_m3_psi_edges_v1.tsv",
+      "rows_written": 2360023,
+      "table_total_rows": 2360023,
+      "columns": [
+        "edge_id",
+        "compound_inchikey",
+        "compound_chembl_id",
+        "target_uniprot_accession",
+        "target_chembl_id",
+        "standard_type",
+        "n_evidence",
+        "n_docs",
+        "pchembl_max",
+        "pchembl_mean",
+        "assay_confidence_score_max",
+        "evidence_score_max",
+        "best_activity_id",
+        "best_assay_id",
+        "best_doc_id",
+        "best_doi",
+        "best_pubmed_id",
+        "aggregated_at_utc"
+      ],
+      "source_sqlite": "/Users/pluviophile/graph/12182/out/m3/chembl_m3.sqlite"
+    }
+  },
+  "contracts": {
+    "pipelines/edges_ppi/contracts/edges_ppi_v1.json": "written",
+    "pipelines/edges_ppi/contracts/ppi_evidence_v1.json": "written",
+    "pipelines/drugbank/contracts/drug_target_edges_v1.json": "written",
+    "pipelines/drugbank/contracts/drug_target_evidence_v1.json": "written"
+  },
+  "acceptance": {
+    "ppi_method_or_reference_rate": 1.0,
+    "psi_evidence_edge_join_rate": 1.0,
+    "psi_method_or_reference_rate": 1.0
+  }
+}

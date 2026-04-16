@@ -1,0 +1,87 @@
+{
+  "domain": "interaction",
+  "generated_at": "2026-04-16",
+  "file_count": 16,
+  "files": [
+    {
+      "file": "drug_target_edges_v1.tsv",
+      "bytes": 4208086,
+      "sha256": "c9fabcefd638e30e3c1bb414a0ca4249a86a92e39f87d65a9eb0bc2fdfd521f7"
+    },
+    {
+      "file": "drug_target_evidence_v1.tsv",
+      "bytes": 6535764,
+      "sha256": "0998854436fc0996e18ae445ae563f23ab6e690691cfe6f703076df6d78e8e95"
+    },
+    {
+      "file": "edges_ppi_v1.tsv",
+      "bytes": 92901371,
+      "sha256": "28091d9d3fa7e2705f153f4c7f06866454c8c2f5a6cb703c227be90f65bed23c"
+    },
+    {
+      "file": "interaction_aggregate_score_v2.sample.tsv",
+      "bytes": 745682,
+      "sha256": "0eab2c7d33f279769a6c21efeca2272216ccc05739ff1f675e06b2ac839c0253"
+    },
+    {
+      "file": "interaction_cross_validation_v2.sample.tsv",
+      "bytes": 1067047,
+      "sha256": "a609f883df42bb3e7819af12a0ebd11061ae112067d576397827e1955b458762"
+    },
+    {
+      "file": "interaction_ontology_mapping_v2.sample.tsv",
+      "bytes": 4299797,
+      "sha256": "a37626176a1bc81604004160050e63b2f77353c00389ee2c5b92d9be94cd9606"
+    },
+    {
+      "file": "rna_protein_edges_v1.sample.tsv",
+      "bytes": 21608,
+      "sha256": "f33700751dc3297b9bd2f8956731e222d23ef764c366228de7452b6eafe0f0a4"
+    },
+    {
+      "file": "rna_protein_edges_v1.tsv",
+      "bytes": 2770256,
+      "sha256": "5cf6704cc4df7613179aae009753c47954cce9425814f5c45b7aca8da04efdcd"
+    },
+    {
+      "file": "rna_protein_evidence_v1.sample.tsv",
+      "bytes": 36654,
+      "sha256": "b700dd0520d52db8dd4d1f1b53fe2090b68b9d712052b8c0d9e54f53c5030f8c"
+    },
+    {
+      "file": "rna_protein_evidence_v1.tsv",
+      "bytes": 20119299,
+      "sha256": "e221a282c2d6563556b58db7adf71e3f1132fa3fca7ea62b4027fe61fc206674"
+    },
+    {
+      "file": "rpi_domain_context_v2.sample.tsv",
+      "bytes": 60677,
+      "sha256": "8d3c2320c72892c323560549242e8752c29cfa7a77ee1bab27ed1fcf9c571e7c"
+    },
+    {
+      "file": "rpi_domain_context_v2.tsv",
+      "bytes": 4698869,
+      "sha256": "081a3d7ce7ef3803e2dbb1d7a5f92752db8d59a96242c18bcc2f7eb1c102dcec"
+    },
+    {
+      "file": "rpi_function_context_v2.sample.tsv",
+      "bytes": 124782,
+      "sha256": "a1edb8b0c2d920dc843fc5956ac02ab7a4f1c82630c1705940ec2761195ce009"
+    },
+    {
+      "file": "rpi_function_context_v2.tsv",
+      "bytes": 9077271,
+      "sha256": "40e5fd8c66b7c08f8df0a28c6193064b3a83fefb8596176350404aa764a4a3b7"
+    },
+    {
+      "file": "rpi_site_context_v2.sample.tsv",
+      "bytes": 46529,
+      "sha256": "0f086cab45cb5fd1f095327c931c7f65f2f802d779fcb72823313bc18cb5df81"
+    },
+    {
+      "file": "rpi_site_context_v2.tsv",
+      "bytes": 23257998,
+      "sha256": "56032a049abc6a5c97cde26eb3d0743c162da7bc1572f9bed4815aa40ea1bfac"
+    }
+  ]
+}

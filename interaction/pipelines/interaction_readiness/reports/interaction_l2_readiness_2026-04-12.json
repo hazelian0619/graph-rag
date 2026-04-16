@@ -1,0 +1,948 @@
+{
+  "report_id": "interaction_l2_readiness_2026-04-12",
+  "generated_at_utc": "2026-04-12T09:47:55.436363+00:00",
+  "mode": "full",
+  "repo_root": "/Users/pluviophile/graph/protian-entity",
+  "dimensions_required": [
+    "组件",
+    "属性字段",
+    "数据类型",
+    "获取方式",
+    "存储形式",
+    "示例",
+    "用途/指标",
+    "指标",
+    "层次结构",
+    "语义关系",
+    "数据来源",
+    "维护机构",
+    "更新频率",
+    "当前状态",
+    "证据路径"
+  ],
+  "interactions": [
+    {
+      "interaction": "PPI",
+      "description": "Protein-Protein Interaction",
+      "status": "部分",
+      "dimension_status": {
+        "组件": "已完成",
+        "属性字段": "已完成",
+        "数据类型": "已完成",
+        "获取方式": "缺失",
+        "存储形式": "已完成",
+        "示例": "已完成",
+        "用途/指标": "缺失",
+        "指标": "缺失",
+        "层次结构": "已完成",
+        "语义关系": "已完成",
+        "数据来源": "已完成",
+        "维护机构": "已完成",
+        "更新频率": "部分",
+        "证据路径": "已完成",
+        "当前状态": "部分"
+      },
+      "artifacts": {
+        "required_tables": [
+          "edges",
+          "evidence"
+        ],
+        "found_in_repo": {
+          "edges": "data/output/edges/edges_ppi_v1.tsv",
+          "evidence": "data/output/evidence/ppi_evidence_v1.tsv",
+          "contract_edges": "pipelines/edges_ppi/contracts/edges_ppi_v1.json",
+          "contract_evidence": "pipelines/edges_ppi/contracts/ppi_evidence_v1.json",
+          "report_validation_edges": "pipelines/edges_ppi/reports/edges_ppi_v1.validation.json",
+          "report_validation_evidence": "pipelines/edges_ppi/reports/ppi_evidence_v1.validation.json"
+        },
+        "missing_required": [],
+        "off_repo_candidates": {
+          "report_qa": [
+            "/Users/pluviophile/graph/1218/pipelines/edges_ppi/reports/edges_ppi_v1.qa.json"
+          ]
+        }
+      },
+      "schema": {
+        "expected_columns": {
+          "edges": [
+            "edge_id",
+            "src_type",
+            "src_id",
+            "dst_type",
+            "dst_id",
+            "predicate",
+            "directed",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "evidence": [
+            "evidence_id",
+            "edge_id",
+            "evidence_type",
+            "method",
+            "score",
+            "reference",
+            "source",
+            "source_version",
+            "fetch_date"
+          ]
+        },
+        "missing_columns_by_component": {
+          "edges": [],
+          "evidence": []
+        }
+      },
+      "table_profiles": {
+        "edges": {
+          "path": "/Users/pluviophile/graph/protian-entity/data/output/edges/edges_ppi_v1.tsv",
+          "delimiter": "tsv",
+          "columns": [
+            "edge_id",
+            "src_type",
+            "src_id",
+            "dst_type",
+            "dst_id",
+            "predicate",
+            "directed",
+            "best_score",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "row_count": 884555,
+          "example": {
+            "edge_id": "ppi|P84085|Q99418",
+            "src_type": "Protein",
+            "src_id": "P84085",
+            "dst_type": "Protein",
+            "dst_id": "Q99418",
+            "predicate": "interacts_with",
+            "directed": "false",
+            "best_score": "471",
+            "source": "STRING",
+            "source_version": "STRING_v12.0",
+            "fetch_date": "2025-10-26"
+          },
+          "inferred_types": {
+            "edge_id": "string",
+            "src_type": "string",
+            "src_id": "string",
+            "dst_type": "string",
+            "dst_id": "string",
+            "predicate": "string",
+            "directed": "bool",
+            "best_score": "int",
+            "source": "string",
+            "source_version": "string",
+            "fetch_date": "date"
+          },
+          "non_empty_rate": {
+            "edge_id": 1.0,
+            "src_type": 1.0,
+            "src_id": 1.0,
+            "dst_type": 1.0,
+            "dst_id": 1.0,
+            "predicate": 1.0,
+            "directed": 1.0,
+            "best_score": 1.0,
+            "source": 1.0,
+            "source_version": 1.0,
+            "fetch_date": 1.0
+          }
+        },
+        "evidence": {
+          "path": "/Users/pluviophile/graph/protian-entity/data/output/evidence/ppi_evidence_v1.tsv",
+          "delimiter": "tsv",
+          "columns": [
+            "evidence_id",
+            "edge_id",
+            "evidence_type",
+            "method",
+            "score",
+            "reference",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "row_count": 884555,
+          "example": {
+            "evidence_id": "string_combined_score|ppi|P84085|Q99418",
+            "edge_id": "ppi|P84085|Q99418",
+            "evidence_type": "protein_protein_interaction",
+            "method": "string_combined_score",
+            "score": "471",
+            "reference": "",
+            "source": "STRING",
+            "source_version": "STRING_v12.0",
+            "fetch_date": "2025-10-26"
+          },
+          "inferred_types": {
+            "evidence_id": "string",
+            "edge_id": "string",
+            "evidence_type": "string",
+            "method": "string",
+            "score": "int",
+            "reference": "string",
+            "source": "string",
+            "source_version": "string",
+            "fetch_date": "date"
+          },
+          "non_empty_rate": {
+            "evidence_id": 1.0,
+            "edge_id": 1.0,
+            "evidence_type": 1.0,
+            "method": 1.0,
+            "score": 1.0,
+            "reference": 0.0,
+            "source": 1.0,
+            "source_version": 1.0,
+            "fetch_date": 1.0
+          }
+        }
+      },
+      "metrics": {
+        "component_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "schema_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "evidence_edge_join_rate": 1.0,
+        "checked_rows": 884555,
+        "source_preview": [
+          {
+            "source": "string",
+            "count": 1769110,
+            "maintainer": "STRING Consortium"
+          }
+        ],
+        "fetch_date_preview": [
+          {
+            "fetch_date": "2025-10-26",
+            "count": 1769110
+          }
+        ]
+      },
+      "evidence_path": {
+        "in_repo": {
+          "edges": "data/output/edges/edges_ppi_v1.tsv",
+          "evidence": "data/output/evidence/ppi_evidence_v1.tsv",
+          "contract_edges": "pipelines/edges_ppi/contracts/edges_ppi_v1.json",
+          "contract_evidence": "pipelines/edges_ppi/contracts/ppi_evidence_v1.json",
+          "report_validation_edges": "pipelines/edges_ppi/reports/edges_ppi_v1.validation.json",
+          "report_validation_evidence": "pipelines/edges_ppi/reports/ppi_evidence_v1.validation.json"
+        },
+        "off_repo_candidates": {
+          "report_qa": [
+            "/Users/pluviophile/graph/1218/pipelines/edges_ppi/reports/edges_ppi_v1.qa.json"
+          ]
+        }
+      }
+    },
+    {
+      "interaction": "PSI",
+      "description": "Protein-Small molecule Interaction",
+      "status": "部分",
+      "dimension_status": {
+        "组件": "已完成",
+        "属性字段": "已完成",
+        "数据类型": "已完成",
+        "获取方式": "缺失",
+        "存储形式": "已完成",
+        "示例": "已完成",
+        "用途/指标": "缺失",
+        "指标": "缺失",
+        "层次结构": "已完成",
+        "语义关系": "已完成",
+        "数据来源": "已完成",
+        "维护机构": "已完成",
+        "更新频率": "部分",
+        "证据路径": "已完成",
+        "当前状态": "部分"
+      },
+      "artifacts": {
+        "required_tables": [
+          "drug_target_edges",
+          "drug_target_evidence",
+          "molecules_m3_psi"
+        ],
+        "found_in_repo": {
+          "drug_target_edges": "data/output/edges/drug_target_edges_v1.tsv",
+          "drug_target_evidence": "data/output/evidence/drug_target_evidence_v1.tsv",
+          "molecules_m3_psi": "data/output/molecules/molecules_m3_psi_edges_v1.tsv",
+          "contract_edges": "pipelines/drugbank/contracts/drug_target_edges_v1.json",
+          "contract_evidence": "pipelines/drugbank/contracts/drug_target_evidence_v1.json",
+          "report_validation_edges": "pipelines/drugbank/reports/drug_target_edges_v1.validation.json",
+          "report_validation_evidence": "pipelines/drugbank/reports/drug_target_evidence_v1.validation.json"
+        },
+        "missing_required": [],
+        "off_repo_candidates": {
+          "drug_xref_molecules": [
+            "/Users/pluviophile/graph/1218/data/output/drugbank/drug_xref_molecules_v1.tsv"
+          ]
+        }
+      },
+      "schema": {
+        "expected_columns": {
+          "drug_target_edges": [
+            "edge_id",
+            "src_type",
+            "src_id",
+            "dst_type",
+            "dst_id",
+            "predicate",
+            "directed",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "drug_target_evidence": [
+            "evidence_id",
+            "edge_id",
+            "evidence_type",
+            "method",
+            "score",
+            "reference",
+            "source",
+            "source_version",
+            "fetch_date"
+          ]
+        },
+        "missing_columns_by_component": {
+          "drug_target_edges": [],
+          "drug_target_evidence": []
+        }
+      },
+      "table_profiles": {
+        "drug_target_edges": {
+          "path": "/Users/pluviophile/graph/protian-entity/data/output/edges/drug_target_edges_v1.tsv",
+          "delimiter": "tsv",
+          "columns": [
+            "edge_id",
+            "src_type",
+            "src_id",
+            "dst_type",
+            "dst_id",
+            "predicate",
+            "directed",
+            "best_score",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "row_count": 32122,
+          "example": {
+            "edge_id": "4d7254a8bfd8a00f930dfca7ef2a8fc2ff4d89bd",
+            "src_type": "Drug",
+            "src_id": "DB00001",
+            "dst_type": "Protein",
+            "dst_id": "P00734",
+            "predicate": "targets",
+            "directed": "true",
+            "best_score": "",
+            "source": "DrugBank",
+            "source_version": "5.1|exported-on:2026-01-04",
+            "fetch_date": "2026-01-09"
+          },
+          "inferred_types": {
+            "edge_id": "string",
+            "src_type": "string",
+            "src_id": "string",
+            "dst_type": "string",
+            "dst_id": "string",
+            "predicate": "string",
+            "directed": "bool",
+            "best_score": "string",
+            "source": "string",
+            "source_version": "string",
+            "fetch_date": "date"
+          },
+          "non_empty_rate": {
+            "edge_id": 1.0,
+            "src_type": 1.0,
+            "src_id": 1.0,
+            "dst_type": 1.0,
+            "dst_id": 1.0,
+            "predicate": 1.0,
+            "directed": 1.0,
+            "best_score": 0.0,
+            "source": 1.0,
+            "source_version": 1.0,
+            "fetch_date": 1.0
+          }
+        },
+        "drug_target_evidence": {
+          "path": "/Users/pluviophile/graph/protian-entity/data/output/evidence/drug_target_evidence_v1.tsv",
+          "delimiter": "tsv",
+          "columns": [
+            "evidence_id",
+            "edge_id",
+            "evidence_type",
+            "method",
+            "score",
+            "reference",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "row_count": 32963,
+          "example": {
+            "evidence_id": "65c5b322b59acf6aaf7fc01a6490723561b4f313",
+            "edge_id": "4d7254a8bfd8a00f930dfca7ef2a8fc2ff4d89bd",
+            "evidence_type": "drug_target_interaction",
+            "method": "inhibitor",
+            "score": "",
+            "reference": "PMID:10505536;PMID:10912644;PMID:11055889;PMID:11467439;PMID:11807012;PMID:37713619",
+            "source": "DrugBank",
+            "source_version": "5.1|exported-on:2026-01-04",
+            "fetch_date": "2026-01-09"
+          },
+          "inferred_types": {
+            "evidence_id": "string",
+            "edge_id": "string",
+            "evidence_type": "string",
+            "method": "string",
+            "score": "string",
+            "reference": "string",
+            "source": "string",
+            "source_version": "string",
+            "fetch_date": "date"
+          },
+          "non_empty_rate": {
+            "evidence_id": 1.0,
+            "edge_id": 1.0,
+            "evidence_type": 1.0,
+            "method": 1.0,
+            "score": 0.0,
+            "reference": 0.995,
+            "source": 1.0,
+            "source_version": 1.0,
+            "fetch_date": 1.0
+          }
+        },
+        "molecules_m3_psi": {
+          "path": "/Users/pluviophile/graph/protian-entity/data/output/molecules/molecules_m3_psi_edges_v1.tsv",
+          "delimiter": "tsv",
+          "columns": [
+            "edge_id",
+            "compound_inchikey",
+            "compound_chembl_id",
+            "target_uniprot_accession",
+            "target_chembl_id",
+            "standard_type",
+            "n_evidence",
+            "n_docs",
+            "pchembl_max",
+            "pchembl_mean",
+            "assay_confidence_score_max",
+            "evidence_score_max",
+            "best_activity_id",
+            "best_assay_id",
+            "best_doc_id",
+            "best_doi",
+            "best_pubmed_id",
+            "aggregated_at_utc"
+          ],
+          "row_count": 2360023,
+          "example": {
+            "edge_id": "15f729ddcf48ee6951e43bef01755881d9e8d228",
+            "compound_inchikey": "AAAAEENPAALFRN-UHFFFAOYSA-N",
+            "compound_chembl_id": "CHEMBL492934",
+            "target_uniprot_accession": "P49654",
+            "target_chembl_id": "CHEMBL4824",
+            "standard_type": "IC50",
+            "n_evidence": "1",
+            "n_docs": "1",
+            "pchembl_max": "7.8",
+            "pchembl_mean": "7.8",
+            "assay_confidence_score_max": "9",
+            "evidence_score_max": "0.975",
+            "best_activity_id": "2271884",
+            "best_assay_id": "562361",
+            "best_doc_id": "46133",
+            "best_doi": "10.1016/j.bmcl.2009.01.097",
+            "best_pubmed_id": "19231178",
+            "aggregated_at_utc": "2025-12-19T17:08:48Z"
+          },
+          "inferred_types": {
+            "edge_id": "string",
+            "compound_inchikey": "string",
+            "compound_chembl_id": "string",
+            "target_uniprot_accession": "string",
+            "target_chembl_id": "string",
+            "standard_type": "string",
+            "n_evidence": "int",
+            "n_docs": "int",
+            "pchembl_max": "float",
+            "pchembl_mean": "float",
+            "assay_confidence_score_max": "int",
+            "evidence_score_max": "float",
+            "best_activity_id": "int",
+            "best_assay_id": "int",
+            "best_doc_id": "int",
+            "best_doi": "string",
+            "best_pubmed_id": "int",
+            "aggregated_at_utc": "string"
+          },
+          "non_empty_rate": {
+            "edge_id": 1.0,
+            "compound_inchikey": 1.0,
+            "compound_chembl_id": 1.0,
+            "target_uniprot_accession": 1.0,
+            "target_chembl_id": 1.0,
+            "standard_type": 1.0,
+            "n_evidence": 1.0,
+            "n_docs": 1.0,
+            "pchembl_max": 0.99,
+            "pchembl_mean": 0.99,
+            "assay_confidence_score_max": 1.0,
+            "evidence_score_max": 1.0,
+            "best_activity_id": 1.0,
+            "best_assay_id": 1.0,
+            "best_doc_id": 1.0,
+            "best_doi": 0.971,
+            "best_pubmed_id": 0.968,
+            "aggregated_at_utc": 1.0
+          }
+        }
+      },
+      "metrics": {
+        "component_completion": {
+          "done": 3,
+          "total": 3,
+          "ratio": 1.0
+        },
+        "schema_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "evidence_edge_join_rate": 1.0,
+        "checked_rows": 32963,
+        "source_preview": [
+          {
+            "source": "drugbank",
+            "count": 65085,
+            "maintainer": "DrugBank (OMx Personal Health Analytics)"
+          }
+        ],
+        "fetch_date_preview": [
+          {
+            "fetch_date": "2026-01-09",
+            "count": 65085
+          }
+        ]
+      },
+      "evidence_path": {
+        "in_repo": {
+          "drug_target_edges": "data/output/edges/drug_target_edges_v1.tsv",
+          "drug_target_evidence": "data/output/evidence/drug_target_evidence_v1.tsv",
+          "molecules_m3_psi": "data/output/molecules/molecules_m3_psi_edges_v1.tsv",
+          "contract_edges": "pipelines/drugbank/contracts/drug_target_edges_v1.json",
+          "contract_evidence": "pipelines/drugbank/contracts/drug_target_evidence_v1.json",
+          "report_validation_edges": "pipelines/drugbank/reports/drug_target_edges_v1.validation.json",
+          "report_validation_evidence": "pipelines/drugbank/reports/drug_target_evidence_v1.validation.json"
+        },
+        "off_repo_candidates": {
+          "drug_xref_molecules": [
+            "/Users/pluviophile/graph/1218/data/output/drugbank/drug_xref_molecules_v1.tsv"
+          ]
+        }
+      }
+    },
+    {
+      "interaction": "RPI",
+      "description": "RNA-Protein Interaction",
+      "status": "部分",
+      "dimension_status": {
+        "组件": "已完成",
+        "属性字段": "已完成",
+        "数据类型": "已完成",
+        "获取方式": "已完成",
+        "存储形式": "已完成",
+        "示例": "已完成",
+        "用途/指标": "已完成",
+        "指标": "已完成",
+        "层次结构": "已完成",
+        "语义关系": "已完成",
+        "数据来源": "已完成",
+        "维护机构": "已完成",
+        "更新频率": "部分",
+        "证据路径": "已完成",
+        "当前状态": "部分"
+      },
+      "artifacts": {
+        "required_tables": [
+          "edges",
+          "evidence"
+        ],
+        "found_in_repo": {
+          "edges": "data/output/edges/rna_protein_edges_v1.tsv",
+          "evidence": "data/output/evidence/rna_protein_evidence_v1.tsv",
+          "contract_edges": "pipelines/rna_rpi/contracts/rna_protein_edges_v1.json",
+          "contract_evidence": "pipelines/rna_rpi/contracts/rna_protein_evidence_v1.json",
+          "report_metrics": "pipelines/rna_rpi/reports/rna_rpi_v1.metrics.json",
+          "report_gates": "pipelines/rna_rpi/reports/rna_rpi_v1.gates.json",
+          "report_manifest": "pipelines/rna_rpi/reports/rna_rpi_v1.manifest.json",
+          "report_validation_edges": "pipelines/rna_rpi/reports/rna_protein_edges_v1.validation.json",
+          "report_validation_evidence": "pipelines/rna_rpi/reports/rna_protein_evidence_v1.validation.json"
+        },
+        "missing_required": [],
+        "off_repo_candidates": {}
+      },
+      "schema": {
+        "expected_columns": {
+          "edges": [
+            "edge_id",
+            "src_type",
+            "src_id",
+            "dst_type",
+            "dst_id",
+            "predicate",
+            "directed",
+            "best_score",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "evidence": [
+            "evidence_id",
+            "edge_id",
+            "evidence_type",
+            "method",
+            "score",
+            "reference",
+            "source",
+            "source_version",
+            "fetch_date"
+          ]
+        },
+        "missing_columns_by_component": {
+          "edges": [],
+          "evidence": []
+        }
+      },
+      "table_profiles": {
+        "edges": {
+          "path": "/Users/pluviophile/graph/protian-entity/data/output/edges/rna_protein_edges_v1.tsv",
+          "delimiter": "tsv",
+          "columns": [
+            "edge_id",
+            "src_type",
+            "src_id",
+            "dst_type",
+            "dst_id",
+            "predicate",
+            "directed",
+            "best_score",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "row_count": 16489,
+          "example": {
+            "edge_id": "rpi_0002db29d1a448c9",
+            "src_type": "RNA",
+            "src_id": "ENST00000293406_9606",
+            "dst_type": "Protein",
+            "dst_id": "Q86V81",
+            "predicate": "binds_to",
+            "directed": "true",
+            "best_score": "",
+            "source": "starBase",
+            "source_version": "ENCORI_API_RBPTarget_hg38_mRNA_clipExpNum_ge_1_target_all_cellType_all",
+            "fetch_date": "2026-04-12"
+          },
+          "inferred_types": {
+            "edge_id": "string",
+            "src_type": "string",
+            "src_id": "string",
+            "dst_type": "string",
+            "dst_id": "string",
+            "predicate": "string",
+            "directed": "bool",
+            "best_score": "string",
+            "source": "string",
+            "source_version": "string",
+            "fetch_date": "date"
+          },
+          "non_empty_rate": {
+            "edge_id": 1.0,
+            "src_type": 1.0,
+            "src_id": 1.0,
+            "dst_type": 1.0,
+            "dst_id": 1.0,
+            "predicate": 1.0,
+            "directed": 1.0,
+            "best_score": 0.0,
+            "source": 1.0,
+            "source_version": 1.0,
+            "fetch_date": 1.0
+          }
+        },
+        "evidence": {
+          "path": "/Users/pluviophile/graph/protian-entity/data/output/evidence/rna_protein_evidence_v1.tsv",
+          "delimiter": "tsv",
+          "columns": [
+            "evidence_id",
+            "edge_id",
+            "evidence_type",
+            "method",
+            "score",
+            "reference",
+            "source",
+            "source_version",
+            "fetch_date"
+          ],
+          "row_count": 100255,
+          "example": {
+            "evidence_id": "ev_0000073c4dff48159829",
+            "edge_id": "rpi_83be2c8317e91a11",
+            "evidence_type": "rna_protein_interaction",
+            "method": "reference_backed_record",
+            "score": "",
+            "reference": "ACIN1:CH3620",
+            "source": "starBase",
+            "source_version": "ENCORI_API_RBPTarget_hg38_mRNA_clipExpNum_ge_1_target_all_cellType_all",
+            "fetch_date": "2026-04-12"
+          },
+          "inferred_types": {
+            "evidence_id": "string",
+            "edge_id": "string",
+            "evidence_type": "string",
+            "method": "string",
+            "score": "string",
+            "reference": "string",
+            "source": "string",
+            "source_version": "string",
+            "fetch_date": "date"
+          },
+          "non_empty_rate": {
+            "evidence_id": 1.0,
+            "edge_id": 1.0,
+            "evidence_type": 1.0,
+            "method": 1.0,
+            "score": 0.0,
+            "reference": 1.0,
+            "source": 1.0,
+            "source_version": 1.0,
+            "fetch_date": 1.0
+          }
+        }
+      },
+      "metrics": {
+        "component_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "schema_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "evidence_edge_join_rate": 1.0,
+        "checked_rows": 100255,
+        "source_preview": [
+          {
+            "source": "starbase",
+            "count": 116744,
+            "maintainer": "Sun Yat-sen University (ENCORI/starBase)"
+          }
+        ],
+        "fetch_date_preview": [
+          {
+            "fetch_date": "2026-04-12",
+            "count": 116744
+          }
+        ]
+      },
+      "evidence_path": {
+        "in_repo": {
+          "edges": "data/output/edges/rna_protein_edges_v1.tsv",
+          "evidence": "data/output/evidence/rna_protein_evidence_v1.tsv",
+          "contract_edges": "pipelines/rna_rpi/contracts/rna_protein_edges_v1.json",
+          "contract_evidence": "pipelines/rna_rpi/contracts/rna_protein_evidence_v1.json",
+          "report_metrics": "pipelines/rna_rpi/reports/rna_rpi_v1.metrics.json",
+          "report_gates": "pipelines/rna_rpi/reports/rna_rpi_v1.gates.json",
+          "report_manifest": "pipelines/rna_rpi/reports/rna_rpi_v1.manifest.json",
+          "report_validation_edges": "pipelines/rna_rpi/reports/rna_protein_edges_v1.validation.json",
+          "report_validation_evidence": "pipelines/rna_rpi/reports/rna_protein_evidence_v1.validation.json"
+        },
+        "off_repo_candidates": {}
+      }
+    }
+  ],
+  "top10_gaps": [
+    {
+      "interaction": "PPI",
+      "gap": "更新频率为部分",
+      "severity": "可延期",
+      "effort": "S",
+      "evidence": {
+        "component_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "schema_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "evidence_edge_join_rate": 1.0,
+        "checked_rows": 884555,
+        "source_preview": [
+          {
+            "source": "string",
+            "count": 1769110,
+            "maintainer": "STRING Consortium"
+          }
+        ],
+        "fetch_date_preview": [
+          {
+            "fetch_date": "2025-10-26",
+            "count": 1769110
+          }
+        ]
+      },
+      "suggestion": "按统一 L2 字段规范补齐并在本地复跑 QA。"
+    },
+    {
+      "interaction": "PSI",
+      "gap": "更新频率为部分",
+      "severity": "可延期",
+      "effort": "S",
+      "evidence": {
+        "component_completion": {
+          "done": 3,
+          "total": 3,
+          "ratio": 1.0
+        },
+        "schema_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "evidence_edge_join_rate": 1.0,
+        "checked_rows": 32963,
+        "source_preview": [
+          {
+            "source": "drugbank",
+            "count": 65085,
+            "maintainer": "DrugBank (OMx Personal Health Analytics)"
+          }
+        ],
+        "fetch_date_preview": [
+          {
+            "fetch_date": "2026-01-09",
+            "count": 65085
+          }
+        ]
+      },
+      "suggestion": "按统一 L2 字段规范补齐并在本地复跑 QA。"
+    },
+    {
+      "interaction": "RPI",
+      "gap": "更新频率为部分",
+      "severity": "可延期",
+      "effort": "S",
+      "evidence": {
+        "component_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "schema_completion": {
+          "done": 2,
+          "total": 2,
+          "ratio": 1.0
+        },
+        "evidence_edge_join_rate": 1.0,
+        "checked_rows": 100255,
+        "source_preview": [
+          {
+            "source": "starbase",
+            "count": 116744,
+            "maintainer": "Sun Yat-sen University (ENCORI/starBase)"
+          }
+        ],
+        "fetch_date_preview": [
+          {
+            "fetch_date": "2026-04-12",
+            "count": 116744
+          }
+        ]
+      },
+      "suggestion": "按统一 L2 字段规范补齐并在本地复跑 QA。"
+    }
+  ],
+  "preupload_gates": [
+    {
+      "gate_id": "ppi_required_artifacts_ready",
+      "description": "PPI 必需产物（edges/evidence/核心衍生）齐全",
+      "passed": true,
+      "evidence": {
+        "missing_required": []
+      }
+    },
+    {
+      "gate_id": "psi_required_artifacts_ready",
+      "description": "PSI 必需产物（edges/evidence/核心衍生）齐全",
+      "passed": true,
+      "evidence": {
+        "missing_required": []
+      }
+    },
+    {
+      "gate_id": "rpi_required_artifacts_ready",
+      "description": "RPI 必需产物（edges/evidence/核心衍生）齐全",
+      "passed": true,
+      "evidence": {
+        "missing_required": []
+      }
+    },
+    {
+      "gate_id": "rpi_edge_evidence_hierarchy_ge_0_99",
+      "description": "RPI evidence.edge_id 与 edges.edge_id 连接率 >= 0.99",
+      "passed": true,
+      "evidence": {
+        "join_rate": 1.0
+      }
+    },
+    {
+      "gate_id": "interaction_schema_uniformity",
+      "description": "三类互作均满足统一 L2 字段口径",
+      "passed": true,
+      "evidence": {
+        "PPI": "已完成",
+        "PSI": "已完成",
+        "RPI": "已完成"
+      }
+    },
+    {
+      "gate_id": "zero_blocking_gaps",
+      "description": "Top gaps 中阻塞级缺口为 0",
+      "passed": true,
+      "evidence": {
+        "has_blocking_gaps": false
+      }
+    }
+  ],
+  "summary": {
+    "interaction_status": {
+      "PPI": "部分",
+      "PSI": "部分",
+      "RPI": "部分"
+    },
+    "blocking_gap_count": 0,
+    "gate_pass_count": 6,
+    "gate_total": 6
+  },
+  "overall_status": "PASS"
+}

@@ -1,0 +1,61 @@
+{
+  "data_version": "kg-interaction-l2-readiness-2026-04-12",
+  "created_at": "2026-04-12T09:47:56.069642+00:00",
+  "git_commit": "36720ce7f189e424fafcd56c87e0ab5a85b1d4e7",
+  "artifacts": [
+    {
+      "path": "pipelines/interaction_readiness/reports/interaction_artifact_materialization_2026-04-12.json",
+      "size_bytes": 3666,
+      "sha256": "851e4f1df5a14fb04b1228e6ee1aa886faf492f8b053148ea997acc54a308724",
+      "modified_time": "2026-04-12T09:46:07.777008+00:00"
+    },
+    {
+      "path": "pipelines/edges_ppi/reports/edges_ppi_v1.validation.json",
+      "size_bytes": 2233,
+      "sha256": "083ab6888880782e934e7f419853b4a695d731ac2fed24afa599ffc3d115160b",
+      "modified_time": "2026-04-12T09:46:21.533624+00:00"
+    },
+    {
+      "path": "pipelines/edges_ppi/reports/ppi_evidence_v1.validation.json",
+      "size_bytes": 2200,
+      "sha256": "ea69dc186934a39690cda23e2087f238db655c5beab55fe6acf91807c6cbdea2",
+      "modified_time": "2026-04-12T09:46:37.039935+00:00"
+    },
+    {
+      "path": "pipelines/drugbank/reports/drug_target_edges_v1.validation.json",
+      "size_bytes": 2227,
+      "sha256": "4ccddec9aa0aaf91eb7070c2a40210e734970245f1ff6783ece754d13e41410a",
+      "modified_time": "2026-04-12T09:46:37.868650+00:00"
+    },
+    {
+      "path": "pipelines/drugbank/reports/drug_target_evidence_v1.validation.json",
+      "size_bytes": 2197,
+      "sha256": "04fd507f0ee9ea98b9a3ed9b0b807ee63f718f124523af4cb2d09b69923ef414",
+      "modified_time": "2026-04-12T09:46:38.615129+00:00"
+    },
+    {
+      "path": "pipelines/interaction_readiness/reports/interaction_l2_readiness_2026-04-12.json",
+      "size_bytes": 29447,
+      "sha256": "a6f24a75b70a6e7cec010eef6d965eb2089dec434a2980c1fdb032ab9f42c031",
+      "modified_time": "2026-04-12T09:47:55.442591+00:00"
+    },
+    {
+      "path": "pipelines/interaction_readiness/reports/interaction_l2_readiness_2026-04-12.validation.json",
+      "size_bytes": 14517,
+      "sha256": "71be9ed930aaa986e18c74e8effdea2534ac6d8ed149386260173cb95d43c5e1",
+      "modified_time": "2026-04-12T09:47:55.646730+00:00"
+    },
+    {
+      "path": "pipelines/interaction_readiness/reports/interaction_l2_readiness_2026-04-12.gates.json",
+      "size_bytes": 1587,
+      "sha256": "715ea1f74ffbbacfa30ca3e2b794bc492a650768aa1cc6d9e8d0d8036b15804b",
+      "modified_time": "2026-04-12T09:47:55.816662+00:00"
+    },
+    {
+      "path": "docs/interaction/INTERACTION_L2_LOCAL_READINESS_2026-04-12.md",
+      "size_bytes": 4654,
+      "sha256": "08908b3bbe4cc8dc86266a546ae182746313dc42078bbfdc4e3387b21b3f41c0",
+      "modified_time": "2026-04-12T09:47:55.443170+00:00"
+    }
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "name": "interaction_l2_readiness_validation",
+  "passed": true,
+  "report": "pipelines/interaction_readiness/reports/interaction_l2_readiness_2026-04-12.json",
+  "contract": "pipelines/interaction_readiness/contracts/interaction_l2_readiness_report_v1.json",
+  "checks": [
+    {
+      "id": "top_level.report_id",
+      "passed": true,
+      "detail": "required key present: report_id"
+    },
+    {
+      "id": "top_level.generated_at_utc",
+      "passed": true,
+      "detail": "required key present: generated_at_utc"
+    },
+    {
+      "id": "top_level.mode",
+      "passed": true,
+      "detail": "required key present: mode"
+    },
+    {
+      "id": "top_level.dimensions_required",
+      "passed": true,
+      "detail": "required key present: dimensions_required"
+    },
+    {
+      "id": "top_level.interactions",
+      "passed": true,
+      "detail": "required key present: interactions"
+    },
+    {
+      "id": "top_level.top10_gaps",
+      "passed": true,
+      "detail": "required key present: top10_gaps"
+    },
+    {
+      "id": "top_level.preupload_gates",
+      "passed": true,
+      "detail": "required key present: preupload_gates"
+    },
+    {
+      "id": "top_level.summary",
+      "passed": true,
+      "detail": "required key present: summary"
+    },
+    {
+      "id": "top_level.overall_status",
+      "passed": true,
+      "detail": "required key present: overall_status"
+    },
+    {
+      "id": "interaction.coverage",
+      "passed": true,
+      "detail": "required interactions present: ['PPI', 'PSI', 'RPI']"
+    },
+    {
+      "id": "PPI.dimension.组件",
+      "passed": true,
+      "detail": "dimension key exists: 组件"
+    },
+    {
+      "id": "PPI.dimension.组件.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.属性字段",
+      "passed": true,
+      "detail": "dimension key exists: 属性字段"
+    },
+    {
+      "id": "PPI.dimension.属性字段.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.数据类型",
+      "passed": true,
+      "detail": "dimension key exists: 数据类型"
+    },
+    {
+      "id": "PPI.dimension.数据类型.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.获取方式",
+      "passed": true,
+      "detail": "dimension key exists: 获取方式"
+    },
+    {
+      "id": "PPI.dimension.获取方式.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 缺失"
+    },
+    {
+      "id": "PPI.dimension.存储形式",
+      "passed": true,
+      "detail": "dimension key exists: 存储形式"
+    },
+    {
+      "id": "PPI.dimension.存储形式.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.示例",
+      "passed": true,
+      "detail": "dimension key exists: 示例"
+    },
+    {
+      "id": "PPI.dimension.示例.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.用途/指标",
+      "passed": true,
+      "detail": "dimension key exists: 用途/指标"
+    },
+    {
+      "id": "PPI.dimension.用途/指标.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 缺失"
+    },
+    {
+      "id": "PPI.dimension.指标",
+      "passed": true,
+      "detail": "dimension key exists: 指标"
+    },
+    {
+      "id": "PPI.dimension.指标.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 缺失"
+    },
+    {
+      "id": "PPI.dimension.层次结构",
+      "passed": true,
+      "detail": "dimension key exists: 层次结构"
+    },
+    {
+      "id": "PPI.dimension.层次结构.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.语义关系",
+      "passed": true,
+      "detail": "dimension key exists: 语义关系"
+    },
+    {
+      "id": "PPI.dimension.语义关系.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.数据来源",
+      "passed": true,
+      "detail": "dimension key exists: 数据来源"
+    },
+    {
+      "id": "PPI.dimension.数据来源.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.维护机构",
+      "passed": true,
+      "detail": "dimension key exists: 维护机构"
+    },
+    {
+      "id": "PPI.dimension.维护机构.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PPI.dimension.更新频率",
+      "passed": true,
+      "detail": "dimension key exists: 更新频率"
+    },
+    {
+      "id": "PPI.dimension.更新频率.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 部分"
+    },
+    {
+      "id": "PPI.dimension.当前状态",
+      "passed": true,
+      "detail": "dimension key exists: 当前状态"
+    },
+    {
+      "id": "PPI.dimension.当前状态.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 部分"
+    },
+    {
+      "id": "PPI.dimension.证据路径",
+      "passed": true,
+      "detail": "dimension key exists: 证据路径"
+    },
+    {
+      "id": "PPI.dimension.证据路径.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.组件",
+      "passed": true,
+      "detail": "dimension key exists: 组件"
+    },
+    {
+      "id": "PSI.dimension.组件.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.属性字段",
+      "passed": true,
+      "detail": "dimension key exists: 属性字段"
+    },
+    {
+      "id": "PSI.dimension.属性字段.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.数据类型",
+      "passed": true,
+      "detail": "dimension key exists: 数据类型"
+    },
+    {
+      "id": "PSI.dimension.数据类型.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.获取方式",
+      "passed": true,
+      "detail": "dimension key exists: 获取方式"
+    },
+    {
+      "id": "PSI.dimension.获取方式.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 缺失"
+    },
+    {
+      "id": "PSI.dimension.存储形式",
+      "passed": true,
+      "detail": "dimension key exists: 存储形式"
+    },
+    {
+      "id": "PSI.dimension.存储形式.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.示例",
+      "passed": true,
+      "detail": "dimension key exists: 示例"
+    },
+    {
+      "id": "PSI.dimension.示例.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.用途/指标",
+      "passed": true,
+      "detail": "dimension key exists: 用途/指标"
+    },
+    {
+      "id": "PSI.dimension.用途/指标.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 缺失"
+    },
+    {
+      "id": "PSI.dimension.指标",
+      "passed": true,
+      "detail": "dimension key exists: 指标"
+    },
+    {
+      "id": "PSI.dimension.指标.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 缺失"
+    },
+    {
+      "id": "PSI.dimension.层次结构",
+      "passed": true,
+      "detail": "dimension key exists: 层次结构"
+    },
+    {
+      "id": "PSI.dimension.层次结构.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.语义关系",
+      "passed": true,
+      "detail": "dimension key exists: 语义关系"
+    },
+    {
+      "id": "PSI.dimension.语义关系.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.数据来源",
+      "passed": true,
+      "detail": "dimension key exists: 数据来源"
+    },
+    {
+      "id": "PSI.dimension.数据来源.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.维护机构",
+      "passed": true,
+      "detail": "dimension key exists: 维护机构"
+    },
+    {
+      "id": "PSI.dimension.维护机构.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "PSI.dimension.更新频率",
+      "passed": true,
+      "detail": "dimension key exists: 更新频率"
+    },
+    {
+      "id": "PSI.dimension.更新频率.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 部分"
+    },
+    {
+      "id": "PSI.dimension.当前状态",
+      "passed": true,
+      "detail": "dimension key exists: 当前状态"
+    },
+    {
+      "id": "PSI.dimension.当前状态.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 部分"
+    },
+    {
+      "id": "PSI.dimension.证据路径",
+      "passed": true,
+      "detail": "dimension key exists: 证据路径"
+    },
+    {
+      "id": "PSI.dimension.证据路径.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.组件",
+      "passed": true,
+      "detail": "dimension key exists: 组件"
+    },
+    {
+      "id": "RPI.dimension.组件.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.属性字段",
+      "passed": true,
+      "detail": "dimension key exists: 属性字段"
+    },
+    {
+      "id": "RPI.dimension.属性字段.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.数据类型",
+      "passed": true,
+      "detail": "dimension key exists: 数据类型"
+    },
+    {
+      "id": "RPI.dimension.数据类型.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.获取方式",
+      "passed": true,
+      "detail": "dimension key exists: 获取方式"
+    },
+    {
+      "id": "RPI.dimension.获取方式.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.存储形式",
+      "passed": true,
+      "detail": "dimension key exists: 存储形式"
+    },
+    {
+      "id": "RPI.dimension.存储形式.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.示例",
+      "passed": true,
+      "detail": "dimension key exists: 示例"
+    },
+    {
+      "id": "RPI.dimension.示例.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.用途/指标",
+      "passed": true,
+      "detail": "dimension key exists: 用途/指标"
+    },
+    {
+      "id": "RPI.dimension.用途/指标.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.指标",
+      "passed": true,
+      "detail": "dimension key exists: 指标"
+    },
+    {
+      "id": "RPI.dimension.指标.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.层次结构",
+      "passed": true,
+      "detail": "dimension key exists: 层次结构"
+    },
+    {
+      "id": "RPI.dimension.层次结构.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.语义关系",
+      "passed": true,
+      "detail": "dimension key exists: 语义关系"
+    },
+    {
+      "id": "RPI.dimension.语义关系.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.数据来源",
+      "passed": true,
+      "detail": "dimension key exists: 数据来源"
+    },
+    {
+      "id": "RPI.dimension.数据来源.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.维护机构",
+      "passed": true,
+      "detail": "dimension key exists: 维护机构"
+    },
+    {
+      "id": "RPI.dimension.维护机构.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "RPI.dimension.更新频率",
+      "passed": true,
+      "detail": "dimension key exists: 更新频率"
+    },
+    {
+      "id": "RPI.dimension.更新频率.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 部分"
+    },
+    {
+      "id": "RPI.dimension.当前状态",
+      "passed": true,
+      "detail": "dimension key exists: 当前状态"
+    },
+    {
+      "id": "RPI.dimension.当前状态.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 部分"
+    },
+    {
+      "id": "RPI.dimension.证据路径",
+      "passed": true,
+      "detail": "dimension key exists: 证据路径"
+    },
+    {
+      "id": "RPI.dimension.证据路径.status_value",
+      "passed": true,
+      "detail": "status in allowed set: 已完成"
+    },
+    {
+      "id": "gates.non_empty",
+      "passed": true,
+      "detail": "preupload_gates must be non-empty list"
+    },
+    {
+      "id": "gates.0.keys",
+      "passed": true,
+      "detail": "missing gate keys: []"
+    },
+    {
+      "id": "gates.1.keys",
+      "passed": true,
+      "detail": "missing gate keys: []"
+    },
+    {
+      "id": "gates.2.keys",
+      "passed": true,
+      "detail": "missing gate keys: []"
+    },
+    {
+      "id": "gates.3.keys",
+      "passed": true,
+      "detail": "missing gate keys: []"
+    },
+    {
+      "id": "gates.4.keys",
+      "passed": true,
+      "detail": "missing gate keys: []"
+    },
+    {
+      "id": "gates.5.keys",
+      "passed": true,
+      "detail": "missing gate keys: []"
+    },
+    {
+      "id": "top10.type",
+      "passed": true,
+      "detail": "top10_gaps must be list"
+    },
+    {
+      "id": "top10.max_len",
+      "passed": true,
+      "detail": "top10_gaps length <=10, got 3"
+    }
+  ]
+}

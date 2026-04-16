@@ -2,7 +2,7 @@
   "release": "interaction-l2-v1",
   "domain": "interaction",
   "generated_at": "2026-04-16",
-  "asset_count": 15,
+  "asset_count": 115,
   "assets": [
     {
       "path": "interaction/release/external/interaction-l2-v1/README.md",
@@ -15,9 +15,44 @@
       "sha256": "547f499e06505397e4d96b9fe9e1760a7a3b0188922f7b63d8cc4b26852af190"
     },
     {
+      "path": "interaction/release/external/interaction-l2-v1/manifests/interaction_doc_alignment_v1.json",
+      "bytes": 2630,
+      "sha256": "73761cbd121bc56e7d0285c29edb03e15efdda7d37e940cb0ebe9cd4f181e6bc"
+    },
+    {
       "path": "interaction/release/external/interaction-l2-v1/manifests/manifest_interaction_l2_v1.json",
       "bytes": 10032,
       "sha256": "1c8adb60d46feb57d6e71c0576a74af92727b6d5a0eb2c242191d100cd940ba7"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/edges_ppi_v1.validation.json",
+      "bytes": 2233,
+      "sha256": "083ab6888880782e934e7f419853b4a695d731ac2fed24afa599ffc3d115160b"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_aggregate_score_v2.smoke.validation.json",
+      "bytes": 3900,
+      "sha256": "14fe773a798f5437a6b00399a4a74bfb020c728891b9d815d6d28cc96c1066e1"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_aggregate_score_v2.validation.json",
+      "bytes": 3935,
+      "sha256": "b64d578994fad9d5c466415a786022e370a774d04a7462a33fec81c7fcffc842"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_artifact_materialization_2026-04-12.json",
+      "bytes": 3666,
+      "sha256": "851e4f1df5a14fb04b1228e6ee1aa886faf492f8b053148ea997acc54a308724"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_artifact_materialization_2026-04-12.sample.json",
+      "bytes": 3654,
+      "sha256": "21c28d5fba78053a84445dd61bfa4e6be633e7a559d28ee185a1576bee9af5f6"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.blocked_or_ready.json",
+      "bytes": 2055,
+      "sha256": "17043548159639eb158884473173262d82dc61b8af8c2870c63283615d76d65b"
     },
     {
       "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.build.json",
@@ -25,9 +60,89 @@
       "sha256": "bfb2ef97a9e064f6496da116dbe510d181de1cad953b2fda0b1106fdaa10a65c"
     },
     {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.gates.json",
+      "bytes": 1111,
+      "sha256": "f383749b91d3018391e15d881b7685a172cb9c5eded3b66d19fd910067d4bec0"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.manifest.json",
+      "bytes": 5916,
+      "sha256": "4b3da76708963aad9e2a7021ff9720d1bf3bce5fe0e5fd3e1ab2d3d9398a3d92"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.metrics.json",
+      "bytes": 4282,
+      "sha256": "47767571f98dd7d53ad663fbe9738a531923a6a767ab8cde2196b4d45b8811b0"
+    },
+    {
       "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.qa.json",
       "bytes": 2060,
       "sha256": "843ab20d41e5c0d53b985da479f4f377543e3a54ac9e8f87adfdb0bce339e7b6"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.sample.metrics.json",
+      "bytes": 4279,
+      "sha256": "294785b84109bbd133ca4f3c46a22ff9d5a0b2f9fcc93432afde983892ebe132"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.smoke.build.json",
+      "bytes": 7732,
+      "sha256": "ec7928e13108b7a1964ecdaa2cff15e846dc356f3e491086dbda203e0a26a953"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.smoke.qa.json",
+      "bytes": 2134,
+      "sha256": "299eb59b78c6cc734d2267b1691af157ba683e493f304c9bfeb44dab99202711"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.smoke.validation.json",
+      "bytes": 3359,
+      "sha256": "04eac08f6c294ad7f7f4ced2c958921028dc670cee1053b43aee10967762e371"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.validation.json",
+      "bytes": 3382,
+      "sha256": "c1eede54a55a0de792ae5d98ec5be987f4445ceb622b2bb99d09a573e1ce35de"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_l2_readiness_2026-04-12.gates.json",
+      "bytes": 1587,
+      "sha256": "715ea1f74ffbbacfa30ca3e2b794bc492a650768aa1cc6d9e8d0d8036b15804b"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_l2_readiness_2026-04-12.json",
+      "bytes": 29447,
+      "sha256": "a6f24a75b70a6e7cec010eef6d965eb2089dec434a2980c1fdb032ab9f42c031"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_l2_readiness_2026-04-12.manifest.json",
+      "bytes": 2643,
+      "sha256": "8b5c39252cc4a994441abbad62fa500ca28dcb3223353f2fd2ef056f42c8c5e7"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_l2_readiness_2026-04-12.sample.json",
+      "bytes": 30228,
+      "sha256": "c68290a748beea3ff3abcc981626af5db00c8369ee6463302f4880aadd6797be"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_l2_readiness_2026-04-12.validation.json",
+      "bytes": 14517,
+      "sha256": "71be9ed930aaa986e18c74e8effdea2534ac6d8ed149386260173cb95d43c5e1"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_l2_v1.release_assets_delivery.json",
+      "bytes": 478,
+      "sha256": "b669eeca2218f5a4463777b9f71670cb452cb6aba71dbf5fb333d93d9ad3a63f"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_l2_v1.release_assets_manifest.json",
+      "bytes": 11998,
+      "sha256": "055e9ff5b7b6de821d650a40a706bd74cb3919572d5564015f59ebf710ff7082"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_ontology_mapping_v2.blocked_or_ready.json",
+      "bytes": 555,
+      "sha256": "ea1520ea025d24e2c4ca49b74d6d730ed68df13e479f8fbb3537cd8626b88fe5"
     },
     {
       "path": "interaction/release/external/interaction-l2-v1/reports/interaction_ontology_mapping_v2.gates.json",
@@ -35,9 +150,34 @@
       "sha256": "cfaf242426d5d258cd18118cc2af7db372fa6b690078f0e58a16eabae3612003"
     },
     {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_ontology_mapping_v2.manifest.json",
+      "bytes": 452,
+      "sha256": "97235c35172008b238e3d8da04beda7d403691f1e3051629792829a646953093"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_ontology_mapping_v2.metrics.json",
+      "bytes": 1327,
+      "sha256": "766392644d6384f63d323b6aecaa1851efbf0fa26dab517c9f06266f7d8251ba"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_ontology_mapping_v2.sample.metrics.json",
+      "bytes": 1316,
+      "sha256": "8e5f685293512d1c74c4ce77179c510c61610292ca221cfaed3ce1b2f760731f"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_ontology_mapping_v2.validation.json",
+      "bytes": 3340,
+      "sha256": "c08991d449f648920d34ca1b892cbd6d8fb099ba28a2d5a033186409bb9d2dac"
+    },
+    {
       "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_2026-04-13.gates.json",
       "bytes": 316,
       "sha256": "672a32af2278ac881cd13cc4a921d319aac9fa826422d889d77259cb51c79821"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_2026-04-13.manifest.json",
+      "bytes": 2755,
+      "sha256": "eb4ec49072b3d752ab6fc680853de9102b5fca9d9c9e832c821aa67bf02a80f6"
     },
     {
       "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_2026-04-13.summary.json",
@@ -50,9 +190,19 @@
       "sha256": "0cb1a7a2846c018204f443301e8f942c703635ecb92964db9777e78fec8ee9bb"
     },
     {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.blocked_or_ready.json",
+      "bytes": 1828,
+      "sha256": "bcba680081c9fc9fc9d19e830c91183283a5fbd1c4e418c8a7bc59db1de258dd"
+    },
+    {
       "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.gates.json",
       "bytes": 528,
       "sha256": "b2100f653705211902e6c5da98e27e9973e933e569a7bae9cb4b4fc5a861102e"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.manifest.json",
+      "bytes": 4440,
+      "sha256": "f07eccb8fd44db82dedbb0afc1163951a64a8b7a09f805514d8c8a34ca059022"
     },
     {
       "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.package.json",
@@ -60,9 +210,44 @@
       "sha256": "f04eac32794d1e7238e665d1c4e400f93a4cdcee18c04eff3a244ef4827e5247"
     },
     {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.sync.json",
+      "bytes": 1829,
+      "sha256": "ee43485f0fdcb0f1858d260c071bf1120ce69d38f0422381d828329de87a35d1"
+    },
+    {
       "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.validation.json",
       "bytes": 4313,
       "sha256": "c2d8f7aee85123aae83539b8cd16d3275c07fdb05fdae96d90fd02a2feaa7bff"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_evidence_v1.validation.json",
+      "bytes": 2200,
+      "sha256": "ea69dc186934a39690cda23e2087f238db655c5beab55fe6acf91807c6cbdea2"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_function_context_v2.validation.json",
+      "bytes": 2210,
+      "sha256": "8cca372bf44d9ac40a8fc80504a7cb4639f9741bb320df369bdd99dcccc4e81d"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_method_context_v2.validation.json",
+      "bytes": 2368,
+      "sha256": "59dd09671e1c0c7b3030191f37379e7fbc9b5a9d305ccd6ca565a091e6abbc51"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_semantic_enrichment_v2.blocked_missing_inputs.json",
+      "bytes": 184,
+      "sha256": "a32a4a3426245b228996d407060d7f33c65098b93d23f48e2f919bac9c1c3e38"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_semantic_enrichment_v2.build.json",
+      "bytes": 1864,
+      "sha256": "536c789506969f497d890dbebe8d41039091aeff14859beee1961322fd34969e"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_semantic_enrichment_v2.manifest.json",
+      "bytes": 1662,
+      "sha256": "c2259a8a513a83f855eec60bb2e92c86ee9ca12599fbeff551809f0ea275e229"
     },
     {
       "path": "interaction/release/external/interaction-l2-v1/reports/ppi_semantic_enrichment_v2.qa.json",
@@ -70,14 +255,329 @@
       "sha256": "a735a2261e18d855f6b22873a0105e7a52bdd7c5ae1e4ae1ec704378eb3199d4"
     },
     {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_semantic_enrichment_v2.result_evidence.json",
+      "bytes": 2774,
+      "sha256": "f8c78868d50316b1754585c5b63233579c535c09c50b136d049c63f84570f2d2"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_semantic_enrichment_v2.sample.json",
+      "bytes": 1447,
+      "sha256": "ca2f0950dcfecacf45de2b76ca2f6ef8eb6a74df72a2a6dc5acd85a56b59062a"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_context_v2.smoke.validation.json",
+      "bytes": 3393,
+      "sha256": "efc4c8c073d6812ce73d59de23ed0b0363abceb6e8fcc2daf488aea9a373b7f5"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_context_v2.validation.json",
+      "bytes": 3390,
+      "sha256": "15ba43986b9c7499d2609a448fea07cd0b46cc87f7f605de0f0c5de01a5b3fb1"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_context_v3.smoke.validation.json",
+      "bytes": 4377,
+      "sha256": "9c3bdc4aa40425388deed41f8999492badbc906f97e836d2371e3bd93f67a761"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_context_v3.validation.json",
+      "bytes": 4455,
+      "sha256": "deeee4a69de741ea9b95d32f4ef1e263df9031c1cefe013cc451458f76c7ddc3"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_structure_enrichment_v2.blocked_missing_inputs.json",
+      "bytes": 1319,
+      "sha256": "16bc62fca434b236025bef3c8aba71eda2d802dfc2e70a65eeeef9c6564e35f3"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_structure_enrichment_v2.build.json",
+      "bytes": 1356,
+      "sha256": "4d89da25a8aeb2f7c942d8ef623646870e51a4d4909f7ac90391bac21e07605e"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_structure_enrichment_v2.manifest.json",
+      "bytes": 2903,
+      "sha256": "323f4d4a6d28230f27e79ac060c51d8719b1cc38bc1569013e0dac1769ab1495"
+    },
+    {
       "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_structure_enrichment_v2.qa.json",
       "bytes": 2213,
       "sha256": "d6deaf7b82506d9b6e2238b50b66d02627ff5bc207ec92008b56f83189158d7b"
     },
     {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_structure_enrichment_v2.result_evidence.json",
+      "bytes": 1323,
+      "sha256": "ddef34401e0a50ebd3de157ec026a7e8ad31f09cafc4a9e22af19bc968826182"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_structure_enrichment_v2.smoke.build.json",
+      "bytes": 1413,
+      "sha256": "c08a91e7af4663ed520f015f121c83a0d52aa093e9c0de2585358c8146cb83e9"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_condition_enrichment_v3.blocked_missing_inputs.json",
+      "bytes": 665,
+      "sha256": "12b7a4e7bf684df766c2d0e549675d4c09bc28ff5df003b06c9a56fd1a81c2e6"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_condition_enrichment_v3.build.json",
+      "bytes": 2750,
+      "sha256": "96be6d957449f1f1c9744caf6315f35486b6c61e098904f14014e878477c480f"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_condition_enrichment_v3.manifest.json",
+      "bytes": 3484,
+      "sha256": "1a8b2f5fcf2d1ae359a2c244f20294be3545e5fbb5a34e29bfe3d69088d23c40"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_condition_enrichment_v3.qa.json",
+      "bytes": 3795,
+      "sha256": "c3775b46d6bb47c667c1ac21a5eac35a683d66e86b7fcef9979d0970e17d0a23"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_condition_enrichment_v3.result_evidence.json",
+      "bytes": 2562,
+      "sha256": "8a81ef0e182e91e02af12d143c1ae4987174913dbb3ea016ed1b6ba197a9c436"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_condition_enrichment_v3.smoke.build.json",
+      "bytes": 2598,
+      "sha256": "a04f29d4d9bba5227a0bdd30e32ad50b35d58c68d98eab8e72f9d6ca6f02bfef"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_condition_parse_audit_v3.smoke.validation.json",
+      "bytes": 2732,
+      "sha256": "d3886060e6365d92f3df515707d9d1f6bf3d36cf2938b37c3124ce79f4b3db38"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_condition_parse_audit_v3.validation.json",
+      "bytes": 2742,
+      "sha256": "771eb9f6f86bf1ff0797a9beec0bb879cae9f7c172f5065b604b828cd39279df"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_structure_evidence_v2.smoke.validation.json",
+      "bytes": 2980,
+      "sha256": "6c91ae6959643e5c26070199b233b3aa26d07b6808f0caa8fef005ecd2416d7a"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_structure_evidence_v2.validation.json",
+      "bytes": 2981,
+      "sha256": "b4ce24c05976e020dfa5d12fe25bfea4252d1ff6230d7b87029a5d75ef5da90e"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/rpi_domain_context_v2.validation.json",
+      "bytes": 2859,
+      "sha256": "120ddde2f9bc77817c1a45bb406a1cfa2dfd868e20cacdd5dbb3e718170b5bdc"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/rpi_function_context_v2.validation.json",
+      "bytes": 2089,
+      "sha256": "7785d63999ceac5e42bc03b89fb9b64da6e5d6f5de6250e6835c57f49837efc4"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/rpi_site_context_v2.validation.json",
+      "bytes": 2868,
+      "sha256": "2ff4a7507680d87f4c7c3c9b96d39c6ca0465b4dea7c75c17ef8f57cdba64cf4"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/rpi_site_domain_enrichment_v2.blocked_or_ready.json",
+      "bytes": 550,
+      "sha256": "dc1ae7f94b6c7c124e27b332b5e5375792566ab82b490deedff3dca2982f9b9e"
+    },
+    {
       "path": "interaction/release/external/interaction-l2-v1/reports/rpi_site_domain_enrichment_v2.gates.json",
       "bytes": 922,
       "sha256": "a79d9f9547320c020eb847ff0837a91252fe821c1c8417dd38ce92f207a10e5b"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/rpi_site_domain_enrichment_v2.manifest.json",
+      "bytes": 935,
+      "sha256": "21f935c40b8fd7fa28f6f94278da254bc2974db95e6999d6c1941d558d8b5026"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/rpi_site_domain_enrichment_v2.metrics.json",
+      "bytes": 3254,
+      "sha256": "bd09a53b2d289fb3d4ed865997a3e977fc3f02f7a332cd3d3acbe70512911ebf"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/rpi_site_domain_enrichment_v2.sample.metrics.json",
+      "bytes": 3266,
+      "sha256": "f2532fa84f9d964c48bcf77e682a0b942053dada09e3e444dca25291f62eefd4"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/upstream_interaction_ontology_mapping_v2.gates.json",
+      "bytes": 985,
+      "sha256": "24b760bd5481dd5f30ae5165182acdede9201ab76621cae355066a7bb17e85eb"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/upstream_rpi_site_domain_enrichment_v2.gates.json",
+      "bytes": 922,
+      "sha256": "992f142575a596efe95557376d2cf869ced056ebbcb417b81ba9dc5ae2bd49fd"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_aggregate_score_v2.tsv.zst.part.000",
+      "bytes": 31457280,
+      "sha256": "fb7bfe6f82e671715713a096314795e0fa3a58c2109099c0c8611a1e758d4a7e"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_aggregate_score_v2.tsv.zst.part.001",
+      "bytes": 31457280,
+      "sha256": "6907486fd9f17e8c94debdcbf808648898c0590ed811bc591f364e9d12e937c5"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_aggregate_score_v2.tsv.zst.part.002",
+      "bytes": 31457280,
+      "sha256": "aa73839e73e54fe8c6196aa687128ba87192079deacdeefb74064e7a6011151b"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_aggregate_score_v2.tsv.zst.part.003",
+      "bytes": 18496437,
+      "sha256": "4298e4d9ff446a9ccedbc2e76124cb852c3b3b13ff1cb3c42f775a9f63820fc2"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_cross_validation_v2.tsv.zst.part.000",
+      "bytes": 41943040,
+      "sha256": "27b88aff7ba7c77ffcd8ef9452378497d09942732bad88dc8ea67d96569ba270"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_cross_validation_v2.tsv.zst.part.001",
+      "bytes": 41943040,
+      "sha256": "e4f3412b3282631ecea569c9124415516443335212af9e26075752205e10c924"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_cross_validation_v2.tsv.zst.part.002",
+      "bytes": 41943040,
+      "sha256": "2634adc9f86cea0a333057404a4118350fe7cf55ea905de2dbfa7eafeffda683"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_cross_validation_v2.tsv.zst.part.003",
+      "bytes": 33733962,
+      "sha256": "8d06ea4a23e5800f1faef5387838b763fcc105ff2f857797d47ef4358f295fe2"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/integrated/interaction_ontology_mapping_v2.tsv.zst",
+      "bytes": 36735729,
+      "sha256": "1878d0791b98c4f8f20976db8ca4ad5e46128a8e7a04f60be6c74d6ca31fc0aa"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/ppi/edges_ppi_v1.tsv.zst",
+      "bytes": 9959851,
+      "sha256": "2b9a319e5c4a1ca74867f4d1a3d85fbc1a8a161695d04e0c3abd85cd70962899"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/ppi/ppi_evidence_v1.tsv.zst",
+      "bytes": 9671945,
+      "sha256": "2d343712e64c705864b05357def7b58aa69112af83893f112912fb87ef624ba0"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/ppi/ppi_function_context_v2.tsv.zst",
+      "bytes": 17736909,
+      "sha256": "2371123b5cc606579002a77e0c4f380dbc86ce45c8b95bb70b48dc30aa330cdf"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/ppi/ppi_method_context_v2.tsv.zst",
+      "bytes": 15566915,
+      "sha256": "d08217cfcf1f01a95f9a1677cfc14160ba641c66720ccdf6ed385e36faec837c"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.000",
+      "bytes": 31457280,
+      "sha256": "254910b31ef687b95cf13c21738ad9190c2eafd9551a51edb8cf25c7b1bb1add"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.001",
+      "bytes": 31457280,
+      "sha256": "49835b688870e4d1d7b1a1c7ea1b32e37fbb9c235ace4d9b92b080fbd0b700ff"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.002",
+      "bytes": 31457280,
+      "sha256": "c84cf9e76d3208cf71b4edd50300f0fff3a9b92ddb5b90a5104e32b6c7ad425f"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.003",
+      "bytes": 31457280,
+      "sha256": "386d5c36f8cb06525b6b17377336537e9ad72d4c93cd701e707509d19e6c5e9d"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.004",
+      "bytes": 31457280,
+      "sha256": "29606b7180b729ed26631e6c0a78b5f72cf8d68ff8dfd55f299523238cc90ff3"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.005",
+      "bytes": 31457280,
+      "sha256": "259edc110d535f334135111b0031366d4919f946da465f1d8d12de393982a0b5"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.006",
+      "bytes": 31457280,
+      "sha256": "2b00d5cdc99499726ed5a064c3dd4328f9a94ca20e5b61e287b006334c7c0f89"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.007",
+      "bytes": 31457280,
+      "sha256": "124386b26f737229e67d8d56c299e63b55300e8025438e81af54107f75398f20"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.008",
+      "bytes": 31457280,
+      "sha256": "ed86702723178774eb027c2edbac650bbf25ecc9dde05c1e635f47e65bfb731d"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.009",
+      "bytes": 6628703,
+      "sha256": "34ce3d7505c275fe2f7a8442766025aaca7ea0f9ec26b13a98f46f5f3b8d4f17"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_structure_evidence_v2.tsv.zst.part.000",
+      "bytes": 31457280,
+      "sha256": "922f1911dc03f876b338b3ca83627560c28d57f50936055d41f8613b12009425"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_structure_evidence_v2.tsv.zst.part.001",
+      "bytes": 31457280,
+      "sha256": "d59b28913377f975e936856e5eec33c19de6e71efe78c7874824fc4955dfe11d"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_structure_evidence_v2.tsv.zst.part.002",
+      "bytes": 30424985,
+      "sha256": "33d64daf8c06b8e0a060c4d5b377bfac167d835f130589be0a4ce25ebfec23c1"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/drug_target_edges_v1.tsv.zst",
+      "bytes": 956111,
+      "sha256": "1b121d6129e2f96f389f48741fe7fa4c8e82707efcb3a7549613e754270b2070"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/psi/drug_target_evidence_v1.tsv.zst",
+      "bytes": 1222912,
+      "sha256": "e3fcc4a3d3bae14a91e8959df9cf8ad19ab452916f812cc02a6300eb9ad535e4"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/rpi/rna_protein_edges_v1.tsv.zst",
+      "bytes": 263517,
+      "sha256": "39ef5ce538e9a8093c29a8f69a828ce091c6e9b002ad305b063819fe93a5487c"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/rpi/rna_protein_evidence_v1.tsv.zst",
+      "bytes": 2339876,
+      "sha256": "e424987f662c6e60d142671d5b47b3b9f048c1830d181b30f65d96df1e012be7"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/rpi/rpi_domain_context_v2.tsv.zst",
+      "bytes": 710457,
+      "sha256": "c3d1fd749b9db3e7da05b7b85fecbf9d1c09b830812f6825c02e28799b747fde"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/rpi/rpi_function_context_v2.tsv.zst",
+      "bytes": 953798,
+      "sha256": "50eefd7db777129252026bc80249df3689ae6ba8ed5620297a77c4ad555dca03"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/tables/rpi/rpi_site_context_v2.tsv.zst",
+      "bytes": 2284907,
+      "sha256": "b07ec2cb537ddce6eba2e0b537b052e92eabeffe1b48e795ecadd1d7630070bd"
     }
   ]
 }

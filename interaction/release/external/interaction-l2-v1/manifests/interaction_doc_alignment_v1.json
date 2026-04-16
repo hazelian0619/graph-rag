@@ -1,0 +1,41 @@
+{
+  "doc": "组件细节 (1).docx - interaction relations section (PPI/PSI/RPI)",
+  "release": "interaction-l2-v1",
+  "covered_components": {
+    "ppi": [
+      "interaction/release/external/interaction-l2-v1/tables/ppi/edges_ppi_v1.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/ppi/ppi_evidence_v1.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/ppi/ppi_method_context_v2.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/ppi/ppi_function_context_v2.tsv.zst"
+    ],
+    "psi": [
+      "interaction/release/external/interaction-l2-v1/tables/psi/drug_target_edges_v1.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/psi/drug_target_evidence_v1.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_activity_context_v2.tsv.zst.part.*",
+      "interaction/release/external/interaction-l2-v1/tables/psi/chunks/psi_structure_evidence_v2.tsv.zst.part.*"
+    ],
+    "rpi": [
+      "interaction/release/external/interaction-l2-v1/tables/rpi/rna_protein_edges_v1.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/rpi/rna_protein_evidence_v1.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/rpi/rpi_site_context_v2.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/rpi/rpi_domain_context_v2.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/rpi/rpi_function_context_v2.tsv.zst"
+    ],
+    "integration_and_validation": [
+      "interaction/release/external/interaction-l2-v1/tables/integrated/interaction_ontology_mapping_v2.tsv.zst",
+      "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_aggregate_score_v2.tsv.zst.part.*",
+      "interaction/release/external/interaction-l2-v1/tables/integrated/chunks/interaction_cross_validation_v2.tsv.zst.part.*",
+      "interaction/release/external/interaction-l2-v1/reports/*.json"
+    ]
+  },
+  "chunk_reassembly": {
+    "aggregate": "cat interaction_aggregate_score_v2.tsv.zst.part.* > interaction_aggregate_score_v2.tsv.zst",
+    "cross_validation": "cat interaction_cross_validation_v2.tsv.zst.part.* > interaction_cross_validation_v2.tsv.zst",
+    "psi_activity": "cat psi_activity_context_v2.tsv.zst.part.* > psi_activity_context_v2.tsv.zst",
+    "psi_structure": "cat psi_structure_evidence_v2.tsv.zst.part.* > psi_structure_evidence_v2.tsv.zst"
+  },
+  "gaps_or_constraints": [
+    "Large full files are chunked to respect GitHub 100MB single-file limit.",
+    "No process-only retrospectives/checklists are included in this public package."
+  ]
+}
