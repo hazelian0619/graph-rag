@@ -1,0 +1,88 @@
+{
+  "name": "molecule_zinc_xref_v1.qa",
+  "created_at": "2026-04-13T08:07:03.822295+00:00",
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "table": "pipelines/molecule_zinc_direct_xref/.cache/molecule_zinc_xref_v1.smoke.tsv",
+    "build_report": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.smoke.build.json",
+    "coverage_report": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.smoke.coverage.json",
+    "conflict_report": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.smoke.conflict_audit.json"
+  },
+  "metrics": {
+    "rows": 1116,
+    "xref_rows": 14775,
+    "backlink_rate": 1.0,
+    "source_rate": 1.0,
+    "source_version_rate": 1.0,
+    "fetch_date_rate": 1.0,
+    "coverage_rate": 0.19133333333333333,
+    "baseline_rate": 0.018341793570219967,
+    "coverage_delta_vs_baseline": 0.17299153976311335
+  },
+  "gates": [
+    {
+      "id": "rows_non_empty_and_format_ok",
+      "passed": true,
+      "detail": {
+        "rows": 1116,
+        "bad_inchikey": 0,
+        "bad_zinc_id": 0,
+        "duplicate_rows": 0
+      }
+    },
+    {
+      "id": "inchikey_backlink_rate",
+      "passed": true,
+      "detail": {
+        "rate": 1.0,
+        "min_required": 0.99,
+        "missing_count": 0,
+        "missing_sample": []
+      }
+    },
+    {
+      "id": "source_anchor_fields_non_empty",
+      "passed": true,
+      "detail": {
+        "source_rate": 1.0,
+        "source_version_rate": 1.0,
+        "fetch_date_rate": 1.0,
+        "min_required": 1.0
+      }
+    },
+    {
+      "id": "coverage_significantly_higher_than_baseline",
+      "passed": true,
+      "detail": {
+        "coverage_rate": 0.19133333333333333,
+        "baseline_rate": 0.018341793570219967,
+        "coverage_delta": 0.17299153976311335,
+        "min_coverage_rate": 0.05,
+        "min_delta_vs_baseline": 0.02
+      }
+    },
+    {
+      "id": "conflict_audit_present",
+      "passed": true,
+      "detail": {
+        "conflict_metrics": {
+          "rows": 1116,
+          "inchikey_with_multi_zinc": 0,
+          "inchikey_with_multi_vendor": 204,
+          "zinc_with_multi_inchikey": 0
+        },
+        "has_structured_samples": true
+      }
+    },
+    {
+      "id": "report_consistency",
+      "passed": true,
+      "detail": {
+        "build_rows": 1116,
+        "coverage_rows": 1116,
+        "actual_rows": 1116
+      }
+    }
+  ],
+  "passed": true
+}

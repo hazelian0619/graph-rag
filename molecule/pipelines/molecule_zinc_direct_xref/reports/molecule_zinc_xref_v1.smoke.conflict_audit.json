@@ -1,0 +1,14 @@
+{
+  "name": "molecule_zinc_xref_v1.conflict_audit",
+  "created_at": "2026-04-13T08:04:02.050609+00:00",
+  "metrics": {
+    "rows": 1116,
+    "inchikey_with_multi_zinc": 0,
+    "inchikey_with_multi_vendor": 204,
+    "zinc_with_multi_inchikey": 0
+  },
+  "samples": {
+    "inchikey_with_multi_zinc": [],
+    "zinc_with_multi_inchikey": []
+  }
+}

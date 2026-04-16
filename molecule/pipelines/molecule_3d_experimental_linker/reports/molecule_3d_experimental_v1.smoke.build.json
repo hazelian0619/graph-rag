@@ -1,0 +1,40 @@
+{
+  "name": "molecule_3d_experimental_v1.build",
+  "created_at": "2026-04-12T23:36:54.032283+00:00",
+  "sample_mode": true,
+  "max_rows": 3000,
+  "max_pdb": 300,
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "protein_pdb": "data/output/protein/pdb_structures_v1.tsv"
+  },
+  "output": "pipelines/molecule_3d_experimental_linker/.cache/molecule_3d_experimental_v1.smoke.tsv",
+  "metrics": {
+    "rows_written": 67,
+    "input_rows": 109531,
+    "valid_inchikey_rows": 3000,
+    "skipped_bad_inchikey_rows": 0,
+    "max_pdb_applied": 300,
+    "unique_pdb": 300,
+    "unique_target_pairs": 348,
+    "ligand_candidates_total": 266,
+    "ligand_not_in_xref": 199,
+    "rows_written_candidate": 67,
+    "pdb_without_ligand": 135,
+    "skip_empty_resolution": 2,
+    "source_type_distribution": {
+      "experimental": 67
+    }
+  },
+  "rcsb_graphql": {
+    "requested_pdb_ids": 300,
+    "resolved_pdb_ids": 165,
+    "failed_pdb_ids": 0,
+    "failed_pdb_id_sample": [],
+    "pdb_with_ligands": 165,
+    "ligand_rows_total": 266,
+    "graphql_http_calls": 4,
+    "graphql_http_success_calls": 4
+  },
+  "coverage_report": "pipelines/molecule_3d_experimental_linker/reports/molecule_3d_experimental_v1.smoke.coverage.json"
+}

@@ -1,0 +1,55 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-13T02:59:13.239237+00:00",
+  "git_commit": "19c0850ae75935d29a480907812df510e42db1e2",
+  "artifacts": [
+    {
+      "path": "data/output/molecules/molecule_xref_core_v2.tsv",
+      "size_bytes": 5813727,
+      "sha256": "b6a4df2b34b0dea940d31b8d736927eb32dd1799e83f09b66000503f65a31170",
+      "modified_time": "2026-04-12T09:46:53.426698+00:00"
+    },
+    {
+      "path": "../12182/out/m1/molecules_m1.sqlite",
+      "size_bytes": 4217884672,
+      "sha256": "7775f74a1abfa58824ccf56d5898a8bfccd9e0659bfcf42b27ea7f288f1c751e",
+      "modified_time": "2026-04-11T16:07:00.307984+00:00"
+    },
+    {
+      "path": "data/output/molecules/molecule_xref_pubchem_enhanced_v1.tsv",
+      "size_bytes": 5868795,
+      "sha256": "06632d9fe214e90833dd3d00a6abb2448bcebee4b0ac763845831a96ce1f5adc",
+      "modified_time": "2026-04-13T02:32:04.689075+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pubchem_direct_xref/contracts/molecule_xref_pubchem_enhanced_v1.json",
+      "size_bytes": 1383,
+      "sha256": "ccacb6e15cb91b3b38d5e6be4d0c695ae0541d07b8def3c60a486cceb457a793",
+      "modified_time": "2026-04-12T23:29:58.337794+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pubchem_direct_xref/reports/molecule_xref_pubchem_enhanced_v1.build.json",
+      "size_bytes": 1759,
+      "sha256": "2b637e8d997cfb18940781c1bef6d7c5ebbb8b91d58d650fa1e3d1b51322b344",
+      "modified_time": "2026-04-13T02:32:04.693947+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pubchem_direct_xref/reports/molecule_xref_pubchem_enhanced_v1.conflict_audit.json",
+      "size_bytes": 47685,
+      "sha256": "260ca9443a0be5a198ad59b02137ecfd1deb3c076ef9aaf74c9ae9ac00842b65",
+      "modified_time": "2026-04-13T02:32:04.694670+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pubchem_direct_xref/reports/molecule_xref_pubchem_enhanced_v1.validation.json",
+      "size_bytes": 1927,
+      "sha256": "77cbef71279c3a86757598c06a62684699ba869663929dff5ecc9efadad12d5e",
+      "modified_time": "2026-04-13T02:59:00.220258+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pubchem_direct_xref/reports/molecule_xref_pubchem_enhanced_v1.qa.json",
+      "size_bytes": 2360,
+      "sha256": "5033a930981286026a1ec8ccf8bb2e118190568b9d879dbd82a81504a7720b74",
+      "modified_time": "2026-04-13T02:59:00.347734+00:00"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "molecule_semantic_tags_v1.coverage",
+  "created_at": "2026-04-12T13:02:55.839654+00:00",
+  "rows": 14775,
+  "metrics": {
+    "rows_with_chebi": 7066,
+    "rows_with_atc": 2685,
+    "rows_with_drugbank_group": 14775,
+    "rows_with_zinc_label": 271,
+    "rows_with_chebi_expandable": 7065,
+    "chebi_rate": 0.47824027072758035,
+    "atc_rate": 0.1817258883248731,
+    "drugbank_group_rate": 1.0,
+    "zinc_label_rate": 0.018341793570219967
+  },
+  "non_empty_rates": {
+    "chebi_source": {
+      "rate": 1.0
+    },
+    "atc_source": {
+      "rate": 1.0
+    },
+    "drugbank_source": {
+      "rate": 1.0
+    },
+    "zinc_source": {
+      "rate": 1.0
+    },
+    "source_version": {
+      "rate": 1.0
+    }
+  },
+  "sources": {
+    "chebi": "ChEBI_obo:251",
+    "atc": "ChEMBL:CHEMBL_36",
+    "drugbank": "DrugBank:5.1|exported-on:2026-01-04",
+    "zinc": "molecule_3d_registry_v1"
+  }
+}

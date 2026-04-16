@@ -1,0 +1,48 @@
+{
+  "name": "molecule_zinc_xref_v1.coverage",
+  "created_at": "2026-04-13T08:21:14.672159+00:00",
+  "xref_rows": 14775,
+  "rows": 102560,
+  "mapped_inchikey": 6719,
+  "coverage_rate": 0.4547546531302876,
+  "baseline_rate": 0.018341793570219967,
+  "baseline_source": "from:pipelines/molecule_3d_registry/reports/molecule_3d_registry_v1.coverage.json",
+  "coverage_delta_vs_baseline": 0.43641285956006765,
+  "coverage_fold_vs_baseline": 24.793357933579333,
+  "non_empty_rates": {
+    "source": {
+      "non_empty": 102560,
+      "total": 102560,
+      "rate": 1.0
+    },
+    "source_version": {
+      "non_empty": 102560,
+      "total": 102560,
+      "rate": 1.0
+    },
+    "fetch_date": {
+      "non_empty": 102560,
+      "total": 102560,
+      "rate": 1.0
+    },
+    "smiles": {
+      "non_empty": 48403,
+      "total": 102560,
+      "rate": 0.471948127925117
+    }
+  },
+  "catalog_tier_distribution": {
+    "10": 2937,
+    "20": 61,
+    "30": 1789,
+    "40": 53891,
+    "50": 43882
+  },
+  "purchase_label_distribution": {
+    "unknown": 2632,
+    "in-vivo": 12420,
+    "in-man": 24424,
+    "in-vitro": 3493,
+    "likely_purchasable": 59591
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "molecule_3d_experimental_v1.coverage",
+  "created_at": "2026-04-12T23:38:52.822841+00:00",
+  "rows": 161214,
+  "unique_inchikey": 3392,
+  "unique_pdb_id": 41153,
+  "unique_uniprot_id": 6460,
+  "non_empty_rates": {
+    "pdb_id": {
+      "non_empty": 161214,
+      "total": 161214,
+      "rate": 1.0
+    },
+    "experimental_method": {
+      "non_empty": 161214,
+      "total": 161214,
+      "rate": 1.0
+    },
+    "resolution": {
+      "non_empty": 161214,
+      "total": 161214,
+      "rate": 1.0
+    },
+    "target_mapping_source": {
+      "non_empty": 161214,
+      "total": 161214,
+      "rate": 1.0
+    },
+    "ligand_mapping_source": {
+      "non_empty": 161214,
+      "total": 161214,
+      "rate": 1.0
+    },
+    "source_type": {
+      "non_empty": 161214,
+      "total": 161214,
+      "rate": 1.0
+    },
+    "source_version": {
+      "non_empty": 161214,
+      "total": 161214,
+      "rate": 1.0
+    }
+  },
+  "backlink": {
+    "in_xref_rows": 161214,
+    "total_rows": 161214,
+    "rate": 1.0
+  },
+  "source_type_distribution": {
+    "experimental": 161214
+  }
+}

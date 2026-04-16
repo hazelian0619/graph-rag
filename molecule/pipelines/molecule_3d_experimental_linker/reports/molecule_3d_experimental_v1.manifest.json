@@ -1,0 +1,55 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-12T23:42:46.285810+00:00",
+  "git_commit": "19c0850ae75935d29a480907812df510e42db1e2",
+  "artifacts": [
+    {
+      "path": "data/output/molecules/molecule_3d_experimental_v1.tsv",
+      "size_bytes": 42292424,
+      "sha256": "0d824755e2b63bb1cced5bb5ca05070d258508d7325be642d1ad77b7092c890f",
+      "modified_time": "2026-04-12T23:42:30.953142+00:00"
+    },
+    {
+      "path": "data/output/molecules/molecule_xref_core_v2.tsv",
+      "size_bytes": 5813727,
+      "sha256": "b6a4df2b34b0dea940d31b8d736927eb32dd1799e83f09b66000503f65a31170",
+      "modified_time": "2026-04-12T09:46:53.426698+00:00"
+    },
+    {
+      "path": "data/output/protein/pdb_structures_v1.tsv",
+      "size_bytes": 7969651,
+      "sha256": "f6b32aee30a82fc7ab9cda6482043f55ba5b13594ce33b5e994153aa63aaddbf",
+      "modified_time": "2026-04-11T21:23:01.492281+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_experimental_linker/contracts/molecule_3d_experimental_v1.json",
+      "size_bytes": 2520,
+      "sha256": "f4d4caff2e934bd4aacc08e22d33f8057ed8f06eccdcc71afb175649680566df",
+      "modified_time": "2026-04-12T23:36:32.690286+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_experimental_linker/reports/molecule_3d_experimental_v1.build.json",
+      "size_bytes": 1224,
+      "sha256": "f5dbac8d6e85d3954468320aa0321363eac9c39fa36eb376a777f01a903a51f8",
+      "modified_time": "2026-04-12T23:42:31.081224+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_experimental_linker/reports/molecule_3d_experimental_v1.coverage.json",
+      "size_bytes": 1084,
+      "sha256": "da6f32fe2e6e85526e7fd22de4a2994dfd7b3763d1838b52d295e8fbb8dc9ee3",
+      "modified_time": "2026-04-12T23:42:31.081098+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_experimental_linker/reports/molecule_3d_experimental_v1.validation.json",
+      "size_bytes": 3252,
+      "sha256": "80a66aed7c2a9e9f709286af29fe65c74677d300486ad3bbef085ad765f2a751",
+      "modified_time": "2026-04-12T23:42:45.752801+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_experimental_linker/reports/molecule_3d_experimental_v1.qa.json",
+      "size_bytes": 2109,
+      "sha256": "6b3c23d78b74f88e614e9d033408aed7d7f74a68fbeaad858c057e5976edf4d2",
+      "modified_time": "2026-04-12T23:42:46.223207+00:00"
+    }
+  ]
+}

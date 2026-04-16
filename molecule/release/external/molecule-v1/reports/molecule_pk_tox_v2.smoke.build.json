@@ -1,0 +1,109 @@
+{
+  "name": "molecule_pk_tox_v2.build",
+  "created_at": "2026-04-13T22:33:57.864932+00:00",
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "drugbank_xml": "../1218/data/raw/drugbank/drugbank_complete_database_2026-01-04.xml",
+    "chembl_cache": "pipelines/molecule_pk_tox_v2/.cache/chembl_pk_tox_v2.cache.tsv",
+    "force_refresh_chembl": false,
+    "chembl_chunk_size": 220,
+    "chembl_page_limit": 1000,
+    "chembl_timeout": 60,
+    "max_rows": 3000
+  },
+  "source_status": {
+    "drugbank": {
+      "available": true,
+      "xml_path": "../1218/data/raw/drugbank/drugbank_complete_database_2026-01-04.xml",
+      "parsed_top_level_drugs": 19830,
+      "matched_target_drugbank_ids": 3001,
+      "target_records_loaded": 3001,
+      "field_non_empty_counts": {
+        "bioavailability": 430,
+        "clearance": 276,
+        "half_life": 412,
+        "volume_of_distribution": 290,
+        "ld50": 175,
+        "mutagenicity": 58
+      }
+    },
+    "chembl_api": {
+      "available": true,
+      "mode": "cache",
+      "cache_path": "pipelines/molecule_pk_tox_v2/.cache/chembl_pk_tox_v2.cache.tsv",
+      "records_loaded": 2846,
+      "field_non_empty_counts": {
+        "bioavailability": 1503,
+        "clearance": 1855,
+        "half_life": 2198,
+        "volume_of_distribution": 363,
+        "ld50": 448,
+        "mutagenicity": 3
+      },
+      "fetch_date": "2026-04-13"
+    }
+  },
+  "source_versions": {
+    "drugbank_version": "DrugBank:5.1|exported-on:2026-01-04",
+    "chembl_version": "ChEMBL:ChEMBL_36|release_date:2025-07-28",
+    "merged_source_version": "ChEMBL:ChEMBL_36|release_date:2025-07-28;DrugBank:5.1|exported-on:2026-01-04;molecule_xref_core_v2"
+  },
+  "xref_stats": {
+    "input_rows": 3000,
+    "valid_rows": 3000,
+    "skipped_bad_inchikey_rows": 0,
+    "rows_with_drugbank_id": 3000,
+    "rows_with_pubchem_cid": 724,
+    "rows_with_chembl_id": 2281,
+    "unique_drugbank_ids": 3001,
+    "unique_pubchem_cids": 2576,
+    "unique_chembl_ids": 2281
+  },
+  "metrics": {
+    "rows_total": 3000,
+    "rows_with_any_pk_tox": 814,
+    "rows_with_any_normalized": 741,
+    "rows_with_drugbank_contrib": 482,
+    "rows_with_second_source_contrib": 458,
+    "field_non_empty_counts": {
+      "bioavailability": 596,
+      "clearance": 529,
+      "half_life": 663,
+      "volume_of_distribution": 335,
+      "ld50": 242,
+      "mutagenicity": 58
+    },
+    "evidence_tier_counts": {
+      "inferred/low": 58,
+      "none": 15577,
+      "structured/high": 2197,
+      "text_mined/medium": 168
+    },
+    "normalization_raw_non_empty_counts": {
+      "bioavailability": 596,
+      "clearance": 529,
+      "half_life": 663,
+      "volume_of_distribution": 335,
+      "ld50": 242,
+      "mutagenicity": 58
+    },
+    "normalization_success_counts": {
+      "bioavailability": 395,
+      "clearance": 112,
+      "half_life": 631,
+      "volume_of_distribution": 83,
+      "ld50": 190,
+      "mutagenicity": 58
+    },
+    "normalization_success_rate_when_raw_present": {
+      "bioavailability": 0.662751677852349,
+      "clearance": 0.21172022684310018,
+      "half_life": 0.951734539969834,
+      "volume_of_distribution": 0.24776119402985075,
+      "ld50": 0.7851239669421488,
+      "mutagenicity": 1.0
+    },
+    "rows_written": 3000,
+    "blocked_recommended": false
+  }
+}

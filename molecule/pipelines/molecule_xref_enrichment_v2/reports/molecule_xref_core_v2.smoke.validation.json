@@ -1,0 +1,109 @@
+{
+  "table": "pipelines/molecule_xref_enrichment_v2/.cache/molecule_xref_core_v2.smoke.tsv",
+  "contract": "molecule_xref_core_v2",
+  "row_count": 8064,
+  "columns": [
+    "inchikey",
+    "chembl_id",
+    "drugbank_id",
+    "pubchem_cid",
+    "match_strategy",
+    "confidence",
+    "xref_source",
+    "fetch_date",
+    "source_version"
+  ],
+  "schema": {
+    "required_columns": [
+      "inchikey",
+      "chembl_id",
+      "drugbank_id",
+      "pubchem_cid",
+      "match_strategy",
+      "confidence",
+      "xref_source",
+      "fetch_date",
+      "source_version"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "inchikey_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0
+    },
+    {
+      "id": "inchikey_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0
+    },
+    {
+      "id": "inchikey_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "drugbank_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0
+    },
+    {
+      "id": "match_strategy_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0
+    },
+    {
+      "id": "confidence_allowed",
+      "type": "allowed_values_rate",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0
+    },
+    {
+      "id": "xref_source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 8064,
+      "passed_count": 8064,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

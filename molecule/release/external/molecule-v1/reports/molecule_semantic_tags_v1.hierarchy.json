@@ -1,0 +1,570 @@
+{
+  "name": "molecule_semantic_tags_v1.chebi_hierarchy",
+  "created_at": "2026-04-12T13:02:55.839654+00:00",
+  "chebi_parse": {
+    "data_version": "251",
+    "term_blocks": 205460,
+    "target_inchikey_mapped_terms": 7365,
+    "target_inchikey_hits": 7066,
+    "terms_loaded": 205459,
+    "parent_nodes": 205459
+  },
+  "rows_with_chebi": 7066,
+  "rows_with_chebi_expandable": 7065,
+  "expandable_rate_among_chebi_rows": 0.9998584772148316,
+  "samples": [
+    {
+      "inchikey": "AAAQFGUYHFJNHI-SFHVURJKSA-N",
+      "chebi_id": "CHEBI:95082",
+      "path": [
+        "CHEBI:95082",
+        "CHEBI:35618",
+        "CHEBI:33659",
+        "CHEBI:33655",
+        "CHEBI:33595",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "molibresib",
+      "parent_name": "aromatic ether"
+    },
+    {
+      "inchikey": "AADCDMQTJNYOSS-LBPRGKRZSA-N",
+      "chebi_id": "CHEBI:92874",
+      "path": [
+        "CHEBI:92874",
+        "CHEBI:53443",
+        "CHEBI:22702",
+        "CHEBI:22645",
+        "CHEBI:62733",
+        "CHEBI:32988",
+        "CHEBI:51143",
+        "CHEBI:33302",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 12,
+      "leaf_name": "5-chloro-3-ethyl-N-[[(2S)-1-ethyl-2-pyrrolidinyl]methyl]-2-hydroxy-6-methoxybenzamide",
+      "parent_name": "salicylamides"
+    },
+    {
+      "inchikey": "AADVCYNFEREWOS-OBRABYBLSA-N",
+      "chebi_id": "CHEBI:80700",
+      "path": [
+        "CHEBI:80700",
+        "CHEBI:23849",
+        "CHEBI:26873",
+        "CHEBI:24913",
+        "CHEBI:50860",
+        "CHEBI:33582",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 10,
+      "leaf_name": "Discodermolide",
+      "parent_name": "diterpenoid"
+    },
+    {
+      "inchikey": "AAKJLRGGTJKAMG-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:114785",
+      "path": [
+        "CHEBI:114785",
+        "CHEBI:73477",
+        "CHEBI:73474",
+        "CHEBI:72695",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 8,
+      "leaf_name": "erlotinib",
+      "parent_name": "terminal acetylenic compound"
+    },
+    {
+      "inchikey": "AANXPIMDONQTQF-HNNXBMFYSA-N",
+      "chebi_id": "CHEBI:40107",
+      "path": [
+        "CHEBI:40107",
+        "CHEBI:35358",
+        "CHEBI:33261",
+        "CHEBI:26835",
+        "CHEBI:33304",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "4-(\\{4-[(4-aminobut-2-ynyl)oxy]phenyl\\}sulfonyl)-N-hydroxy-2,2-dimethylthiomorpholine-3-carboxamide",
+      "parent_name": "sulfonamide"
+    },
+    {
+      "inchikey": "AAOVKJBEBIDNHE-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:49575",
+      "path": [
+        "CHEBI:49575",
+        "CHEBI:36683",
+        "CHEBI:17792",
+        "CHEBI:37578",
+        "CHEBI:37577",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 8,
+      "leaf_name": "diazepam",
+      "parent_name": "organochlorine compound"
+    },
+    {
+      "inchikey": "AAQOQKQBGPPFNS-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:3172",
+      "path": [
+        "CHEBI:3172",
+        "CHEBI:35267",
+        "CHEBI:25697",
+        "CHEBI:25699",
+        "CHEBI:24870",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 7,
+      "leaf_name": "bretylium",
+      "parent_name": "quaternary ammonium ion"
+    },
+    {
+      "inchikey": "AAXVEMMRQDVLJB-BULBTXNYSA-N",
+      "chebi_id": "CHEBI:50885",
+      "path": [
+        "CHEBI:50885",
+        "CHEBI:35344",
+        "CHEBI:35350",
+        "CHEBI:33822",
+        "CHEBI:24651",
+        "CHEBI:37577",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "fludrocortisone",
+      "parent_name": "21-hydroxy steroid"
+    },
+    {
+      "inchikey": "ABDDQTDRAHXHOC-QMMMGPOBSA-N",
+      "chebi_id": "CHEBI:228346",
+      "path": [
+        "CHEBI:228346",
+        "CHEBI:50995",
+        "CHEBI:50047",
+        "CHEBI:50860",
+        "CHEBI:33582",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "ulotaront",
+      "parent_name": "secondary amino compound"
+    },
+    {
+      "inchikey": "ABJKIHHNDMEBNA-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:134790",
+      "path": [
+        "CHEBI:134790",
+        "CHEBI:23238",
+        "CHEBI:38445",
+        "CHEBI:23232",
+        "CHEBI:38443",
+        "CHEBI:22727",
+        "CHEBI:38104",
+        "CHEBI:24532",
+        "CHEBI:33832",
+        "CHEBI:33595",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 14,
+      "leaf_name": "methylchromone",
+      "parent_name": "chromones"
+    },
+    {
+      "inchikey": "ABJKWBDEJIDSJZ-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:3238",
+      "path": [
+        "CHEBI:3238",
+        "CHEBI:25477",
+        "CHEBI:36785",
+        "CHEBI:33636",
+        "CHEBI:33595",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "butenafine",
+      "parent_name": "naphthalenes"
+    },
+    {
+      "inchikey": "ABLACSIRCKEUOB-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:29671",
+      "path": [
+        "CHEBI:29671",
+        "CHEBI:25962",
+        "CHEBI:33853",
+        "CHEBI:33822",
+        "CHEBI:24651",
+        "CHEBI:37577",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "Resistomycin",
+      "parent_name": "phenanthrol"
+    },
+    {
+      "inchikey": "ABQYZRZVRIPTPI-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:135084",
+      "path": [
+        "CHEBI:135084",
+        "CHEBI:26513",
+        "CHEBI:33659",
+        "CHEBI:33655",
+        "CHEBI:33595",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "miloxacin",
+      "parent_name": "quinolines"
+    },
+    {
+      "inchikey": "ACCMWZWAEFYUGZ-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:135954",
+      "path": [
+        "CHEBI:135954",
+        "CHEBI:22715",
+        "CHEBI:27171",
+        "CHEBI:33672",
+        "CHEBI:33636",
+        "CHEBI:33595",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 10,
+      "leaf_name": "bilastine",
+      "parent_name": "benzimidazoles"
+    },
+    {
+      "inchikey": "ACEFOQMQINFMRW-DYCFVMESSA-N",
+      "chebi_id": "CHEBI:47179",
+      "path": [
+        "CHEBI:47179",
+        "CHEBI:36683",
+        "CHEBI:17792",
+        "CHEBI:37578",
+        "CHEBI:37577",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 8,
+      "leaf_name": "(E)-2-(5-chlorothiophen-2-yl)-N-\\{(3S)-1-[(1S)-1-methyl-2-morpholin-4-yl-2-oxoethyl]-2-oxopyrrolidin-3-yl\\}ethenesulfonamide",
+      "parent_name": "organochlorine compound"
+    },
+    {
+      "inchikey": "ACEWLPOYLGNNHV-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:31685",
+      "path": [
+        "CHEBI:31685",
+        "CHEBI:50860",
+        "CHEBI:33582",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 7,
+      "leaf_name": "Ibuprofen piconol",
+      "parent_name": "organic molecular entity"
+    },
+    {
+      "inchikey": "ACFIXJIJDZMPPO-NNYOXOHSSA-N",
+      "chebi_id": "CHEBI:16474",
+      "path": [
+        "CHEBI:16474",
+        "CHEBI:13392",
+        "CHEBI:25524",
+        "CHEBI:37007",
+        "CHEBI:47885",
+        "CHEBI:36976",
+        "CHEBI:25608",
+        "CHEBI:61120",
+        "CHEBI:51143",
+        "CHEBI:33302",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 14,
+      "leaf_name": "NADPH",
+      "parent_name": "NAD(P)H"
+    },
+    {
+      "inchikey": "ACGDKVXYNVEAGU-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:5557",
+      "path": [
+        "CHEBI:5557",
+        "CHEBI:24436",
+        "CHEBI:35352",
+        "CHEBI:51143",
+        "CHEBI:33302",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "guanethidine",
+      "parent_name": "guanidines"
+    },
+    {
+      "inchikey": "ACGUYXCXAPNIKK-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:5693",
+      "path": [
+        "CHEBI:5693",
+        "CHEBI:26195",
+        "CHEBI:33853",
+        "CHEBI:33822",
+        "CHEBI:24651",
+        "CHEBI:37577",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "hexachlorophene",
+      "parent_name": "polyphenol"
+    },
+    {
+      "inchikey": "ACLJAFRNPZVVIW-ADFGDECNSA-N",
+      "chebi_id": "CHEBI:177433",
+      "path": [
+        "CHEBI:177433",
+        "CHEBI:61655",
+        "CHEBI:35341",
+        "CHEBI:18059",
+        "CHEBI:50860",
+        "CHEBI:33582",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 10,
+      "leaf_name": "actodigin",
+      "parent_name": "steroid saponin"
+    },
+    {
+      "inchikey": "ACPOUJIDANTYHO-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:90695",
+      "path": [
+        "CHEBI:90695",
+        "CHEBI:3992",
+        "CHEBI:17087",
+        "CHEBI:36586",
+        "CHEBI:36587",
+        "CHEBI:72695",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 10,
+      "leaf_name": "anthra[1,9-cd]pyrazol-6(2H)-one",
+      "parent_name": "cyclic ketone"
+    },
+    {
+      "inchikey": "ACRHBAYQBXXRTO-OAQYLSRUSA-N",
+      "chebi_id": "CHEBI:85966",
+      "path": [
+        "CHEBI:85966",
+        "CHEBI:36785",
+        "CHEBI:33636",
+        "CHEBI:33595",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 8,
+      "leaf_name": "ivabradine",
+      "parent_name": "carbobicyclic compound"
+    },
+    {
+      "inchikey": "ACSIXWWBWUQEHA-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:110423",
+      "path": [
+        "CHEBI:110423",
+        "CHEBI:36683",
+        "CHEBI:17792",
+        "CHEBI:37578",
+        "CHEBI:37577",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 8,
+      "leaf_name": "clodronic acid",
+      "parent_name": "organochlorine compound"
+    },
+    {
+      "inchikey": "ACTIUHUUMQJHFO-UPTCCGCDSA-N",
+      "chebi_id": "CHEBI:46245",
+      "path": [
+        "CHEBI:46245",
+        "CHEBI:16389",
+        "CHEBI:132124",
+        "CHEBI:22729",
+        "CHEBI:36141",
+        "CHEBI:3992",
+        "CHEBI:17087",
+        "CHEBI:36586",
+        "CHEBI:36587",
+        "CHEBI:72695",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 14,
+      "leaf_name": "coenzyme Q10",
+      "parent_name": "ubiquinones"
+    },
+    {
+      "inchikey": "ACTPEXQBEHJTBO-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:46272",
+      "path": [
+        "CHEBI:46272",
+        "CHEBI:30528",
+        "CHEBI:35166",
+        "CHEBI:33861",
+        "CHEBI:33497",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 7,
+      "leaf_name": "cyclo-tetravanadate(4-)",
+      "parent_name": "vanadium oxoanion"
+    },
+    {
+      "inchikey": "ACTRVOBWPAIOHC-XIXRPRMCSA-N",
+      "chebi_id": "CHEBI:63623",
+      "path": [
+        "CHEBI:63623",
+        "CHEBI:33576",
+        "CHEBI:33261",
+        "CHEBI:26835",
+        "CHEBI:33304",
+        "CHEBI:33675",
+        "CHEBI:33579",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "succimer",
+      "parent_name": "sulfur-containing carboxylic acid"
+    },
+    {
+      "inchikey": "ACWBQPMHZXGDFX-QFIPXVFZSA-N",
+      "chebi_id": "CHEBI:9927",
+      "path": [
+        "CHEBI:9927",
+        "CHEBI:48420",
+        "CHEBI:22888",
+        "CHEBI:36820",
+        "CHEBI:33595",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "valsartan",
+      "parent_name": "biphenylyltetrazole"
+    },
+    {
+      "inchikey": "ACWZRVQXLIRSDF-UHFFFAOYSA-N",
+      "chebi_id": "CHEBI:145371",
+      "path": [
+        "CHEBI:145371",
+        "CHEBI:37149",
+        "CHEBI:37141",
+        "CHEBI:17792",
+        "CHEBI:37578",
+        "CHEBI:37577",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 9,
+      "leaf_name": "binimetinib",
+      "parent_name": "bromobenzenes"
+    },
+    {
+      "inchikey": "ACZWIDANLCXHBM-HRCADAONSA-N",
+      "chebi_id": "CHEBI:3354",
+      "path": [
+        "CHEBI:3354",
+        "CHEBI:35692",
+        "CHEBI:131927",
+        "CHEBI:36586",
+        "CHEBI:36587",
+        "CHEBI:72695",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 10,
+      "leaf_name": "candoxatrilat",
+      "parent_name": "dicarboxylic acid"
+    },
+    {
+      "inchikey": "ADEBPBSSDYVVLD-HXUWFJFHSA-N",
+      "chebi_id": "CHEBI:42208",
+      "path": [
+        "CHEBI:42208",
+        "CHEBI:24789",
+        "CHEBI:46940",
+        "CHEBI:36785",
+        "CHEBI:33636",
+        "CHEBI:33595",
+        "CHEBI:25367",
+        "CHEBI:36357",
+        "CHEBI:23367",
+        "CHEBI:24431"
+      ],
+      "path_length": 10,
+      "leaf_name": "(2R)-2-[(1-benzylpiperidin-4-yl)methyl]-5,6-dimethoxy-2,3-dihydro-1H-inden-1-one",
+      "parent_name": "indanones"
+    }
+  ]
+}

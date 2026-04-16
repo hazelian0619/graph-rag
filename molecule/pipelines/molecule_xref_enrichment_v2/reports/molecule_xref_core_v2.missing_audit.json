@@ -1,0 +1,1210 @@
+{
+  "name": "molecule_xref_core_v2.missing_audit",
+  "created_at": "2026-04-12T09:46:25.856853+00:00",
+  "total": 5035,
+  "reason_counts": {
+    "no_match_after_two_stage_backfill": 5035
+  },
+  "sample_top_n": [
+    {
+      "drugbank_id": "DB00001",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Lepirudin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00002",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Cetuximab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00003",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Dornase alfa",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00004",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Denileukin diftitox",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00005",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Etanercept",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00008",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Peginterferon alfa-2a",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00009",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Alteplase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00010",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Sermorelin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00011",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Interferon alfa-n1",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00012",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Darbepoetin alfa",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00013",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Urokinase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00015",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Reteplase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00016",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Erythropoietin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00018",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Interferon alfa-n3",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00019",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Pegfilgrastim",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00020",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Sargramostim",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00022",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Peginterferon alfa-2b",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00023",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Asparaginase Escherichia coli",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00024",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Thyrotropin alfa",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00025",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Antihemophilic factor, human recombinant",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00026",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Anakinra",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00028",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Human immunoglobulin G",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00029",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Anistreplase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00030",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Insulin human",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00031",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Tenecteplase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00032",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Menotropins",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00033",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Interferon gamma-1b",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00034",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Interferon alfa-2a",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00036",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Coagulation factor VIIa Recombinant Human",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00038",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Oprelvekin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00039",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Palifermin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00040",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Glucagon",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00041",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Aldesleukin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00042",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Botulinum toxin type B",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00043",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Omalizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00044",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Lutropin alfa",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00045",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Lyme disease vaccine (recombinant OspA)",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00046",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Insulin lispro",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00047",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Insulin glargine",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00048",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Collagenase clostridium histolyticum",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00049",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Rasburicase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00051",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Adalimumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00052",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Somatotropin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00053",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Imiglucerase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00054",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Abciximab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00055",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Drotrecogin alfa",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00056",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Gemtuzumab ozogamicin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00057",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Indium In-111 satumomab pendetide",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00058",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Alpha-1-proteinase inhibitor",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00059",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Pegaspargase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00060",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Interferon beta-1a",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00061",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Pegademase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00062",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Albumin human",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00065",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Infliximab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00066",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Follitropin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00068",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Interferon beta-1b",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00069",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Interferon alfacon-1",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00070",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Hyaluronidase (ovine)",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00071",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Insulin pork",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00072",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Trastuzumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00073",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Rituximab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00074",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Basiliximab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00075",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Muromonab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00076",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Digoxin Immune Fab (Ovine)",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00078",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ibritumomab tiuxetan",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00081",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Tositumomab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00082",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Pegvisomant",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00083",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Botulinum toxin type A",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00085",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Pancrelipase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00086",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Streptokinase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00087",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Alemtuzumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00088",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Alglucerase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00089",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Capromab pendetide",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00090",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Laronidase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00092",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Alefacept",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00094",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Urofollitropin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00095",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Efalizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00097",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Choriogonadotropin alfa",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00098",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Antithymocyte immunoglobulin (rabbit)",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00099",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Filgrastim",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00100",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Coagulation Factor IX (Recombinant)",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00102",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Becaplermin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00103",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Agalsidase beta",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00105",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Interferon alfa-2b",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00108",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Natalizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00110",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Palivizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00111",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Daclizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00112",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Bevacizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00113",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Technetium Tc-99m arcitumomab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00286",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Conjugated estrogens",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00375",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Colestipol",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00407",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ardeparin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00460",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Verteporfin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00516",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Bentoquatam",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00638",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Inulin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00702",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Icodextrin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00707",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Porfimer sodium",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00781",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Polymyxin B",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00785",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Cryptenamine",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00803",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Colistin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00840",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Hydroxypropyl cellulose",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00893",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Iron Dextran",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00930",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Colesevelam",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00965",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ethiodized oil",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB00994",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Neomycin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01109",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Heparin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01225",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Enoxaparin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01257",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Eculizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01266",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Sinecatechins",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01269",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Panitumumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01270",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ranibizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01271",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Idursulfase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01272",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Alglucosidase alfa",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01277",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Mecasermin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01279",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Galsulfase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01281",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Abatacept",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01285",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Corticotropin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01306",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Insulin aspart",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01309",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Insulin glulisine",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01323",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "St. John's Wort",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01341",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Dihydroquinidine barbiturate",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01344",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Tolevamer",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01363",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ephedra sinica root",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01381",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ginkgo biloba",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01404",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ginseng",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01432",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Cholestyramine",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01448",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "19-Nor-4-androstenedione",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01510",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Dehydrochloromethyltestosterone",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB01584",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Thyroglobulin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB02574",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "BV2",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB02820",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "1-Azepan-1-Yl-2-Phenyl-2-(4-Thioxo-1,4-Dihydro-Pyrazolo[3,4-D]Pyrimidin-5-Yl)Ethanone Adduct",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB03378",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "4-Amino-1-[(1s,3r,4r,7s)-7-Hydroxy-1-(Hydroxymethyl)-2,5-Dioxabicyclo[2.2.1]Hept-3-Yl]-5-Methylpyrimidin-2(1h)-One",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB03404",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Hemin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04210",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "3-(alpha-D-galactopyranosyloxy)-N-(3-{4-[3-({2-[(3-{4-[3-({[3-(hexopyranosyloxy)-5-nitrophenyl]carbonyl}amino)propyl]piperazin-1-yl}propyl)amino]-3,4-dioxocyclobut-1-en-1-yl}amino)propyl]piperazin-1-yl}propyl)-5-nitrobenzamide",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04848",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "AZD0947",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04893",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "AZD3409",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04895",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Pegaptanib",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04897",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Lucinactant",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04899",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Nesiritide",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04901",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Galiximab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04904",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Amolimogene bepiplasmid",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04907",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Sitimagene ceradenovec",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04914",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "G17DT Immunogen",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04919",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Alfimeprase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04923",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "rhThrombin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04925",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Desmoteplase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04928",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "XP12B",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04932",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Defibrotide",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04941",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Crofelemer",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04943",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "LX201",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04945",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Hemoglobin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04949",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Pexelizumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04950",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ranpirnase",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04952",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ramoplanin",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04955",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Pumactant",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04956",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Afelimomab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04958",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Epratuzumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04959",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Verpasep caltespen",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04962",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Bectumomab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04963",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "rhGAD65",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04964",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Oregovomab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04969",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "NV1020",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04973",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "LErafAON",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04976",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Imisopasem manganese",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04978",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "SP1049C",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04979",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "AVR118",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04981",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "CG7870",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04986",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "ZYC300",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04987",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "P-113D",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04988",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "IGN311",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04989",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Ty800",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04991",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "XL784",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04992",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "AP5346",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04995",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "AT1022",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04997",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "ATL1102",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04998",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "AGRO100",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB04999",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "MBO7133",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05000",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "AeroLEF",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05001",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "PSN9301",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05004",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Peptide YY (3-36)",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05006",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Adecatumumab",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05011",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Taberminogene vadenovec",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05012",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "XEN-2174",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05014",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "XL999",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05017",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "YSIL6",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05019",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "LC16M8",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05021",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "EMZ702",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05023",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "ATL1101",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05027",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "DG041",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05032",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "Votucalis",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05033",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "INCB7839",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05040",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "MVA3000",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05042",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "SGS518",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05044",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "PSN357",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05046",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "V1003",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05049",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "DDP733",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05050",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "ADL5859",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05051",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "BZL101",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05052",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "MF101",
+      "candidate_count": 0
+    },
+    {
+      "drugbank_id": "DB05054",
+      "reason": "no_match_after_two_stage_backfill",
+      "name": "AN0128",
+      "candidate_count": 0
+    }
+  ]
+}

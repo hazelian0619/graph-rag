@@ -1,0 +1,69 @@
+{
+  "name": "molecule_activity_fusion_v2.build",
+  "created_at": "2026-04-12T14:20:26.315053+00:00",
+  "inputs": {
+    "chembl_m3_db": "../12182/out/m3/chembl_m3.sqlite",
+    "bindingdb_zip": "pipelines/molecule_activity_fusion/.cache/BindingDB_PubChem_202604_tsv.zip",
+    "pdbbind_index_tar": "pipelines/molecule_activity_fusion/.cache/PDBbind_v2020_plain_text_index.tar.gz"
+  },
+  "download_notes": {
+    "bindingdb": {
+      "status": "ready_local",
+      "target_path": "pipelines/molecule_activity_fusion/.cache/BindingDB_PubChem_202604_tsv.zip",
+      "size_bytes": 26630350
+    },
+    "pdbbind": {
+      "status": "ready_local",
+      "target_path": "pipelines/molecule_activity_fusion/.cache/PDBbind_v2020_plain_text_index.tar.gz",
+      "size_bytes": 3231607
+    }
+  },
+  "manual_download_report": "pipelines/molecule_activity_fusion/reports/molecule_activity_fusion_v2.manual_download.json",
+  "max_chembl_rows": 0,
+  "metrics": {
+    "total_evidence_rows": 3223952,
+    "total_edge_rows": 2410389,
+    "source_rows": {
+      "chembl": 3103547,
+      "bindingdb": 119823,
+      "pdbbind": 582
+    },
+    "chembl_rows_in_v2": 3103547,
+    "chembl_edges_in_v2": 2352932,
+    "multi_source_groups": 46821,
+    "conflict_groups_in_audit_table": 46821,
+    "flagged_conflicts_fold_ge_10": 2693,
+    "chembl_baseline_rows": 3103547,
+    "chembl_baseline_edges": 2352932
+  },
+  "source_stats": {
+    "bindingdb": {
+      "rows_total": 120577,
+      "evidence_rows": 119823,
+      "skip_invalid_inchikey": 744,
+      "skip_duplicate_record": 10
+    },
+    "pdbbind": {
+      "affinity_rows_parsed": 19443,
+      "pdb_uniprot_map_size": 19443,
+      "rows_total": 19443,
+      "skip_missing_inchikey_mapping": 18861,
+      "evidence_rows": 582
+    }
+  },
+  "skipped": {
+    "chembl_missing_nm": 1191
+  },
+  "source_versions": [
+    "BindingDB_PubChem_202604_tsv",
+    "PDBbind_v2020",
+    "chembl_36"
+  ],
+  "notes": [],
+  "outputs": {
+    "evidence": "data/output/evidence/molecule_activity_evidence_v2.tsv",
+    "edges": "data/output/edges/molecule_target_edges_v2.tsv",
+    "conflict_audit_tsv": "pipelines/molecule_activity_fusion/reports/molecule_activity_conflict_audit_v2.tsv",
+    "conflict_audit_json": "pipelines/molecule_activity_fusion/reports/molecule_activity_conflict_audit_v2.json"
+  }
+}

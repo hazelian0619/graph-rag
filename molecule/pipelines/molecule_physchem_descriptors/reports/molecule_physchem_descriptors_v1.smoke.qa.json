@@ -1,0 +1,143 @@
+{
+  "name": "molecule_physchem_descriptors_v1.qa",
+  "created_at": "2026-04-13T22:03:59.802939+00:00",
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "table": "pipelines/molecule_physchem_descriptors/.cache/molecule_physchem_descriptors_v1.smoke.tsv",
+    "build_report": "pipelines/molecule_physchem_descriptors/reports/molecule_physchem_descriptors_v1.smoke.build.json"
+  },
+  "thresholds": {
+    "min_backlink_rate": 1.0,
+    "min_format_valid_rate": 0.99,
+    "min_mappable_non_empty_rate": 0.5,
+    "min_core_coverage": 0.5
+  },
+  "metrics": {
+    "rows": 5000,
+    "xref_rows": 14775,
+    "backlink_rate": 1.0,
+    "mappable_rows": 3822,
+    "numeric_non_empty_cells": 21715,
+    "numeric_valid_cells": 21715,
+    "numeric_format_valid_rate": 1.0,
+    "field_non_empty_counts": {
+      "molecular_weight": 3822,
+      "logp": 3688,
+      "tpsa": 3678,
+      "hbd": 3266,
+      "hba": 3678,
+      "rotatable_bonds": 3583
+    },
+    "field_valid_rates": {
+      "molecular_weight": 1.0,
+      "logp": 1.0,
+      "tpsa": 1.0,
+      "hbd": 1.0,
+      "hba": 1.0,
+      "rotatable_bonds": 1.0
+    },
+    "mappable_field_non_empty_rates": {
+      "molecular_weight": 1.0,
+      "logp": 0.9649398220826793,
+      "tpsa": 0.9623233908948194,
+      "hbd": 0.8545264259549974,
+      "hba": 0.9623233908948194,
+      "rotatable_bonds": 0.9374672946101518
+    },
+    "mappable_overall_non_empty_rate": 0.9469300540729112,
+    "core_triple_coverage_rate": 0.7352
+  },
+  "gates": [
+    {
+      "id": "inchikey_unique_and_valid",
+      "passed": true,
+      "detail": {
+        "bad_inchikey": 0,
+        "duplicate_inchikey": 0
+      }
+    },
+    {
+      "id": "backlink_rate_1p0",
+      "passed": true,
+      "detail": {
+        "backlink_rate": 1.0,
+        "min_required": 1.0,
+        "missing_backlink_rows": 0
+      }
+    },
+    {
+      "id": "numeric_format_valid_rate",
+      "passed": true,
+      "detail": {
+        "numeric_non_empty_cells": 21715,
+        "numeric_valid_cells": 21715,
+        "valid_rate": 1.0,
+        "min_required": 0.99,
+        "invalid_samples_top20": [],
+        "field_valid_rates": {
+          "molecular_weight": 1.0,
+          "logp": 1.0,
+          "tpsa": 1.0,
+          "hbd": 1.0,
+          "hba": 1.0,
+          "rotatable_bonds": 1.0
+        }
+      }
+    },
+    {
+      "id": "mappable_subset_non_empty_rate",
+      "passed": true,
+      "detail": {
+        "mappable_rows": 3822,
+        "overall_non_empty_rate": 0.9469300540729112,
+        "non_empty_cells": 21715,
+        "total_cells": 22932,
+        "field_rates": {
+          "molecular_weight": 1.0,
+          "logp": 0.9649398220826793,
+          "tpsa": 0.9623233908948194,
+          "hbd": 0.8545264259549974,
+          "hba": 0.9623233908948194,
+          "rotatable_bonds": 0.9374672946101518
+        },
+        "min_required": 0.5
+      }
+    },
+    {
+      "id": "core_triple_coverage",
+      "passed": true,
+      "detail": {
+        "core_fields": [
+          "molecular_weight",
+          "logp",
+          "tpsa"
+        ],
+        "coverage_rate": 0.7352,
+        "min_required": 0.5,
+        "rows_with_core": 3676,
+        "rows": 5000
+      }
+    },
+    {
+      "id": "metadata_fields_non_empty_and_unit_strategy",
+      "passed": true,
+      "detail": {
+        "source_empty_rows": 0,
+        "source_version_empty_rows": 0,
+        "fetch_date_empty_rows": 0,
+        "unit_strategy_mismatch_rows": 0
+      }
+    },
+    {
+      "id": "build_report_consistency",
+      "passed": true,
+      "detail": {
+        "build_rows": 5000,
+        "actual_rows": 5000,
+        "build_core_triple_coverage_rate": 0.7352,
+        "actual_core_triple_coverage_rate": 0.7352
+      }
+    }
+  ],
+  "passed": true
+}

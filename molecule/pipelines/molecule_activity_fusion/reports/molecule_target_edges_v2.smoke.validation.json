@@ -1,0 +1,169 @@
+{
+  "table": "pipelines/molecule_activity_fusion/.cache/molecule_target_edges_v2.smoke.tsv",
+  "contract": "molecule_target_edges_v2",
+  "row_count": 145582,
+  "columns": [
+    "edge_id",
+    "compound_inchikey",
+    "target_uniprot_accession",
+    "standard_type",
+    "best_normalized_nM",
+    "mean_normalized_nM",
+    "max_normalized_nM",
+    "best_confidence",
+    "best_confidence_score",
+    "evidence_count",
+    "doc_count",
+    "source_count",
+    "source_dbs",
+    "source_version",
+    "fetch_date"
+  ],
+  "schema": {
+    "required_columns": [
+      "edge_id",
+      "compound_inchikey",
+      "target_uniprot_accession",
+      "standard_type",
+      "best_normalized_nM",
+      "mean_normalized_nM",
+      "max_normalized_nM",
+      "best_confidence",
+      "best_confidence_score",
+      "evidence_count",
+      "doc_count",
+      "source_count",
+      "source_dbs",
+      "source_version",
+      "fetch_date"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "edge_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "edge_id_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "compound_inchikey_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "target_uniprot_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "standard_type_allowed",
+      "type": "allowed_values_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "best_normalized_nM_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "mean_normalized_nM_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "max_normalized_nM_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "best_confidence_allowed",
+      "type": "allowed_values_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "best_confidence_score_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "evidence_count_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "source_count_numeric",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "source_dbs_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 145582,
+      "passed_count": 145582,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

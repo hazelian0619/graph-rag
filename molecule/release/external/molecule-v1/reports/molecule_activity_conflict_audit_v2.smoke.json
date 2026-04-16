@@ -1,0 +1,11 @@
+{
+  "name": "molecule_activity_conflict_audit_v2",
+  "created_at": "2026-04-12T14:01:03.196039+00:00",
+  "table": "pipelines/molecule_activity_fusion/reports/molecule_activity_conflict_audit_v2.smoke.tsv",
+  "summary": {
+    "multi_source_groups": 384,
+    "conflict_groups_in_audit_table": 384,
+    "flagged_conflicts_fold_ge_10": 27,
+    "flagged_conflict_rate": 0.0703125
+  }
+}

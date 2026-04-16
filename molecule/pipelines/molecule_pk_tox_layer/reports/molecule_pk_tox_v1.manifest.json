@@ -1,0 +1,49 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-12T23:41:24.884309+00:00",
+  "git_commit": "19c0850ae75935d29a480907812df510e42db1e2",
+  "artifacts": [
+    {
+      "path": "data/output/molecules/molecule_pk_tox_v1.tsv",
+      "size_bytes": 3725070,
+      "sha256": "d29c8f074e39076e19115d1273e24575d5f0c6138529894000713e87c46f15b3",
+      "modified_time": "2026-04-12T23:41:24.328834+00:00"
+    },
+    {
+      "path": "data/output/molecules/molecule_xref_core_v2.tsv",
+      "size_bytes": 5813727,
+      "sha256": "b6a4df2b34b0dea940d31b8d736927eb32dd1799e83f09b66000503f65a31170",
+      "modified_time": "2026-04-12T09:46:53.426698+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pk_tox_layer/contracts/molecule_pk_tox_v1.json",
+      "size_bytes": 3812,
+      "sha256": "1929ecdd94d48ab725eabcf3eda55a87841447449e4f26e29d731ff8285d5dc6",
+      "modified_time": "2026-04-12T23:34:20.587827+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pk_tox_layer/reports/molecule_pk_tox_v1.build.json",
+      "size_bytes": 1952,
+      "sha256": "d07572edcc5682a5f47b2c4fc4e9532fce9d375d8fd8c2851f10076943fd0ae0",
+      "modified_time": "2026-04-12T23:41:24.330691+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pk_tox_layer/reports/molecule_pk_tox_v1.validation.json",
+      "size_bytes": 4530,
+      "sha256": "0e253ae5e043cffd13632773afe95a2664e7b9bd6d79d8e0968153ab3d9385e2",
+      "modified_time": "2026-04-12T23:41:24.555150+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pk_tox_layer/reports/molecule_pk_tox_v1.qa.json",
+      "size_bytes": 1882,
+      "sha256": "29de1793a327cf38ebcf0b3f6db45cd3b2fe1e9658efc87f64fcfdd629b0a8a7",
+      "modified_time": "2026-04-12T23:41:24.749708+00:00"
+    },
+    {
+      "path": "pipelines/molecule_pk_tox_layer/reports/molecule_pk_tox_v1.blocked_or_manual_download.json",
+      "size_bytes": 446,
+      "sha256": "09a11ef747ee4e6094776875c492372d4b889ed8165eff1322f46ba415c162e9",
+      "modified_time": "2026-04-12T23:40:56.898677+00:00"
+    }
+  ]
+}

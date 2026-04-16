@@ -1,0 +1,80 @@
+{
+  "name": "molecule_semantic_tags_v1.qa",
+  "created_at": "2026-04-12T13:03:01.101113+00:00",
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "table": "data/output/molecules/molecule_semantic_tags_v1.tsv",
+    "build_report": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.build.json",
+    "hierarchy_report": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.hierarchy.json",
+    "coverage_report": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.coverage.json"
+  },
+  "metrics": {
+    "rows": 14775,
+    "xref_rows": 14775,
+    "backlink_rate": 1.0,
+    "chebi_rows": 7066,
+    "chebi_expandable_rows": 7065,
+    "chebi_expandable_rate": 0.9998584772148316,
+    "source_non_empty_rates": {
+      "chebi_source": 1.0,
+      "atc_source": 1.0,
+      "drugbank_source": 1.0,
+      "zinc_source": 1.0,
+      "source_version": 1.0
+    }
+  },
+  "gates": [
+    {
+      "id": "inchikey_unique_and_valid",
+      "passed": true,
+      "detail": {
+        "bad_inchikey": 0,
+        "duplicate_inchikey": 0
+      }
+    },
+    {
+      "id": "inchikey_backlink_rate",
+      "passed": true,
+      "detail": {
+        "backlink_rate": 1.0,
+        "min_required": 0.99,
+        "missing_count": 0,
+        "missing_sample": []
+      }
+    },
+    {
+      "id": "chebi_hierarchy_expandable",
+      "passed": true,
+      "detail": {
+        "chebi_rows": 7066,
+        "chebi_expandable_rows": 7065,
+        "expandable_rate": 0.9998584772148316,
+        "hierarchy_report_expandable_rate": 0.9998584772148316
+      }
+    },
+    {
+      "id": "classification_source_anchor_non_empty",
+      "passed": true,
+      "detail": {
+        "rates": {
+          "chebi_source": 1.0,
+          "atc_source": 1.0,
+          "drugbank_source": 1.0,
+          "zinc_source": 1.0,
+          "source_version": 1.0
+        },
+        "min_required": 0.99
+      }
+    },
+    {
+      "id": "report_consistency",
+      "passed": true,
+      "detail": {
+        "build_rows": 14775,
+        "coverage_rows": 14775,
+        "actual_rows": 14775
+      }
+    }
+  ],
+  "passed": true
+}

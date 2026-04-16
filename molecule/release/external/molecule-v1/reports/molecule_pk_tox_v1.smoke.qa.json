@@ -1,0 +1,83 @@
+{
+  "name": "molecule_pk_tox_v1.qa",
+  "created_at": "2026-04-12T23:41:09.852216+00:00",
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "table": "pipelines/molecule_pk_tox_layer/.cache/molecule_pk_tox_v1.smoke.tsv",
+    "build_report": "pipelines/molecule_pk_tox_layer/reports/molecule_pk_tox_v1.smoke.build.json"
+  },
+  "metrics": {
+    "rows": 5000,
+    "xref_rows": 14775,
+    "rows_with_any_pk_tox": 826,
+    "field_non_empty_counts": {
+      "bioavailability": 732,
+      "clearance": 472,
+      "half_life": 712,
+      "volume_of_distribution": 497,
+      "ld50": 321,
+      "mutagenicity": 94
+    },
+    "backlink_rate": 1.0,
+    "anchor_violations": 0,
+    "evidence_violations": 0
+  },
+  "gates": [
+    {
+      "id": "inchikey_unique_and_valid",
+      "passed": true,
+      "detail": {
+        "bad_inchikey": 0,
+        "duplicate_inchikey": 0
+      }
+    },
+    {
+      "id": "xref_backlink_rate",
+      "passed": true,
+      "detail": {
+        "backlink_rate": 1.0,
+        "min_required": 0.999,
+        "missing_backlink_rows": 0
+      }
+    },
+    {
+      "id": "evidence_tier_domain",
+      "passed": true,
+      "detail": {
+        "violations": 0,
+        "allowed": [
+          "inferred/low",
+          "none",
+          "structured/high",
+          "text_mined/medium"
+        ]
+      }
+    },
+    {
+      "id": "value_requires_anchor",
+      "passed": true,
+      "detail": {
+        "anchor_violations": 0
+      }
+    },
+    {
+      "id": "report_consistency",
+      "passed": true,
+      "detail": {
+        "build_rows": 5000,
+        "actual_rows": 5000,
+        "build_rows_with_any_pk_tox": 826,
+        "actual_rows_with_any_pk_tox": 826
+      }
+    },
+    {
+      "id": "rows_with_data_gate",
+      "passed": true,
+      "detail": {
+        "rows_with_any_pk_tox": 826,
+        "min_required": 0
+      }
+    }
+  ],
+  "passed": true
+}

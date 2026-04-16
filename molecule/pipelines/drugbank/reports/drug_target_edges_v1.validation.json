@@ -1,0 +1,113 @@
+{
+  "table": "data/output/edges/drug_target_edges_v1.tsv",
+  "contract": "drug_target_edges_v1",
+  "row_count": 32122,
+  "columns": [
+    "edge_id",
+    "src_type",
+    "src_id",
+    "dst_type",
+    "dst_id",
+    "predicate",
+    "directed",
+    "best_score",
+    "source",
+    "source_version",
+    "fetch_date"
+  ],
+  "schema": {
+    "required_columns": [
+      "edge_id",
+      "src_type",
+      "src_id",
+      "dst_type",
+      "dst_id",
+      "predicate",
+      "directed",
+      "best_score",
+      "source",
+      "source_version",
+      "fetch_date"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "edge_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0
+    },
+    {
+      "id": "edge_id_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "src_type_drug",
+      "type": "equals_value_rate",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0
+    },
+    {
+      "id": "dst_type_protein",
+      "type": "equals_value_rate",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0
+    },
+    {
+      "id": "predicate_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0
+    },
+    {
+      "id": "directed_bool",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0
+    },
+    {
+      "id": "source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_iso",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 32122,
+      "passed_count": 32122,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

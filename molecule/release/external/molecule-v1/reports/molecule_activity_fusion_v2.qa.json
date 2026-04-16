@@ -1,0 +1,137 @@
+{
+  "name": "molecule_activity_fusion_v2.qa",
+  "created_at": "2026-04-12T14:23:46.290022+00:00",
+  "strict_mode": true,
+  "inputs": {
+    "chembl_m3_db": "../12182/out/m3/chembl_m3.sqlite",
+    "evidence": "data/output/evidence/molecule_activity_evidence_v2.tsv",
+    "edges": "data/output/edges/molecule_target_edges_v2.tsv",
+    "conflict_audit_tsv": "pipelines/molecule_activity_fusion/reports/molecule_activity_conflict_audit_v2.tsv",
+    "build_report": "pipelines/molecule_activity_fusion/reports/molecule_activity_fusion_v2.build.json",
+    "evidence_validation": "pipelines/molecule_activity_fusion/reports/molecule_activity_evidence_v2.validation.json",
+    "edges_validation": "pipelines/molecule_activity_fusion/reports/molecule_target_edges_v2.validation.json"
+  },
+  "metrics": {
+    "baseline": {
+      "chembl_baseline_rows": 3103547,
+      "chembl_baseline_edges": 2352932
+    },
+    "evidence": {
+      "rows": 3223952,
+      "source_rows": {
+        "chembl": 3103547,
+        "bindingdb": 119823,
+        "pdbbind": 582
+      },
+      "required_non_empty": {
+        "source_db": 1.0,
+        "assay_type": 1.0,
+        "standard_type": 1.0,
+        "standard_value": 1.0,
+        "standard_unit": 1.0,
+        "normalized_nM": 1.0,
+        "confidence": 1.0
+      },
+      "bad_inchikey": 0,
+      "bad_normalized_nM": 0,
+      "bad_confidence": 0,
+      "chembl_rows": 3103547
+    },
+    "edges": {
+      "rows": 2410389,
+      "chembl_edges": 2352932,
+      "bad_best_normalized_nM": 0
+    },
+    "conflict_audit": {
+      "rows": 46821,
+      "flagged_rows": 2693
+    }
+  },
+  "gates": [
+    {
+      "id": "contracts_pass",
+      "passed": true,
+      "detail": {
+        "evidence_contract_passed": true,
+        "edges_contract_passed": true
+      }
+    },
+    {
+      "id": "required_fields_non_empty_rate",
+      "passed": true,
+      "detail": {
+        "required_field_rates": {
+          "source_db": 1.0,
+          "assay_type": 1.0,
+          "standard_type": 1.0,
+          "standard_value": 1.0,
+          "standard_unit": 1.0,
+          "normalized_nM": 1.0,
+          "confidence": 1.0
+        },
+        "threshold": 0.99
+      }
+    },
+    {
+      "id": "normalized_nM_and_confidence_valid",
+      "passed": true,
+      "detail": {
+        "evidence_bad_normalized_nM": 0,
+        "evidence_bad_confidence": 0,
+        "evidence_bad_inchikey": 0,
+        "edges_bad_best_normalized_nM": 0
+      }
+    },
+    {
+      "id": "multi_source_present",
+      "passed": true,
+      "detail": {
+        "source_rows": {
+          "chembl": 3103547,
+          "bindingdb": 119823,
+          "pdbbind": 582
+        },
+        "source_count_nonzero": 3,
+        "bindingdb_used": true,
+        "pdbbind_used": true,
+        "strict_mode": true
+      }
+    },
+    {
+      "id": "conflict_audit_exists_and_parseable",
+      "passed": true,
+      "detail": {
+        "audit_rows": 46821,
+        "flagged_rows": 2693
+      }
+    },
+    {
+      "id": "chembl_hard_gate_not_degraded",
+      "passed": true,
+      "detail": {
+        "strict_mode": true,
+        "chembl_rows_v2": 3103547,
+        "chembl_rows_baseline": 3103547,
+        "chembl_edges_v2": 2352932,
+        "chembl_edges_baseline": 2352932,
+        "build_metrics": {
+          "total_evidence_rows": 3223952,
+          "total_edge_rows": 2410389,
+          "source_rows": {
+            "chembl": 3103547,
+            "bindingdb": 119823,
+            "pdbbind": 582
+          },
+          "chembl_rows_in_v2": 3103547,
+          "chembl_edges_in_v2": 2352932,
+          "multi_source_groups": 46821,
+          "conflict_groups_in_audit_table": 46821,
+          "flagged_conflicts_fold_ge_10": 2693,
+          "chembl_baseline_rows": 3103547,
+          "chembl_baseline_edges": 2352932
+        }
+      }
+    }
+  ],
+  "passed": true
+}

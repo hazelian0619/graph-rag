@@ -1,0 +1,55 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-13T08:44:58.656338+00:00",
+  "git_commit": "19c0850ae75935d29a480907812df510e42db1e2",
+  "artifacts": [
+    {
+      "path": "data/output/molecules/molecule_zinc_xref_v1.tsv",
+      "size_bytes": 31567503,
+      "sha256": "123bfff9075c166572a6989eb943824a027223777ea9e27445371d7418d3cb95",
+      "modified_time": "2026-04-13T08:44:38.087225+00:00"
+    },
+    {
+      "path": "data/output/molecules/molecule_xref_core_v2.tsv",
+      "size_bytes": 5813727,
+      "sha256": "b6a4df2b34b0dea940d31b8d736927eb32dd1799e83f09b66000503f65a31170",
+      "modified_time": "2026-04-12T09:46:53.426698+00:00"
+    },
+    {
+      "path": "pipelines/molecule_zinc_direct_xref/contracts/molecule_zinc_xref_v1.json",
+      "size_bytes": 1662,
+      "sha256": "59ec8826f1b3723f16f2947e0a9ec482ff2b08363230f02425a97afd6d2d5372",
+      "modified_time": "2026-04-13T07:59:45.056521+00:00"
+    },
+    {
+      "path": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.build.json",
+      "size_bytes": 62836,
+      "sha256": "3ad914fc8cfdfcb9aedeef9996c96eda75112af1f2aac7edcd7ebe01404882e7",
+      "modified_time": "2026-04-13T08:44:38.319958+00:00"
+    },
+    {
+      "path": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.coverage.json",
+      "size_bytes": 1147,
+      "sha256": "2b8ede71473f22cc7d51dce614a8db5e5074595a231e7dfca821728ba4b9bd74",
+      "modified_time": "2026-04-13T08:44:38.296059+00:00"
+    },
+    {
+      "path": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.conflict_audit.json",
+      "size_bytes": 345,
+      "sha256": "6d1356a5196d8b6929b30b9b25b5a8b88e32104d1e40b8978631822181ba10ba",
+      "modified_time": "2026-04-13T08:44:38.185762+00:00"
+    },
+    {
+      "path": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.validation.json",
+      "size_bytes": 2280,
+      "sha256": "0053d9d9baca81bac831452e93faa38715b1eb488699d22604575d32548726cf",
+      "modified_time": "2026-04-13T08:44:57.461295+00:00"
+    },
+    {
+      "path": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.qa.json",
+      "size_bytes": 2403,
+      "sha256": "a0752832ea5138f99b8d555cfa8f9319ac2255e2592f1f5144d5a7f23e50a2f8",
+      "modified_time": "2026-04-13T08:44:58.442667+00:00"
+    }
+  ]
+}

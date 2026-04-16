@@ -1,0 +1,13 @@
+{
+  "name": "molecule_pk_tox_v1.blocked_or_manual_download",
+  "status": "ready",
+  "reason": "At least one PK/Tox source is available.",
+  "resolved_inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "drugbank_xml": "../1218/data/raw/drugbank/drugbank_complete_database_2026-01-04.xml",
+    "pubchem_tox": null
+  },
+  "missing_optional_inputs": [
+    "data/raw/molecules/pubchem/pubchem_toxicity_summary_v1.tsv"
+  ]
+}

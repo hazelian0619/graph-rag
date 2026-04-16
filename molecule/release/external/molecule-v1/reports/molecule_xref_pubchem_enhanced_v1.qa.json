@@ -1,0 +1,88 @@
+{
+  "name": "molecule_xref_pubchem_enhanced_v1.qa",
+  "created_at": "2026-04-13T02:59:00.346921+00:00",
+  "inputs": {
+    "core_tsv": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "enhanced_tsv": "data/output/molecules/molecule_xref_pubchem_enhanced_v1.tsv",
+    "build_report": "pipelines/molecule_pubchem_direct_xref/reports/molecule_xref_pubchem_enhanced_v1.build.json",
+    "conflict_audit": "pipelines/molecule_pubchem_direct_xref/reports/molecule_xref_pubchem_enhanced_v1.conflict_audit.json"
+  },
+  "metrics": {
+    "core": {
+      "rows": 14775,
+      "covered_rows": 3605,
+      "rate": 0.2439932318104907
+    },
+    "enhanced": {
+      "rows": 14775,
+      "covered_rows": 4656,
+      "rate": 0.3151269035532995
+    },
+    "comparable_core_rows": 14775,
+    "newly_filled_rows": 1051,
+    "high_conf_overwrite_count": 0
+  },
+  "gates": [
+    {
+      "id": "row_count_preserved",
+      "passed": true,
+      "detail": {
+        "core_rows": 14775,
+        "enhanced_rows": 14775,
+        "allow_row_subset": false
+      }
+    },
+    {
+      "id": "pubchem_coverage_improved_vs_core",
+      "passed": true,
+      "detail": {
+        "core_rate": 0.2439932318104907,
+        "enhanced_rate": 0.3151269035532995,
+        "delta": 0.07113367174280877
+      }
+    },
+    {
+      "id": "pubchem_coverage_above_baseline_24_4pct",
+      "passed": true,
+      "detail": {
+        "enhanced_rate": 0.3151269035532995,
+        "baseline_min_rate": 0.244
+      }
+    },
+    {
+      "id": "added_rows_have_strategy_confidence_source_version",
+      "passed": true,
+      "detail": {
+        "newly_filled_rows": 1051,
+        "missing_required_fields_count": 0
+      }
+    },
+    {
+      "id": "high_confidence_existing_mapping_not_overwritten",
+      "passed": true,
+      "detail": {
+        "high_conf_overwrite_count": 0
+      }
+    },
+    {
+      "id": "conflict_audit_exists_and_structured",
+      "passed": true,
+      "detail": {
+        "conflict_rows": 98,
+        "tie_break_keys": [
+          "resolved_unique_by_smiles_intersection",
+          "smiles_missing_keep_inchikey_candidates"
+        ]
+      }
+    },
+    {
+      "id": "build_report_coverage_consistency",
+      "passed": true,
+      "detail": {
+        "qa_enhanced_rate": 0.3151269035532995,
+        "build_enhanced_rate": 0.3151269035532995
+      }
+    }
+  ],
+  "passed": true
+}

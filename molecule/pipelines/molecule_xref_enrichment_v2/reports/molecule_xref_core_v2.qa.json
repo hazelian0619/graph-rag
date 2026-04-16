@@ -1,0 +1,123 @@
+{
+  "name": "molecule_xref_core_v2.qa",
+  "created_at": "2026-04-12T09:46:54.606683+00:00",
+  "inputs": {
+    "v1_table": "../1218/data/output/molecules/molecule_xref_core_v1.tsv",
+    "v2_table": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "backfill_audit": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.backfill_audit.json",
+    "build_report": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.build.json"
+  },
+  "require_positive_delta": true,
+  "metrics": {
+    "v1": {
+      "rows": 14611,
+      "inchikey_duplicates": 0,
+      "inchikey_bad_format": 0,
+      "chembl_bad_token": 0,
+      "rows_with_chembl": 10852,
+      "rows_with_pubchem": 3518,
+      "chembl_row_rate": 0.7427280815823695,
+      "pubchem_row_rate": 0.24077749640681678,
+      "drugbank_ids": 14619,
+      "drugbank_ids_with_chembl": 10859,
+      "drugbank_ids_with_pubchem": 3522,
+      "drugbank_chembl_rate": 0.742800465148095,
+      "drugbank_pubchem_rate": 0.24091935152883234,
+      "backfill_rows": 0,
+      "backfill_rows_missing_conf": 0
+    },
+    "v2": {
+      "rows": 14775,
+      "inchikey_duplicates": 0,
+      "inchikey_bad_format": 0,
+      "chembl_bad_token": 0,
+      "rows_with_chembl": 11316,
+      "rows_with_pubchem": 3605,
+      "chembl_row_rate": 0.7658883248730964,
+      "pubchem_row_rate": 0.2439932318104907,
+      "drugbank_ids": 14795,
+      "drugbank_ids_with_chembl": 11336,
+      "drugbank_ids_with_pubchem": 3615,
+      "drugbank_chembl_rate": 0.7662047989185535,
+      "drugbank_pubchem_rate": 0.2443393038188577,
+      "backfill_rows": 174,
+      "backfill_rows_missing_conf": 0
+    },
+    "chembl_delta_abs": 464,
+    "pubchem_delta_abs": 87,
+    "chembl_delta_rate_abs": 0.023160243290726967,
+    "pubchem_delta_rate_abs": 0.003215735403673925
+  },
+  "gates": [
+    {
+      "id": "inchikey_unique_100pct",
+      "passed": true,
+      "detail": {
+        "inchikey_duplicates": 0,
+        "inchikey_bad_format": 0
+      }
+    },
+    {
+      "id": "chembl_coverage_delta_positive",
+      "passed": true,
+      "detail": {
+        "v1_rows_with_chembl": 10852,
+        "v2_rows_with_chembl": 11316,
+        "delta_abs": 464,
+        "v1_rate": 0.7427280815823695,
+        "v2_rate": 0.7658883248730964,
+        "delta_rate_abs": 0.023160243290726967,
+        "required_positive": true
+      }
+    },
+    {
+      "id": "pubchem_coverage_delta_positive",
+      "passed": true,
+      "detail": {
+        "v1_rows_with_pubchem": 3518,
+        "v2_rows_with_pubchem": 3605,
+        "delta_abs": 87,
+        "v1_rate": 0.24077749640681678,
+        "v2_rate": 0.2439932318104907,
+        "delta_rate_abs": 0.003215735403673925,
+        "required_positive": true
+      }
+    },
+    {
+      "id": "backfill_records_have_strategy_and_confidence",
+      "passed": true,
+      "detail": {
+        "accepted_count": 176,
+        "records_length": 176,
+        "records_missing_fields": 0
+      }
+    },
+    {
+      "id": "backfill_rows_in_v2_have_confidence",
+      "passed": true,
+      "detail": {
+        "backfill_rows": 174,
+        "backfill_rows_missing_conf": 0
+      }
+    },
+    {
+      "id": "chembl_token_format_valid",
+      "passed": true,
+      "detail": {
+        "chembl_bad_token": 0
+      }
+    },
+    {
+      "id": "build_report_consistency",
+      "passed": true,
+      "detail": {
+        "build_chembl_delta": 464,
+        "qa_chembl_delta": 464,
+        "build_pubchem_delta": 87,
+        "qa_pubchem_delta": 87,
+        "skipped_in_smoke_mode": false
+      }
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,299 @@
+{
+  "name": "molecule_xref_core_v2.backfill_audit",
+  "created_at": "2026-04-12T09:46:00.737728+00:00",
+  "accepted_count": 36,
+  "strategy_counts": {
+    "backfill_stage1_name_exact_unique": 30,
+    "backfill_stage2_synonym_exact_unique": 6
+  },
+  "records": [
+    {
+      "drugbank_id": "DB00007",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Leuprolide",
+      "chembl_id": "CHEMBL1201199",
+      "inchikey": "GFIJNRVAKGFPGQ-LIJARHBVSA-N"
+    },
+    {
+      "drugbank_id": "DB00017",
+      "match_strategy": "backfill_stage2_synonym_exact_unique",
+      "confidence": "medium",
+      "matched_term": "Calcitonin (Salmon Synthetic)",
+      "chembl_id": "CHEMBL3989767",
+      "inchikey": "BBBFJLBPOGFECG-VJVYQDLKSA-N"
+    },
+    {
+      "drugbank_id": "DB00063",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Eptifibatide",
+      "chembl_id": "CHEMBL1174",
+      "inchikey": "CZKPOZZJODAYPZ-LROMGURASA-N"
+    },
+    {
+      "drugbank_id": "DB00067",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Vasopressin",
+      "chembl_id": "CHEMBL373742",
+      "inchikey": "KBZOIRJILGZLEJ-LGYYRGKSSA-N"
+    },
+    {
+      "drugbank_id": "DB00093",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Felypressin",
+      "chembl_id": "CHEMBL3185126",
+      "inchikey": "SFKQVVDKFKYTNA-DZCXQCEKSA-N"
+    },
+    {
+      "drugbank_id": "DB00104",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Octreotide",
+      "chembl_id": "CHEMBL1680",
+      "inchikey": "DEQANNDTNATYII-OULOTJBUSA-N"
+    },
+    {
+      "drugbank_id": "DB00107",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Oxytocin",
+      "chembl_id": "CHEMBL395429",
+      "inchikey": "XNOPRXBHLZRZKH-DSZYJQQASA-N"
+    },
+    {
+      "drugbank_id": "DB00109",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Enfuvirtide",
+      "chembl_id": "CHEMBL525076",
+      "inchikey": "PEASPLKKXBYDKL-FXEVSJAOSA-N"
+    },
+    {
+      "drugbank_id": "DB00362",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Anidulafungin",
+      "chembl_id": "CHEMBL264241",
+      "inchikey": "JHVAMHSQVVQIOT-MFAJLEFUSA-N"
+    },
+    {
+      "drugbank_id": "DB00644",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Gonadorelin",
+      "chembl_id": "CHEMBL1007",
+      "inchikey": "XLXSAKCOAKORKW-AQJXLSMYSA-N"
+    },
+    {
+      "drugbank_id": "DB01049",
+      "match_strategy": "backfill_stage2_synonym_exact_unique",
+      "confidence": "medium",
+      "matched_term": "Dihydroergotoxine Mesilate",
+      "chembl_id": "CHEMBL2311030",
+      "inchikey": "PBKVEOSEPXMKDN-LZHUFOCISA-N"
+    },
+    {
+      "drugbank_id": "DB01276",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Exenatide",
+      "chembl_id": "CHEMBL414357",
+      "inchikey": "HTQBXNHDCUEHJF-XWLPCZSASA-N"
+    },
+    {
+      "drugbank_id": "DB01307",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Insulin detemir",
+      "chembl_id": "CHEMBL2104391",
+      "inchikey": "UGOZVNFCFYTPAZ-IOXYNQHNSA-N"
+    },
+    {
+      "drugbank_id": "DB02638",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Terlipressin",
+      "chembl_id": "CHEMBL2135460",
+      "inchikey": "BENFXAYNYRLAIU-QSVFAHTRSA-N"
+    },
+    {
+      "drugbank_id": "DB04894",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Vapreotide",
+      "chembl_id": "CHEMBL3349523",
+      "inchikey": "SWXOGPJRIDTIRL-DOUNNPEJSA-N"
+    },
+    {
+      "drugbank_id": "DB04900",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Thymalfasin",
+      "chembl_id": "CHEMBL2103979",
+      "inchikey": "NZVYCXVTEHPMHE-ZSUJOUNUSA-N"
+    },
+    {
+      "drugbank_id": "DB04921",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Dirucotide",
+      "chembl_id": "CHEMBL2105639",
+      "inchikey": "RCTCWZRPYFBGLQ-KVBIMOIYSA-N"
+    },
+    {
+      "drugbank_id": "DB04968",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Fasedienol",
+      "chembl_id": "CHEMBL5095042",
+      "inchikey": "NYVFCEPOUVGTNP-DYKIIFRCSA-N"
+    },
+    {
+      "drugbank_id": "DB04985",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Tigapotide",
+      "chembl_id": "CHEMBL3040192",
+      "inchikey": "ZRXXHPDJLAQCPC-SFJRRRFZSA-N"
+    },
+    {
+      "drugbank_id": "DB05024",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Lunacalcipol",
+      "chembl_id": "CHEMBL2105705",
+      "inchikey": "RFQHCLMGLJGZNV-UXXOMSPDSA-N"
+    },
+    {
+      "drugbank_id": "DB05043",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Milveterol",
+      "chembl_id": "CHEMBL1940832",
+      "inchikey": "BMKINZUHKYLSKI-DQEYMECFSA-N"
+    },
+    {
+      "drugbank_id": "DB05060",
+      "match_strategy": "backfill_stage2_synonym_exact_unique",
+      "confidence": "medium",
+      "matched_term": "R1626",
+      "chembl_id": "CHEMBL550936",
+      "inchikey": "VKXWOLCNTHXCLF-DXEZIKHYSA-N"
+    },
+    {
+      "drugbank_id": "DB05070",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Raseglurant",
+      "chembl_id": "CHEMBL3545036",
+      "inchikey": "MEDCLNYIYBERKO-UHFFFAOYSA-N"
+    },
+    {
+      "drugbank_id": "DB05096",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Pomaglumetad methionil",
+      "chembl_id": "CHEMBL2105707",
+      "inchikey": "HQMAHCKDJKNYEK-LBMFEJOUSA-N"
+    },
+    {
+      "drugbank_id": "DB05147",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Lexibulin",
+      "chembl_id": "CHEMBL552212",
+      "inchikey": "MTJHLONVHHPNSI-IBGZPJMESA-N"
+    },
+    {
+      "drugbank_id": "DB05181",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Vapendavir",
+      "chembl_id": "CHEMBL2062774",
+      "inchikey": "DKSVBVKHUICELN-UHFFFAOYSA-N"
+    },
+    {
+      "drugbank_id": "DB05192",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "MB07811",
+      "chembl_id": "CHEMBL471897",
+      "inchikey": "LGGPZDRLTDGYSQ-GYKKGXIBSA-N"
+    },
+    {
+      "drugbank_id": "DB05196",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Ordopidine",
+      "chembl_id": "CHEMBL3545010",
+      "inchikey": "UKUPJASJNQDHPH-UHFFFAOYSA-N"
+    },
+    {
+      "drugbank_id": "DB05201",
+      "match_strategy": "backfill_stage2_synonym_exact_unique",
+      "confidence": "medium",
+      "matched_term": "V24343",
+      "chembl_id": "CHEMBL5095165",
+      "inchikey": "BNLYOVHLLDBOFZ-LJQANCHMSA-N"
+    },
+    {
+      "drugbank_id": "DB05210",
+      "match_strategy": "backfill_stage2_synonym_exact_unique",
+      "confidence": "medium",
+      "matched_term": "SF 1126",
+      "chembl_id": "CHEMBL2326966",
+      "inchikey": "SVNJBEMPMKWDCO-KCHLEUMXSA-N"
+    },
+    {
+      "drugbank_id": "DB05214",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "KD7040",
+      "chembl_id": "CHEMBL1911882",
+      "inchikey": "ZJFFPGMGWOEQLF-UHFFFAOYSA-N"
+    },
+    {
+      "drugbank_id": "DB05217",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Teglarinad chloride",
+      "chembl_id": "CHEMBL190412",
+      "inchikey": "DAHMXVAETAAQOZ-UHFFFAOYSA-N"
+    },
+    {
+      "drugbank_id": "DB05227",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Temanogrel",
+      "chembl_id": "CHEMBL1084617",
+      "inchikey": "ZEOQUKRCASTCFR-UHFFFAOYSA-N"
+    },
+    {
+      "drugbank_id": "DB05308",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Folitixorin calcium",
+      "chembl_id": "CHEMBL2103811",
+      "inchikey": "AKUPTUNGFOADRT-ZEDZUCNESA-L"
+    },
+    {
+      "drugbank_id": "DB05309",
+      "match_strategy": "backfill_stage1_name_exact_unique",
+      "confidence": "high",
+      "matched_term": "Rusalatide",
+      "chembl_id": "CHEMBL2111105",
+      "inchikey": "ZZASKUJKXIXHIC-VKDININFSA-N"
+    },
+    {
+      "drugbank_id": "DB05317",
+      "match_strategy": "backfill_stage2_synonym_exact_unique",
+      "confidence": "medium",
+      "matched_term": "Lapaquistat Acetate",
+      "chembl_id": "CHEMBL435224",
+      "inchikey": "CMLUGNQVANVZHY-POURPWNDSA-N"
+    }
+  ]
+}

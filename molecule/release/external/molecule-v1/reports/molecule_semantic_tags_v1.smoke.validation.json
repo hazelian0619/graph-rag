@@ -1,0 +1,139 @@
+{
+  "table": "pipelines/molecule_semantic_layer/.cache/molecule_semantic_tags_v1.smoke.tsv",
+  "contract": "molecule_semantic_tags_v1",
+  "row_count": 3000,
+  "columns": [
+    "inchikey",
+    "chebi_id",
+    "chebi_name",
+    "chebi_ancestor_ids",
+    "chebi_paths",
+    "atc_code",
+    "atc_level1_code",
+    "atc_level1_description",
+    "atc_level2_code",
+    "atc_level2_description",
+    "drugbank_group",
+    "zinc_id",
+    "zinc_label",
+    "semantic_tags",
+    "chebi_source",
+    "atc_source",
+    "drugbank_source",
+    "zinc_source",
+    "fetch_date",
+    "source_version"
+  ],
+  "schema": {
+    "required_columns": [
+      "inchikey",
+      "chebi_id",
+      "chebi_name",
+      "chebi_ancestor_ids",
+      "chebi_paths",
+      "atc_code",
+      "atc_level1_code",
+      "atc_level1_description",
+      "atc_level2_code",
+      "atc_level2_description",
+      "drugbank_group",
+      "zinc_id",
+      "zinc_label",
+      "semantic_tags",
+      "chebi_source",
+      "atc_source",
+      "drugbank_source",
+      "zinc_source",
+      "fetch_date",
+      "source_version"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "inchikey_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    },
+    {
+      "id": "inchikey_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    },
+    {
+      "id": "inchikey_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "semantic_tags_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    },
+    {
+      "id": "chebi_source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    },
+    {
+      "id": "atc_source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    },
+    {
+      "id": "drugbank_source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    },
+    {
+      "id": "zinc_source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    },
+    {
+      "id": "source_version_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 3000,
+      "passed_count": 3000,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,79 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-12T14:23:46.485685+00:00",
+  "git_commit": "e588c914f8c8c53676f14b247bef6a42f6737cd4",
+  "artifacts": [
+    {
+      "path": "data/output/evidence/molecule_activity_evidence_v2.tsv",
+      "size_bytes": 650208503,
+      "sha256": "03fcfa8a1362d5b3e5054f2deb143f6afb4615fd5c3f1355cf7762a49d2af363",
+      "modified_time": "2026-04-12T14:19:13.925427+00:00"
+    },
+    {
+      "path": "data/output/edges/molecule_target_edges_v2.tsv",
+      "size_bytes": 442916493,
+      "sha256": "752635b6c71cd226e99b321a242b8d80bbc13d01aca8b49123ed567a7a9f5ee9",
+      "modified_time": "2026-04-12T14:20:21.044941+00:00"
+    },
+    {
+      "path": "../12182/out/m3/chembl_m3.sqlite",
+      "size_bytes": 4067770368,
+      "sha256": "b14e7b8652061a991bffcfc96cc6218744ee779e8e683747e8497d81e7b0cc66",
+      "modified_time": "2026-01-09T08:59:28.839737+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/contracts/molecule_activity_evidence_v2.json",
+      "size_bytes": 2987,
+      "sha256": "53a23fadb31a5b87711d8e14b67cd12e9292186d22ae4613bcd5743287ab3914",
+      "modified_time": "2026-04-12T13:29:21.561464+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/contracts/molecule_target_edges_v2.json",
+      "size_bytes": 3023,
+      "sha256": "faf575612bf158591bb335bd638792b788e42838e44e893d8a41b8dc4f29e2b9",
+      "modified_time": "2026-04-12T13:29:38.828266+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/reports/molecule_activity_fusion_v2.build.json",
+      "size_bytes": 2306,
+      "sha256": "f020fa9908b3ef1dc1fe528f3e8e8bc08d0572f2c632827d8788147637fb2d64",
+      "modified_time": "2026-04-12T14:20:26.315422+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/reports/molecule_activity_conflict_audit_v2.tsv",
+      "size_bytes": 3914891,
+      "sha256": "8a9630b99d9a961efa1c7a59e600d1b606f985178e4ef158d96c4cba304d04ca",
+      "modified_time": "2026-04-12T14:20:21.044878+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/reports/molecule_activity_conflict_audit_v2.json",
+      "size_bytes": 392,
+      "sha256": "d947d72cb85e31eb134b6afa5d1c080398782d8546ec061d1ee1286bc2391d04",
+      "modified_time": "2026-04-12T14:20:26.315006+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/reports/molecule_activity_evidence_v2.validation.json",
+      "size_bytes": 3815,
+      "sha256": "72f6acf515be8fad1700274bb91ee90cb185ae1d7cd0b95378809ff87fde9894",
+      "modified_time": "2026-04-12T14:21:49.468912+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/reports/molecule_target_edges_v2.validation.json",
+      "size_bytes": 3713,
+      "sha256": "395dca3c261a5b4661fda1f75af7d9326875517a16d453940ae612e2cf292128",
+      "modified_time": "2026-04-12T14:22:28.235977+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/reports/molecule_activity_fusion_v2.qa.json",
+      "size_bytes": 3822,
+      "sha256": "0e726398c22ed073aa603943d6cf66eaf8dc67a8e821e8cdd8199452cb147b97",
+      "modified_time": "2026-04-12T14:23:46.291851+00:00"
+    },
+    {
+      "path": "pipelines/molecule_activity_fusion/reports/molecule_activity_fusion_v2.manual_download.json",
+      "size_bytes": 569,
+      "sha256": "b217e5e778c8ebd242e61445e0409723ce881b805df48f9ac6f0f687c3411cf5",
+      "modified_time": "2026-04-12T14:12:40.218269+00:00"
+    }
+  ]
+}

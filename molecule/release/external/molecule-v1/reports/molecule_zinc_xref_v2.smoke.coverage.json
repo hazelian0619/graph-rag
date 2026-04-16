@@ -1,0 +1,41 @@
+{
+  "name": "molecule_zinc_xref_v2.coverage",
+  "created_at": "2026-04-13T22:08:13.512063+00:00",
+  "rows": 5000,
+  "smiles_non_empty_rate_v1": {
+    "non_empty": 313,
+    "total": 5000,
+    "rate": 0.0626
+  },
+  "smiles_non_empty_rate_v2": {
+    "non_empty": 4993,
+    "total": 5000,
+    "rate": 0.9986
+  },
+  "smiles_non_empty_delta": 0.936,
+  "smiles_non_empty_delta_pp": 93.60000000000001,
+  "backfill": {
+    "fallback_candidates": 4680,
+    "rows_backfilled": 4680,
+    "rows_still_missing_smiles": 7,
+    "rows_prefilled_preserved": 313,
+    "prefilled_rows_with_structure_smiles_diff": 294
+  },
+  "non_empty_rates": {
+    "source": {
+      "non_empty": 5000,
+      "total": 5000,
+      "rate": 1.0
+    },
+    "source_version": {
+      "non_empty": 5000,
+      "total": 5000,
+      "rate": 1.0
+    },
+    "fetch_date": {
+      "non_empty": 5000,
+      "total": 5000,
+      "rate": 1.0
+    }
+  }
+}

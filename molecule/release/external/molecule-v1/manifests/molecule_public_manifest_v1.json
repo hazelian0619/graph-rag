@@ -2,7 +2,7 @@
   "release": "molecule-v1",
   "domain": "molecule",
   "generated_at": "2026-04-16",
-  "asset_count": 9,
+  "asset_count": 127,
   "assets": [
     {
       "path": "molecule/release/external/molecule-v1/README.md",
@@ -10,44 +10,634 @@
       "sha256": "46f50f6f83f434c16f8036dd836f9cb44f945a98354fa3e4bcff63752304f8d5"
     },
     {
-      "path": "molecule/release/external/molecule-v1/tables/molecule_3d_experimental_v1.tsv",
-      "bytes": 42292424,
-      "sha256": "0d824755e2b63bb1cced5bb5ca05070d258508d7325be642d1ad77b7092c890f"
+      "path": "molecule/release/external/molecule-v1/manifests/molecule_doc_alignment_v1.json",
+      "bytes": 1918,
+      "sha256": "b3afccdae39a406b7f62f5941725a0ec5ebfee6c6e5b9719a0a7f3b8a0c30516"
     },
     {
-      "path": "molecule/release/external/molecule-v1/tables/molecule_physchem_descriptors_v1.tsv",
-      "bytes": 2659923,
-      "sha256": "9b88dc4a0b876659fd1d5281933faa055af89034bbfc87fccc4d6a2a0baeb661"
+      "path": "molecule/release/external/molecule-v1/reports/drug_target_edges_v1.validation.json",
+      "bytes": 2227,
+      "sha256": "4ccddec9aa0aaf91eb7070c2a40210e734970245f1ff6783ece754d13e41410a"
     },
     {
-      "path": "molecule/release/external/molecule-v1/tables/molecule_pk_tox_v1.tsv",
-      "bytes": 3725070,
-      "sha256": "d29c8f074e39076e19115d1273e24575d5f0c6138529894000713e87c46f15b3"
+      "path": "molecule/release/external/molecule-v1/reports/drug_target_evidence_v1.validation.json",
+      "bytes": 2197,
+      "sha256": "04fd507f0ee9ea98b9a3ed9b0b807ee63f718f124523af4cb2d09b69923ef414"
     },
     {
-      "path": "molecule/release/external/molecule-v1/tables/molecule_pk_tox_v2.tsv",
-      "bytes": 5464575,
-      "sha256": "6ae501f22906528edf9870563a9b2be86a9d34be81818ee55b5dc5444ccd9a87"
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.build.json",
+      "bytes": 1224,
+      "sha256": "f5dbac8d6e85d3954468320aa0321363eac9c39fa36eb376a777f01a903a51f8"
     },
     {
-      "path": "molecule/release/external/molecule-v1/tables/molecule_structure_identifiers_v1.tsv",
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.coverage.json",
+      "bytes": 1084,
+      "sha256": "da6f32fe2e6e85526e7fd22de4a2994dfd7b3763d1838b52d295e8fbb8dc9ee3"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.manifest.json",
+      "bytes": 2355,
+      "sha256": "852ef4df2ee39f0b3ce1cf3cbaa15f5c669deeaffd8f720dce784bd46f05430c"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.qa.json",
+      "bytes": 2109,
+      "sha256": "6b3c23d78b74f88e614e9d033408aed7d7f74a68fbeaad858c057e5976edf4d2"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.smoke.build.json",
+      "bytes": 1248,
+      "sha256": "2b60bf5c977173893227006324f0caa2dfa022830c9f7abef930e9279f454463"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.smoke.coverage.json",
+      "bytes": 1005,
+      "sha256": "9a3ab4fb27792a619a274dcec9111ff259fed63e2e51a8e31928df82b5770a3c"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.smoke.qa.json",
+      "bytes": 2122,
+      "sha256": "c2fcb0c626cc1fdbb5819892699c7f941827e32285c7f765ef10d45755e1cad6"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.smoke.validation.json",
+      "bytes": 3177,
+      "sha256": "535aff3dbf3ffa8a29db2739d93dbc3bc02497a8597ea1ede3ead8774cc79c3d"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_experimental_v1.validation.json",
+      "bytes": 3252,
+      "sha256": "80a66aed7c2a9e9f709286af29fe65c74677d300486ad3bbef085ad765f2a751"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.build.json",
+      "bytes": 2636,
+      "sha256": "3cfc8906016cdf3523da5e5c893abf7fffbafa5f085ca79bc0b18fcc44ad10d2"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.coverage.json",
+      "bytes": 966,
+      "sha256": "f6f657bfa2406f5d0e7f0b52d0a84d474ee881014afdc53159d47055aee4bcf6"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.manifest.json",
+      "bytes": 2273,
+      "sha256": "78a85a5e3dbc4d0ba63bfad2073e97191eac5d9660e8a89afcf69d240311567d"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.qa.json",
+      "bytes": 2171,
+      "sha256": "fe34efc0765ed20c58b9954e829f602f032d8db705c48144732b2ea52bd914af"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.smoke.build.json",
+      "bytes": 1662,
+      "sha256": "a60d582635b221442f77703e0e1736a205f88125a63abdd3cab1c28d002ab62f"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.smoke.coverage.json",
+      "bytes": 923,
+      "sha256": "d37c6180cce094e507e2fddc9bee2280e854d396695c7016bb31e821a9b18eb2"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.smoke.qa.json",
+      "bytes": 2199,
+      "sha256": "324bf23eacc13eae41c59801e15434f4c45cfe3a2421b24caaa51db77f07b821"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.smoke.validation.json",
+      "bytes": 3326,
+      "sha256": "352edf7c3e7b9c300117f16339419791fa07efee8e2cf2aad7a4303ca10caea2"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_3d_registry_v1.validation.json",
+      "bytes": 3327,
+      "sha256": "cedffe232fcf7beb5ec4123d3d75edc73f6cb611e5305d9939b926814e64eac8"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_conflict_audit_v2.json",
+      "bytes": 392,
+      "sha256": "d947d72cb85e31eb134b6afa5d1c080398782d8546ec061d1ee1286bc2391d04"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_conflict_audit_v2.smoke.json",
+      "bytes": 381,
+      "sha256": "5a3832196006760065e5c7419dc41ca1c04d008c33595f8b5e47c6cf21741326"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_evidence_v2.smoke.validation.json",
+      "bytes": 3813,
+      "sha256": "4635e3c0d27693be70b64b66bf10236e9cdd30839d8c033cfd8f4875dc999ad3"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_evidence_v2.validation.json",
+      "bytes": 3815,
+      "sha256": "72f6acf515be8fad1700274bb91ee90cb185ae1d7cd0b95378809ff87fde9894"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_fusion_v2.build.json",
+      "bytes": 2306,
+      "sha256": "f020fa9908b3ef1dc1fe528f3e8e8bc08d0572f2c632827d8788147637fb2d64"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_fusion_v2.manifest.json",
+      "bytes": 3447,
+      "sha256": "d00cf92e333a427fd65f02dc3edbcae8ec2187107e21a048ec52d62a3cfed54a"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_fusion_v2.manual_download.json",
+      "bytes": 569,
+      "sha256": "b217e5e778c8ebd242e61445e0409723ce881b805df48f9ac6f0f687c3411cf5"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_fusion_v2.qa.json",
+      "bytes": 3822,
+      "sha256": "0e726398c22ed073aa603943d6cf66eaf8dc67a8e821e8cdd8199452cb147b97"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_fusion_v2.smoke.build.json",
+      "bytes": 2369,
+      "sha256": "de249c138b39b30b2926698c7e21addd7637441aef0d47a83c9f6474abd84d55"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_fusion_v2.smoke.manual_download.json",
+      "bytes": 569,
+      "sha256": "da9ab4357510117f78a0c304463c2e7fa10758c43575f45012f1cbee00e477b1"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_activity_fusion_v2.smoke.qa.json",
+      "bytes": 3870,
+      "sha256": "8ecf2f869c41798141e1485f842b288df815b4fa147388e8572f98aee0fabf83"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_physchem_descriptors_v1.build.json",
+      "bytes": 3372,
+      "sha256": "211da91cac27cc17fbad2b4e8fb412432f6209bf01a11737613f5c5389149e5c"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_physchem_descriptors_v1.manifest.json",
+      "bytes": 2080,
+      "sha256": "e6c60e0962fc6e3b086113c352ff3f3f6de5eb54a11027f878141bce8018fa96"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_physchem_descriptors_v1.qa.json",
+      "bytes": 3773,
+      "sha256": "84c3f5811f0c61ab88412ebd6eaee6de2e493e2a5410b029e82fc9251a412805"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_physchem_descriptors_v1.smoke.build.json",
+      "bytes": 3291,
+      "sha256": "0ff32558177a8acb9b269413c12600e0f36f78cc33a2f9cbb7d8c566f318be37"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_physchem_descriptors_v1.smoke.qa.json",
+      "bytes": 3750,
+      "sha256": "f7e3275028aa928f15c30da2fab97c109bf09bd581ada8d51173df590e9f8fb7"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_physchem_descriptors_v1.smoke.validation.json",
+      "bytes": 2978,
+      "sha256": "fc343eec2fb2bbfa8e285bab02dc9dc0e0009fd8519bb216f50869fe55f1dfa5"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_physchem_descriptors_v1.validation.json",
+      "bytes": 2974,
+      "sha256": "e6b26a3e433fb6b844dc06e142f80a67525fbe497b730283dfd58f492228c4d5"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v1.blocked_or_manual_download.json",
+      "bytes": 446,
+      "sha256": "09a11ef747ee4e6094776875c492372d4b889ed8165eff1322f46ba415c162e9"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v1.build.json",
+      "bytes": 1952,
+      "sha256": "d07572edcc5682a5f47b2c4fc4e9532fce9d375d8fd8c2851f10076943fd0ae0"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v1.manifest.json",
+      "bytes": 2024,
+      "sha256": "461dadbe85e59dfe267a4fd5c12f32b0785a0fd1a91faa2a5ade76e7961ac085"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v1.qa.json",
+      "bytes": 1882,
+      "sha256": "29de1793a327cf38ebcf0b3f6db45cd3b2fe1e9658efc87f64fcfdd629b0a8a7"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v1.smoke.build.json",
+      "bytes": 1930,
+      "sha256": "d54c16580ac37f98e04e0fa53d638c2155c1df93814c4348cd8d2f10d8ffba6b"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v1.smoke.qa.json",
+      "bytes": 1899,
+      "sha256": "7cca391a7cbce0d4713ea312c455ccc5647d82697573c0f2de73e84510839100"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v1.smoke.validation.json",
+      "bytes": 4518,
+      "sha256": "e890b280e0eb03657e4742a30dfecdd97b09df7eeca4ccd4aa51a7da88636aa6"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v1.validation.json",
+      "bytes": 4530,
+      "sha256": "0e253ae5e043cffd13632773afe95a2664e7b9bd6d79d8e0968153ab3d9385e2"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v2.build.json",
+      "bytes": 3371,
+      "sha256": "875e2e17358450f5bd0762fdc324f9f0f860c556a2f26d6fc0e2ab8ece5886e3"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v2.manifest.json",
+      "bytes": 1996,
+      "sha256": "9f4ea7850087bcefc803821ba2c040e8c03fc642f4ebf5a4163910a0bc7c5546"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v2.qa.json",
+      "bytes": 3415,
+      "sha256": "c6420a8836222f6adcd628c54b6078f3e837a6757b8708ca730347750efe81e1"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v2.smoke.build.json",
+      "bytes": 3331,
+      "sha256": "1e68e5854bd50c7b84e049e4b5df39596127bd924785bdda4844f9c116deefec"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v2.smoke.qa.json",
+      "bytes": 3401,
+      "sha256": "d0c2678e38b65051d51e0a8dd138df236e94012ea2b0572139ffdfa8de4990dc"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v2.smoke.validation.json",
+      "bytes": 6027,
+      "sha256": "fdc8b64ffb2b5a869c052d672a8ab4464adbba3752aeecb9b7d5db6dba51bc67"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_pk_tox_v2.validation.json",
+      "bytes": 6052,
+      "sha256": "330357f2af02c49f048f2d88606939424dba5b4e12aa66458439d2e8692e1e4d"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.build.json",
+      "bytes": 1950,
+      "sha256": "2c1c7e5188b2f2ba4d6a878f4a495e94c9022f28a29e37048dd2d3ab587724ae"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.coverage.json",
+      "bytes": 897,
+      "sha256": "1a6ae0bce72dcca752f7007cf876df736220c77d4b95f84b6c16feaf593b4806"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.hierarchy.json",
+      "bytes": 13880,
+      "sha256": "36bcb093963e754ebe718d700f5528ef958b58071333e62fc17b960dc8d18b77"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.manifest.json",
+      "bytes": 3077,
+      "sha256": "df369f58b2c68bdf16e59f22b21f8107307842b975ef5fb38a02a5fc6812ad80"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.qa.json",
+      "bytes": 2144,
+      "sha256": "7103733d53ec26a93d28e12106051f6a8cdfcb230af6614339e1524ff68d6a6a"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.smoke.build.json",
+      "bytes": 1965,
+      "sha256": "62fa99b1cb241ce0ac761e31dd20868e67d1009de1cd8f36081c957d57937391"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.smoke.coverage.json",
+      "bytes": 880,
+      "sha256": "6906cb15b74593e7661bad260e0e5fb2dbe66cb77c711975c21dbff91446de61"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.smoke.hierarchy.json",
+      "bytes": 13865,
+      "sha256": "23ce3faae3947bf2c403489b28529973b8c2521348422625bdb897fb0aef3762"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.smoke.qa.json",
+      "bytes": 2138,
+      "sha256": "d27c1a4ad37ef2e8c2a9390d9d0b2bd9484883c491f0cb516facd6ad0b97d1ee"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.smoke.validation.json",
+      "bytes": 2931,
+      "sha256": "2b6bd141d9ebe54595c5f972b06615ee1022bdc1c4e28efb4e6efb412faee98f"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_semantic_tags_v1.validation.json",
+      "bytes": 2927,
+      "sha256": "bd56564776a745b6889342d529bc3167da5cb0542d2f02e8a13852e354fa897e"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_structure_identifiers_v1.build.json",
+      "bytes": 2055,
+      "sha256": "1f3d1e8c865695eb551cfafe52e6c28370c6a7f2f9bb56c6d9f8534875bd0211"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_structure_identifiers_v1.manifest.json",
+      "bytes": 2102,
+      "sha256": "9b55b4b0d917b3129c878593df33043744c34639aef68ff92ac955460db7fa3b"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_structure_identifiers_v1.qa.json",
+      "bytes": 2485,
+      "sha256": "2c484f68790decf2892521a2bdbb0a1cc8b4686a62f4360363a8ed5965dc8927"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_structure_identifiers_v1.smoke.build.json",
+      "bytes": 1912,
+      "sha256": "fb804e1cc246f358c983640d4e93d1797d183479e2766c354128db5dc616ca43"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_structure_identifiers_v1.smoke.qa.json",
+      "bytes": 2389,
+      "sha256": "b4055c413085232648e69aa2c790cf5c554853d4043b96d1be86069b2268b4bb"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_structure_identifiers_v1.smoke.validation.json",
+      "bytes": 1793,
+      "sha256": "c12cc6b5cc513704e30c7311ac943259e6170003b35f76084635209a3d0e962a"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_structure_identifiers_v1.validation.json",
+      "bytes": 1774,
+      "sha256": "5acd6d7312ec79b412a1f3f6016873151104113cd020be143375f11f57f99603"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_target_edges_v2.smoke.validation.json",
+      "bytes": 3712,
+      "sha256": "0f561441eba048747d987c855d3a8b22820231e63b36c19dec893af84a7d2ebc"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_target_edges_v2.validation.json",
+      "bytes": 3713,
+      "sha256": "395dca3c261a5b4661fda1f75af7d9326875517a16d453940ae612e2cf292128"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.backfill_audit.json",
+      "bytes": 45452,
+      "sha256": "1fc56560224b3c9fb9d08a5202a5176070a48d5e4151b59dc2b5b590425f5494"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.build.json",
+      "bytes": 2389,
+      "sha256": "75811013d05e89c33757835b851e02bd1595f34124365eba2871536e1d10e61e"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.manifest.json",
+      "bytes": 3343,
+      "sha256": "cedc3319c24826531b790dead87565ddb3b2352d90cd18fc25b093996cafdd49"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.missing_audit.json",
+      "bytes": 31787,
+      "sha256": "052503ed4e159845091b2e6a0fba3d0ed9ffca22b02c5548531ecd7f00bd333b"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.qa.json",
+      "bytes": 3565,
+      "sha256": "6a82ab25c38e1d73368c4f77af2be343c56541fac352d8fd1584c5aefdad3727"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.smoke.backfill_audit.json",
+      "bytes": 9493,
+      "sha256": "ec159cb4e865af2d3a8b0a6726baf415186125e5f8dd3061d5857a38556f5c99"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.smoke.build.json",
+      "bytes": 2399,
+      "sha256": "b4c4cddeffaf91830b51a85b272ae78fba124cb10da0840c92d8e3cb6cd56dcf"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.smoke.missing_audit.json",
+      "bytes": 31780,
+      "sha256": "151c321416643667c2c20a5b6e6ba7874f4f88aee80e35a3614a30d7e0e92b30"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.smoke.qa.json",
+      "bytes": 3619,
+      "sha256": "9771556105ebe4818f118049c1e7a1acf25976e53ca31a493f741f4c73d5d012"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.smoke.validation.json",
+      "bytes": 2245,
+      "sha256": "156f632faf2117554868acc8dbe4ceb2b8e0bc09796df9f332d835db3f3d63ec"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_core_v2.validation.json",
+      "bytes": 2235,
+      "sha256": "7daadb3a7939a400688db1c0aa3f134c2fe7ad5574b2bea4b33d99a83a5b076f"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_pubchem_enhanced_v1.build.json",
+      "bytes": 1759,
+      "sha256": "2b637e8d997cfb18940781c1bef6d7c5ebbb8b91d58d650fa1e3d1b51322b344"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_pubchem_enhanced_v1.conflict_audit.json",
+      "bytes": 47685,
+      "sha256": "260ca9443a0be5a198ad59b02137ecfd1deb3c076ef9aaf74c9ae9ac00842b65"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_pubchem_enhanced_v1.manifest.json",
+      "bytes": 2379,
+      "sha256": "7cba6fcc38e3211dee5a8a1b382ea255f930573be5602aae817d27a820365b97"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_pubchem_enhanced_v1.qa.json",
+      "bytes": 2360,
+      "sha256": "5033a930981286026a1ec8ccf8bb2e118190568b9d879dbd82a81504a7720b74"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_xref_pubchem_enhanced_v1.validation.json",
+      "bytes": 1927,
+      "sha256": "77cbef71279c3a86757598c06a62684699ba869663929dff5ecc9efadad12d5e"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.build.json",
+      "bytes": 62836,
+      "sha256": "3ad914fc8cfdfcb9aedeef9996c96eda75112af1f2aac7edcd7ebe01404882e7"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.conflict_audit.json",
+      "bytes": 345,
+      "sha256": "6d1356a5196d8b6929b30b9b25b5a8b88e32104d1e40b8978631822181ba10ba"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.coverage.json",
+      "bytes": 1147,
+      "sha256": "2b8ede71473f22cc7d51dce614a8db5e5074595a231e7dfca821728ba4b9bd74"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.manifest.json",
+      "bytes": 2330,
+      "sha256": "99149d401a3a7d2ccc5cf2b913233acbe491bc689589c7278efef7516d92025f"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.qa.json",
+      "bytes": 2403,
+      "sha256": "a0752832ea5138f99b8d555cfa8f9319ac2255e2592f1f5144d5a7f23e50a2f8"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.smoke.build.json",
+      "bytes": 10951,
+      "sha256": "7d28b5b74047d0a4fd127ca065b6f3cc2726fe3cb3eb9afa1f256c804ff20124"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.smoke.conflict_audit.json",
+      "bytes": 342,
+      "sha256": "f87a5b7dbb534c77a6da83de076d7766984653204b7bdea080042c90fd2aa36d"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.smoke.coverage.json",
+      "bytes": 1112,
+      "sha256": "c9f72cfb67db5ff3074f002267f2957272da8392e9254111ef4b3c4cf0c95bed"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.smoke.qa.json",
+      "bytes": 2437,
+      "sha256": "ef599471a6e3415dc259e639a92459c10ba1a33f75b708f89644dc8d41e43a70"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.smoke.validation.json",
+      "bytes": 2273,
+      "sha256": "ae0593b846f45a6e47352a13d705861c2d9e9f9d50563e289ea9aeabea9da7bd"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v1.validation.json",
+      "bytes": 2280,
+      "sha256": "0053d9d9baca81bac831452e93faa38715b1eb488699d22604575d32548726cf"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.build.json",
+      "bytes": 1543,
+      "sha256": "e47bced03cf0822b0aa2fccc59089e28421013ecec65692513a97b892fc75597"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.conflict_audit.json",
+      "bytes": 730,
+      "sha256": "c48d5adc1397e0190da7ae4bd445da31d5b0feb07be9fba079c88f040750dcfb"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.coverage.json",
+      "bytes": 970,
+      "sha256": "4cfabfbf67157f777c7c50f7c84120747404aee3dcfe2276c4ff20c681db1f4d"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.manifest.json",
+      "bytes": 2608,
+      "sha256": "df10983bc1c06302840fb87dfbfa0a0317de2f521ca8195648ddf0c10803fb25"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.qa.json",
+      "bytes": 2844,
+      "sha256": "b27866cd0077fb3f005c4687856b5e4ed32d0ae2ca995da2b8eb2b888bb0e087"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.smoke.build.json",
+      "bytes": 1537,
+      "sha256": "7172e6145e4d07e08a450a9fac5b55095b16872475278fc20faedfb31ddab476"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.smoke.conflict_audit.json",
+      "bytes": 721,
+      "sha256": "9db0abc37b521db9ff86e06505747ea01dd24829a40314b455be63103ef8df4f"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.smoke.coverage.json",
+      "bytes": 904,
+      "sha256": "09bc72828dafd390103469ee6f4bf60c4e6791c437f6b66480be852f44ca5212"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.smoke.qa.json",
+      "bytes": 2767,
+      "sha256": "87e22776efd853e5d73c53f72a23c087b10d9fbba68f34502312fccd1ba73c1a"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.smoke.validation.json",
+      "bytes": 2673,
+      "sha256": "b8fa0934b7144497bca7af9c00fbd1a8d42cb0315e670321fbafc03ed6e1fbcf"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/reports/molecule_zinc_xref_v2.validation.json",
+      "bytes": 2681,
+      "sha256": "5b0680a864549242a14c873c49da51941335018de2ecf7fd33097bc10f28ca99"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/activity/molecule_activity_evidence_v2.sample.tsv",
+      "bytes": 1043001,
+      "sha256": "831d943dd65b0dcc1365bcc660d31c632d9578489638d28da95ae535222d4383"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/activity/molecule_large_relation_assets_summary_v1.json",
+      "bytes": 658,
+      "sha256": "fe6ef2fe054227d26ddae04740356ee3e00d8c78dd9a19f16ab5e8f3dd40ff1d"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/activity/molecule_target_edges_v2.sample.tsv",
+      "bytes": 920509,
+      "sha256": "53ca7a3bdc0ca675964026d836757f0415c15e00df454fa1c51094d01989d993"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/identifiers/molecule_structure_identifiers_v1.tsv",
       "bytes": 6523180,
       "sha256": "0533dfcb74d723dd13553084d6fc01ee503c950cb96a83e07f1fca18a6c22396"
     },
     {
-      "path": "molecule/release/external/molecule-v1/tables/molecule_xref_pubchem_enhanced_v1.tsv",
+      "path": "molecule/release/external/molecule-v1/tables/identifiers/molecule_xref_core_v2.tsv",
+      "bytes": 5813727,
+      "sha256": "b6a4df2b34b0dea940d31b8d736927eb32dd1799e83f09b66000503f65a31170"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/identifiers/molecule_xref_pubchem_enhanced_v1.tsv",
       "bytes": 5868795,
       "sha256": "06632d9fe214e90833dd3d00a6abb2448bcebee4b0ac763845831a96ce1f5adc"
     },
     {
-      "path": "molecule/release/external/molecule-v1/tables/molecule_zinc_xref_v1.tsv",
+      "path": "molecule/release/external/molecule-v1/tables/identifiers/molecule_zinc_xref_v1.tsv",
       "bytes": 31567503,
       "sha256": "123bfff9075c166572a6989eb943824a027223777ea9e27445371d7418d3cb95"
     },
     {
-      "path": "molecule/release/external/molecule-v1/tables/molecule_zinc_xref_v2.tsv",
+      "path": "molecule/release/external/molecule-v1/tables/identifiers/molecule_zinc_xref_v2.tsv",
       "bytes": 47311733,
       "sha256": "f53c813f9d38af748cb5b3b18c882d6a89fe540ff265ebd293b992dea815f783"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/physicochemical/molecule_physchem_descriptors_v1.tsv",
+      "bytes": 2659923,
+      "sha256": "9b88dc4a0b876659fd1d5281933faa055af89034bbfc87fccc4d6a2a0baeb661"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/pk_toxicology/molecule_pk_tox_v1.tsv",
+      "bytes": 3725070,
+      "sha256": "d29c8f074e39076e19115d1273e24575d5f0c6138529894000713e87c46f15b3"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/pk_toxicology/molecule_pk_tox_v2.tsv",
+      "bytes": 5464575,
+      "sha256": "6ae501f22906528edf9870563a9b2be86a9d34be81818ee55b5dc5444ccd9a87"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/semantic/molecule_semantic_tags_v1.tsv",
+      "bytes": 6250662,
+      "sha256": "19b6ca078c51d2132812fe7eb11ff701b6d3c96e981394f4dbfb5ab120bd25f0"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/structure/molecule_3d_experimental_v1.tsv",
+      "bytes": 42292424,
+      "sha256": "0d824755e2b63bb1cced5bb5ca05070d258508d7325be642d1ad77b7092c890f"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/structure/molecule_3d_registry_v1.tsv",
+      "bytes": 5163698,
+      "sha256": "9503c66eb4578baa909ede0aa3bb896aab2af7d56a180469d23e2c3676831493"
     }
   ]
 }

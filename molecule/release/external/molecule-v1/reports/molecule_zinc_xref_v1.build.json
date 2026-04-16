@@ -1,0 +1,2179 @@
+{
+  "name": "molecule_zinc_xref_v1.build",
+  "created_at": "2026-04-13T08:21:14.672159+00:00",
+  "sample_mode": false,
+  "max_rows": null,
+  "max_vendors": null,
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "zinc_base_url": "http://files.docking.org/catalogs/",
+    "tiers": [
+      "10",
+      "20",
+      "30",
+      "40",
+      "50"
+    ]
+  },
+  "output": "data/output/molecules/molecule_zinc_xref_v1.tsv",
+  "metrics": {
+    "rows_written": 102560,
+    "input_rows": 14775,
+    "valid_inchikey_rows": 14775,
+    "skipped_bad_inchikey_rows": 0,
+    "vendor_attempted": 124,
+    "vendor_info_ok": 123,
+    "vendor_with_match": 116,
+    "matched_rows_total": 102560,
+    "vendor_info_not_found": 1,
+    "discovered_vendor_count": 124,
+    "smiles_joined_rows": 48403,
+    "coverage_rate": 0.4547546531302876,
+    "mapped_inchikey": 6719,
+    "baseline_rate": 0.018341793570219967,
+    "coverage_delta_vs_baseline": 0.43641285956006765
+  },
+  "vendor_scan": {
+    "tier_10": {
+      "status": "ok",
+      "vendors": 10
+    },
+    "10/cdivp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/cdivp/cdivp.info.txt.gz",
+      "metrics": {
+        "lines_total": 1
+      }
+    },
+    "10/chbr": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/chbr/chbr.info.txt.gz",
+      "metrics": {
+        "lines_total": 446,
+        "lines_not_in_xref": 445
+      }
+    },
+    "10/chbrbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/chbrbb/chbrbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 5295,
+        "lines_not_in_xref": 5277,
+        "matched_rows": 17
+      }
+    },
+    "10/chbrbbp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/chbrbbp/chbrbbp.info.txt.gz",
+      "metrics": {
+        "lines_total": 273,
+        "lines_not_in_xref": 271,
+        "matched_rows": 1
+      }
+    },
+    "10/chbrp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/chbrp/chbrp.info.txt.gz",
+      "metrics": {
+        "lines_total": 525,
+        "lines_not_in_xref": 524
+      }
+    },
+    "10/enaminebb-v": {
+      "status": "not_found",
+      "info_url": "",
+      "metrics": {
+        "status_code": 404
+      }
+    },
+    "10/molport": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/molport/molport.info.txt.gz",
+      "metrics": {
+        "lines_total": 304204,
+        "lines_not_in_xref": 303402,
+        "matched_rows": 801
+      }
+    },
+    "10/molportbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/molportbb/molportbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 197359,
+        "lines_not_in_xref": 195662,
+        "matched_rows": 1696
+      }
+    },
+    "10/molportbbp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/molportbbp/molportbbp.info.txt.gz",
+      "metrics": {
+        "lines_total": 16704,
+        "lines_not_in_xref": 16467,
+        "matched_rows": 236
+      }
+    },
+    "10/molportp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/molportp/molportp.info.txt.gz",
+      "metrics": {
+        "lines_total": 44747,
+        "lines_not_in_xref": 44560,
+        "matched_rows": 186
+      }
+    },
+    "tier_20": {
+      "status": "ok",
+      "vendors": 4
+    },
+    "20/enamine-vt1": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/20/enamine-vt1/enamine-vt1.info.txt.gz",
+      "metrics": {
+        "lines_total": 1839584,
+        "lines_not_in_xref": 1839582,
+        "matched_rows": 1
+      }
+    },
+    "20/enamine-vt2": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/20/enamine-vt2/enamine-vt2.info.txt.gz",
+      "metrics": {
+        "lines_total": 3868870,
+        "lines_not_in_xref": 3868842,
+        "matched_rows": 27
+      }
+    },
+    "20/enamine-vt5": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/20/enamine-vt5/enamine-vt5.info.txt.gz",
+      "metrics": {
+        "lines_total": 3389879,
+        "lines_not_in_xref": 3389878
+      }
+    },
+    "20/enamine-vt6": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/20/enamine-vt6/enamine-vt6.info.txt.gz",
+      "metrics": {
+        "lines_total": 719685,
+        "lines_not_in_xref": 719651,
+        "matched_rows": 33
+      }
+    },
+    "tier_30": {
+      "status": "ok",
+      "vendors": 3
+    },
+    "30/molportbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/30/molportbb/molportbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 197359,
+        "lines_not_in_xref": 195662,
+        "matched_rows": 1696
+      }
+    },
+    "30/sciex": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/30/sciex/sciex.info.txt.gz",
+      "metrics": {
+        "lines_total": 62158,
+        "lines_not_in_xref": 62090,
+        "matched_rows": 67
+      }
+    },
+    "30/sciexbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/30/sciexbb/sciexbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 37958,
+        "lines_not_in_xref": 37931,
+        "matched_rows": 26
+      }
+    },
+    "tier_40": {
+      "status": "ok",
+      "vendors": 74
+    },
+    "40/a2z": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/a2z/a2z.info.txt.gz",
+      "metrics": {
+        "lines_total": 123725,
+        "lines_not_in_xref": 123449,
+        "matched_rows": 275
+      }
+    },
+    "40/accela": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/accela/accela.info.txt.gz",
+      "metrics": {
+        "lines_total": 19426,
+        "lines_not_in_xref": 19020,
+        "matched_rows": 405
+      }
+    },
+    "40/acdisc": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/acdisc/acdisc.info.txt.gz",
+      "metrics": {
+        "lines_total": 2225,
+        "lines_not_in_xref": 2224
+      }
+    },
+    "40/acdiscnd": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/acdiscnd/acdiscnd.info.txt.gz",
+      "metrics": {
+        "lines_total": 27870,
+        "lines_not_in_xref": 27869
+      }
+    },
+    "40/acdiscnp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/acdiscnp/acdiscnp.info.txt.gz",
+      "metrics": {
+        "lines_total": 13227,
+        "lines_not_in_xref": 13081,
+        "matched_rows": 145
+      }
+    },
+    "40/achemblock": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/achemblock/achemblock.info.txt.gz",
+      "metrics": {
+        "lines_total": 10580,
+        "lines_not_in_xref": 10125,
+        "matched_rows": 454
+      }
+    },
+    "40/aksci": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/aksci/aksci.info.txt",
+      "metrics": {
+        "lines_total": 212119,
+        "lines_not_in_xref": 204876,
+        "matched_rows": 7242
+      }
+    },
+    "40/alindabb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/alindabb/alindabb.info.txt.gz",
+      "metrics": {
+        "lines_total": 36207,
+        "lines_not_in_xref": 35943,
+        "matched_rows": 263
+      }
+    },
+    "40/aobious": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/aobious/aobious.info.txt.gz",
+      "metrics": {
+        "lines_total": 1430,
+        "lines_not_in_xref": 1026,
+        "matched_rows": 403
+      }
+    },
+    "40/apexbt": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/apexbt/apexbt.info.txt.gz",
+      "metrics": {
+        "lines_total": 5983,
+        "lines_not_in_xref": 4190,
+        "matched_rows": 1792
+      }
+    },
+    "40/apollo": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/apollo/apollo.info.txt.gz",
+      "metrics": {
+        "lines_total": 43562,
+        "lines_not_in_xref": 43353,
+        "matched_rows": 208
+      }
+    },
+    "40/apollobb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/apollobb/apollobb.info.txt.gz",
+      "metrics": {
+        "lines_total": 24999,
+        "lines_not_in_xref": 24513,
+        "matched_rows": 485
+      }
+    },
+    "40/apollobio": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/apollobio/apollobio.info.txt.gz",
+      "metrics": {
+        "lines_total": 2274,
+        "lines_not_in_xref": 1758,
+        "matched_rows": 515
+      }
+    },
+    "40/arkbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/arkbb/arkbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 33960,
+        "lines_not_in_xref": 32508,
+        "matched_rows": 1451
+      }
+    },
+    "40/aronis": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/aronis/aronis.info.txt.gz",
+      "metrics": {
+        "lines_total": 31109,
+        "lines_not_in_xref": 30912,
+        "matched_rows": 196
+      }
+    },
+    "40/asin": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/asin/asin.info.txt",
+      "metrics": {
+        "lines_total": 796203,
+        "lines_not_in_xref": 796108,
+        "matched_rows": 94
+      }
+    },
+    "40/bcp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/bcp/bcp.info.txt.gz",
+      "metrics": {
+        "lines_total": 1983,
+        "lines_not_in_xref": 1424,
+        "matched_rows": 558
+      }
+    },
+    "40/bidebb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/bidebb/bidebb.info.txt.gz",
+      "metrics": {
+        "lines_total": 51934,
+        "lines_not_in_xref": 49860,
+        "matched_rows": 2073
+      }
+    },
+    "40/biopurify": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/biopurify/biopurify.info.txt.gz",
+      "metrics": {
+        "lines_total": 2708,
+        "lines_not_in_xref": 2411,
+        "matched_rows": 296
+      }
+    },
+    "40/bosche": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/bosche/bosche.info.txt.gz",
+      "metrics": {
+        "lines_total": 20623,
+        "lines_not_in_xref": 18846,
+        "matched_rows": 1776
+      }
+    },
+    "40/capot": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/capot/capot.info.txt.gz",
+      "metrics": {
+        "lines_total": 28687,
+        "lines_not_in_xref": 27537,
+        "matched_rows": 1149
+      }
+    },
+    "40/cayman": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/cayman/cayman.info.txt.gz",
+      "metrics": {
+        "lines_total": 10899,
+        "matched_rows": 2050,
+        "lines_not_in_xref": 8848
+      }
+    },
+    "40/chemaphor": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/chemaphor/chemaphor.info.txt.gz",
+      "metrics": {
+        "lines_total": 16,
+        "matched_rows": 8,
+        "lines_not_in_xref": 7
+      }
+    },
+    "40/chemimpex": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/chemimpex/chemimpex.info.txt.gz",
+      "metrics": {
+        "lines_total": 16699,
+        "lines_not_in_xref": 15590,
+        "matched_rows": 1108
+      }
+    },
+    "40/chemodexbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/chemodexbb/chemodexbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 155,
+        "lines_not_in_xref": 141,
+        "matched_rows": 13
+      }
+    },
+    "40/chemyuhao": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/chemyuhao/chemyuhao.info.txt.gz",
+      "metrics": {
+        "lines_total": 6961,
+        "lines_not_in_xref": 5909,
+        "matched_rows": 1051
+      }
+    },
+    "40/coresyn": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/coresyn/coresyn.info.txt.gz",
+      "metrics": {
+        "lines_total": 4151,
+        "lines_not_in_xref": 4106,
+        "matched_rows": 44
+      }
+    },
+    "40/creative": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/creative/creative.info.txt.gz",
+      "metrics": {
+        "lines_total": 9412,
+        "lines_not_in_xref": 8940,
+        "matched_rows": 471
+      }
+    },
+    "40/edasa": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/edasa/edasa.info.txt.gz",
+      "metrics": {
+        "lines_total": 30970,
+        "lines_not_in_xref": 30705,
+        "matched_rows": 264
+      }
+    },
+    "40/endo": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/endo/endo.info.txt.gz",
+      "metrics": {
+        "lines_total": 3496,
+        "lines_not_in_xref": 3445,
+        "matched_rows": 50
+      }
+    },
+    "40/evoblocks": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/evoblocks/evoblocks.info.txt.gz",
+      "metrics": {
+        "lines_total": 9710,
+        "lines_not_in_xref": 9696,
+        "matched_rows": 13
+      }
+    },
+    "40/exchem": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/exchem/exchem.info.txt.gz",
+      "metrics": {
+        "lines_total": 3010,
+        "lines_not_in_xref": 2914,
+        "matched_rows": 95
+      }
+    },
+    "40/fluorochem": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/fluorochem/fluorochem.info.txt.gz",
+      "metrics": {
+        "lines_total": 203702,
+        "lines_not_in_xref": 201016,
+        "matched_rows": 2685
+      }
+    },
+    "40/hdhpharma": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/hdhpharma/hdhpharma.info.txt.gz",
+      "metrics": {
+        "lines_total": 52244,
+        "lines_not_in_xref": 51949,
+        "matched_rows": 294
+      }
+    },
+    "40/ibsbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/ibsbb/ibsbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 16015,
+        "lines_not_in_xref": 15339,
+        "matched_rows": 675
+      }
+    },
+    "40/ibsdrugs": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/ibsdrugs/ibsdrugs.info.txt.gz",
+      "metrics": {
+        "lines_total": 996,
+        "matched_rows": 451,
+        "lines_not_in_xref": 544
+      }
+    },
+    "40/ibsnp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/ibsnp/ibsnp.info.txt.gz",
+      "metrics": {
+        "lines_total": 114868,
+        "lines_not_in_xref": 114511,
+        "matched_rows": 356
+      }
+    },
+    "40/iflab": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/iflab/iflab.info.txt.gz",
+      "metrics": {
+        "lines_total": 561362,
+        "lines_not_in_xref": 561158,
+        "matched_rows": 203
+      }
+    },
+    "40/iflabbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/iflabbb/iflabbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 75874,
+        "lines_not_in_xref": 75394,
+        "matched_rows": 479
+      }
+    },
+    "40/indofine": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/indofine/indofine.info.txt.gz",
+      "metrics": {
+        "lines_total": 14049,
+        "lines_not_in_xref": 13390,
+        "matched_rows": 658
+      }
+    },
+    "40/indofinenp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/indofinenp/indofinenp.info.txt.gz",
+      "metrics": {
+        "lines_total": 114,
+        "matched_rows": 43,
+        "lines_not_in_xref": 70
+      }
+    },
+    "40/innovabb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/innovabb/innovabb.info.txt.gz",
+      "metrics": {
+        "lines_total": 40788,
+        "lines_not_in_xref": 40307,
+        "matched_rows": 480
+      }
+    },
+    "40/isoprenoid": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/isoprenoid/isoprenoid.info.txt.gz",
+      "metrics": {
+        "lines_total": 6,
+        "matched_rows": 4,
+        "lines_not_in_xref": 1
+      }
+    },
+    "40/jrd": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/jrd/jrd.info.txt.gz",
+      "metrics": {
+        "lines_total": 2657,
+        "lines_not_in_xref": 2652,
+        "matched_rows": 4
+      }
+    },
+    "40/labseekerbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/labseekerbb/labseekerbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 65588,
+        "lines_not_in_xref": 62969,
+        "matched_rows": 2618
+      }
+    },
+    "40/leadgen": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/leadgen/leadgen.info.txt.gz",
+      "metrics": {
+        "lines_total": 1945,
+        "lines_not_in_xref": 1933,
+        "matched_rows": 11
+      }
+    },
+    "40/molcan": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/molcan/molcan.info.txt.gz",
+      "metrics": {
+        "lines_total": 1605,
+        "matched_rows": 243,
+        "lines_not_in_xref": 1361
+      }
+    },
+    "40/molepedia": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/molepedia/molepedia.info.txt.gz",
+      "metrics": {
+        "lines_total": 14771,
+        "lines_not_in_xref": 13906,
+        "matched_rows": 864
+      }
+    },
+    "40/molmall": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/molmall/molmall.info.txt.gz",
+      "metrics": {
+        "lines_total": 25335,
+        "lines_not_in_xref": 25157,
+        "matched_rows": 177
+      }
+    },
+    "40/ncidiv": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/ncidiv/ncidiv.info.txt.gz",
+      "metrics": {
+        "lines_total": 2247,
+        "matched_rows": 39,
+        "lines_not_in_xref": 2207
+      }
+    },
+    "40/ncip": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/ncip/ncip.info.txt.gz",
+      "metrics": {
+        "lines_total": 233849,
+        "lines_not_in_xref": 230798,
+        "matched_rows": 3050
+      }
+    },
+    "40/oakwood": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/oakwood/oakwood.info.txt.gz",
+      "metrics": {
+        "lines_total": 118819,
+        "lines_not_in_xref": 117431,
+        "matched_rows": 1387
+      }
+    },
+    "40/peptech": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/peptech/peptech.info.txt.gz",
+      "metrics": {
+        "lines_total": 4923,
+        "lines_not_in_xref": 4886,
+        "matched_rows": 36
+      }
+    },
+    "40/pharmekbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/pharmekbb/pharmekbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 14230,
+        "lines_not_in_xref": 13663,
+        "matched_rows": 566
+      }
+    },
+    "40/pipharm": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/pipharm/pipharm.info.txt.gz",
+      "metrics": {
+        "lines_total": 30531,
+        "lines_not_in_xref": 28857,
+        "matched_rows": 1673
+      }
+    },
+    "40/princetonbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/princetonbb/princetonbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 187678,
+        "lines_not_in_xref": 187457,
+        "matched_rows": 220
+      }
+    },
+    "40/rieke": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/rieke/rieke.info.txt.gz",
+      "metrics": {
+        "lines_total": 9079,
+        "lines_not_in_xref": 9077,
+        "matched_rows": 1
+      }
+    },
+    "40/specsbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/specsbb/specsbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 10333,
+        "lines_not_in_xref": 10194,
+        "matched_rows": 138
+      }
+    },
+    "40/specsnp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/specsnp/specsnp.info.txt.gz",
+      "metrics": {
+        "lines_total": 2031,
+        "matched_rows": 53,
+        "lines_not_in_xref": 1977
+      }
+    },
+    "40/spiro": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/spiro/spiro.info.txt.gz",
+      "metrics": {
+        "lines_total": 13023,
+        "lines_not_in_xref": 12973,
+        "matched_rows": 49
+      }
+    },
+    "40/synchemug": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/synchemug/synchemug.info.txt.gz",
+      "metrics": {
+        "lines_total": 6947,
+        "lines_not_in_xref": 6868,
+        "matched_rows": 78
+      }
+    },
+    "40/syntharise": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/syntharise/syntharise.info.txt.gz",
+      "metrics": {
+        "lines_total": 151,
+        "lines_not_in_xref": 120,
+        "matched_rows": 30
+      }
+    },
+    "40/synthonlab": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/synthonlab/synthonlab.info.txt.gz",
+      "metrics": {
+        "lines_total": 38731,
+        "lines_not_in_xref": 38729,
+        "matched_rows": 1
+      }
+    },
+    "40/targetmol": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/targetmol/targetmol.info.txt.gz",
+      "metrics": {
+        "lines_total": 9501,
+        "matched_rows": 2553,
+        "lines_not_in_xref": 6947
+      }
+    },
+    "40/tetrahedronbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/tetrahedronbb/tetrahedronbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 109990,
+        "lines_not_in_xref": 104694,
+        "matched_rows": 5295
+      }
+    },
+    "40/timtecbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/timtecbb/timtecbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 66750,
+        "lines_not_in_xref": 65531,
+        "matched_rows": 1218
+      }
+    },
+    "40/timtecnd": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/timtecnd/timtecnd.info.txt.gz",
+      "metrics": {
+        "lines_total": 4940,
+        "lines_not_in_xref": 4888,
+        "matched_rows": 51
+      }
+    },
+    "40/toslab": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/toslab/toslab.info.txt.gz",
+      "metrics": {
+        "lines_total": 26469,
+        "lines_not_in_xref": 26452,
+        "matched_rows": 16
+      }
+    },
+    "40/toslabbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/toslabbb/toslabbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 1884,
+        "lines_not_in_xref": 1875,
+        "matched_rows": 8
+      }
+    },
+    "40/vesino": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/vesino/vesino.info.txt.gz",
+      "metrics": {
+        "lines_total": 21072,
+        "lines_not_in_xref": 20404,
+        "matched_rows": 667
+      }
+    },
+    "40/wandj": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/wandj/wandj.info.txt.gz",
+      "metrics": {
+        "lines_total": 15719,
+        "matched_rows": 1488,
+        "lines_not_in_xref": 14230
+      }
+    },
+    "40/wuxi": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/wuxi/wuxi.info.txt.gz",
+      "metrics": {
+        "lines_total": 154913,
+        "lines_not_in_xref": 154906,
+        "matched_rows": 6
+      }
+    },
+    "40/wuxibb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/wuxibb/wuxibb.info.txt.gz",
+      "metrics": {
+        "lines_total": 8540,
+        "lines_not_in_xref": 8505,
+        "matched_rows": 34
+      }
+    },
+    "40/zelinskybb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/zelinskybb/zelinskybb.info.txt.gz",
+      "metrics": {
+        "lines_total": 23421,
+        "lines_not_in_xref": 23378,
+        "matched_rows": 42
+      }
+    },
+    "tier_50": {
+      "status": "ok",
+      "vendors": 33
+    },
+    "50/alfa": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/alfa/alfa.info.txt.gz",
+      "metrics": {
+        "lines_total": 36816,
+        "lines_not_in_xref": 35066,
+        "matched_rows": 1749
+      }
+    },
+    "50/aronisbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/aronisbb/aronisbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 2365,
+        "lines_not_in_xref": 2211,
+        "matched_rows": 153
+      }
+    },
+    "50/bachem": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/bachem/bachem.info.txt.gz",
+      "metrics": {
+        "lines_total": 4914,
+        "lines_not_in_xref": 4689,
+        "matched_rows": 224
+      }
+    },
+    "50/cdivbbe": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/cdivbbe/cdivbbe.info.txt.gz",
+      "metrics": {
+        "lines_total": 14735,
+        "lines_not_in_xref": 14525,
+        "matched_rows": 209
+      }
+    },
+    "50/cdivbbe-v": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/cdivbbe-v/cdivbbe-v.info.txt.gz",
+      "metrics": {
+        "lines_total": 384,
+        "lines_not_in_xref": 378,
+        "matched_rows": 5
+      }
+    },
+    "50/cdive": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/cdive/cdive.info.txt.gz",
+      "metrics": {
+        "lines_total": 1
+      }
+    },
+    "50/chbrbbe": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/chbrbbe/chbrbbe.info.txt.gz",
+      "metrics": {
+        "lines_total": 17106,
+        "lines_not_in_xref": 17074,
+        "matched_rows": 31
+      }
+    },
+    "50/chbre": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/chbre/chbre.info.txt.gz",
+      "metrics": {
+        "lines_total": 1935039,
+        "lines_not_in_xref": 1934760,
+        "matched_rows": 278
+      }
+    },
+    "50/combiblocksbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/combiblocksbb/combiblocksbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 95173,
+        "lines_not_in_xref": 92827,
+        "matched_rows": 2345
+      }
+    },
+    "50/enamine": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/enamine/enamine.info.txt.gz",
+      "metrics": {
+        "lines_total": 87317,
+        "lines_not_in_xref": 87184,
+        "matched_rows": 132
+      }
+    },
+    "50/enaminebb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/enaminebb/enaminebb.info.txt.gz",
+      "metrics": {
+        "lines_total": 964378,
+        "lines_not_in_xref": 962477,
+        "matched_rows": 1900
+      }
+    },
+    "50/frinton": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/frinton/frinton.info.txt.gz",
+      "metrics": {
+        "lines_total": 1567,
+        "lines_not_in_xref": 1537,
+        "matched_rows": 29
+      }
+    },
+    "50/frontier": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/frontier/frontier.info.txt.gz",
+      "metrics": {
+        "lines_total": 81229,
+        "lines_not_in_xref": 80996,
+        "matched_rows": 232
+      }
+    },
+    "50/frontierbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/frontierbb/frontierbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 31225,
+        "lines_not_in_xref": 30050,
+        "matched_rows": 1174
+      }
+    },
+    "50/keyo": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/keyo/keyo.info.txt.gz",
+      "metrics": {
+        "lines_total": 94261,
+        "lines_not_in_xref": 93951,
+        "matched_rows": 309
+      }
+    },
+    "50/keyobb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/keyobb/keyobb.info.txt.gz",
+      "metrics": {
+        "lines_total": 45717,
+        "lines_not_in_xref": 45274,
+        "matched_rows": 442
+      }
+    },
+    "50/keyobio": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/keyobio/keyobio.info.txt.gz",
+      "metrics": {
+        "lines_total": 1351,
+        "lines_not_in_xref": 701,
+        "matched_rows": 649
+      }
+    },
+    "50/matrix": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/matrix/matrix.info.txt.gz",
+      "metrics": {
+        "lines_total": 191036,
+        "lines_not_in_xref": 188444,
+        "matched_rows": 2591
+      }
+    },
+    "50/mayb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/mayb/mayb.info.txt.gz",
+      "metrics": {
+        "lines_total": 64746,
+        "lines_not_in_xref": 64561,
+        "matched_rows": 184
+      }
+    },
+    "50/maybbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/maybbb/maybbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 5381,
+        "lines_not_in_xref": 5336,
+        "matched_rows": 44
+      }
+    },
+    "50/mce": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/mce/mce.info.txt.gz",
+      "metrics": {
+        "lines_total": 2008,
+        "matched_rows": 596,
+        "lines_not_in_xref": 1411
+      }
+    },
+    "50/molportbbe": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/molportbbe/molportbbe.info.txt.gz",
+      "metrics": {
+        "lines_total": 176400,
+        "matched_rows": 3630,
+        "lines_not_in_xref": 172769
+      }
+    },
+    "50/molporte": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/molporte/molporte.info.txt.gz",
+      "metrics": {
+        "lines_total": 9727558,
+        "matched_rows": 4716,
+        "lines_not_in_xref": 9722841
+      }
+    },
+    "50/ryan": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/ryan/ryan.info.txt.gz",
+      "metrics": {
+        "lines_total": 7190,
+        "lines_not_in_xref": 6994,
+        "matched_rows": 195
+      }
+    },
+    "50/ryanbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/ryanbb/ryanbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 20880,
+        "lines_not_in_xref": 19450,
+        "matched_rows": 1429
+      }
+    },
+    "50/selleck": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/selleck/selleck.info.txt.gz",
+      "metrics": {
+        "lines_total": 3346,
+        "matched_rows": 1711,
+        "lines_not_in_xref": 1634
+      }
+    },
+    "50/sial": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/sial/sial.info.txt.gz",
+      "metrics": {
+        "lines_total": 245248,
+        "lines_not_in_xref": 244437,
+        "matched_rows": 810
+      }
+    },
+    "50/sialbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/sialbb/sialbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 105928,
+        "lines_not_in_xref": 94534,
+        "matched_rows": 11393
+      }
+    },
+    "50/specs": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/specs/specs.info.txt.gz",
+      "metrics": {
+        "lines_total": 884044,
+        "lines_not_in_xref": 882103,
+        "matched_rows": 1940
+      }
+    },
+    "50/tocris": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/tocris/tocris.info.txt.gz",
+      "metrics": {
+        "lines_total": 4214,
+        "matched_rows": 985,
+        "lines_not_in_xref": 3228
+      }
+    },
+    "50/trc": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/trc/trc.info.txt.gz",
+      "metrics": {
+        "lines_total": 25697,
+        "lines_not_in_xref": 23407,
+        "matched_rows": 2289
+      }
+    },
+    "50/vitasm": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/vitasm/vitasm.info.txt.gz",
+      "metrics": {
+        "lines_total": 1538841,
+        "lines_not_in_xref": 1537872,
+        "matched_rows": 968
+      }
+    },
+    "50/vitasmbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/vitasmbb/vitasmbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 27401,
+        "lines_not_in_xref": 26860,
+        "matched_rows": 540
+      }
+    }
+  },
+  "source_fetch": {
+    "a2z": {
+      "needed_codes": 269,
+      "source_lines_total": 98529,
+      "source_codes_found": 269,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/a2z.src.txt",
+      "source_error": ""
+    },
+    "accela": {
+      "needed_codes": 393,
+      "source_lines_total": 49386,
+      "source_codes_found": 359,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/accela.src.txt",
+      "source_error": ""
+    },
+    "acdiscnp": {
+      "needed_codes": 145,
+      "source_lines_total": 6540,
+      "source_codes_found": 136,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/acdiscnp.src.txt",
+      "source_error": ""
+    },
+    "achemblock": {
+      "needed_codes": 454,
+      "source_lines_total": 63820,
+      "source_codes_found": 449,
+      "source_lines_bad_short": 3,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/achemblock.src.txt",
+      "source_error": ""
+    },
+    "aksci": {
+      "needed_codes": 7109,
+      "source_lines_total": 45967,
+      "source_codes_found": 914,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/aksci.src.txt",
+      "source_error": ""
+    },
+    "alfa": {
+      "needed_codes": 1705,
+      "source_lines_total": 35365,
+      "source_codes_found": 1705,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/alfa.src.txt",
+      "source_error": ""
+    },
+    "alindabb": {
+      "needed_codes": 254,
+      "source_lines_total": 7289,
+      "source_codes_found": 23,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/alindabb.src.txt",
+      "source_error": ""
+    },
+    "aobious": {
+      "needed_codes": 401,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "apexbt": {
+      "needed_codes": 1785,
+      "source_lines_total": 63164,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/apexbt.src.txt",
+      "source_error": ""
+    },
+    "apollo": {
+      "needed_codes": 206,
+      "source_lines_total": 46807,
+      "source_lines_bad_short": 234,
+      "source_codes_found": 194,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/apollo.src.txt",
+      "source_error": ""
+    },
+    "apollobb": {
+      "needed_codes": 483,
+      "source_lines_total": 24958,
+      "source_codes_found": 481,
+      "source_lines_bad_short": 69,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/apollobb.src.txt",
+      "source_error": ""
+    },
+    "apollobio": {
+      "needed_codes": 465,
+      "source_lines_total": 3609,
+      "source_codes_found": 461,
+      "source_lines_bad_short": 270,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/apollobio.src.txt",
+      "source_error": ""
+    },
+    "arkbb": {
+      "needed_codes": 1419,
+      "source_lines_total": 31228,
+      "source_codes_found": 1418,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/arkbb.src.txt",
+      "source_error": ""
+    },
+    "aronis": {
+      "needed_codes": 184,
+      "source_lines_total": 26750,
+      "source_codes_found": 184,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/aronis.src.txt",
+      "source_error": ""
+    },
+    "aronisbb": {
+      "needed_codes": 152,
+      "source_fetch_errors": 1,
+      "source_lines_total": 1853,
+      "source_codes_found": 152,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/aronisbb.src.txt",
+      "source_error": ""
+    },
+    "asin": {
+      "needed_codes": 93,
+      "source_lines_total": 560644,
+      "source_codes_found": 63,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/asin.src.txt",
+      "source_error": ""
+    },
+    "bachem": {
+      "needed_codes": 208,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "bcp": {
+      "needed_codes": 558,
+      "source_lines_total": 12001,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/bcp.src.txt",
+      "source_error": ""
+    },
+    "bidebb": {
+      "needed_codes": 2018,
+      "source_lines_total": 56712,
+      "source_codes_found": 805,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/bidebb.src.txt",
+      "source_error": ""
+    },
+    "biopurify": {
+      "needed_codes": 290,
+      "source_lines_total": 2069,
+      "source_codes_found": 263,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/biopurify.src.txt",
+      "source_error": ""
+    },
+    "bosche": {
+      "needed_codes": 1752,
+      "source_lines_total": 18747,
+      "source_codes_found": 1695,
+      "source_lines_bad_short": 8,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/bosche.src.txt",
+      "source_error": ""
+    },
+    "capot": {
+      "needed_codes": 1120,
+      "source_lines_total": 33876,
+      "source_codes_found": 1115,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/capot.src.txt",
+      "source_error": ""
+    },
+    "cayman": {
+      "needed_codes": 2036,
+      "source_lines_total": 8620,
+      "source_codes_found": 2036,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/cayman.src.txt",
+      "source_error": ""
+    },
+    "cdivbbe": {
+      "needed_codes": 205,
+      "source_lines_total": 14841,
+      "source_codes_found": 204,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/cdivbbe.src.txt",
+      "source_error": ""
+    },
+    "cdivbbe-v": {
+      "needed_codes": 5,
+      "source_lines_total": 917,
+      "source_codes_found": 5,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/cdivbbe-v.src.txt",
+      "source_error": ""
+    },
+    "chbrbb": {
+      "needed_codes": 17,
+      "source_lines_total": 3506,
+      "source_codes_found": 9,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/chbrbb.src.txt",
+      "source_error": ""
+    },
+    "chbrbbe": {
+      "needed_codes": 31,
+      "source_lines_total": 13882,
+      "source_codes_found": 23,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/chbrbbe.src.txt",
+      "source_error": ""
+    },
+    "chbrbbp": {
+      "needed_codes": 1,
+      "source_lines_total": 379,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/chbrbbp.src.txt",
+      "source_error": ""
+    },
+    "chbre": {
+      "needed_codes": 275,
+      "source_lines_total": 1684935,
+      "source_codes_found": 243,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/chbre.src.txt",
+      "source_error": ""
+    },
+    "chemaphor": {
+      "needed_codes": 8,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "chemimpex": {
+      "needed_codes": 1078,
+      "source_lines_total": 18271,
+      "source_lines_bad_short": 315,
+      "source_codes_found": 495,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/chemimpex.src.txt",
+      "source_error": ""
+    },
+    "chemodexbb": {
+      "needed_codes": 11,
+      "source_lines_total": 34,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/chemodexbb.src.txt",
+      "source_error": ""
+    },
+    "chemyuhao": {
+      "needed_codes": 1033,
+      "source_lines_total": 36319,
+      "source_codes_found": 1027,
+      "source_lines_bad_short": 25,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/chemyuhao.src.txt",
+      "source_error": ""
+    },
+    "combiblocksbb": {
+      "needed_codes": 2304,
+      "source_lines_total": 309768,
+      "source_codes_found": 2059,
+      "source_lines_bad_short": 15,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/combiblocksbb.src.txt",
+      "source_error": ""
+    },
+    "coresyn": {
+      "needed_codes": 44,
+      "source_lines_total": 4024,
+      "source_codes_found": 41,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/coresyn.src.txt",
+      "source_error": ""
+    },
+    "creative": {
+      "needed_codes": 376,
+      "source_lines_total": 5157,
+      "source_codes_found": 350,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/creative.src.txt",
+      "source_error": ""
+    },
+    "edasa": {
+      "needed_codes": 253,
+      "source_lines_total": 29814,
+      "source_codes_found": 69,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/edasa.src.txt",
+      "source_error": ""
+    },
+    "enamine": {
+      "needed_codes": 129,
+      "source_lines_total": 2946687,
+      "source_codes_found": 60,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/enamine.src.txt",
+      "source_error": ""
+    },
+    "enamine-vt1": {
+      "needed_codes": 1,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "enamine-vt2": {
+      "needed_codes": 27,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "enamine-vt6": {
+      "needed_codes": 32,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "enaminebb": {
+      "needed_codes": 1831,
+      "source_lines_total": 1147314,
+      "source_codes_found": 1791,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/enaminebb.src.txt",
+      "source_error": ""
+    },
+    "endo": {
+      "needed_codes": 50,
+      "source_lines_total": 1134,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/endo.src.txt",
+      "source_error": ""
+    },
+    "evoblocks": {
+      "needed_codes": 13,
+      "source_lines_total": 7558,
+      "source_codes_found": 12,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/evoblocks.src.txt",
+      "source_error": ""
+    },
+    "exchem": {
+      "needed_codes": 95,
+      "source_lines_total": 2482,
+      "source_codes_found": 95,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/exchem.src.txt",
+      "source_error": ""
+    },
+    "fluorochem": {
+      "needed_codes": 2618,
+      "source_lines_total": 180334,
+      "source_codes_found": 2360,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/fluorochem.src.txt",
+      "source_error": ""
+    },
+    "frinton": {
+      "needed_codes": 29,
+      "source_lines_total": 1077,
+      "source_codes_found": 29,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/frinton.src.txt",
+      "source_error": ""
+    },
+    "frontier": {
+      "needed_codes": 227,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "frontierbb": {
+      "needed_codes": 1152,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "hdhpharma": {
+      "needed_codes": 288,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "ibsbb": {
+      "needed_codes": 656,
+      "source_lines_total": 13248,
+      "source_codes_found": 645,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/ibsbb.src.txt",
+      "source_error": ""
+    },
+    "ibsdrugs": {
+      "needed_codes": 445,
+      "source_lines_total": 787,
+      "source_codes_found": 443,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/ibsdrugs.src.txt",
+      "source_error": ""
+    },
+    "ibsnp": {
+      "needed_codes": 347,
+      "source_lines_total": 69041,
+      "source_codes_found": 340,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/ibsnp.src.txt",
+      "source_error": ""
+    },
+    "iflab": {
+      "needed_codes": 196,
+      "source_lines_total": 516987,
+      "source_codes_found": 173,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/iflab.src.txt",
+      "source_error": ""
+    },
+    "iflabbb": {
+      "needed_codes": 462,
+      "source_lines_total": 593,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/iflabbb.src.txt",
+      "source_error": ""
+    },
+    "indofine": {
+      "needed_codes": 626,
+      "source_lines_total": 20672,
+      "source_codes_found": 557,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/indofine.src.txt",
+      "source_error": ""
+    },
+    "indofinenp": {
+      "needed_codes": 39,
+      "source_lines_total": 46,
+      "source_codes_found": 24,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/indofinenp.src.txt",
+      "source_error": ""
+    },
+    "innovabb": {
+      "needed_codes": 456,
+      "source_lines_total": 34891,
+      "source_codes_found": 423,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/innovabb.src.txt",
+      "source_error": ""
+    },
+    "isoprenoid": {
+      "needed_codes": 4,
+      "source_lines_total": 4,
+      "source_codes_found": 4,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/isoprenoid.src.txt",
+      "source_error": ""
+    },
+    "jrd": {
+      "needed_codes": 4,
+      "source_lines_total": 1437,
+      "source_codes_found": 4,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/jrd.src.txt",
+      "source_error": ""
+    },
+    "keyo": {
+      "needed_codes": 308,
+      "source_lines_total": 100104,
+      "source_codes_found": 242,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/keyo.src.txt",
+      "source_error": ""
+    },
+    "keyobb": {
+      "needed_codes": 441,
+      "source_lines_total": 221022,
+      "source_codes_found": 262,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/keyobb.src.txt",
+      "source_error": ""
+    },
+    "keyobio": {
+      "needed_codes": 640,
+      "source_lines_total": 2430,
+      "source_codes_found": 620,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/keyobio.src.txt",
+      "source_error": ""
+    },
+    "labseekerbb": {
+      "needed_codes": 2529,
+      "source_lines_total": 51703,
+      "source_codes_found": 1462,
+      "source_lines_bad_short": 1,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/labseekerbb.src.txt",
+      "source_error": ""
+    },
+    "leadgen": {
+      "needed_codes": 11,
+      "source_lines_total": 1680,
+      "source_codes_found": 11,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/leadgen.src.txt",
+      "source_error": ""
+    },
+    "matrix": {
+      "needed_codes": 2553,
+      "source_lines_total": 171644,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/matrix.src.txt",
+      "source_error": ""
+    },
+    "mayb": {
+      "needed_codes": 182,
+      "source_lines_total": 53276,
+      "source_codes_found": 182,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/mayb.src.txt",
+      "source_error": ""
+    },
+    "maybbb": {
+      "needed_codes": 43,
+      "source_lines_total": 3265,
+      "source_codes_found": 17,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/maybbb.src.txt",
+      "source_error": ""
+    },
+    "mce": {
+      "needed_codes": 594,
+      "source_lines_total": 17806,
+      "source_codes_found": 235,
+      "source_lines_bad_short": 2429,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/mce.src.txt",
+      "source_error": ""
+    },
+    "molcan": {
+      "needed_codes": 237,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "molepedia": {
+      "needed_codes": 854,
+      "source_lines_total": 13327,
+      "source_codes_found": 854,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molepedia.src.txt",
+      "source_error": ""
+    },
+    "molmall": {
+      "needed_codes": 170,
+      "source_lines_total": 15397,
+      "source_codes_found": 169,
+      "source_lines_bad_short": 2,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molmall.src.txt",
+      "source_error": ""
+    },
+    "molport": {
+      "needed_codes": 795,
+      "source_lines_total": 3439498,
+      "source_fetch_errors": 1,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molport.src.txt",
+      "source_error": ""
+    },
+    "molportbb": {
+      "needed_codes": 1671,
+      "source_lines_total": 107026,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molportbb.src.txt",
+      "source_error": ""
+    },
+    "molportbbe": {
+      "needed_codes": 3566,
+      "source_lines_total": 256249,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molportbbe.src.txt",
+      "source_error": ""
+    },
+    "molportbbp": {
+      "needed_codes": 235,
+      "source_lines_total": 488469,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molportbbp.src.txt",
+      "source_error": ""
+    },
+    "molporte": {
+      "needed_codes": 4648,
+      "source_lines_total": 455772,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molporte.src.txt",
+      "source_error": ""
+    },
+    "molportp": {
+      "needed_codes": 185,
+      "source_lines_total": 95922,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molportp.src.txt",
+      "source_error": ""
+    },
+    "ncidiv": {
+      "needed_codes": 38,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "ncip": {
+      "needed_codes": 2841,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "oakwood": {
+      "needed_codes": 1352,
+      "source_lines_total": 5187,
+      "source_codes_found": 15,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/oakwood.src.txt",
+      "source_error": ""
+    },
+    "peptech": {
+      "needed_codes": 36,
+      "source_lines_total": 4693,
+      "source_codes_found": 35,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/peptech.src.txt",
+      "source_error": ""
+    },
+    "pharmekbb": {
+      "needed_codes": 549,
+      "source_lines_total": 12307,
+      "source_codes_found": 546,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/pharmekbb.src.txt",
+      "source_error": ""
+    },
+    "pipharm": {
+      "needed_codes": 1662,
+      "source_lines_total": 34143,
+      "source_codes_found": 1498,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/pipharm.src.txt",
+      "source_error": ""
+    },
+    "princetonbb": {
+      "needed_codes": 216,
+      "source_lines_total": 119270,
+      "source_codes_found": 216,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/princetonbb.src.txt",
+      "source_error": ""
+    },
+    "rieke": {
+      "needed_codes": 1,
+      "source_lines_total": 8505,
+      "source_codes_found": 1,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/rieke.src.txt",
+      "source_error": ""
+    },
+    "ryan": {
+      "needed_codes": 193,
+      "source_lines_total": 6224488,
+      "source_codes_found": 193,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/ryan.src.txt",
+      "source_error": ""
+    },
+    "ryanbb": {
+      "needed_codes": 1390,
+      "source_lines_total": 1990962,
+      "source_codes_found": 1390,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/ryanbb.src.txt",
+      "source_error": ""
+    },
+    "sciex": {
+      "needed_codes": 64,
+      "source_lines_total": 239080,
+      "source_codes_found": 64,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/sciex.src.txt",
+      "source_error": ""
+    },
+    "sciexbb": {
+      "needed_codes": 26,
+      "source_lines_total": 33178,
+      "source_codes_found": 24,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/sciexbb.src.txt",
+      "source_error": ""
+    },
+    "selleck": {
+      "needed_codes": 1704,
+      "source_lines_total": 14739,
+      "source_codes_found": 1682,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/selleck.src.txt",
+      "source_error": ""
+    },
+    "sial": {
+      "needed_codes": 799,
+      "source_lines_total": 170245,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/sial.src.txt",
+      "source_error": ""
+    },
+    "sialbb": {
+      "needed_codes": 11216,
+      "source_lines_total": 117226,
+      "source_lines_bad_short": 6,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/sialbb.src.txt",
+      "source_error": ""
+    },
+    "specs": {
+      "needed_codes": 1884,
+      "source_lines_total": 535572,
+      "source_codes_found": 61,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/specs.src.txt",
+      "source_error": ""
+    },
+    "specsbb": {
+      "needed_codes": 136,
+      "source_lines_total": 9013,
+      "source_codes_found": 134,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/specsbb.src.txt",
+      "source_error": ""
+    },
+    "specsnp": {
+      "needed_codes": 51,
+      "source_lines_total": 737,
+      "source_codes_found": 49,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/specsnp.src.txt",
+      "source_error": ""
+    },
+    "spiro": {
+      "needed_codes": 48,
+      "source_lines_total": 12008,
+      "source_codes_found": 27,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/spiro.src.txt",
+      "source_error": ""
+    },
+    "synchemug": {
+      "needed_codes": 78,
+      "source_lines_total": 6252,
+      "source_codes_found": 78,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/synchemug.src.txt",
+      "source_error": ""
+    },
+    "syntharise": {
+      "needed_codes": 28,
+      "source_lines_total": 74,
+      "source_codes_found": 23,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/syntharise.src.txt",
+      "source_error": ""
+    },
+    "synthonlab": {
+      "needed_codes": 1,
+      "source_lines_total": 27891,
+      "source_codes_found": 1,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/synthonlab.src.txt",
+      "source_error": ""
+    },
+    "targetmol": {
+      "needed_codes": 2497,
+      "source_lines_total": 30277,
+      "source_codes_found": 1971,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/targetmol.src.txt",
+      "source_error": ""
+    },
+    "tetrahedronbb": {
+      "needed_codes": 5193,
+      "source_lines_total": 92552,
+      "source_codes_found": 5193,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/tetrahedronbb.src.txt",
+      "source_error": ""
+    },
+    "timtecbb": {
+      "needed_codes": 1192,
+      "source_lines_total": 54640,
+      "source_codes_found": 1192,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/timtecbb.src.txt",
+      "source_error": ""
+    },
+    "timtecnd": {
+      "needed_codes": 50,
+      "source_lines_total": 2608,
+      "source_codes_found": 50,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/timtecnd.src.txt",
+      "source_error": ""
+    },
+    "tocris": {
+      "needed_codes": 974,
+      "source_lines_total": 4084,
+      "source_codes_found": 974,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/tocris.src.txt",
+      "source_error": ""
+    },
+    "toslab": {
+      "needed_codes": 16,
+      "source_lines_total": 17577,
+      "source_codes_found": 16,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/toslab.src.txt",
+      "source_error": ""
+    },
+    "toslabbb": {
+      "needed_codes": 8,
+      "source_404": 1,
+      "source_lines_total": 1233,
+      "source_codes_found": 8,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/toslabbb.src.txt.gz",
+      "source_error": ""
+    },
+    "trc": {
+      "needed_codes": 2261,
+      "source_lines_total": 224109,
+      "source_lines_bad_short": 453,
+      "source_codes_found": 2053,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/trc.src.txt",
+      "source_error": ""
+    },
+    "vesino": {
+      "needed_codes": 618,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "vitasm": {
+      "needed_codes": 936,
+      "source_lines_total": 1407364,
+      "source_codes_found": 921,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/vitasm.src.txt",
+      "source_error": ""
+    },
+    "vitasmbb": {
+      "needed_codes": 508,
+      "source_fetch_errors": 1,
+      "source_lines_total": 24266,
+      "source_codes_found": 501,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/vitasmbb.src.txt",
+      "source_error": ""
+    },
+    "wandj": {
+      "needed_codes": 1446,
+      "source_lines_total": 964,
+      "source_codes_found": 49,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/wandj.src.txt",
+      "source_error": ""
+    },
+    "wuxi": {
+      "needed_codes": 6,
+      "source_lines_total": 98369,
+      "source_lines_bad_short": 3,
+      "source_codes_found": 6,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/wuxi.src.txt",
+      "source_error": ""
+    },
+    "wuxibb": {
+      "needed_codes": 34,
+      "source_lines_total": 7183,
+      "source_codes_found": 34,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/wuxibb.src.txt",
+      "source_error": ""
+    },
+    "zelinskybb": {
+      "needed_codes": 42,
+      "source_lines_total": 22754,
+      "source_codes_found": 41,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/zelinskybb.src.txt",
+      "source_error": ""
+    }
+  },
+  "coverage_report": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.coverage.json",
+  "conflict_report": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.conflict_audit.json"
+}

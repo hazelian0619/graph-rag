@@ -1,0 +1,43 @@
+{
+  "name": "molecule_zinc_xref_v2.build",
+  "created_at": "2026-04-13T22:08:13.512063+00:00",
+  "sample_mode": true,
+  "max_rows": 5000,
+  "inputs": {
+    "zinc_v1": "data/output/molecules/molecule_zinc_xref_v1.tsv",
+    "structure_identifiers": "data/output/molecules/molecule_structure_identifiers_v1.tsv"
+  },
+  "output": "pipelines/molecule_zinc_direct_xref_v2/.cache/molecule_zinc_xref_v2.smoke.tsv",
+  "metrics": {
+    "rows_input": 5000,
+    "rows_written": 5000,
+    "invalid_v1_inchikey_rows": 0,
+    "invalid_v1_zinc_id_rows": 0,
+    "smiles_rate_v1": 0.0626,
+    "smiles_rate_v2": 0.9986,
+    "smiles_rate_delta": 0.936,
+    "smiles_rate_delta_pp": 93.60000000000001,
+    "rows_backfilled": 4680,
+    "rows_still_missing_smiles": 7,
+    "rows_prefilled_preserved": 313,
+    "source_appended_rows": 4680,
+    "source_version_appended_rows": 4680,
+    "mapping_key_set_equal_to_v1": true,
+    "source_non_empty_rate": 1.0,
+    "source_version_non_empty_rate": 1.0,
+    "fetch_date_non_empty_rate": 1.0
+  },
+  "structure_stats": {
+    "rows": 14775,
+    "valid_inchikey_rows": 14775,
+    "bad_inchikey_rows": 0,
+    "duplicate_inchikey_rows": 0,
+    "conflicting_smiles_for_same_inchikey": 0,
+    "structure_fetch_dates": [
+      "2026-04-13"
+    ],
+    "canonical_smiles_non_empty": 14540
+  },
+  "coverage_report": "pipelines/molecule_zinc_direct_xref_v2/reports/molecule_zinc_xref_v2.smoke.coverage.json",
+  "conflict_report": "pipelines/molecule_zinc_direct_xref_v2/reports/molecule_zinc_xref_v2.smoke.conflict_audit.json"
+}

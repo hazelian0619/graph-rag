@@ -1,0 +1,55 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-12T11:27:05.043233+00:00",
+  "git_commit": "36720ce7f189e424fafcd56c87e0ab5a85b1d4e7",
+  "artifacts": [
+    {
+      "path": "data/output/molecules/molecule_3d_registry_v1.tsv",
+      "size_bytes": 5163698,
+      "sha256": "9503c66eb4578baa909ede0aa3bb896aab2af7d56a180469d23e2c3676831493",
+      "modified_time": "2026-04-12T11:27:04.308940+00:00"
+    },
+    {
+      "path": "data/output/molecules/molecule_xref_core_v2.tsv",
+      "size_bytes": 5813727,
+      "sha256": "b6a4df2b34b0dea940d31b8d736927eb32dd1799e83f09b66000503f65a31170",
+      "modified_time": "2026-04-12T09:46:53.426698+00:00"
+    },
+    {
+      "path": "../12182/data/chembl_36/chembl_36.db",
+      "size_bytes": 29739835392,
+      "sha256": "cf8547cad7da721e3cfaa79b60d38f616e21e05df18059efa34428c794b16d2b",
+      "modified_time": "2025-12-19T15:59:39.398334+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_registry/contracts/molecule_3d_registry_v1.json",
+      "size_bytes": 2490,
+      "sha256": "4e791ae814c5c229d3ba5eafd0345a5ee0f93134ab365336acc7112d9aeafe1a",
+      "modified_time": "2026-04-12T10:45:32.736669+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_registry/reports/molecule_3d_registry_v1.build.json",
+      "size_bytes": 2636,
+      "sha256": "3cfc8906016cdf3523da5e5c893abf7fffbafa5f085ca79bc0b18fcc44ad10d2",
+      "modified_time": "2026-04-12T11:27:04.319965+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_registry/reports/molecule_3d_registry_v1.coverage.json",
+      "size_bytes": 966,
+      "sha256": "f6f657bfa2406f5d0e7f0b52d0a84d474ee881014afdc53159d47055aee4bcf6",
+      "modified_time": "2026-04-12T11:27:04.319686+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_registry/reports/molecule_3d_registry_v1.validation.json",
+      "size_bytes": 3327,
+      "sha256": "cedffe232fcf7beb5ec4123d3d75edc73f6cb611e5305d9939b926814e64eac8",
+      "modified_time": "2026-04-12T11:27:04.665979+00:00"
+    },
+    {
+      "path": "pipelines/molecule_3d_registry/reports/molecule_3d_registry_v1.qa.json",
+      "size_bytes": 2171,
+      "sha256": "fe34efc0765ed20c58b9954e829f602f032d8db705c48144732b2ea52bd914af",
+      "modified_time": "2026-04-12T11:27:04.902348+00:00"
+    }
+  ]
+}

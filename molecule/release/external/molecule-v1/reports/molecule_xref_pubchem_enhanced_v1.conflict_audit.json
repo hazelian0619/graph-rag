@@ -1,0 +1,1824 @@
+{
+  "name": "molecule_xref_pubchem_enhanced_v1.conflict_audit",
+  "created_at": "2026-04-13T01:34:02.590189+00:00",
+  "total_conflicts": 98,
+  "tie_break_counts": {
+    "smiles_missing_keep_inchikey_candidates": 49,
+    "resolved_unique_by_smiles_intersection": 49
+  },
+  "records": [
+    {
+      "inchikey": "AACACXATQSKRQG-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "84645",
+        "75487596"
+      ],
+      "inchikey_candidates": [
+        "84645",
+        "75487596"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AAXYAFFKOSNMEB-MHARETSRSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "444841",
+        "5288460",
+        "135450902"
+      ],
+      "inchikey_candidates": [
+        "444841",
+        "5288460",
+        "135450902"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ACBSZTQIFTYFGH-IAPPQJPRSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135399823"
+      ],
+      "inchikey_candidates": [
+        "3036990",
+        "135399823"
+      ],
+      "smiles_candidates": [
+        "135399823"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "ACFIXJIJDZMPPO-NNYOXOHSSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "5884"
+      ],
+      "inchikey_candidates": [
+        "5884",
+        "134821689"
+      ],
+      "smiles_candidates": [
+        "5884"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "ACTPEXQBEHJTBO-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "3393379",
+        "12101749"
+      ],
+      "inchikey_candidates": [
+        "3393379",
+        "12101749"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AEBYHKKMCWUMKX-LNTZDJBBSA-K",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "91800164",
+        "154572876"
+      ],
+      "inchikey_candidates": [
+        "91800164",
+        "154572876"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AEFLONBTGZFSGQ-VKHMYHEASA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "445883",
+        "7015181"
+      ],
+      "inchikey_candidates": [
+        "445883",
+        "7015181"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AEGSYIKLTCZUEZ-FZTWWWDYSA-K",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "119117",
+        "16682728",
+        "17749568"
+      ],
+      "inchikey_candidates": [
+        "119117",
+        "16682728",
+        "17749568"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AFNHHLILYQEHKK-BDAKNGLRSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135449518"
+      ],
+      "inchikey_candidates": [
+        "447268",
+        "135449518"
+      ],
+      "smiles_candidates": [
+        "135449518"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AHBGXTDRMVNFER-FCHARDOESA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "5388879"
+      ],
+      "inchikey_candidates": [
+        "71435",
+        "5388879"
+      ],
+      "smiles_candidates": [
+        "5388879"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AHBGXTDRMVNFER-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "5362485"
+      ],
+      "inchikey_candidates": [
+        "61520",
+        "5362485",
+        "163196530"
+      ],
+      "smiles_candidates": [
+        "5362485"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AHLPHDHHMVZTML-BYPYZUCNSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "6262"
+      ],
+      "inchikey_candidates": [
+        "6262",
+        "88747248"
+      ],
+      "smiles_candidates": [
+        "6262"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AHPWLYJHTFAWKI-UHFFFAOYSA-K",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "169535",
+        "146025948"
+      ],
+      "inchikey_candidates": [
+        "169535",
+        "146025948"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AIOKQVJVNPDJKA-ZZMNMWMASA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "16211196",
+        "54682511",
+        "175647699"
+      ],
+      "inchikey_candidates": [
+        "16211196",
+        "54682511",
+        "175647699"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AJPJDKMHJJGVTQ-UHFFFAOYSA-M",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "23672064"
+      ],
+      "inchikey_candidates": [
+        "24204",
+        "21226420",
+        "23672064",
+        "172995771"
+      ],
+      "smiles_candidates": [
+        "23672064"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AJXFJEHKGGCFNM-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135451578"
+      ],
+      "inchikey_candidates": [
+        "445462",
+        "5289180",
+        "135451578"
+      ],
+      "smiles_candidates": [
+        "135451578"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AKFVRSQELXTCFW-JYRVWZFOSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "137349070"
+      ],
+      "inchikey_candidates": [
+        "23647659",
+        "137349070"
+      ],
+      "smiles_candidates": [
+        "137349070"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AKTXOQVMWSFEBQ-LCYFTJDESA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135564773"
+      ],
+      "inchikey_candidates": [
+        "6444826",
+        "135564773"
+      ],
+      "smiles_candidates": [
+        "135564773"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AKUPTUNGFOADRT-ZEDZUCNESA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135540812"
+      ],
+      "inchikey_candidates": [
+        "16124481",
+        "135540812"
+      ],
+      "smiles_candidates": [
+        "135540812"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AMDUVUKDRBIVAH-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "151434",
+        "5288551",
+        "135440058"
+      ],
+      "inchikey_candidates": [
+        "151434",
+        "5288551",
+        "135440058"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ANFNNSIOGODJDN-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135436454"
+      ],
+      "inchikey_candidates": [
+        "406591",
+        "135436454"
+      ],
+      "smiles_candidates": [
+        "135436454"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "ANOBYBYXJXCGBS-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "24550",
+        "10197804"
+      ],
+      "inchikey_candidates": [
+        "24550",
+        "10197804"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AOKQNZVJJXPUQA-KQYNXXCUSA-O",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135398701"
+      ],
+      "inchikey_candidates": [
+        "440190",
+        "5280639",
+        "135398701"
+      ],
+      "smiles_candidates": [
+        "135398701"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AOMXURITGZJPKB-ZETCQYMHSA-O",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "5287494",
+        "22524581",
+        "36688234"
+      ],
+      "inchikey_candidates": [
+        "5287494",
+        "22524581",
+        "36688234"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "APKDPOQXVKRLEP-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "11578",
+        "53297379"
+      ],
+      "inchikey_candidates": [
+        "11578",
+        "53297379"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AQIVLFLYHYFRKU-VPENINKCSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "447903",
+        "5287562",
+        "135488904"
+      ],
+      "inchikey_candidates": [
+        "447903",
+        "5287562",
+        "135488904"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ARSWQPLPYROOBG-ZETCQYMHSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "446181",
+        "6951130"
+      ],
+      "inchikey_candidates": [
+        "446181",
+        "6951130"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ARSXTTJGWGCRRR-LJRZAWCWSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "3085188",
+        "3085189",
+        "46217347",
+        "92031481"
+      ],
+      "inchikey_candidates": [
+        "3085188",
+        "3085189",
+        "46217347",
+        "92031481"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ARSXTTJGWGCRRR-XXKOCQOQSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "11593018",
+        "71777463",
+        "101650338"
+      ],
+      "inchikey_candidates": [
+        "11593018",
+        "71777463",
+        "101650338"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ASTWEMOBIXQPPV-UHFFFAOYSA-K",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "61473",
+        "516998"
+      ],
+      "inchikey_candidates": [
+        "61473",
+        "516998"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ASXBYYWOLISCLQ-HZYVHMACSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "439369"
+      ],
+      "inchikey_candidates": [
+        "439369",
+        "176517143",
+        "176518474"
+      ],
+      "smiles_candidates": [
+        "439369"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "ASYYOZSDALANRF-UHFFFAOYSA-K",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "9846339",
+        "16687137",
+        "165365652"
+      ],
+      "inchikey_candidates": [
+        "9846339",
+        "16687137",
+        "165365652"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ATALOFNDEOCMKK-OITMNORJSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135413536"
+      ],
+      "inchikey_candidates": [
+        "6918365",
+        "135413536"
+      ],
+      "smiles_candidates": [
+        "135413536"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "ATNHDLDRLWWWCB-AENOIHSZSA-M",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "12085802",
+        "13557925",
+        "16667503",
+        "44602414"
+      ],
+      "inchikey_candidates": [
+        "12085802",
+        "13557925",
+        "16667503",
+        "44602414"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ATRRKUHOCOJYRX-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "14013",
+        "61507",
+        "517881",
+        "23041731",
+        "172995148",
+        "173697855"
+      ],
+      "inchikey_candidates": [
+        "14013",
+        "61507",
+        "517881",
+        "23041731",
+        "172995148",
+        "173697855"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "ATSZELKUSAREPW-ZJUUUORDSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135544014"
+      ],
+      "inchikey_candidates": [
+        "193961",
+        "135544014"
+      ],
+      "smiles_candidates": [
+        "135544014"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AUJRCFUBUPVWSZ-XTZHGVARSA-M",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "6918453",
+        "16667669",
+        "165339206"
+      ],
+      "inchikey_candidates": [
+        "6918453",
+        "16667669",
+        "165339206"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AVJBPWGFOQAPRH-FWMKGIEWSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "32756",
+        "170844089"
+      ],
+      "inchikey_candidates": [
+        "32756",
+        "170844089"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AWAKNMKLVLWIIQ-OAHLLOKOSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "449412",
+        "4369082"
+      ],
+      "inchikey_candidates": [
+        "449412",
+        "4369082"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AWMAOFAHBPCBHJ-YZUKSGEXSA-M",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "5484011",
+        "23692755"
+      ],
+      "inchikey_candidates": [
+        "5484011",
+        "23692755"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AXZWODMDQAVCJE-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "24479",
+        "5284466"
+      ],
+      "inchikey_candidates": [
+        "24479",
+        "5284466"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "AYEKOFBPNLCAJY-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "644169"
+      ],
+      "inchikey_candidates": [
+        "5431",
+        "644169",
+        "71586757"
+      ],
+      "smiles_candidates": [
+        "644169"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "AYFVYJQAPQTCCC-PWNYCUMCSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "90624"
+      ],
+      "inchikey_candidates": [
+        "90624",
+        "6971050"
+      ],
+      "smiles_candidates": [
+        "90624"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BAAXVYBAMNDCIB-BMCUWHFPSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "90479374"
+      ],
+      "inchikey_candidates": [
+        "90479374",
+        "175647792"
+      ],
+      "smiles_candidates": [
+        "90479374"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BAOICLZZDLLDRL-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "1616",
+        "5288110"
+      ],
+      "inchikey_candidates": [
+        "1616",
+        "5288110"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BARDROPHSZEBKC-OITMNORJSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135413538"
+      ],
+      "inchikey_candidates": [
+        "219090",
+        "135413538"
+      ],
+      "smiles_candidates": [
+        "135413538"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BAZAXWOYCMUHIX-UHFFFAOYSA-M",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "24246"
+      ],
+      "inchikey_candidates": [
+        "24246",
+        "522606",
+        "139036533",
+        "139207607"
+      ],
+      "smiles_candidates": [
+        "24246"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BBBFJLBPOGFECG-VJVYQDLKSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "16133812"
+      ],
+      "inchikey_candidates": [
+        "16133812",
+        "16220016",
+        "134156276",
+        "169553436"
+      ],
+      "smiles_candidates": [
+        "16133812"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BBTNLADSUVOPPN-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "76726"
+      ],
+      "inchikey_candidates": [
+        "76726",
+        "5289541"
+      ],
+      "smiles_candidates": [
+        "76726"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BDAGIHXWWSANSR-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "284"
+      ],
+      "inchikey_candidates": [
+        "284",
+        "18971002"
+      ],
+      "smiles_candidates": [
+        "284"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BDBMLMBYCXNVMC-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "71587099"
+      ],
+      "inchikey_candidates": [
+        "23535193",
+        "57828125",
+        "71587099",
+        "121232744",
+        "135564886",
+        "135673376",
+        "137157436",
+        "145948239",
+        "176486949"
+      ],
+      "smiles_candidates": [
+        "71587099"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BDRFWSJMVOBAHR-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "3037172"
+      ],
+      "inchikey_candidates": [
+        "170371",
+        "3037172"
+      ],
+      "smiles_candidates": [
+        "3037172"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BEDMDXBTNSVNGS-NIAPTITASA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "46936673",
+        "139031127",
+        "168315219"
+      ],
+      "inchikey_candidates": [
+        "46936673",
+        "139031127",
+        "168315219"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BEIGFKLRGRRJJA-JLHYYAGUSA-O",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "448998",
+        "5289059",
+        "5326847",
+        "6105620",
+        "45157700"
+      ],
+      "inchikey_candidates": [
+        "448998",
+        "5289059",
+        "5326847",
+        "6105620",
+        "45157700"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BFDWBSRJQZPEEB-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "24266"
+      ],
+      "inchikey_candidates": [
+        "24266",
+        "66524099"
+      ],
+      "smiles_candidates": [
+        "24266"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BHAYDBSYOBONRV-IUYQGCFVSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "71957"
+      ],
+      "inchikey_candidates": [
+        "71957",
+        "51724090"
+      ],
+      "smiles_candidates": [
+        "71957"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BHJAPJNOACHPNI-CHWSQXEVSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "5289479",
+        "6323520",
+        "135403830"
+      ],
+      "inchikey_candidates": [
+        "5289479",
+        "6323520",
+        "135403830"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BISHACNKZIBDFM-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "13611"
+      ],
+      "inchikey_candidates": [
+        "13611",
+        "5289569"
+      ],
+      "smiles_candidates": [
+        "13611"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BISPBXFUKNXOQY-RITPCOANSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "89851852"
+      ],
+      "inchikey_candidates": [
+        "89851852",
+        "173521794"
+      ],
+      "smiles_candidates": [
+        "89851852"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BJFGVYCULWBXKF-UHFFFAOYSA-M",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "2716",
+        "6110",
+        "25210",
+        "101603127"
+      ],
+      "inchikey_candidates": [
+        "2716",
+        "6110",
+        "25210",
+        "101603127"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BJFGVYCULWBXKF-WUYZZQIKSA-M",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "11954348",
+        "91667977"
+      ],
+      "inchikey_candidates": [
+        "11954348",
+        "91667977"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BJNLLBUOHPVGFT-CAYRISATSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "133065662",
+        "162393013"
+      ],
+      "inchikey_candidates": [
+        "133065662",
+        "162393013"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BKZOQCGDCHOGOQ-MZLJFPOFSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135617452"
+      ],
+      "inchikey_candidates": [
+        "23586178",
+        "135617452"
+      ],
+      "smiles_candidates": [
+        "135617452"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BLALCKLYSDDAOC-JWFOFJTQSA-K",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "52949190",
+        "76967078",
+        "131704319"
+      ],
+      "inchikey_candidates": [
+        "52949190",
+        "76967078",
+        "131704319"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BLORRZQTHNGFTI-ZZMNMWMASA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "54740489"
+      ],
+      "inchikey_candidates": [
+        "13788048",
+        "54740489"
+      ],
+      "smiles_candidates": [
+        "54740489"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BLQSIKSVAXFNRH-ZMWZJJJDSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "70693502"
+      ],
+      "inchikey_candidates": [
+        "16131055",
+        "70693502",
+        "168324623"
+      ],
+      "smiles_candidates": [
+        "70693502"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BMATWAHJJFXMFA-AXFHLTTASA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "445357",
+        "5287537"
+      ],
+      "inchikey_candidates": [
+        "445357",
+        "5287537"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BMQYVXCPAOLZOK-INEUFUBQSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "444632",
+        "5289005",
+        "135460965"
+      ],
+      "inchikey_candidates": [
+        "444632",
+        "5289005",
+        "135460965"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BMQYVXCPAOLZOK-XINAWCOVSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "448839",
+        "135398721"
+      ],
+      "inchikey_candidates": [
+        "448839",
+        "135398721"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BMZYTDRMCBZVNH-HXUWFJFHSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "9843897"
+      ],
+      "inchikey_candidates": [
+        "9843897",
+        "131674041",
+        "138398766"
+      ],
+      "smiles_candidates": [
+        "9843897"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BNIILDVGGAEEIG-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "24203"
+      ],
+      "inchikey_candidates": [
+        "24203",
+        "21924748",
+        "58592228"
+      ],
+      "smiles_candidates": [
+        "24203"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BNMYZGAZFGNKTH-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "405389"
+      ],
+      "inchikey_candidates": [
+        "405389",
+        "5254992",
+        "6313595"
+      ],
+      "smiles_candidates": [
+        "405389"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BNZHKKGOSYAQSW-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "448724"
+      ],
+      "inchikey_candidates": [
+        "448724",
+        "5288496"
+      ],
+      "smiles_candidates": [
+        "448724"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BPHYTQORKHDHAH-OHNHNXIVSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "131704207",
+        "135678080"
+      ],
+      "inchikey_candidates": [
+        "131704207",
+        "135678080"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BPKIMPVREBSLAJ-QTBYCLKRSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "16135415"
+      ],
+      "inchikey_candidates": [
+        "16135415",
+        "102505334",
+        "175689407"
+      ],
+      "smiles_candidates": [
+        "16135415"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BPMFZUMJYQTVII-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "763"
+      ],
+      "inchikey_candidates": [
+        "763",
+        "3946848",
+        "4546993"
+      ],
+      "smiles_candidates": [
+        "763"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BRMWTNUJHUMWMS-LURJTMIESA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "92105"
+      ],
+      "inchikey_candidates": [
+        "92105",
+        "7020397"
+      ],
+      "smiles_candidates": [
+        "92105"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BRTOIRPXZSVHKA-NSCUHMNNSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135535920"
+      ],
+      "inchikey_candidates": [
+        "6441378",
+        "135535920"
+      ],
+      "smiles_candidates": [
+        "135535920"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BUFLLCUFNHESEH-UUOKFMHZSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "439450",
+        "5280412",
+        "135398637"
+      ],
+      "inchikey_candidates": [
+        "439450",
+        "5280412",
+        "135398637"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "BUJQMJUTTBGELS-KQYNXXCUSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135486126"
+      ],
+      "inchikey_candidates": [
+        "5288807",
+        "6323407",
+        "135486126"
+      ],
+      "smiles_candidates": [
+        "135486126"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BWHMMNNQKKPAPP-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "11430"
+      ],
+      "inchikey_candidates": [
+        "11430",
+        "516886",
+        "139064508",
+        "139207750"
+      ],
+      "smiles_candidates": [
+        "11430"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BYEIJZFKOAXBBV-ATZCPNFKSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "448130"
+      ],
+      "inchikey_candidates": [
+        "448130",
+        "25202924"
+      ],
+      "smiles_candidates": [
+        "448130"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BYSBXIPCDJNEBG-INIZCTEOSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "24768560"
+      ],
+      "inchikey_candidates": [
+        "24768560",
+        "44629678"
+      ],
+      "smiles_candidates": [
+        "24768560"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "BZJFKYRGSZWSLT-YLIVDTKOSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "17754101",
+        "131704281"
+      ],
+      "inchikey_candidates": [
+        "17754101",
+        "131704281"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CABVTRNMFUVUDM-VRHQGPGLSA-I",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "5288565",
+        "131704231"
+      ],
+      "inchikey_candidates": [
+        "5288565",
+        "131704231"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CALDTVBHJMBRTM-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "446366"
+      ],
+      "inchikey_candidates": [
+        "446366",
+        "44386054",
+        "54746008"
+      ],
+      "smiles_candidates": [
+        "446366"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "CBDQOLKNTOMMTL-UHFFFAOYSA-K",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "151932",
+        "56840998"
+      ],
+      "inchikey_candidates": [
+        "151932",
+        "56840998"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CBFXRTSHUMEYKQ-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "5288673",
+        "6323390",
+        "135509113"
+      ],
+      "inchikey_candidates": [
+        "5288673",
+        "6323390",
+        "135509113"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CCTREOMTIFSZAU-OGFXRTJISA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "9840368",
+        "157539625"
+      ],
+      "inchikey_candidates": [
+        "9840368",
+        "157539625"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CDBYLPFSWZWCQE-UHFFFAOYSA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "10340"
+      ],
+      "inchikey_candidates": [
+        "10340",
+        "516885"
+      ],
+      "smiles_candidates": [
+        "10340"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "CDIFCTOKYOUYOT-SCGRZTRASA-L",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "9906338",
+        "145811955"
+      ],
+      "inchikey_candidates": [
+        "9906338",
+        "145811955"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CEGIKIXYDFDYDN-RXDXJJGDSA-O",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "5288855",
+        "6323421",
+        "131704261",
+        "135509130",
+        "135678090"
+      ],
+      "inchikey_candidates": [
+        "5288855",
+        "6323421",
+        "131704261",
+        "135509130",
+        "135678090"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CEGOLXSVJUTHNZ-UHFFFAOYSA-K",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "12496",
+        "16686040"
+      ],
+      "inchikey_candidates": [
+        "12496",
+        "16686040"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CEWKWXPCQGWWBM-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "446622",
+        "5287658",
+        "135460962"
+      ],
+      "inchikey_candidates": [
+        "446622",
+        "5287658",
+        "135460962"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CHPZKNULDCNCBW-UHFFFAOYSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "61635",
+        "16683902",
+        "16697707"
+      ],
+      "inchikey_candidates": [
+        "61635",
+        "16683902",
+        "16697707"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    },
+    {
+      "inchikey": "CIKGWCTVFSRMJU-KVQBGUIXSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "135398595"
+      ],
+      "inchikey_candidates": [
+        "439220",
+        "5280339",
+        "135398595"
+      ],
+      "smiles_candidates": [
+        "135398595"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "CILIXQOJUNDIDU-ASQIGDHWSA-N",
+      "match_strategy": "pubchem_direct_inchikey_multi_tiebreak_smiles",
+      "confidence": "high",
+      "tie_break": "resolved_unique_by_smiles_intersection",
+      "selected_cids": [
+        "70683012"
+      ],
+      "inchikey_candidates": [
+        "16139605",
+        "70683012",
+        "175689202"
+      ],
+      "smiles_candidates": [
+        "70683012"
+      ],
+      "smiles_used": true,
+      "smiles_present_in_m1": true
+    },
+    {
+      "inchikey": "CKNPWBAXEKSCRG-UHFFFAOYSA-J",
+      "match_strategy": "pubchem_direct_inchikey_multi_cid",
+      "confidence": "low",
+      "tie_break": "smiles_missing_keep_inchikey_candidates",
+      "selected_cids": [
+        "123974",
+        "11540590",
+        "139054265"
+      ],
+      "inchikey_candidates": [
+        "123974",
+        "11540590",
+        "139054265"
+      ],
+      "smiles_candidates": [],
+      "smiles_used": false,
+      "smiles_present_in_m1": false
+    }
+  ]
+}

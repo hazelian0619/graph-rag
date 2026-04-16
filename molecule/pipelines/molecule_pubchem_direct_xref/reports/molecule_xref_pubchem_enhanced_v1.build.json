@@ -1,0 +1,56 @@
+{
+  "name": "molecule_xref_pubchem_enhanced_v1.build",
+  "created_at": "2026-04-13T01:34:02.590189+00:00",
+  "inputs": {
+    "core_tsv": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "m1_db": "../12182/out/m1/molecules_m1.sqlite",
+    "cache_path": "pipelines/molecule_pubchem_direct_xref/.cache/pubchem_lookup_cache_v1.jsonl",
+    "cache_preloaded_entries": 795
+  },
+  "output": "data/output/molecules/molecule_xref_pubchem_enhanced_v1.tsv",
+  "metrics": {
+    "rows_written": 14775,
+    "before": {
+      "rows": 14775,
+      "rows_with_pubchem_cid": 3605,
+      "coverage_rate": 0.2439932318104907
+    },
+    "after": {
+      "rows": 14775,
+      "rows_with_pubchem_cid": 4656,
+      "coverage_rate": 0.3151269035532995
+    },
+    "coverage_delta_abs": 0.07113367174280877,
+    "coverage_delta_rows": 1051,
+    "target_rows_missing_pubchem_before": 11170,
+    "rows_updated": 1051,
+    "cids_added_total": 1134,
+    "strategy_counts": {
+      "pubchem_direct_inchikey_exact_unique": 919,
+      "pubchem_direct_inchikey_multi_cid": 49,
+      "pubchem_direct_inchikey_multi_tiebreak_smiles": 49,
+      "pubchem_direct_smiles_fallback_unique": 34
+    },
+    "update_reason_counts": {
+      "updated": 1051,
+      "no_new_cid": 10119
+    },
+    "lookup_stats": {
+      "cache_hit_inchikey": 755,
+      "cache_hit_smiles": 40,
+      "cache_miss_smiles": 7019,
+      "request_smiles": 7019,
+      "cache_miss_inchikey": 10415,
+      "request_inchikey": 10415,
+      "http_503_retryable": 67892,
+      "http_success": 335,
+      "http_404_empty": 14,
+      "http_failed_final": 17085,
+      "http_error_retryable": 760
+    },
+    "conflict_rows": 98
+  },
+  "source_version_tag": "PubChem:PUGREST:2026-04-13",
+  "sample_mode": false,
+  "max_rows": null
+}

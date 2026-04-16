@@ -1,0 +1,59 @@
+{
+  "name": "molecule_xref_core_v2.build",
+  "created_at": "2026-04-12T09:46:00.737728+00:00",
+  "sample_mode": true,
+  "max_rows": 5000,
+  "inputs": {
+    "v1_core": "../1218/data/output/molecules/molecule_xref_core_v1.tsv",
+    "drug_master": "../1218/data/output/drugbank/drug_master_v1.tsv",
+    "drug_xref": "../1218/data/output/drugbank/drug_xref_molecules_v1.tsv",
+    "m1_db": "../12182/out/m1/molecules_m1.sqlite",
+    "m1_db_exists": true,
+    "chembl_db": "../12182/data/chembl_36/chembl_36.db",
+    "chembl_db_exists": true
+  },
+  "output": "pipelines/molecule_xref_enrichment_v2/.cache/molecule_xref_core_v2.smoke.tsv",
+  "reports": {
+    "backfill_audit": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.smoke.backfill_audit.json",
+    "missing_audit": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.smoke.missing_audit.json"
+  },
+  "metrics": {
+    "rows_written": 8064,
+    "duplicate_inchikey": 0,
+    "inchikey_unique_rate": 1.0,
+    "v1_rows": 5000,
+    "v2_rows": 8064,
+    "chembl_rows_v1": 3715,
+    "chembl_rows_v2": 5805,
+    "chembl_rows_delta_abs": 2090,
+    "chembl_rate_v1": 0.743,
+    "chembl_rate_v2": 0.7198660714285714,
+    "chembl_rate_delta_abs": -0.023133928571428597,
+    "pubchem_rows_v1": 1206,
+    "pubchem_rows_v2": 2244,
+    "pubchem_rows_delta_abs": 1038,
+    "pubchem_rate_v1": 0.2412,
+    "pubchem_rate_v2": 0.27827380952380953,
+    "pubchem_rate_delta_abs": 0.03707380952380954,
+    "drugbank_ids_v1": 5000,
+    "drugbank_ids_v2": 8065,
+    "drugbank_missing_inchikey_input": 404,
+    "backfill_accepted": 36,
+    "backfill_stage1_accepted": 30,
+    "backfill_stage2_accepted": 6,
+    "backfill_unresolved": 368,
+    "chembl_ids_added_from_m1": 1922,
+    "chembl_ids_added_from_chembl_db_inchikey": 133,
+    "pubchem_ids_added_from_bridge": 4572,
+    "m1_chembl_inchikey_count": 2699403,
+    "m1_chembl_pairs": 2699403,
+    "chembl_db_inchikey_match_count": 133,
+    "pubchem_chembl_map_count": 2244
+  },
+  "warnings": [],
+  "notes": [
+    "chembl enrichment from molecules_m1 sqlite",
+    "chembl enrichment from chembl_36.db compound_structures"
+  ],
+  "source_version": "ChEMBL:chembl_36.db;ChEMBL:molecules_m1.sqlite;DrugBank:5.1|exported-on:2026-01-04;PubChemCID:from_chembl_36_compound_records;v1:ChEMBL:m1_sqlite_chembl36;DrugBank:5.1|exported-on:2026-01-04;PubChemCID:from_ChEMBL_36_compound_records"
+}

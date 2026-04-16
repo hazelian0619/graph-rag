@@ -1,0 +1,82 @@
+{
+  "name": "molecule_3d_experimental_v1.qa",
+  "created_at": "2026-04-12T23:36:56.083207+00:00",
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "table": "pipelines/molecule_3d_experimental_linker/.cache/molecule_3d_experimental_v1.smoke.tsv",
+    "build_report": "pipelines/molecule_3d_experimental_linker/reports/molecule_3d_experimental_v1.smoke.build.json",
+    "coverage_report": "pipelines/molecule_3d_experimental_linker/reports/molecule_3d_experimental_v1.smoke.coverage.json"
+  },
+  "metrics": {
+    "rows": 67,
+    "xref_rows": 14775,
+    "experimental_rows": 67,
+    "computational_rows": 0,
+    "backlink_rate": 1.0,
+    "pdb_non_empty_rate": 1.0,
+    "method_non_empty_rate": 1.0,
+    "resolution_non_empty_rate": 1.0
+  },
+  "gates": [
+    {
+      "id": "inchikey_and_pdb_format_with_unique_rows",
+      "passed": true,
+      "detail": {
+        "bad_inchikey": 0,
+        "bad_pdb_id": 0,
+        "duplicate_rows": 0
+      }
+    },
+    {
+      "id": "inchikey_backlink_rate_mappable_subset",
+      "passed": true,
+      "detail": {
+        "rate": 1.0,
+        "min_required": 0.99,
+        "missing_count": 0,
+        "missing_sample": []
+      }
+    },
+    {
+      "id": "experimental_rows_present",
+      "passed": true,
+      "detail": {
+        "rows": 67,
+        "experimental_rows": 67
+      }
+    },
+    {
+      "id": "source_type_split_experimental_vs_computational",
+      "passed": true,
+      "detail": {
+        "experimental_rows": 67,
+        "computational_rows": 0,
+        "bad_source_type_rows": 0
+      }
+    },
+    {
+      "id": "pdb_method_resolution_non_empty_rate",
+      "passed": true,
+      "detail": {
+        "pdb_non_empty_rate": 1.0,
+        "method_non_empty_rate": 1.0,
+        "resolution_non_empty_rate": 1.0,
+        "min_required": {
+          "pdb": 0.99,
+          "method": 0.99,
+          "resolution": 0.99
+        }
+      }
+    },
+    {
+      "id": "report_consistency",
+      "passed": true,
+      "detail": {
+        "build_rows": 67,
+        "coverage_rows": 67,
+        "actual_rows": 67
+      }
+    }
+  ],
+  "passed": true
+}

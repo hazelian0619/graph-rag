@@ -1,0 +1,38 @@
+{
+  "doc": "组件细节 (1).docx - Small Molecule Entity section",
+  "release": "molecule-v1",
+  "covered_components": {
+    "chemical_identifiers": [
+      "molecule/release/external/molecule-v1/tables/identifiers/molecule_structure_identifiers_v1.tsv",
+      "molecule/release/external/molecule-v1/tables/identifiers/molecule_xref_core_v2.tsv",
+      "molecule/release/external/molecule-v1/tables/identifiers/molecule_xref_pubchem_enhanced_v1.tsv",
+      "molecule/release/external/molecule-v1/tables/identifiers/molecule_zinc_xref_v1.tsv",
+      "molecule/release/external/molecule-v1/tables/identifiers/molecule_zinc_xref_v2.tsv"
+    ],
+    "structure_data": [
+      "molecule/release/external/molecule-v1/tables/structure/molecule_3d_experimental_v1.tsv",
+      "molecule/release/external/molecule-v1/tables/structure/molecule_3d_registry_v1.tsv"
+    ],
+    "physicochemical_data": [
+      "molecule/release/external/molecule-v1/tables/physicochemical/molecule_physchem_descriptors_v1.tsv"
+    ],
+    "pk_tox_data": [
+      "molecule/release/external/molecule-v1/tables/pk_toxicology/molecule_pk_tox_v1.tsv",
+      "molecule/release/external/molecule-v1/tables/pk_toxicology/molecule_pk_tox_v2.tsv"
+    ],
+    "semantic_classification": [
+      "molecule/release/external/molecule-v1/tables/semantic/molecule_semantic_tags_v1.tsv"
+    ],
+    "bioactivity_proxy": [
+      "molecule/release/external/molecule-v1/tables/activity/molecule_activity_evidence_v2.sample.tsv",
+      "molecule/release/external/molecule-v1/tables/activity/molecule_target_edges_v2.sample.tsv"
+    ],
+    "quality_reports": [
+      "molecule/release/external/molecule-v1/reports/*.json"
+    ]
+  },
+  "gaps_or_constraints": [
+    "Full molecule_activity_evidence_v2.tsv and molecule_target_edges_v2.tsv are very large; sampled subsets are included in repo.",
+    "No process retrospectives/checklists are included in public package."
+  ]
+}

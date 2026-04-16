@@ -1,0 +1,54 @@
+{
+  "name": "molecule_structure_identifiers_v1.build",
+  "created_at": "2026-04-13T21:46:12.507534+00:00",
+  "inputs": {
+    "core_tsv": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "chembl_db": "../1218/data/raw/molecules/chembl_36/chembl_36.db",
+    "cache_path": "pipelines/molecule_structure_identifiers/.cache/pubchem_structure_lookup_v1.jsonl",
+    "cache_preloaded_entries": 0
+  },
+  "output": "pipelines/molecule_structure_identifiers/.cache/molecule_structure_identifiers_v1.smoke.tsv",
+  "metrics": {
+    "rows_input": 2500,
+    "rows_written": 2500,
+    "invalid_inchikey_rows": 0,
+    "unique_valid_inchikeys": 2500,
+    "chembl_matches": 1891,
+    "pubchem_lookup_rows": 609,
+    "pubchem_hit_any_field": 565,
+    "inchi_non_empty_rate": 0.9824,
+    "inchi_non_empty_rate_mappable_subset": 1.0,
+    "canonical_smiles_non_empty_rate": 0.9824,
+    "source_non_empty_rate": 1.0,
+    "source_version_non_empty_rate": 1.0,
+    "fetch_date_non_empty_rate": 1.0,
+    "inchi_source_counts": {
+      "pubchem_pug_rest.inchi": 565,
+      "chembl_compound_structures.standard_inchi": 1891,
+      "missing": 44
+    },
+    "canonical_smiles_source_counts": {
+      "pubchem_pug_rest.canonical_smiles": 565,
+      "chembl_compound_structures.canonical_smiles": 1891,
+      "missing": 44
+    },
+    "top_row_source_counts": {
+      "chembl_compound_structures.canonical_smiles;chembl_compound_structures.standard_inchi": 1891,
+      "pubchem_pug_rest.canonical_smiles;pubchem_pug_rest.inchi": 565,
+      "chembl_compound_structures;pubchem_pug_rest": 44
+    },
+    "pubchem_client_stats": {
+      "cache_miss": 609,
+      "request_inchikey": 609,
+      "http_success": 565,
+      "http_404_not_found": 44,
+      "http_503_retryable": 8
+    }
+  },
+  "source_version_tags": {
+    "chembl": "ChEMBL:chembl_36.db",
+    "pubchem": "PubChem:PUGREST:2026-04-13"
+  },
+  "sample_mode": true,
+  "max_rows": 2500
+}

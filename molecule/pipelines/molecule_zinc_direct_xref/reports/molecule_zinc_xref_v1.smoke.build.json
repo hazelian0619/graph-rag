@@ -1,0 +1,394 @@
+{
+  "name": "molecule_zinc_xref_v1.build",
+  "created_at": "2026-04-13T08:04:02.050609+00:00",
+  "sample_mode": true,
+  "max_rows": 3000,
+  "max_vendors": 6,
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "zinc_base_url": "http://files.docking.org/catalogs/",
+    "tiers": [
+      "10",
+      "20",
+      "30",
+      "40",
+      "50"
+    ]
+  },
+  "output": "pipelines/molecule_zinc_direct_xref/.cache/molecule_zinc_xref_v1.smoke.tsv",
+  "metrics": {
+    "rows_written": 1116,
+    "input_rows": 3000,
+    "valid_inchikey_rows": 3000,
+    "skipped_bad_inchikey_rows": 0,
+    "vendor_attempted": 25,
+    "vendor_info_ok": 24,
+    "vendor_with_match": 14,
+    "matched_rows_total": 1116,
+    "vendor_info_not_found": 1,
+    "discovered_vendor_count": 25,
+    "smiles_joined_rows": 693,
+    "coverage_rate": 0.19133333333333333,
+    "mapped_inchikey": 574,
+    "baseline_rate": 0.018341793570219967,
+    "coverage_delta_vs_baseline": 0.17299153976311335
+  },
+  "vendor_scan": {
+    "tier_10": {
+      "status": "ok",
+      "vendors": 6
+    },
+    "10/cdivp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/cdivp/cdivp.info.txt.gz",
+      "metrics": {
+        "lines_total": 1
+      }
+    },
+    "10/chbr": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/chbr/chbr.info.txt.gz",
+      "metrics": {
+        "lines_total": 446,
+        "lines_not_in_xref": 445
+      }
+    },
+    "10/chbrbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/chbrbb/chbrbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 5295,
+        "lines_not_in_xref": 5288,
+        "matched_rows": 6
+      }
+    },
+    "10/chbrbbp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/chbrbbp/chbrbbp.info.txt.gz",
+      "metrics": {
+        "lines_total": 273,
+        "lines_not_in_xref": 272
+      }
+    },
+    "10/chbrp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/10/chbrp/chbrp.info.txt.gz",
+      "metrics": {
+        "lines_total": 525,
+        "lines_not_in_xref": 524
+      }
+    },
+    "10/enaminebb-v": {
+      "status": "not_found",
+      "info_url": "",
+      "metrics": {
+        "status_code": 404
+      }
+    },
+    "tier_20": {
+      "status": "ok",
+      "vendors": 4
+    },
+    "20/enamine-vt1": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/20/enamine-vt1/enamine-vt1.info.txt.gz",
+      "metrics": {
+        "lines_total": 1839584,
+        "lines_not_in_xref": 1839583
+      }
+    },
+    "20/enamine-vt2": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/20/enamine-vt2/enamine-vt2.info.txt.gz",
+      "metrics": {
+        "lines_total": 3868870,
+        "lines_not_in_xref": 3868865,
+        "matched_rows": 4
+      }
+    },
+    "20/enamine-vt5": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/20/enamine-vt5/enamine-vt5.info.txt.gz",
+      "metrics": {
+        "lines_total": 3389879,
+        "lines_not_in_xref": 3389878
+      }
+    },
+    "20/enamine-vt6": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/20/enamine-vt6/enamine-vt6.info.txt.gz",
+      "metrics": {
+        "lines_total": 719685,
+        "lines_not_in_xref": 719678,
+        "matched_rows": 6
+      }
+    },
+    "tier_30": {
+      "status": "ok",
+      "vendors": 3
+    },
+    "30/molportbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/30/molportbb/molportbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 197359,
+        "lines_not_in_xref": 197010,
+        "matched_rows": 348
+      }
+    },
+    "30/sciex": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/30/sciex/sciex.info.txt.gz",
+      "metrics": {
+        "fetch_errors": 1,
+        "lines_total": 62158,
+        "lines_not_in_xref": 62147,
+        "matched_rows": 10
+      }
+    },
+    "30/sciexbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/30/sciexbb/sciexbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 37958,
+        "lines_not_in_xref": 37949,
+        "matched_rows": 8
+      }
+    },
+    "tier_40": {
+      "status": "ok",
+      "vendors": 6
+    },
+    "40/a2z": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/a2z/a2z.info.txt.gz",
+      "metrics": {
+        "lines_total": 123725,
+        "lines_not_in_xref": 123678,
+        "matched_rows": 46
+      }
+    },
+    "40/accela": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/accela/accela.info.txt.gz",
+      "metrics": {
+        "lines_total": 19426,
+        "lines_not_in_xref": 19348,
+        "matched_rows": 77
+      }
+    },
+    "40/acdisc": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/acdisc/acdisc.info.txt.gz",
+      "metrics": {
+        "lines_total": 2225,
+        "lines_not_in_xref": 2224
+      }
+    },
+    "40/acdiscnd": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/acdiscnd/acdiscnd.info.txt.gz",
+      "metrics": {
+        "lines_total": 27870,
+        "lines_not_in_xref": 27869
+      }
+    },
+    "40/acdiscnp": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/acdiscnp/acdiscnp.info.txt.gz",
+      "metrics": {
+        "lines_total": 13227,
+        "lines_not_in_xref": 13191,
+        "matched_rows": 35
+      }
+    },
+    "40/achemblock": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/40/achemblock/achemblock.info.txt.gz",
+      "metrics": {
+        "lines_total": 10580,
+        "lines_not_in_xref": 10478,
+        "matched_rows": 101
+      }
+    },
+    "tier_50": {
+      "status": "ok",
+      "vendors": 6
+    },
+    "50/alfa": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/alfa/alfa.info.txt.gz",
+      "metrics": {
+        "lines_total": 36816,
+        "lines_not_in_xref": 36450,
+        "matched_rows": 365
+      }
+    },
+    "50/aronisbb": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/aronisbb/aronisbb.info.txt.gz",
+      "metrics": {
+        "lines_total": 2365,
+        "lines_not_in_xref": 2341,
+        "matched_rows": 23
+      }
+    },
+    "50/bachem": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/bachem/bachem.info.txt.gz",
+      "metrics": {
+        "lines_total": 4914,
+        "lines_not_in_xref": 4858,
+        "matched_rows": 55
+      }
+    },
+    "50/cdivbbe": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/cdivbbe/cdivbbe.info.txt.gz",
+      "metrics": {
+        "lines_total": 14735,
+        "lines_not_in_xref": 14702,
+        "matched_rows": 32
+      }
+    },
+    "50/cdivbbe-v": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/cdivbbe-v/cdivbbe-v.info.txt.gz",
+      "metrics": {
+        "lines_total": 384,
+        "lines_not_in_xref": 383
+      }
+    },
+    "50/cdive": {
+      "status": "ok",
+      "info_url": "http://files.docking.org/catalogs/50/cdive/cdive.info.txt.gz",
+      "metrics": {
+        "lines_total": 1
+      }
+    }
+  },
+  "source_fetch": {
+    "a2z": {
+      "needed_codes": 45,
+      "source_lines_total": 97902,
+      "source_codes_found": 45,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/a2z.src.txt",
+      "source_error": ""
+    },
+    "accela": {
+      "needed_codes": 76,
+      "source_lines_total": 49386,
+      "source_codes_found": 71,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/accela.src.txt",
+      "source_error": ""
+    },
+    "acdiscnp": {
+      "needed_codes": 35,
+      "source_lines_total": 6540,
+      "source_codes_found": 33,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/acdiscnp.src.txt",
+      "source_error": ""
+    },
+    "achemblock": {
+      "needed_codes": 101,
+      "source_lines_total": 63820,
+      "source_codes_found": 100,
+      "source_lines_bad_short": 3,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/achemblock.src.txt",
+      "source_error": ""
+    },
+    "alfa": {
+      "needed_codes": 358,
+      "source_lines_total": 35115,
+      "source_codes_found": 358,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/alfa.src.txt",
+      "source_error": ""
+    },
+    "aronisbb": {
+      "needed_codes": 23,
+      "source_lines_total": 1853,
+      "source_codes_found": 23,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/aronisbb.src.txt",
+      "source_error": ""
+    },
+    "bachem": {
+      "needed_codes": 50,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "cdivbbe": {
+      "needed_codes": 32,
+      "source_lines_total": 14016,
+      "source_codes_found": 32,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/cdivbbe.src.txt",
+      "source_error": ""
+    },
+    "chbrbb": {
+      "needed_codes": 6,
+      "source_lines_total": 3506,
+      "source_codes_found": 4,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/chbrbb.src.txt",
+      "source_error": ""
+    },
+    "enamine-vt2": {
+      "needed_codes": 4,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "enamine-vt6": {
+      "needed_codes": 6,
+      "source_404": 2,
+      "status": "failed",
+      "source_url": "",
+      "source_error": ""
+    },
+    "molportbb": {
+      "needed_codes": 345,
+      "source_lines_total": 107026,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/molportbb.src.txt",
+      "source_error": ""
+    },
+    "sciex": {
+      "needed_codes": 10,
+      "source_lines_total": 238183,
+      "source_codes_found": 10,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/sciex.src.txt",
+      "source_error": ""
+    },
+    "sciexbb": {
+      "needed_codes": 8,
+      "source_lines_total": 33176,
+      "source_codes_found": 8,
+      "source_url_used": 1,
+      "status": "ok",
+      "source_url": "http://files.docking.org/catalogs/source/sciexbb.src.txt",
+      "source_error": ""
+    }
+  },
+  "coverage_report": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.smoke.coverage.json",
+  "conflict_report": "pipelines/molecule_zinc_direct_xref/reports/molecule_zinc_xref_v1.smoke.conflict_audit.json"
+}

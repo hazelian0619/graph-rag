@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-04-16",
+  "source_full_files": [
+    {
+      "path": "/Users/pluviophile/graph/protian-entity/data/output/evidence/molecule_activity_evidence_v2.tsv",
+      "bytes": 650208503,
+      "tracked_in_repo": "sample_only"
+    },
+    {
+      "path": "/Users/pluviophile/graph/protian-entity/data/output/edges/molecule_target_edges_v2.tsv",
+      "bytes": 442916493,
+      "tracked_in_repo": "sample_only"
+    }
+  ],
+  "samples": [
+    "molecule_activity_evidence_v2.sample.tsv",
+    "molecule_target_edges_v2.sample.tsv"
+  ],
+  "note": "Full files are very large and relation-heavy; samples are included for public package readability."
+}

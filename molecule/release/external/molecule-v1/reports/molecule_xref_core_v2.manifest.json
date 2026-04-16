@@ -1,0 +1,79 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-12T09:46:54.842412+00:00",
+  "git_commit": "36720ce7f189e424fafcd56c87e0ab5a85b1d4e7",
+  "artifacts": [
+    {
+      "path": "data/output/molecules/molecule_xref_core_v2.tsv",
+      "size_bytes": 5813727,
+      "sha256": "b6a4df2b34b0dea940d31b8d736927eb32dd1799e83f09b66000503f65a31170",
+      "modified_time": "2026-04-12T09:46:53.426698+00:00"
+    },
+    {
+      "path": "../1218/data/output/molecules/molecule_xref_core_v1.tsv",
+      "size_bytes": 3397087,
+      "sha256": "d3ac4782397c4836924b98d94c123821006d8886aa7134b9ba6d33363aef1712",
+      "modified_time": "2026-04-12T03:28:49.478903+00:00"
+    },
+    {
+      "path": "../1218/data/output/drugbank/drug_master_v1.tsv",
+      "size_bytes": 4801156,
+      "sha256": "5bdc1b7f22c1832ae30b7c27eead19aeb48f343c3ab605d8c9ad114df2a6c972",
+      "modified_time": "2026-01-09T11:18:04.327742+00:00"
+    },
+    {
+      "path": "../1218/data/output/drugbank/drug_xref_molecules_v1.tsv",
+      "size_bytes": 834187,
+      "sha256": "050045fade0bfe1693064be3410a2ed7c984230c64fbf399855e0119f90b10b0",
+      "modified_time": "2026-01-09T11:18:04.327716+00:00"
+    },
+    {
+      "path": "../12182/out/m1/molecules_m1.sqlite",
+      "size_bytes": 4217884672,
+      "sha256": "7775f74a1abfa58824ccf56d5898a8bfccd9e0659bfcf42b27ea7f288f1c751e",
+      "modified_time": "2026-04-11T16:07:00.307984+00:00"
+    },
+    {
+      "path": "../12182/data/chembl_36/chembl_36.db",
+      "size_bytes": 29739835392,
+      "sha256": "cf8547cad7da721e3cfaa79b60d38f616e21e05df18059efa34428c794b16d2b",
+      "modified_time": "2025-12-19T15:59:39.398334+00:00"
+    },
+    {
+      "path": "pipelines/molecule_xref_enrichment_v2/contracts/molecule_xref_core_v2.json",
+      "size_bytes": 1689,
+      "sha256": "cceea0e10e343fcbeb67d0f38b5546cc19a0af821eda45c498d4dd212771c4ec",
+      "modified_time": "2026-04-12T09:44:02.172833+00:00"
+    },
+    {
+      "path": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.build.json",
+      "size_bytes": 2389,
+      "sha256": "75811013d05e89c33757835b851e02bd1595f34124365eba2871536e1d10e61e",
+      "modified_time": "2026-04-12T09:46:53.443336+00:00"
+    },
+    {
+      "path": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.backfill_audit.json",
+      "size_bytes": 45452,
+      "sha256": "1fc56560224b3c9fb9d08a5202a5176070a48d5e4151b59dc2b5b590425f5494",
+      "modified_time": "2026-04-12T09:46:53.440672+00:00"
+    },
+    {
+      "path": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.missing_audit.json",
+      "size_bytes": 31787,
+      "sha256": "052503ed4e159845091b2e6a0fba3d0ed9ffca22b02c5548531ecd7f00bd333b",
+      "modified_time": "2026-04-12T09:46:53.442724+00:00"
+    },
+    {
+      "path": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.validation.json",
+      "size_bytes": 2235,
+      "sha256": "7daadb3a7939a400688db1c0aa3f134c2fe7ad5574b2bea4b33d99a83a5b076f",
+      "modified_time": "2026-04-12T09:46:54.155639+00:00"
+    },
+    {
+      "path": "pipelines/molecule_xref_enrichment_v2/reports/molecule_xref_core_v2.qa.json",
+      "size_bytes": 3565,
+      "sha256": "6a82ab25c38e1d73368c4f77af2be343c56541fac352d8fd1584c5aefdad3727",
+      "modified_time": "2026-04-12T09:46:54.608332+00:00"
+    }
+  ]
+}

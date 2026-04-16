@@ -1,0 +1,73 @@
+{
+  "data_version": "kg-data-local",
+  "created_at": "2026-04-12T13:03:01.283946+00:00",
+  "git_commit": "36720ce7f189e424fafcd56c87e0ab5a85b1d4e7",
+  "artifacts": [
+    {
+      "path": "data/output/molecules/molecule_semantic_tags_v1.tsv",
+      "size_bytes": 6250662,
+      "sha256": "19b6ca078c51d2132812fe7eb11ff701b6d3c96e981394f4dbfb5ab120bd25f0",
+      "modified_time": "2026-04-12T13:03:00.561757+00:00"
+    },
+    {
+      "path": "data/output/molecules/molecule_xref_core_v2.tsv",
+      "size_bytes": 5813727,
+      "sha256": "b6a4df2b34b0dea940d31b8d736927eb32dd1799e83f09b66000503f65a31170",
+      "modified_time": "2026-04-12T09:46:53.426698+00:00"
+    },
+    {
+      "path": "../1218/data/raw/molecules/chebi/chebi.obo",
+      "size_bytes": 259389266,
+      "sha256": "ae2dd18a273177a48ac0a17d2107e0b3444d46970b6c5961748f1043ae5af00f",
+      "modified_time": "2026-04-12T11:05:55.506027+00:00"
+    },
+    {
+      "path": "../1218/data/output/drugbank/drug_master_v1.tsv",
+      "size_bytes": 4801156,
+      "sha256": "5bdc1b7f22c1832ae30b7c27eead19aeb48f343c3ab605d8c9ad114df2a6c972",
+      "modified_time": "2026-01-09T11:18:04.327742+00:00"
+    },
+    {
+      "path": "../12182/data/chembl_36/chembl_36.db",
+      "size_bytes": 29739835392,
+      "sha256": "cf8547cad7da721e3cfaa79b60d38f616e21e05df18059efa34428c794b16d2b",
+      "modified_time": "2025-12-19T15:59:39.398334+00:00"
+    },
+    {
+      "path": "pipelines/molecule_semantic_layer/contracts/molecule_semantic_tags_v1.json",
+      "size_bytes": 2018,
+      "sha256": "d5929c7dcaae39419febb171774a30c9197b5109b3ba39d75d8b7a3b2dced9b7",
+      "modified_time": "2026-04-12T13:01:27.283991+00:00"
+    },
+    {
+      "path": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.build.json",
+      "size_bytes": 1950,
+      "sha256": "2c1c7e5188b2f2ba4d6a878f4a495e94c9022f28a29e37048dd2d3ab587724ae",
+      "modified_time": "2026-04-12T13:03:00.572312+00:00"
+    },
+    {
+      "path": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.hierarchy.json",
+      "size_bytes": 13880,
+      "sha256": "36bcb093963e754ebe718d700f5528ef958b58071333e62fc17b960dc8d18b77",
+      "modified_time": "2026-04-12T13:03:00.571687+00:00"
+    },
+    {
+      "path": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.coverage.json",
+      "size_bytes": 897,
+      "sha256": "1a6ae0bce72dcca752f7007cf876df736220c77d4b95f84b6c16feaf593b4806",
+      "modified_time": "2026-04-12T13:03:00.571941+00:00"
+    },
+    {
+      "path": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.validation.json",
+      "size_bytes": 2927,
+      "sha256": "bd56564776a745b6889342d529bc3167da5cb0542d2f02e8a13852e354fa897e",
+      "modified_time": "2026-04-12T13:03:00.864759+00:00"
+    },
+    {
+      "path": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.qa.json",
+      "size_bytes": 2144,
+      "sha256": "7103733d53ec26a93d28e12106051f6a8cdfcb230af6614339e1524ff68d6a6a",
+      "modified_time": "2026-04-12T13:03:01.101766+00:00"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "molecule_semantic_tags_v1.build",
+  "created_at": "2026-04-12T13:02:50.571207+00:00",
+  "sample_mode": true,
+  "max_rows": 3000,
+  "inputs": {
+    "xref": "data/output/molecules/molecule_xref_core_v2.tsv",
+    "chebi_obo": "../1218/data/raw/molecules/chebi/chebi.obo",
+    "drug_master": "../1218/data/output/drugbank/drug_master_v1.tsv",
+    "chembl_db": "../12182/data/chembl_36/chembl_36.db",
+    "registry_3d": "data/output/molecules/molecule_3d_registry_v1.tsv",
+    "registry_3d_exists": true
+  },
+  "output": "pipelines/molecule_semantic_layer/.cache/molecule_semantic_tags_v1.smoke.tsv",
+  "metrics": {
+    "rows_written": 3000,
+    "input_rows": 3000,
+    "valid_rows": 3000,
+    "skipped_bad_inchikey_rows": 0,
+    "rows_with_chembl": 2281,
+    "rows_with_drugbank": 3000,
+    "rows_with_chebi": 1413,
+    "rows_with_atc": 533,
+    "rows_with_drugbank_group": 3000,
+    "rows_with_zinc_label": 58,
+    "rows_with_chebi_expandable": 1413,
+    "chebi_rate": 0.471,
+    "atc_rate": 0.17766666666666667,
+    "drugbank_group_rate": 1.0,
+    "zinc_label_rate": 0.019333333333333334
+  },
+  "chebi_parse": {
+    "data_version": "251",
+    "term_blocks": 205460,
+    "target_inchikey_mapped_terms": 1484,
+    "target_inchikey_hits": 1413,
+    "terms_loaded": 205459,
+    "parent_nodes": 205459
+  },
+  "atc": {
+    "chembl_release": "CHEMBL_36",
+    "mapped_chembl_ids": 3652,
+    "atc_pairs": 4569
+  },
+  "drugbank": {
+    "drugbank_ids": 19830,
+    "version": "DrugBank:5.1|exported-on:2026-01-04"
+  },
+  "zinc": {
+    "available": true,
+    "rows": 14775,
+    "mapped_inchikey": 14775,
+    "source_version": "PubChem:PUGREST_ConformerCount3D;PubChem:PUGREST_RegistryID;ZINC:chembl_molecule_synonyms;ChEMBL:CHEMBL_36"
+  },
+  "coverage_report": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.smoke.coverage.json",
+  "hierarchy_report": "pipelines/molecule_semantic_layer/reports/molecule_semantic_tags_v1.smoke.hierarchy.json"
+}
