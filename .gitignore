@@ -99,3 +99,5 @@ pipelines/**/reports/
 
 # Local release packaging
 /dist/
+!rna/data/output/rna/rna_master_mirna_v1.tsv.gz
+!rna/release/external/rna-v1/tables/sequence/rna_master_mirna_v1.tsv.gz
