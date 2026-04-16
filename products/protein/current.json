@@ -7,7 +7,7 @@
     "distribution_mode": "repository_snapshot",
     "release_tag": null,
     "release_url": null,
-    "manifest_path": "pipelines/protein/reports/protein_master_v6.manifest.json",
+    "manifest_path": "release/external/protein-v6/protein_master_v6.manifest.json",
     "artifacts": [
       {
         "name": "protein_master_v6_clean.tsv",
@@ -16,14 +16,14 @@
       },
       {
         "name": "protein_source_versions_v1.tsv",
-        "path": "data/output/protein/protein_source_versions_v1.tsv",
-        "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/data/output/protein/protein_source_versions_v1.tsv"
+        "path": "release/external/protein-v6/protein_source_versions_v1.tsv",
+        "download_url": "https://raw.githubusercontent.com/hazelian0619/graph-rag/main/release/external/protein-v6/protein_source_versions_v1.tsv"
       }
     ],
     "quality_reports": [
-      "pipelines/protein/reports/protein_master_v6.validation.json",
-      "pipelines/protein_provenance/reports/protein_source_versions_v1.validation.json",
-      "pipelines/protein_provenance/reports/protein_source_versions_v1.qa.json"
+      "release/external/protein-v6/reports/protein_master_v6.validation.json",
+      "release/external/protein-v6/reports/protein_source_versions_v1.validation.json",
+      "release/external/protein-v6/reports/protein_source_versions_v1.qa.json"
     ]
   }
 }
