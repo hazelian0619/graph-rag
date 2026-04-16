@@ -1,13 +1,7 @@
 # Molecule Domain
 
-Molecule 类目骨架已就绪。
-当前已从 protein 区域拆分出的分子相关输出位于：
+Molecule 类目已建立首版公开交付：`molecule-v1`。
 
-- `data/output/molecules/`
-
-后续按与 protein 同标准继续补齐：
-
-- `data/{raw,processed,output}`
-- `pipelines/molecule`
-- `products/molecule`
-- `release/{external,internal,schema}`
+- 产品入口：`molecule/products/molecule/current.json`
+- 发布目录：`molecule/release/external/molecule-v1/`
+- 数据输出：`molecule/data/output/molecules/`

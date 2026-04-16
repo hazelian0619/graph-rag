@@ -1,0 +1,83 @@
+{
+  "release": "interaction-l2-v1",
+  "domain": "interaction",
+  "generated_at": "2026-04-16",
+  "asset_count": 15,
+  "assets": [
+    {
+      "path": "interaction/release/external/interaction-l2-v1/README.md",
+      "bytes": 181,
+      "sha256": "378f881580f0429a6424698c4b483f2af2f21aab216bab162ddf7f5a01644480"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/RELEASE_NOTES_interaction_l2_v1.md",
+      "bytes": 1143,
+      "sha256": "547f499e06505397e4d96b9fe9e1760a7a3b0188922f7b63d8cc4b26852af190"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/manifests/manifest_interaction_l2_v1.json",
+      "bytes": 10032,
+      "sha256": "1c8adb60d46feb57d6e71c0576a74af92727b6d5a0eb2c242191d100cd940ba7"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.build.json",
+      "bytes": 7804,
+      "sha256": "bfb2ef97a9e064f6496da116dbe510d181de1cad953b2fda0b1106fdaa10a65c"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_cross_validation_v2.qa.json",
+      "bytes": 2060,
+      "sha256": "843ab20d41e5c0d53b985da479f4f377543e3a54ac9e8f87adfdb0bce339e7b6"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_ontology_mapping_v2.gates.json",
+      "bytes": 985,
+      "sha256": "cfaf242426d5d258cd18118cc2af7db372fa6b690078f0e58a16eabae3612003"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_2026-04-13.gates.json",
+      "bytes": 316,
+      "sha256": "672a32af2278ac881cd13cc4a921d319aac9fa826422d889d77259cb51c79821"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_2026-04-13.summary.json",
+      "bytes": 5167,
+      "sha256": "be4a5f6f86ed1f6871ed2a04b8093d1b1e0fcfa12b22781d1ac7f6a985d044e3"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_2026-04-13.validation.json",
+      "bytes": 1784,
+      "sha256": "0cb1a7a2846c018204f443301e8f942c703635ecb92964db9777e78fec8ee9bb"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.gates.json",
+      "bytes": 528,
+      "sha256": "b2100f653705211902e6c5da98e27e9973e933e569a7bae9cb4b4fc5a861102e"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.package.json",
+      "bytes": 4888,
+      "sha256": "f04eac32794d1e7238e665d1c4e400f93a4cdcee18c04eff3a244ef4827e5247"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/interaction_release_local_v1.validation.json",
+      "bytes": 4313,
+      "sha256": "c2d8f7aee85123aae83539b8cd16d3275c07fdb05fdae96d90fd02a2feaa7bff"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/ppi_semantic_enrichment_v2.qa.json",
+      "bytes": 1858,
+      "sha256": "a735a2261e18d855f6b22873a0105e7a52bdd7c5ae1e4ae1ec704378eb3199d4"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/psi_activity_structure_enrichment_v2.qa.json",
+      "bytes": 2213,
+      "sha256": "d6deaf7b82506d9b6e2238b50b66d02627ff5bc207ec92008b56f83189158d7b"
+    },
+    {
+      "path": "interaction/release/external/interaction-l2-v1/reports/rpi_site_domain_enrichment_v2.gates.json",
+      "bytes": 922,
+      "sha256": "a79d9f9547320c020eb847ff0837a91252fe821c1c8417dd38ce92f207a10e5b"
+    }
+  ]
+}

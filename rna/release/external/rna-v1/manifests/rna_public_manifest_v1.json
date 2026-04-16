@@ -1,0 +1,103 @@
+{
+  "release": "rna-v1",
+  "domain": "rna",
+  "generated_at": "2026-04-16",
+  "asset_count": 19,
+  "assets": [
+    {
+      "path": "rna/release/external/rna-v1/README.md",
+      "bytes": 221,
+      "sha256": "2d9bcd926814edebdee19c91f3ee17c8fa3d1e5820cd1ea64602a7db2261158b"
+    },
+    {
+      "path": "rna/release/external/rna-v1/RELEASE_NOTES.md",
+      "bytes": 258,
+      "sha256": "064da2b3c6e795825f101925cfaec33baaf9481d6c3f9b675916ce6d6a38ba11"
+    },
+    {
+      "path": "rna/release/external/rna-v1/reports/rna_master_v1.validation.json",
+      "bytes": 3241,
+      "sha256": "0c27801f1bd62d00e6dbf84ce500209d7999b424a5f63a017b7ad02025636f60"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/annotation/rna_lnc_entries_v1.tsv",
+      "bytes": 43000459,
+      "sha256": "200dbd677caf028d268dbe939ce19527fbcb5b92004bce7230996f1f9b339194"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/annotation/rna_rrna_loci_v1.tsv",
+      "bytes": 13739518,
+      "sha256": "0653fbd6b312688951f9f73dea7b4f79f828e04374a5390b703ed74de775026f"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/annotation/rna_trna_features_v2.tsv",
+      "bytes": 696551,
+      "sha256": "b7fdd7dee9b68556605ffeae372c66a0531c5ed42be39ff2c337385632023604"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/evidence/rna_expression_evidence_v1.sample.tsv",
+      "bytes": 36347,
+      "sha256": "85737de4c39a60b4b9356348da3e5f3067afcc5706e0dd0cf3d7513541c78f4d"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/evidence/rna_expression_evidence_v1.tsv",
+      "bytes": 51857745,
+      "sha256": "9c87f122af2a554502c0ca03471c0a6522c20926ac5b8ecafcbbd9aa295b5e65"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/evidence/rna_rbp_sites_v1.sample.tsv",
+      "bytes": 28481,
+      "sha256": "3ea97f434de34d11913bcc95490533cde4c0a6343ddccced81e0630c071f6e62"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/evidence/rna_rbp_sites_v1.tsv",
+      "bytes": 4399904,
+      "sha256": "eb34d949c5382c00b26aa77c4f91b79e14b662586451e9c788137bac035dd905"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/reference/rna_external_xref_v1.tsv",
+      "bytes": 30375074,
+      "sha256": "4d336c58498c63477d0a0fa2b1659e0ecb6007404deedb90e46e753b21ba9456"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/reference/rna_xref_mrna_enst_urs_v2.tsv",
+      "bytes": 1470,
+      "sha256": "cb7503cd298a5d9585daff48380888cd25f49299b773dd50608cb8e654775b60"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/structure/rna_covariance_models_index_v1.sample.tsv",
+      "bytes": 15263,
+      "sha256": "7dac3bf2be87b4fd6b1acafb76679fad034e03d54416ca478196180f0ae1cfcf"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/structure/rna_covariance_models_index_v1.tsv",
+      "bytes": 318160,
+      "sha256": "2da811c575d5b0835f5e414e70dc4a10fc8aa16e2de8f303df62add0a7789dab"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/structure/rna_pdb_structures_v1.tsv",
+      "bytes": 289,
+      "sha256": "a65c7fa3f67942ecab48df43a0349cd11ffcfaf51984b99aac8a8d5951a3cf91"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/structure/rna_predicted_structures_v1.sample.tsv",
+      "bytes": 27278,
+      "sha256": "de031096edaf848f5bd1ca61dfb6131280ff65f2117a09fbb3ed4a1681d09d79"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/structure/rna_predicted_structures_v1.tsv",
+      "bytes": 478054,
+      "sha256": "59c5be197361ba904839830b9dc6a5c21215478578508a59924ed2f7184bc86f"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/structure/rna_structure_rfam_v1.sample.tsv",
+      "bytes": 102,
+      "sha256": "e0855ec8122007fb5f929b5ebee1f3fcddc073676d1077ea3a2564eaba13251c"
+    },
+    {
+      "path": "rna/release/external/rna-v1/tables/structure/rna_structure_rfam_v1.tsv",
+      "bytes": 224787,
+      "sha256": "c02ae166c38d8a7d529c5b89edbe5daa2845b64557fa4c2ba9f173547a10827c"
+    }
+  ]
+}

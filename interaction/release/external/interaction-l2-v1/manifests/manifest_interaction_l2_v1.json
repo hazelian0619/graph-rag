@@ -1,0 +1,229 @@
+{
+  "data_version": "interaction-l2-v1",
+  "created_at": "2026-04-13T21:24:49.262605+00:00",
+  "git_commit": "9abd73a0288baa6434e95192d059a85d7d81540b",
+  "artifacts": [
+    {
+      "path": "dist/interaction-l2-v1/ppi_method_context_v2.tsv.zst",
+      "size_bytes": 12951527,
+      "sha256": "352f9675eebd72bce14c781e1b9a8bef11ebe700d6c54b9ef197c93115f90f07",
+      "modified_time": "2026-04-12T13:28:05+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/ppi_function_context_v2.tsv.zst",
+      "size_bytes": 13008270,
+      "sha256": "00f2a1e052c0f5ebc4903cdc5dd4f0c486121c06f4ba8ef54dd26b6180f859d2",
+      "modified_time": "2026-04-12T13:28:17+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/rpi_site_context_v2.tsv.zst",
+      "size_bytes": 2071864,
+      "sha256": "167d2d61a89e6760bc2526ef90621b434b8b835deedcb9a9a14202fbc9fcf5d9",
+      "modified_time": "2026-04-13T01:33:46+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/rpi_domain_context_v2.tsv.zst",
+      "size_bytes": 660881,
+      "sha256": "bc4cb95664dbfa5a2a58051489f5af2c57578be1a1582d1b274da8bfdfcd470e",
+      "modified_time": "2026-04-13T01:33:47+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/rpi_function_context_v2.tsv.zst",
+      "size_bytes": 857172,
+      "sha256": "37772a8c1944c6f22ef9fb04101a86bbfcf5c736cab36f71ffc685914f30afd0",
+      "modified_time": "2026-04-13T01:33:47+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_cross_validation_v2.tsv.zst",
+      "size_bytes": 152636052,
+      "sha256": "c79f4bce9189030b769e87635bd887b6478775b6fd4c09a34501b9fa3160ae4d",
+      "modified_time": "2026-04-13T01:47:57+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_ontology_mapping_v2.tsv.zst",
+      "size_bytes": 35890136,
+      "sha256": "bc2650ee9c8e4d3a5e91e60c357dcc32c505c0ba1d4391896353fd4599a45816",
+      "modified_time": "2026-04-13T01:39:23+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_structure_evidence_v2.tsv.zst.part.000",
+      "size_bytes": 31457280,
+      "sha256": "922f1911dc03f876b338b3ca83627560c28d57f50936055d41f8613b12009425",
+      "modified_time": "2026-04-13T09:32:08.746410+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_structure_evidence_v2.tsv.zst.part.001",
+      "size_bytes": 31457280,
+      "sha256": "d59b28913377f975e936856e5eec33c19de6e71efe78c7874824fc4955dfe11d",
+      "modified_time": "2026-04-13T09:32:08.759701+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_structure_evidence_v2.tsv.zst.part.002",
+      "size_bytes": 30424985,
+      "sha256": "33d64daf8c06b8e0a060c4d5b377bfac167d835f130589be0a4ce25ebfec23c1",
+      "modified_time": "2026-04-13T09:32:08.771163+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/interaction_aggregate_score_v2.tsv.zst.part.000",
+      "size_bytes": 31457280,
+      "sha256": "fb7bfe6f82e671715713a096314795e0fa3a58c2109099c0c8611a1e758d4a7e",
+      "modified_time": "2026-04-13T09:32:08.797104+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/interaction_aggregate_score_v2.tsv.zst.part.001",
+      "size_bytes": 31457280,
+      "sha256": "6907486fd9f17e8c94debdcbf808648898c0590ed811bc591f364e9d12e937c5",
+      "modified_time": "2026-04-13T09:32:08.808566+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/interaction_aggregate_score_v2.tsv.zst.part.002",
+      "size_bytes": 31457280,
+      "sha256": "aa73839e73e54fe8c6196aa687128ba87192079deacdeefb74064e7a6011151b",
+      "modified_time": "2026-04-13T09:32:08.820902+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/interaction_aggregate_score_v2.tsv.zst.part.003",
+      "size_bytes": 18496437,
+      "sha256": "4298e4d9ff446a9ccedbc2e76124cb852c3b3b13ff1cb3c42f775a9f63820fc2",
+      "modified_time": "2026-04-13T09:32:08.828031+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.000",
+      "size_bytes": 31457280,
+      "sha256": "254910b31ef687b95cf13c21738ad9190c2eafd9551a51edb8cf25c7b1bb1add",
+      "modified_time": "2026-04-13T09:32:08.857535+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.001",
+      "size_bytes": 31457280,
+      "sha256": "49835b688870e4d1d7b1a1c7ea1b32e37fbb9c235ace4d9b92b080fbd0b700ff",
+      "modified_time": "2026-04-13T09:32:08.885361+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.002",
+      "size_bytes": 31457280,
+      "sha256": "c84cf9e76d3208cf71b4edd50300f0fff3a9b92ddb5b90a5104e32b6c7ad425f",
+      "modified_time": "2026-04-13T09:32:08.923311+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.003",
+      "size_bytes": 31457280,
+      "sha256": "386d5c36f8cb06525b6b17377336537e9ad72d4c93cd701e707509d19e6c5e9d",
+      "modified_time": "2026-04-13T09:32:08.965068+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.004",
+      "size_bytes": 31457280,
+      "sha256": "29606b7180b729ed26631e6c0a78b5f72cf8d68ff8dfd55f299523238cc90ff3",
+      "modified_time": "2026-04-13T09:32:09.010307+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.005",
+      "size_bytes": 31457280,
+      "sha256": "259edc110d535f334135111b0031366d4919f946da465f1d8d12de393982a0b5",
+      "modified_time": "2026-04-13T09:32:09.052480+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.006",
+      "size_bytes": 31457280,
+      "sha256": "2b00d5cdc99499726ed5a064c3dd4328f9a94ca20e5b61e287b006334c7c0f89",
+      "modified_time": "2026-04-13T09:32:09.097601+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.007",
+      "size_bytes": 31457280,
+      "sha256": "124386b26f737229e67d8d56c299e63b55300e8025438e81af54107f75398f20",
+      "modified_time": "2026-04-13T09:32:09.145685+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.008",
+      "size_bytes": 31457280,
+      "sha256": "ed86702723178774eb027c2edbac650bbf25ecc9dde05c1e635f47e65bfb731d",
+      "modified_time": "2026-04-13T09:32:09.183515+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/chunks/psi_activity_context_v2.tsv.zst.part.009",
+      "size_bytes": 6628703,
+      "sha256": "34ce3d7505c275fe2f7a8442766025aaca7ea0f9ec26b13a98f46f5f3b8d4f17",
+      "modified_time": "2026-04-13T09:32:09.202954+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_release_local_v1.package.json",
+      "size_bytes": 4888,
+      "sha256": "f04eac32794d1e7238e665d1c4e400f93a4cdcee18c04eff3a244ef4827e5247",
+      "modified_time": "2026-04-13T07:59:52.748340+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_release_local_v1.gates.json",
+      "size_bytes": 528,
+      "sha256": "b2100f653705211902e6c5da98e27e9973e933e569a7bae9cb4b4fc5a861102e",
+      "modified_time": "2026-04-13T07:59:52.751012+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_release_local_v1.validation.json",
+      "size_bytes": 4313,
+      "sha256": "c2d8f7aee85123aae83539b8cd16d3275c07fdb05fdae96d90fd02a2feaa7bff",
+      "modified_time": "2026-04-13T07:59:52.753367+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_release_local_2026-04-13.summary.json",
+      "size_bytes": 5167,
+      "sha256": "be4a5f6f86ed1f6871ed2a04b8093d1b1e0fcfa12b22781d1ac7f6a985d044e3",
+      "modified_time": "2026-04-13T07:59:52.755829+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_release_local_2026-04-13.gates.json",
+      "size_bytes": 316,
+      "sha256": "672a32af2278ac881cd13cc4a921d319aac9fa826422d889d77259cb51c79821",
+      "modified_time": "2026-04-13T07:59:52.758025+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_release_local_2026-04-13.validation.json",
+      "size_bytes": 1784,
+      "sha256": "0cb1a7a2846c018204f443301e8f942c703635ecb92964db9777e78fec8ee9bb",
+      "modified_time": "2026-04-13T07:59:52.760507+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/ppi_semantic_enrichment_v2.qa.json",
+      "size_bytes": 1858,
+      "sha256": "a735a2261e18d855f6b22873a0105e7a52bdd7c5ae1e4ae1ec704378eb3199d4",
+      "modified_time": "2026-04-13T07:59:52.762832+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/psi_activity_structure_enrichment_v2.qa.json",
+      "size_bytes": 2213,
+      "sha256": "d6deaf7b82506d9b6e2238b50b66d02627ff5bc207ec92008b56f83189158d7b",
+      "modified_time": "2026-04-13T07:59:52.765280+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/rpi_site_domain_enrichment_v2.gates.json",
+      "size_bytes": 922,
+      "sha256": "a79d9f9547320c020eb847ff0837a91252fe821c1c8417dd38ce92f207a10e5b",
+      "modified_time": "2026-04-13T07:59:52.767673+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_cross_validation_v2.qa.json",
+      "size_bytes": 2060,
+      "sha256": "843ab20d41e5c0d53b985da479f4f377543e3a54ac9e8f87adfdb0bce339e7b6",
+      "modified_time": "2026-04-13T07:59:52.769969+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_cross_validation_v2.build.json",
+      "size_bytes": 7804,
+      "sha256": "bfb2ef97a9e064f6496da116dbe510d181de1cad953b2fda0b1106fdaa10a65c",
+      "modified_time": "2026-04-13T07:59:52.772315+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/interaction_ontology_mapping_v2.gates.json",
+      "size_bytes": 985,
+      "sha256": "cfaf242426d5d258cd18118cc2af7db372fa6b690078f0e58a16eabae3612003",
+      "modified_time": "2026-04-13T07:59:52.775035+00:00"
+    },
+    {
+      "path": "dist/interaction-l2-v1/RELEASE_NOTES_interaction_l2_v1.md",
+      "size_bytes": 1143,
+      "sha256": "547f499e06505397e4d96b9fe9e1760a7a3b0188922f7b63d8cc4b26852af190",
+      "modified_time": "2026-04-13T21:24:48.911716+00:00"
+    }
+  ]
+}

@@ -1,30 +1,21 @@
 # Graph-RAG
 
-该仓库采用**按类目分区**的公开结构。顶层四个类目：
+仓库按四大类目组织：
 
-- `protein/`（已实装，当前主交付）
-- `rna/`（骨架已建，待填充）
-- `molecule/`（骨架已建，含已整理的小分子输出）
-- `interaction/`（骨架已建，待填充）
+- `protein/`（已完整实装）
+- `rna/`（已填入首版公开包）
+- `molecule/`（已填入首版公开包）
+- `interaction/`（已填入首版元数据包）
 
-## 统一目录标准（每个类目）
+## 统一结构
+每个类目统一包含：
+- `data/`
+- `pipelines/`
+- `products/`
+- `release/`
 
-- `data/`：原始/处理中/输出数据
-- `pipelines/`：构建与校验流水线
-- `products/`：版本指针与产品元数据
-- `release/`：对外发布包（external）与内部过程物（internal）
-
-## 当前可直接使用（Protein）
-
-1. `protein/products/protein/current.json`
-2. `protein/release/index.json`
-3. `protein/release/external/protein-v6/`
-
-## Protein 校验命令
-
-```bash
-python3 scripts/build_release_index.py --products-root protein/products --out protein/release/index.json
-python3 scripts/validate_release_index.py --index protein/release/index.json --schema protein/release/schema/index.schema.json --repo-root .
-python3 scripts/check_release_consistency.py --index protein/release/index.json --out protein/release/consistency_report.json
-pytest -q tests/release
-```
+## 当前入口
+- Protein: `protein/products/protein/current.json`
+- RNA: `rna/products/rna/current.json`
+- Molecule: `molecule/products/molecule/current.json`
+- Interaction: `interaction/products/interaction/current.json`

@@ -1,0 +1,53 @@
+{
+  "release": "molecule-v1",
+  "domain": "molecule",
+  "generated_at": "2026-04-16",
+  "asset_count": 9,
+  "assets": [
+    {
+      "path": "molecule/release/external/molecule-v1/README.md",
+      "bytes": 103,
+      "sha256": "46f50f6f83f434c16f8036dd836f9cb44f945a98354fa3e4bcff63752304f8d5"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/molecule_3d_experimental_v1.tsv",
+      "bytes": 42292424,
+      "sha256": "0d824755e2b63bb1cced5bb5ca05070d258508d7325be642d1ad77b7092c890f"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/molecule_physchem_descriptors_v1.tsv",
+      "bytes": 2659923,
+      "sha256": "9b88dc4a0b876659fd1d5281933faa055af89034bbfc87fccc4d6a2a0baeb661"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/molecule_pk_tox_v1.tsv",
+      "bytes": 3725070,
+      "sha256": "d29c8f074e39076e19115d1273e24575d5f0c6138529894000713e87c46f15b3"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/molecule_pk_tox_v2.tsv",
+      "bytes": 5464575,
+      "sha256": "6ae501f22906528edf9870563a9b2be86a9d34be81818ee55b5dc5444ccd9a87"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/molecule_structure_identifiers_v1.tsv",
+      "bytes": 6523180,
+      "sha256": "0533dfcb74d723dd13553084d6fc01ee503c950cb96a83e07f1fca18a6c22396"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/molecule_xref_pubchem_enhanced_v1.tsv",
+      "bytes": 5868795,
+      "sha256": "06632d9fe214e90833dd3d00a6abb2448bcebee4b0ac763845831a96ce1f5adc"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/molecule_zinc_xref_v1.tsv",
+      "bytes": 31567503,
+      "sha256": "123bfff9075c166572a6989eb943824a027223777ea9e27445371d7418d3cb95"
+    },
+    {
+      "path": "molecule/release/external/molecule-v1/tables/molecule_zinc_xref_v2.tsv",
+      "bytes": 47311733,
+      "sha256": "f53c813f9d38af748cb5b3b18c882d6a89fe540ff265ebd293b992dea815f783"
+    }
+  ]
+}

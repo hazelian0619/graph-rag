@@ -1,0 +1,2 @@
+rna_id	rna_type	urs_id	pdb_id	pdb_entity_id	mapping_strategy	experimental_method	resolution	release_date	source	source_version	fetch_date
+URS00003B95DA_9606	mirna	URS00003B95DA_9606	6MFN	C	rna_id_direct_urs	X-RAY DIFFRACTION	2.5	2019-08-07	RCSB_DATA_API	RNAcentral:25;RCSB:live	2026-04-12
