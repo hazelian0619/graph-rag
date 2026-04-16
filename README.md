@@ -1,40 +1,26 @@
-# Graph-RAG Bio-KG Foundation (Public Result Repo)
+# Graph-RAG Bio-KG Foundation
 
-面向对外交付的生物知识图谱结果仓库，聚焦 4 条主线：
-
-- Protein Entity
-- RNA Entity
-- Small Molecule Entity
-- Cross-entity Interactions (PPI / PSI / RPI)
-
-本仓库是**结果导向**：优先提供可下载数据、可验证清单、可追溯 manifest；不保留大量过程性协作文档。
+面向对外的数据结果仓库，聚焦 4 条主线：Protein / RNA / Molecule / Interaction。
 
 ## 快速入口
+1. `release/index.json`（统一产品索引）
+2. `products/*/current.json`（各产品当前版本）
+3. `scripts/download_dataset.py`（下载工具）
 
-1. 统一产品索引：`release/index.json`
-2. 产品当前版本指针：`products/*/current.json`
-3. 下载工具：`scripts/download_dataset.py`
+## 仓库定位
+- 结果导向：优先提供可下载数据与可验证元数据
+- 公开专业：不收录过程性协作文档
+- 稳定入口：四产品统一版本契约
 
-## 对照《组件细节》架构
-
-- 资源层：`products/`, `release/`
-- 数据层：`data/`, `pipelines/`
-- 算法层：`pipelines/ppi_*`, `pipelines/psi_*`, `pipelines/rpi_*`, `pipelines/interaction_*`
-- 应用层（对外接口入口准备）：`scripts/` + release metadata
-
-详细映射见：`docs/architecture/doc_component_mapping.md`
+详细标准见：`docs/REPO_STANDARDS.md`
 
 ## 数据分发策略
+- Protein：仓库快照为主（当前含核心结果表）
+- RNA / Molecule / Interaction：Release 资产为主，仓库保留 manifest/checksum/QA
 
-- **Protein**：仓库快照（`data/processed/protein_master_v6_clean.tsv`）
-- **RNA / Molecule / Interaction**：以 Release 为主，仓库内保留 manifest / QA / checksum
-- 大文件不直接入 git（>100MB 一律走 Release 资产）
-
-
-> 过渡说明：当前 RNA/Molecule/Interaction 的 `release_url` 暂指向既有稳定发布源 `hazelian0619/protian-entity`，后续会在 `graph-rag` 建立同版本 tag 后切换。
+> 过渡说明：当前 RNA/Molecule/Interaction 的 `release_url` 暂指向既有稳定发布源 `hazelian0619/protian-entity`，后续会迁移为 `graph-rag` 自有 tag。
 
 ## 基本校验
-
 ```bash
 python3 scripts/validate_release_index.py \
   --index release/index.json \
@@ -44,4 +30,6 @@ python3 scripts/validate_release_index.py \
 python3 scripts/check_release_consistency.py \
   --index release/index.json \
   --out release/consistency_report.json
+
+pytest -q tests/release
 ```
