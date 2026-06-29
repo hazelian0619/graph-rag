@@ -126,7 +126,7 @@ def schema_errors(index: Dict[str, Any], schema_path: Path) -> List[str]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate release index and referenced paths")
     parser.add_argument("--index", default="protein/release/index.json", help="release index path")
-    parser.add_argument("--schema", default="protein/release/schema/index.schema.json", help="json schema path")
+    parser.add_argument("--schema", default="schemas/release-index.schema.json", help="json schema path")
     parser.add_argument("--repo-root", default=".", help="repository root for path checks")
     parser.add_argument("--allow-missing-jsonschema", action="store_true", help="do not fail when jsonschema package is missing")
     parser.add_argument(
