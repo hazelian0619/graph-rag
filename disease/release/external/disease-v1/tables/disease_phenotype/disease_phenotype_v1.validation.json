@@ -1,0 +1,72 @@
+{
+  "table": "/Users/pluviophile/graph/graph-rag/disease/release/external/disease-v1/tables/disease_phenotype/disease_phenotype_v1.tsv",
+  "contract": "disease_phenotype_v1",
+  "row_count": 269518,
+  "columns": [
+    "disease_id",
+    "hpo_id",
+    "source",
+    "evidence_class"
+  ],
+  "schema": {
+    "required_columns": [
+      "disease_id",
+      "hpo_id",
+      "source",
+      "evidence_class"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "disease_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 269518,
+      "passed_count": 269518,
+      "rate": 1.0
+    },
+    {
+      "id": "disease_id_mondo_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 269518,
+      "passed_count": 269518,
+      "rate": 1.0
+    },
+    {
+      "id": "hpo_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 269518,
+      "passed_count": 269518,
+      "rate": 1.0
+    },
+    {
+      "id": "hpo_id_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 269518,
+      "passed_count": 269518,
+      "rate": 1.0
+    },
+    {
+      "id": "source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 269518,
+      "passed_count": 269518,
+      "rate": 1.0
+    },
+    {
+      "id": "evidence_class_allowed",
+      "type": "allowed_values_rate",
+      "passed": true,
+      "checked": 269518,
+      "passed_count": 269518,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

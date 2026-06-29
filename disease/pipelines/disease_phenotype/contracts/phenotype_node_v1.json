@@ -1,0 +1,56 @@
+{
+  "name": "phenotype_node_v1",
+  "description": "Phenotype canonical node table (disease-layer-v1). HPO-only (DECISIONS 004). Primary key = hpo_id. Aligned to FR-002 / SC-002.",
+  "required_columns": [
+    "hpo_id",
+    "term",
+    "source",
+    "fetch_date"
+  ],
+  "rules": [
+    {
+      "id": "pk_non_empty",
+      "type": "non_empty_rate",
+      "column": "hpo_id",
+      "min_rate": 1.0
+    },
+    {
+      "id": "pk_unique",
+      "type": "unique",
+      "column": "hpo_id"
+    },
+    {
+      "id": "pk_hpo_format",
+      "type": "regex_rate",
+      "column": "hpo_id",
+      "pattern": "^HP:\\d{7}$",
+      "min_rate": 1.0
+    },
+    {
+      "id": "term_non_empty",
+      "type": "non_empty_rate",
+      "column": "term",
+      "min_rate": 1.0
+    },
+    {
+      "id": "source_hpo_only",
+      "type": "allowed_values_rate",
+      "column": "source",
+      "allowed": ["HPO"],
+      "min_rate": 1.0
+    },
+    {
+      "id": "fetch_date_non_empty",
+      "type": "non_empty_rate",
+      "column": "fetch_date",
+      "min_rate": 1.0
+    },
+    {
+      "id": "fetch_date_format",
+      "type": "regex_rate",
+      "column": "fetch_date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "min_rate": 1.0
+    }
+  ]
+}

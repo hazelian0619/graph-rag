@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bio-entity-kg-foundation/disease/release/schema/disease.schema.json",
+  "title": "Disease Node (disease-layer-v1)",
+  "description": "Canonical disease node. Primary key = MONDO id (D-GATE-1, default-applied). Aligned to FR-001 / SC-001. Source/ontology = MONDO, DO as supplementary cross-reference (DECISIONS 003).",
+  "type": "object",
+  "required": ["disease_id", "canonical_name", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "disease_id": {
+      "type": "string",
+      "pattern": "^MONDO:\\d{7}$",
+      "description": "Primary key. MONDO id (D-GATE-1 default-applied). Stable, cross-source-aligned canonical identity."
+    },
+    "canonical_name": {
+      "type": "string",
+      "description": "Preferred disease name from MONDO."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Synonyms / alternative names. Controlled dedup required (FR-014)."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["MONDO"],
+      "description": "Canonical source/ontology for this node."
+    },
+    "external_ids": {
+      "type": "object",
+      "description": "Traceable cross-references to other ontologies/sources (DO, ICD, OMIM, UMLS, etc.). DO is supplementary mapping, not canonical (DECISIONS 003).",
+      "additionalProperties": {"type": "string"}
+    },
+    "xref_doid": {
+      "type": ["string", "null"],
+      "description": "Supplementary Disease Ontology id (cross-reference only)."
+    }
+  }
+}

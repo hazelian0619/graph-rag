@@ -1,0 +1,85 @@
+{
+  "table": "data/processed/phenotype_node_v1.tsv",
+  "contract": "phenotype_node_v1",
+  "row_count": 19836,
+  "columns": [
+    "hpo_id",
+    "term",
+    "synonyms",
+    "source",
+    "hierarchy_reference",
+    "fetch_date"
+  ],
+  "schema": {
+    "required_columns": [
+      "hpo_id",
+      "term",
+      "source",
+      "fetch_date"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "pk_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 19836,
+      "passed_count": 19836,
+      "rate": 1.0
+    },
+    {
+      "id": "pk_unique",
+      "type": "unique",
+      "passed": true,
+      "checked": 19836,
+      "passed_count": 19836,
+      "rate": 1.0,
+      "detail": {
+        "duplicates": 0
+      }
+    },
+    {
+      "id": "pk_hpo_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 19836,
+      "passed_count": 19836,
+      "rate": 1.0
+    },
+    {
+      "id": "term_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 19836,
+      "passed_count": 19836,
+      "rate": 1.0
+    },
+    {
+      "id": "source_hpo_only",
+      "type": "allowed_values_rate",
+      "passed": true,
+      "checked": 19836,
+      "passed_count": 19836,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 19836,
+      "passed_count": 19836,
+      "rate": 1.0
+    },
+    {
+      "id": "fetch_date_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 19836,
+      "passed_count": 19836,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

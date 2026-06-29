@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bio-entity-kg-foundation/schemas/disease.schema.json",
+  "title": "Disease Domain (placeholder registration)",
+  "description": "Placeholder registration for the disease domain. Canonical node/edge schemas are authored per-release under disease/release/schema/ (e.g. disease.schema.json, phenotype.schema.json, biomarker.schema.json). This entry reserves the domain in the shared schemas registry. Primary key strategy governed by D-GATE-1 (default-applied: MONDO id as primary key).",
+  "domain": "disease",
+  "feature": "disease-layer-v1",
+  "status": "placeholder",
+  "canonical_schema_paths": [
+    "disease/release/schema/disease.schema.json",
+    "disease/release/schema/phenotype.schema.json",
+    "disease/release/schema/biomarker.schema.json"
+  ]
+}

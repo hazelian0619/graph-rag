@@ -1,0 +1,43 @@
+{
+  "data_version": "disease-v1",
+  "created_at": "2026-06-29T09:46:13.884604+00:00",
+  "git_commit": null,
+  "artifacts": [
+    {
+      "path": "/Users/pluviophile/graph/graph-rag/disease/release/external/disease-v1/tables/disease/disease_node_v1.tsv",
+      "size_bytes": 4531428,
+      "sha256": "65ea3b5362b225ea22a3efc4bbf56d0496e55ee63f5fc4a176e7eb1460d2867e",
+      "modified_time": "2026-06-29T08:11:17.406260+00:00"
+    },
+    {
+      "path": "/Users/pluviophile/graph/graph-rag/disease/release/external/disease-v1/tables/phenotype/phenotype_node_v1.tsv",
+      "size_bytes": 1944163,
+      "sha256": "c7d81f7a9a39a990412b7d2f33f1e4d865f6e290f711f1f44abbb960a51f536e",
+      "modified_time": "2026-06-29T08:11:17.415683+00:00"
+    },
+    {
+      "path": "/Users/pluviophile/graph/graph-rag/disease/release/external/disease-v1/tables/disease_phenotype/disease_phenotype_v1.tsv",
+      "size_bytes": 16619872,
+      "sha256": "80e6ee6cfef7a675444b228176ad847c791b6d68fc8a73ca2db1cc9d9bfb63ca",
+      "modified_time": "2026-06-29T08:11:17.426488+00:00"
+    },
+    {
+      "path": "/Users/pluviophile/graph/graph-rag/disease/release/external/disease-v1/tables/disease_gene_target/disease_gene_target_v1.tsv",
+      "size_bytes": 1315929,
+      "sha256": "0d288f1feb92855d3982291d91643944bb3356a269480bd2e9d9228189acb18d",
+      "modified_time": "2026-06-29T09:15:41.150133+00:00"
+    },
+    {
+      "path": "/Users/pluviophile/graph/graph-rag/disease/release/external/disease-v1/tables/disease_drug/disease_drug_v1.tsv",
+      "size_bytes": 1739630,
+      "sha256": "9313b3d2b447c50dfbc0e56d450f6ab22fa796f9995f6c405a7165da79d21df0",
+      "modified_time": "2026-06-29T09:46:13.488261+00:00"
+    },
+    {
+      "path": "/Users/pluviophile/graph/graph-rag/disease/release/external/disease-v1/tables/biomarker/biomarker_edges_v1.tsv",
+      "size_bytes": 1542971,
+      "sha256": "56f2327928e2058b9a9947402dee097c80acbb620d4eca3f8ee2f539b6397d46",
+      "modified_time": "2026-06-29T09:46:13.484982+00:00"
+    }
+  ]
+}
