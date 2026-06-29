@@ -5,6 +5,12 @@ on:
     paths:
       - 'protein/data/**'
       - 'protein/pipelines/**'
+      - 'rna/data/**'
+      - 'rna/pipelines/**'
+      - 'molecule/data/**'
+      - 'molecule/pipelines/**'
+      - 'interaction/data/**'
+      - 'interaction/pipelines/**'
       - 'tools/**'
       - 'docs/**'
   push:
@@ -12,6 +18,12 @@ on:
     paths:
       - 'protein/data/**'
       - 'protein/pipelines/**'
+      - 'rna/data/**'
+      - 'rna/pipelines/**'
+      - 'molecule/data/**'
+      - 'molecule/pipelines/**'
+      - 'interaction/data/**'
+      - 'interaction/pipelines/**'
       - 'tools/**'
       - 'docs/**'
 
