@@ -27,10 +27,8 @@ wheels/
 .ipynb_checkpoints
 *.ipynb
 
-# PyCharm
+# IDE
 .idea/
-
-# VS Code
 .vscode/
 
 # macOS
@@ -38,66 +36,52 @@ wheels/
 .AppleDouble
 .LSOverride
 
-# 中间版本数据文件（不同步到仓库）
-data/processed/protein_master_v3*.tsv
-data/processed/protein_master_v4*.tsv
-data/processed/protein_master_v5*.tsv
-
-# 原始下载数据（如果太大）
-data/raw/*
-!data/raw/.gitkeep
-
-# 临时文件
+# Temp files
 *.tmp
 *.bak
 *.swp
 *.log
 
-# 大文件缓存
+# Large file archives
 *.gz
 *.zip
 *.tar
 
-# 测试输出
+# Test / scratch output
 test_output/
 scratch/
 
-# RNA pipeline outputs (do not commit)
-data/processed/rna/
-data/output/rna_*.tsv
-data/output/rna_master_*.tsv
+# Per-domain: raw data and intermediate outputs are NOT committed.
+# Only .gitkeep and curated sample files belong in data/.
+*/data/raw/*
+!*/data/raw/.gitkeep
+*/data/output/
+*/data/processed/rna/
 
-# Pipeline outputs (do not commit)
-data/output/
-data/processed/rna/
-pipelines/**/reports/
-pipelines/**/.cache/
-pipelines/**/data/raw/
-pipelines/**/reports/*.smoke.tsv
+# Pipeline caches and smoke outputs
+*/pipelines/**/.cache/
+*/pipelines/**/data/raw/
+*/pipelines/**/reports/*.smoke.tsv
 
-
-# Pipeline outputs (do not commit)
-data/output/
-data/processed/rna/
-pipelines/**/reports/
-
-# Allow JSON QA reports for interaction review pipelines
-!pipelines/ppi_semantic_enrichment/reports/
-!pipelines/ppi_semantic_enrichment/reports/*.json
-!pipelines/psi_activity_structure_enrichment/reports/
-!pipelines/psi_activity_structure_enrichment/reports/*.json
-!pipelines/rpi_site_domain_enrichment/reports/
-!pipelines/rpi_site_domain_enrichment/reports/*.json
-!pipelines/interaction_cross_validation/reports/
-!pipelines/interaction_cross_validation/reports/*.json
-!pipelines/interaction_ontology_mapping/reports/
-!pipelines/interaction_ontology_mapping/reports/*.json
-!pipelines/interaction_release_local/reports/
-!pipelines/interaction_release_local/reports/*.json
-!pipelines/psi_condition_enrichment/reports/
-!pipelines/psi_condition_enrichment/reports/*.json
+# Allow tracked JSON reports in interaction pipelines (override the report exclusion)
+!*/pipelines/ppi_semantic_enrichment/reports/
+!*/pipelines/ppi_semantic_enrichment/reports/*.json
+!*/pipelines/psi_activity_structure_enrichment/reports/
+!*/pipelines/psi_activity_structure_enrichment/reports/*.json
+!*/pipelines/rpi_site_domain_enrichment/reports/
+!*/pipelines/rpi_site_domain_enrichment/reports/*.json
+!*/pipelines/interaction_cross_validation/reports/
+!*/pipelines/interaction_cross_validation/reports/*.json
+!*/pipelines/interaction_ontology_mapping/reports/
+!*/pipelines/interaction_ontology_mapping/reports/*.json
+!*/pipelines/interaction_release_local/reports/
+!*/pipelines/interaction_release_local/reports/*.json
+!*/pipelines/psi_condition_enrichment/reports/
+!*/pipelines/psi_condition_enrichment/reports/*.json
 
 # Local release packaging
 /dist/
+
+# Curated mirna compressed subset (tracked exception)
 !rna/data/output/rna/rna_master_mirna_v1.tsv.gz
 !rna/release/external/rna-v1/tables/sequence/rna_master_mirna_v1.tsv.gz
