@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bio-entity-kg-foundation/disease/release/schema/biomarker.schema.json",
+  "title": "Biomarker first-pass relation layer (disease-layer-v1)",
+  "description": "Biomarker v1 as a relation layer (D-GATE-2, default-applied), not a standalone node table. Bridges disease <-> molecular entity (gene/protein/rna). Derived from high-value disease-gene/protein mappings (D-GATE-4). Aligned to FR-003 / FR-007 / SC-003 / SC-005.",
+  "type": "object",
+  "required": ["biomarker_id", "biomarker_type", "disease_id", "target_id", "source", "evidence_class"],
+  "additionalProperties": false,
+  "properties": {
+    "biomarker_id": {
+      "type": "string",
+      "description": "Stable biomarker identity. Derived from the bridged mapping (e.g. hash of disease+target+type) to support a future upgrade to a standalone node layer."
+    },
+    "biomarker_type": {
+      "type": "string",
+      "enum": ["gene_biomarker", "protein_biomarker", "rna_biomarker"],
+      "description": "Type of molecular target this biomarker bridges to."
+    },
+    "disease_id": {
+      "type": "string",
+      "pattern": "^MONDO:\\d{7}$",
+      "description": "Disease FK (MONDO, D-GATE-1)."
+    },
+    "target_id": {
+      "type": "string",
+      "description": "Molecular target FK (gene/protein/rna id), must resolve to an existing backbone entity."
+    },
+    "source": {
+      "type": "string",
+      "description": "Provenance (FR-015): derived source, e.g. DisGeNET_derived / Open_Targets_derived."
+    },
+    "evidence_class": {
+      "type": "string",
+      "enum": ["bridge_only", "evidence_backed"],
+      "description": "D-GATE-4 default: derived mappings are bridge_only; curated biomarkers would be evidence_backed."
+    },
+    "support": {
+      "type": ["string", "null"],
+      "description": "Optional support score from the derived mapping."
+    }
+  }
+}

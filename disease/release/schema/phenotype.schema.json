@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bio-entity-kg-foundation/disease/release/schema/phenotype.schema.json",
+  "title": "Phenotype Node (disease-layer-v1)",
+  "description": "Canonical phenotype node. HPO-only strategy (DECISIONS 004 / constitution Binding Decision). No symptom/sign/diagnosis multi-system. Aligned to FR-002 / SC-002.",
+  "type": "object",
+  "required": ["hpo_id", "term", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "hpo_id": {
+      "type": "string",
+      "pattern": "^HP:\\d{7}$",
+      "description": "Primary key. HPO id (HPO-only strategy, DECISIONS 004)."
+    },
+    "term": {
+      "type": "string",
+      "description": "Standard HPO term (preferred name)."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "HPO term synonyms. Controlled dedup required (FR-014)."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["HPO"],
+      "description": "Canonical source for this node. HPO-only (constitution D004)."
+    },
+    "hierarchy_reference": {
+      "type": ["string", "null"],
+      "description": "Optional HPO ontology parent/ancestor reference for hierarchy traversal (e.g. parent HP id). May be null if not applicable."
+    }
+  }
+}

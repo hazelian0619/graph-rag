@@ -1,0 +1,56 @@
+{
+  "name": "disease_node_v1",
+  "description": "Disease canonical node table (disease-layer-v1). Primary key = MONDO id (D-GATE-1, default-applied). Aligned to FR-001 / SC-001 / contract disease-node.md.",
+  "required_columns": [
+    "disease_id",
+    "canonical_name",
+    "source",
+    "fetch_date"
+  ],
+  "rules": [
+    {
+      "id": "pk_non_empty",
+      "type": "non_empty_rate",
+      "column": "disease_id",
+      "min_rate": 1.0
+    },
+    {
+      "id": "pk_unique",
+      "type": "unique",
+      "column": "disease_id"
+    },
+    {
+      "id": "pk_mondo_format",
+      "type": "regex_rate",
+      "column": "disease_id",
+      "pattern": "^MONDO:\\d{7}$",
+      "min_rate": 1.0
+    },
+    {
+      "id": "canonical_name_non_empty",
+      "type": "non_empty_rate",
+      "column": "canonical_name",
+      "min_rate": 1.0
+    },
+    {
+      "id": "source_canonical",
+      "type": "allowed_values_rate",
+      "column": "source",
+      "allowed": ["MONDO"],
+      "min_rate": 1.0
+    },
+    {
+      "id": "fetch_date_non_empty",
+      "type": "non_empty_rate",
+      "column": "fetch_date",
+      "min_rate": 1.0
+    },
+    {
+      "id": "fetch_date_format",
+      "type": "regex_rate",
+      "column": "fetch_date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "min_rate": 1.0
+    }
+  ]
+}

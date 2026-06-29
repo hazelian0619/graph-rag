@@ -58,6 +58,10 @@ scratch/
 */data/output/
 */data/processed/rna/
 
+# Top-level data/ is a non-canonical working dir (raw downloads + duplicate
+# tables). The single source of truth is <domain>/release/external/. Never commit it.
+/data/
+
 # Pipeline caches and smoke outputs
 */pipelines/**/.cache/
 */pipelines/**/data/raw/

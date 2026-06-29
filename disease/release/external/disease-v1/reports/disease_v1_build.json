@@ -1,0 +1,39 @@
+{
+  "feature": "disease-layer-v1",
+  "release": "disease-v1",
+  "generated_at": "2026-06-29T09:46:13.976681+00:00",
+  "status": "PASS",
+  "total_rows": 372705,
+  "tables": [
+    {
+      "table": "biomarker_edges_v1.tsv",
+      "rows": 15780,
+      "passed": true
+    },
+    {
+      "table": "disease_node_v1.tsv",
+      "rows": 29868,
+      "passed": true
+    },
+    {
+      "table": "disease_drug_v1.tsv",
+      "rows": 21923,
+      "passed": true
+    },
+    {
+      "table": "disease_gene_target_v1.tsv",
+      "rows": 15780,
+      "passed": true
+    },
+    {
+      "table": "disease_phenotype_v1.tsv",
+      "rows": 269518,
+      "passed": true
+    },
+    {
+      "table": "phenotype_node_v1.tsv",
+      "rows": 19836,
+      "passed": true
+    }
+  ]
+}

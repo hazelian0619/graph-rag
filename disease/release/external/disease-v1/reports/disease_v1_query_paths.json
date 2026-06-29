@@ -1,0 +1,52 @@
+{
+  "feature": "disease-layer-v1",
+  "check": "query_path_validation",
+  "spec_ref": "SC-008",
+  "generated_at": "2026-06-29T08:12:30.788686+00:00",
+  "summary": {
+    "paths_supported": 1,
+    "paths_structurally_supported": 2,
+    "paths_pending_data": 3,
+    "total_paths": 5
+  },
+  "paths": [
+    {
+      "path": "disease \u2192 phenotype",
+      "spec_ref": "US2 / SC-002 / FR-005",
+      "status": "SUPPORTED",
+      "disease_nodes": 29868,
+      "phenotype_nodes": 19836,
+      "edge_rows": 10605,
+      "diseases_with_phenotype": 10605,
+      "hpo_terms_referenced": 11614,
+      "note": "35.5% of disease nodes have \u22651 HPO annotation"
+    },
+    {
+      "path": "disease \u2192 gene/target",
+      "spec_ref": "US1 / SC-001 / FR-004",
+      "status": "PENDING_DATA",
+      "note": "disease_gene_target_v1.tsv pending DisGeNET/Open Targets ingestion"
+    },
+    {
+      "path": "disease \u2192 drug (indication)",
+      "spec_ref": "US3 / SC-004 / FR-006",
+      "status": "PENDING_DATA",
+      "note": "disease_drug_v1.tsv pending DrugCentral/DrugBank ingestion"
+    },
+    {
+      "path": "disease \u2192 biomarker (first-pass)",
+      "spec_ref": "US4 / SC-005 / FR-007",
+      "status": "PENDING_DATA",
+      "note": "biomarker_edges_v1.tsv pending source data (relation-layer, Decision 015)"
+    },
+    {
+      "path": "disease \u2192 backbone (MONDO FK)",
+      "spec_ref": "FR-008 / SC-006 / Constitution I",
+      "status": "STRUCTURALLY_SUPPORTED",
+      "disease_nodes_with_mondo_pk": 29868,
+      "total_disease_nodes": 29868,
+      "pk_coverage": "100.0%",
+      "note": "disease_id is MONDO:NNNNNNN format (Decision 013); FK to backbone available once gene/target edges land"
+    }
+  ]
+}

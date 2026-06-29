@@ -1,0 +1,84 @@
+{
+  "table": "/Users/pluviophile/graph/graph-rag/disease/release/external/disease-v1/tables/disease_gene_target/disease_gene_target_v1.tsv",
+  "contract": "disease_gene_target_v1",
+  "row_count": 15780,
+  "columns": [
+    "disease_id",
+    "target_id",
+    "target_type",
+    "relation_semantics",
+    "source",
+    "evidence_class"
+  ],
+  "schema": {
+    "required_columns": [
+      "disease_id",
+      "target_id",
+      "relation_semantics",
+      "target_type",
+      "source",
+      "evidence_class"
+    ],
+    "missing_required": [],
+    "passed": true
+  },
+  "rules": [
+    {
+      "id": "disease_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 15780,
+      "passed_count": 15780,
+      "rate": 1.0
+    },
+    {
+      "id": "disease_id_mondo_format",
+      "type": "regex_rate",
+      "passed": true,
+      "checked": 15780,
+      "passed_count": 15780,
+      "rate": 1.0
+    },
+    {
+      "id": "target_id_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 15780,
+      "passed_count": 15780,
+      "rate": 1.0
+    },
+    {
+      "id": "relation_semantics_allowed",
+      "type": "allowed_values_rate",
+      "passed": true,
+      "checked": 15780,
+      "passed_count": 15780,
+      "rate": 1.0
+    },
+    {
+      "id": "target_type_allowed",
+      "type": "allowed_values_rate",
+      "passed": true,
+      "checked": 15780,
+      "passed_count": 15780,
+      "rate": 1.0
+    },
+    {
+      "id": "source_non_empty",
+      "type": "non_empty_rate",
+      "passed": true,
+      "checked": 15780,
+      "passed_count": 15780,
+      "rate": 1.0
+    },
+    {
+      "id": "evidence_class_allowed",
+      "type": "allowed_values_rate",
+      "passed": true,
+      "checked": 15780,
+      "passed_count": 15780,
+      "rate": 1.0
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,60 @@
+{
+  "name": "disease_drug_v1",
+  "description": "Disease-drug edge table (disease-layer-v1). Indication/treatment relation ONLY (DECISIONS 006). No contraindication/AE/safety. Drug must map to molecule backbone (FR-010). Aligned to FR-006/FR-015/FR-016.",
+  "required_columns": [
+    "disease_id",
+    "molecule_id",
+    "relation_type",
+    "source",
+    "evidence_class",
+    "molecule_backbone_mapped"
+  ],
+  "rules": [
+    {
+      "id": "disease_id_non_empty",
+      "type": "non_empty_rate",
+      "column": "disease_id",
+      "min_rate": 1.0
+    },
+    {
+      "id": "disease_id_mondo_format",
+      "type": "regex_rate",
+      "column": "disease_id",
+      "pattern": "^MONDO:\\d{7}$",
+      "min_rate": 1.0
+    },
+    {
+      "id": "molecule_id_non_empty",
+      "type": "non_empty_rate",
+      "column": "molecule_id",
+      "min_rate": 1.0
+    },
+    {
+      "id": "relation_type_indication_only",
+      "type": "allowed_values_rate",
+      "column": "relation_type",
+      "allowed": ["indication", "treatment"],
+      "min_rate": 1.0
+    },
+    {
+      "id": "source_non_empty",
+      "type": "non_empty_rate",
+      "column": "source",
+      "min_rate": 1.0
+    },
+    {
+      "id": "evidence_class_allowed",
+      "type": "allowed_values_rate",
+      "column": "evidence_class",
+      "allowed": ["curated_indication", "inferred_mapping"],
+      "min_rate": 1.0
+    },
+    {
+      "id": "molecule_backbone_mapped_bool",
+      "type": "allowed_values_rate",
+      "column": "molecule_backbone_mapped",
+      "allowed": ["True", "False"],
+      "min_rate": 1.0
+    }
+  ]
+}
