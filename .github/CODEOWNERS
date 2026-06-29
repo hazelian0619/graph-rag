@@ -1,5 +1,13 @@
 # Code owners for repository
 # Format: <file pattern> <owner>
-/pipelines/ @hazelian0619
-/data/processed/ @hazelian0619
+/*/pipelines/ @hazelian0619
+/*/data/ @hazelian0619
 /docs/ @hazelian0619
+/schemas/ @hazelian0619
+/scripts/ @hazelian0619
+/tools/ @hazelian0619
+/tests/ @hazelian0619
+/.github/ @hazelian0619
+/*/products/ @hazelian0619
+/*/release/ @hazelian0619
+ARCHITECTURE.md @hazelian0619
