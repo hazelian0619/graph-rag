@@ -21,7 +21,7 @@ Out of scope（本域不构建）：anatomy / tissue / organ 主模块、contrai
 
 ## 版本边界
 
-当前版本：`disease-v1`。本域所有正式产物归属 Disease Layer v1，并通过 `products/disease/current.json` 指向 `release/external/disease-v1/`。
+当前版本：`disease-v1`，`product.json` 状态仍为 `in-development`。结果通过 `products/disease/current.json` 指向 `release/external/disease-v1/`；存在结果表不代表已完成稳定分发验收。当前 manifest 含本机绝对路径且 `git_commit` 为空，完整来源许可与可移植发布仍待核查，见[数据目录](../docs/DATASET_CATALOG.md)。
 
 ## 与现有主干的关系
 

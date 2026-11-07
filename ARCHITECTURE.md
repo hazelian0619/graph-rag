@@ -2,11 +2,11 @@
 
 ## Repository Role
 
-**graph-rag is the sole public-facing dataset repository.** External users download all datasets from this repository. It does not serve as a development workspace or store raw pipeline inputs.
+**graph-rag is the public-facing dataset entry point.** It contains a standalone starter candidate and a catalog of existing results. Starter publication and remote verification are pending. Some historical large assets remain in protian-entity Releases; their links and verification boundaries are explicit in the catalog.
 
 Sister repository [protian-entity](https://github.com/hazelian0619/protian-entity) is the development engine where pipelines are built and data is produced. Only curated, QA-passed results are promoted to graph-rag for public delivery.
 
-## Four Domains
+## Five Domains
 
 | Domain | Scope | Latest version |
 |---|---|---|
@@ -14,6 +14,7 @@ Sister repository [protian-entity](https://github.com/hazelian0619/protian-entit
 | `rna/` | Human RNA L1/L2 entity tables | rna-v1 |
 | `molecule/` | Small molecule L1/L2 entity tables | molecule-v1 |
 | `interaction/` | Cross-entity L2 edges (PPI / PSI / RPI) | interaction-l2-v1 |
+| `disease/` | Disease/phenotype relations; in development | disease-v1 |
 
 ## Per-Domain Layout
 
@@ -42,7 +43,8 @@ scripts/           # release tooling (build_release_index, validate_release_inde
 tools/             # table validation utilities (kg_validate_table, kg_make_manifest)
 tests/             # shared test suite
 docs/              # repository standards and documentation
-.github/workflows/ # CI: data-qa + release-metadata (covers all four domains)
+.github/workflows/ # CI: data-qa + release-metadata (coverage described below)
+examples/          # standalone starter examples and field provenance
 ```
 
 ## Data Promotion Path
@@ -60,19 +62,27 @@ Rules:
 - `data/` directories hold `.gitkeep` and sample files, not full datasets.
 - Super-sized assets use GitHub Releases; the repo holds metadata only.
 
-## Download Entry Point
+## Starter Delivery
 
-All `download_url` fields in `products/*/current.json` point to graph-rag raw URLs:
+`scripts/build_starter_dataset.py` selects connected protein/compound activity records from existing tables and writes a small package under ignored `build/`. Its manifest records input hashes, selection, fields, licenses and exported file hashes. `examples/run_examples.py` reads that manifest and the three tables offline; it has no dependency on repository modules or online services.
+
+The planned public asset pair is a versioned `starter-v1.tar.gz` and `SHA256SUMS.txt`. The local candidate contains its own runner and attribution. Direct Release links will serve this first-use path after publication and remote verification; they do not require changing the five domain pointers or adapting every historical index.
+
+## Historical Download Entry Points
+
+Protein's `latest.artifacts[].download_url` fields use graph-rag raw URLs:
 
 ```
 https://raw.githubusercontent.com/hazelian0619/graph-rag/main/<domain>/release/external/<version>/tables/...
 ```
 
-No download_url points to protian-entity or any other repository.
+The other four current pointers use `current/path`, without the same `latest` shape. The existing downloader supports protein/latest. Legacy RNA and interaction releases in protian-entity remain explicit catalog entries; this version does not migrate their assets or claim a uniform five-domain download CLI.
 
 ## CI Coverage
 
-Two GitHub Actions workflows run on all four domains:
+The existing workflows have narrower coverage than the five-domain catalog:
 
-- **data-qa**: validates data contracts when any domain's `data/` or `pipelines/` changes
-- **release-metadata**: builds release index, validates schema, checks consistency when any domain's `products/` or `release/` changes
+- **data-qa**: runs the protein contract validator, with selected path triggers. It is not five-domain scientific validation.
+- **release-metadata**: retains the protein/RNA/molecule/interaction matrix and release tests. The non-protein pointer mismatch remains a known historical gap; consistency's `--allow-issues` is report mode, not acceptance.
+
+Starter acceptance separately requires its release tests, repeated build hashes, clean-directory execution and actual remote download/checksum/extraction. Passing these checks does not imply that the historical domain matrix is green.
