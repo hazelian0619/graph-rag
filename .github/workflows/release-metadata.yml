@@ -16,6 +16,8 @@ on:
       - 'scripts/check_release_consistency.py'
       - 'scripts/validate_release_index.py'
       - 'scripts/download_dataset.py'
+      - 'scripts/build_starter_dataset.py'
+      - 'examples/**'
       - 'tests/release/**'
   push:
     branches: [ main ]
@@ -33,6 +35,8 @@ on:
       - 'scripts/check_release_consistency.py'
       - 'scripts/validate_release_index.py'
       - 'scripts/download_dataset.py'
+      - 'scripts/build_starter_dataset.py'
+      - 'examples/**'
       - 'tests/release/**'
 
 jobs:
