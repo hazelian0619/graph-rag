@@ -4,9 +4,11 @@ Snapshot: graph-rag input commit `a204c52b63a5140415a80576971842396e224590`, che
 
 ## Starter v1
 
+[dataset-starter-v1.0.0](https://github.com/hazelian0619/graph-rag/releases/tag/dataset-starter-v1.0.0) was published and anonymously downloaded, checked and run on 2026-11-07. The 32,619-byte archive has SHA256 `b3e0797f57aa5cc4045e5b7fd73064cd15890a0082aa1223324fa7a79f0791cb`.
+
 The standalone starter selects activity records whose protein and compound endpoints both exist and whose DOI or PMID is present. Endpoint tables contain only referenced entities. Selection is deterministic from the existing ChEMBL 36 sample; it is not random or representative sampling.
 
-| Table | Current candidate rows | Meaning | Source / license |
+| Table | Released rows | Meaning | Source / license |
 |---|---:|---|---|
 | `data/proteins.tsv` | 87 | Distinct referenced protein IDs | UniProtKB/Swiss-Prot snapshot, fetched 2025-10-26; CC BY 4.0 |
 | `data/molecules.tsv` | 102 | Distinct referenced InChIKeys | ChEMBL `chembl_36.db` identity records; CC BY-SA 3.0 |

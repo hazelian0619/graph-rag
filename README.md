@@ -8,7 +8,7 @@ Explore protein–compound measurements with source identifiers, publication ref
 
 The `starter-v1` subset connects **87 proteins**, **102 compounds**, and **359 activity records** selected from the existing 5,000-record ChEMBL 36 sample. It is an introduction to the data, not the size of the full project or a representative benchmark.
 
-The candidate assets are prepared by the build below. The versioned download becomes usable after publication and remote verification.
+Download [dataset-starter-v1.0.0](https://github.com/hazelian0619/graph-rag/releases/tag/dataset-starter-v1.0.0). Anonymous download, checksum verification, extraction and all three examples passed on 2026-11-07.
 
 ```bash
 curl --fail --location --output starter-v1.tar.gz https://github.com/hazelian0619/graph-rag/releases/download/dataset-starter-v1.0.0/starter-v1.tar.gz
@@ -18,7 +18,7 @@ tar -xzf starter-v1.tar.gz
 python3 starter-v1/examples/run_examples.py --data-dir starter-v1/data --out example-results
 ```
 
-The package runs with Python's standard library; no repository clone, API key, LLM, or database service is needed. See [example instructions and field provenance](examples/README.md). The current candidate archive is **32,619 bytes (about 32 KiB)**. Local acceptance covers macOS with Python **3.9.21** and **3.12.6**, including isolated execution without installed site packages; Linux/Windows have not been independently accepted here.
+The package runs with Python's standard library; no repository clone, API key, LLM, or database service is needed. See [example instructions and field provenance](examples/README.md). The archive is **32,619 bytes (about 32 KiB)**. Acceptance covers macOS with Python **3.9.21** and **3.12.6**, including isolated execution of the remotely downloaded package without installed site packages; Linux/Windows have not been independently accepted here.
 
 | Example | What you get |
 |---|---|

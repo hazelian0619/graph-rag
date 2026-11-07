@@ -2,7 +2,7 @@
 
 ## Repository Role
 
-**graph-rag is the public-facing dataset entry point.** It contains a standalone starter candidate and a catalog of existing results. Starter publication and remote verification are pending. Some historical large assets remain in protian-entity Releases; their links and verification boundaries are explicit in the catalog.
+**graph-rag is the public-facing dataset entry point.** It provides the independently runnable [dataset-starter-v1.0.0](https://github.com/hazelian0619/graph-rag/releases/tag/dataset-starter-v1.0.0) package and a catalog of existing results. Starter anonymous download and execution passed on 2026-11-07. Some historical large assets remain in protian-entity Releases; their links and verification boundaries are explicit in the catalog.
 
 Sister repository [protian-entity](https://github.com/hazelian0619/protian-entity) is the development engine where pipelines are built and data is produced. Only curated, QA-passed results are promoted to graph-rag for public delivery.
 
@@ -66,7 +66,7 @@ Rules:
 
 `scripts/build_starter_dataset.py` selects connected protein/compound activity records from existing tables and writes a small package under ignored `build/`. Its manifest records input hashes, selection, fields, licenses and exported file hashes. `examples/run_examples.py` reads that manifest and the three tables offline; it has no dependency on repository modules or online services.
 
-The planned public asset pair is a versioned `starter-v1.tar.gz` and `SHA256SUMS.txt`. The local candidate contains its own runner and attribution. Direct Release links will serve this first-use path after publication and remote verification; they do not require changing the five domain pointers or adapting every historical index.
+The published asset pair is a versioned `starter-v1.tar.gz` and `SHA256SUMS.txt`. The package contains its own runner and attribution. Direct Release links serve this first-use path after remote verification; they do not require changing the five domain pointers or adapting every historical index.
 
 ## Historical Download Entry Points
 
