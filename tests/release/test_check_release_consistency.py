@@ -113,3 +113,87 @@ def test_release_assets_fail_on_missing_sha(tmp_path: Path) -> None:
     report = json.loads((tmp_path / "release" / "out.json").read_text(encoding="utf-8"))
     assert report["summary"]["status"] == "FAIL"
     assert report["summary"]["issues"] >= 1
+
+
+def _run_case(tmp_path, products, manifest=None, allow=False):
+    if manifest is not None:
+        (tmp_path / "manifest.json").write_text(json.dumps(manifest))
+    (tmp_path / "index.json").write_text(json.dumps({"products": products}))
+    cmd = [sys.executable, str(SCRIPT), "--index", "index.json", "--out", "out.json"]
+    if allow:
+        cmd.append("--allow-issues")
+    proc = subprocess.run(cmd, cwd=tmp_path, capture_output=True, text=True)
+    return proc, json.loads((tmp_path / "out.json").read_text())
+
+
+def test_empty_missing_and_unknown_manifests_fail(tmp_path):
+    for products, manifest, issue in [
+        ([], None, "no_products"),
+        ([{"product": "x", "latest": {}}], None, "manifest_path_missing"),
+        ([{"product": "x", "latest": {"manifest_path": "manifest.json"}}], {"other": []}, "no_tables_checked"),
+        ([{"product": "x", "latest": {"manifest_path": "manifest.json", "consistency_mode": "release_assets"}}], {"other": []}, "no_assets_checked"),
+        ([{"product": "x", "latest": {"manifest_path": "manifest.json", "consistency_mode": "unknown"}}], {}, "unknown_consistency_mode"),
+    ]:
+        proc, report = _run_case(tmp_path, products, manifest)
+        assert proc.returncode == 1
+        assert report["summary"]["status"] == "FAIL"
+        assert any(i["type"] == issue for i in report["issues"])
+    proc, report = _run_case(tmp_path, [], allow=True)
+    assert proc.returncode == 0 and report["summary"]["status"] == "FAIL"
+
+
+def test_assets_path_zero_rows_and_sha(tmp_path):
+    import hashlib
+    table = tmp_path / "empty.tsv"
+    _write_tsv(table, [])
+    product = [{"product": "x", "latest": {"manifest_path": "manifest.json"}}]
+    manifest = {"assets": [{"path": "empty.tsv", "rows": 0,
+                            "sha256": hashlib.sha256(table.read_bytes()).hexdigest()}]}
+    proc, report = _run_case(tmp_path, product, manifest)
+    assert proc.returncode == 0 and report["checks"][0]["tables_checked"] == 1
+    _write_tsv(table, [["a", "1"]])
+    proc, report = _run_case(tmp_path, product, manifest)
+    assert proc.returncode == 1
+    assert {i["type"] for i in report["issues"]} == {"checksum_mismatch", "manifest_row_mismatch"}
+
+
+def test_release_assets_path_is_metadata_only(tmp_path):
+    product = [{"product": "x", "latest": {"manifest_path": "manifest.json", "consistency_mode": "release_assets"}}]
+    proc, report = _run_case(tmp_path, product, {"assets": [{"path": "elsewhere/file.tsv", "sha256": "abc"}]})
+    assert proc.returncode == 0
+    assert report["checks"][0]["verification_scope"] == "metadata_only"
+    assert report["checks"][0]["assets_checked"] == 1
+
+
+def test_duplicate_path_preserves_and_checks_sha(tmp_path):
+    (tmp_path / "x.tsv").write_text("header\n")
+    product = [{"product": "x", "latest": {"manifest_path": "manifest.json"}}]
+    manifest = {"tables": [{"path": "x.tsv", "sha256": "bad"}], "assets": [{"path": "x.tsv"}]}
+    proc, report = _run_case(tmp_path, product, manifest)
+    assert proc.returncode == 1
+    assert any(i["type"] == "checksum_mismatch" for i in report["issues"])
+
+
+def test_existing_table_without_expectations_is_not_verified(tmp_path):
+    (tmp_path / "x.tsv").write_text("header\na\n")
+    product = [{"product": "x", "latest": {"manifest_path": "manifest.json"}}]
+    proc, report = _run_case(tmp_path, product, {"assets": [{"path": "x.tsv"}]})
+    assert proc.returncode == 1
+    assert report["summary"]["status"] == "FAIL"
+    assert report["checks"][0]["comparisons_checked"] == 0
+    assert any(i["type"] == "table_expectations_missing" for i in report["issues"])
+
+
+def test_duplicate_table_sha_ignores_hex_case_but_rejects_conflict(tmp_path):
+    import hashlib
+    (tmp_path / "x.tsv").write_text("header\n")
+    digest = hashlib.sha256(b"header\n").hexdigest()
+    product = [{"product": "x", "latest": {"manifest_path": "manifest.json"}}]
+    manifest = {"tables": [{"path": "x.tsv", "rows": 0, "sha256": digest}],
+                "artifacts": [{"path": "x.tsv", "rows": 0, "sha256": digest.upper()}]}
+    proc, report = _run_case(tmp_path, product, manifest)
+    assert proc.returncode == 0 and report["summary"]["status"] == "PASS"
+    manifest["artifacts"][0]["sha256"] = "0" * 64
+    proc, report = _run_case(tmp_path, product, manifest)
+    assert proc.returncode == 1
+    assert any(i["type"] == "manifest_conflict" for i in report["issues"])

@@ -20,6 +20,8 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
+import unicodedata
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -63,36 +65,39 @@ def manifest_checksum_map(manifest_path: Optional[Path]) -> Dict[str, str]:
 
     data = load_json(manifest_path)
 
-    # RNA manifest
-    for key in ["tables", "reports"]:
-        items = data.get(key)
-        if isinstance(items, list):
-            for item in items:
-                if isinstance(item, dict) and item.get("name") and item.get("sha256"):
-                    checksums[item["name"]] = str(item["sha256"])
+    identities: Dict[str, str] = {}
 
-    # Molecule manifest
-    items = data.get("assets")
-    if isinstance(items, list):
-        for item in items:
-            if isinstance(item, dict) and item.get("name") and item.get("sha256"):
-                checksums[item["name"]] = str(item["sha256"])
+    def add(item: Any) -> None:
+        if not isinstance(item, dict):
+            return
+        identity = str(item.get("path") or item.get("name") or "")
+        name = str(item.get("name") or Path(identity).name)
+        if not identity:
+            return
+        if not name or Path(name).name != name:
+            raise ValueError(f"invalid manifest asset identity: {item}")
+        checksum = str(item.get("sha256") or "")
+        if name in identities and (identities[name] != identity or
+                                   (checksum and name in checksums and checksums[name].lower() != checksum.lower())):
+            raise ValueError(f"ambiguous manifest asset basename: {name}")
+        identities[name] = identity
+        if checksum:
+            checksums[name] = checksum
 
-    # Interaction release assets manifest
-    items = data.get("items")
-    if isinstance(items, list):
-        for item in items:
-            if not isinstance(item, dict):
-                continue
+    for key in ("tables", "reports", "assets"):
+        for item in data.get(key, []) if isinstance(data.get(key), list) else []:
+            add(item)
+    for item in data.get("items", []) if isinstance(data.get("items"), list) else []:
+        if isinstance(item, dict):
             for asset in item.get("release_assets", []):
-                if isinstance(asset, dict) and asset.get("name") and asset.get("sha256"):
-                    checksums[asset["name"]] = str(asset["sha256"])
+                add(asset)
 
     return checksums
 
 
 def parse_sha256sums(path: Path) -> Dict[str, str]:
     out: Dict[str, str] = {}
+    identities: Dict[str, str] = {}
     if not path.exists():
         return out
     for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
@@ -101,33 +106,53 @@ def parse_sha256sums(path: Path) -> Dict[str, str]:
             continue
         parts = line.split()
         if len(parts) >= 2:
-            out[parts[1].lstrip("*")] = parts[0]
+            identity = parts[1].lstrip("*")
+            name = Path(identity).name
+            if name in out and (identities[name] != identity or out[name].lower() != parts[0].lower()):
+                raise ValueError(f"ambiguous checksum basename: {name}")
+            identities[name] = identity
+            out[name] = parts[0]
     return out
 
 
-def merge_chunk_files(directory: Path) -> List[Path]:
+def merge_chunk_files(
+    directory: Path, expected_names: Optional[List[str]] = None,
+    checksums: Optional[Dict[str, str]] = None,
+) -> List[Path]:
     pattern = re.compile(r"^(?P<base>.+)\.part\.(?P<num>\d+)$")
     groups: Dict[str, List[Tuple[int, Path]]] = {}
-
     for p in directory.iterdir():
-        if not p.is_file():
-            continue
-        m = pattern.match(p.name)
-        if not m:
-            continue
-        base = m.group("base")
-        num = int(m.group("num"))
-        groups.setdefault(base, []).append((num, p))
+        m = pattern.match(p.name) if p.is_file() else None
+        if m:
+            groups.setdefault(m.group("base"), []).append((int(m.group("num")), p))
 
     merged: List[Path] = []
     for base, parts in groups.items():
-        parts_sorted = sorted(parts, key=lambda x: x[0])
+        names = [name for name in (expected_names or []) if (m := pattern.match(name)) and m.group("base") == base]
+        numbers = sorted(int(pattern.match(name).group("num")) for name in names)
+        actual = {p.name for _, p in parts}
+        expected_hash = (checksums or {}).get(base)
+        if not names or numbers != list(range(len(numbers))) or len(set(names)) != len(names):
+            raise ValueError(f"missing or invalid expected chunk set for {base}")
+        if actual != set(names):
+            raise ValueError(f"chunk set mismatch for {base}: expected {sorted(names)}, found {sorted(actual)}")
+        if not expected_hash:
+            raise ValueError(f"missing whole-file checksum for {base}")
         out_path = directory / base
-        with out_path.open("wb") as out_f:
-            for _, part_path in parts_sorted:
-                with part_path.open("rb") as in_f:
-                    shutil.copyfileobj(in_f, out_f)
-        merged.append(out_path)
+        tmp_path = None
+        try:
+            with tempfile.NamedTemporaryFile(dir=directory, prefix=".merge-", delete=False) as out_f:
+                tmp_path = Path(out_f.name)
+                for _, part_path in sorted(parts):
+                    with part_path.open("rb") as in_f:
+                        shutil.copyfileobj(in_f, out_f)
+            if sha256_file(tmp_path).lower() != expected_hash.lower():
+                raise ValueError(f"whole-file checksum mismatch for {base}")
+            tmp_path.replace(out_path)
+            merged.append(out_path)
+        finally:
+            if tmp_path is not None:
+                tmp_path.unlink(missing_ok=True)
     return merged
 
 
@@ -167,6 +192,19 @@ def filter_assets(assets: List[Dict[str, Any]], patterns: List[str]) -> List[Dic
     return out
 
 
+def validate_asset_names(assets: List[Dict[str, Any]]) -> None:
+    """Require distinct NFC/casefold filenames before writing portable payloads."""
+    names = set()
+    for asset in assets:
+        name = asset.get("name")
+        if not isinstance(name, str) or not name or name in {".", ".."} or Path(name).name != name:
+            raise SystemExit(f"[ERROR] invalid asset filename: {name!r}")
+        identity = unicodedata.normalize("NFC", name).casefold()
+        if identity in names:
+            raise SystemExit(f"[ERROR] duplicate asset destination: {name}")
+        names.add(identity)
+
+
 def load_index_product(index_path: Path, product: str) -> Dict[str, Any]:
     idx = load_json(index_path)
     for p in idx.get("products", []):
@@ -202,6 +240,7 @@ def main() -> int:
     manifest_sha = manifest_checksum_map(manifest_path)
 
     downloaded: List[Path] = []
+    release_names: List[str] = []
 
     if latest.get("distribution_mode") == "github_release":
         tag = latest.get("release_tag")
@@ -209,9 +248,11 @@ def main() -> int:
             raise SystemExit(f"[ERROR] product {args.product} missing release_tag")
 
         assets = github_release_assets(args.repo, tag)
+        release_names = [a["name"] for a in assets]
         assets = filter_assets(assets, args.asset_glob)
         if not assets:
-            print(f"[WARN] no assets matched for {args.product}:{tag}")
+            raise SystemExit(f"[ERROR] no assets matched for {args.product}:{tag}")
+        validate_asset_names(assets)
 
         print(f"[INFO] downloading {len(assets)} assets from release {tag}")
         for asset in assets:
@@ -224,6 +265,7 @@ def main() -> int:
 
     else:
         artifacts = latest.get("artifacts", [])
+        release_names = [a["name"] for a in artifacts]
         if args.asset_glob:
             artifacts = [
                 a for a in artifacts
@@ -231,6 +273,7 @@ def main() -> int:
             ]
         if not artifacts:
             raise SystemExit(f"[ERROR] product {args.product} has no artifacts in current.json")
+        validate_asset_names(artifacts)
 
         print(f"[INFO] downloading {len(artifacts)} repository artifacts")
         for a in artifacts:
@@ -241,35 +284,42 @@ def main() -> int:
             download_file(url, target)
             downloaded.append(target)
 
-    # optional checksum verification
-    if not args.skip_verify:
-        sha_failures = []
+    expected = dict(manifest_sha)
+    # Only a checksum file downloaded during this invocation is trusted.
+    sums = next((p for p in downloaded if p.name == "SHA256SUMS.txt"), None)
+    if sums:
+        for name, checksum in parse_sha256sums(sums).items():
+            if name in expected and expected[name].lower() != checksum.lower():
+                print(f"[FAIL] conflicting checksums for {name}")
+                return 2
+            expected[name] = checksum
 
-        # 1) manifest checksums (preferred)
-        expected = dict(manifest_sha)
-
-        # 2) SHA256SUMS from downloaded assets (if present)
-        sha_sums_file = out_dir / "SHA256SUMS.txt"
-        expected.update(parse_sha256sums(sha_sums_file))
-
-        if expected:
-            for f in downloaded:
-                exp = expected.get(f.name)
-                if not exp:
-                    continue
-                got = sha256_file(f)
-                if got.lower() != exp.lower():
-                    sha_failures.append((f.name, exp, got))
-
-        if sha_failures:
-            print("[FAIL] checksum verification failed:")
-            for name, exp, got in sha_failures[:20]:
-                print(f"  - {name}: expected={exp} got={got}")
+    if args.skip_verify:
+        print("[UNVERIFIED] checksum verification explicitly skipped")
+    else:
+        payloads = [p for p in downloaded if p.name != "SHA256SUMS.txt"]
+        if not payloads:
+            print("[FAIL] no payloads selected for verification")
             return 2
-        print("[OK] checksum verification passed (where checksum available)")
+        for f in downloaded:
+            exp = expected.get(f.name)
+            if not exp and f.name == "SHA256SUMS.txt":
+                continue
+            if not exp:
+                print(f"[FAIL] missing checksum for {f.name}")
+                return 2
+            got = sha256_file(f)
+            if got.lower() != exp.lower():
+                print(f"[FAIL] checksum mismatch for {f.name}: expected={exp} got={got}")
+                return 2
+        print("[OK] checksum verification passed for all selected payloads")
 
     if args.merge_chunks:
-        merged = merge_chunk_files(out_dir)
+        try:
+            merged = merge_chunk_files(out_dir, release_names, expected)
+        except ValueError as exc:
+            print(f"[FAIL] {exc}")
+            return 2
         if merged:
             print(f"[OK] merged {len(merged)} chunked files")
             for p in merged:
