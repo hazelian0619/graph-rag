@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'protein/data/**'
+      - 'protein/release/external/protein-v6/tables/sequence/**'
       - 'protein/pipelines/**'
       - 'rna/data/**'
       - 'rna/pipelines/**'
@@ -17,6 +18,7 @@ on:
     branches: [ main ]
     paths:
       - 'protein/data/**'
+      - 'protein/release/external/protein-v6/tables/sequence/**'
       - 'protein/pipelines/**'
       - 'rna/data/**'
       - 'rna/pipelines/**'
@@ -44,7 +46,7 @@ jobs:
           mkdir -p build/validate
           python3 tools/kg_validate_table.py \
             --contract protein/pipelines/protein/contracts/protein_master_v6.json \
-            --table protein/data/processed/protein_master_v6_clean.tsv \
+            --table protein/release/external/protein-v6/tables/sequence/protein_master_v6_clean.tsv \
             --out build/validate/protein_master_v6_report.json
 
       - name: Upload validation report

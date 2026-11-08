@@ -7,6 +7,7 @@ import argparse
 import csv
 import datetime as dt
 import glob
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -51,10 +52,10 @@ def tables_from_manifest(manifest_path: Path) -> List[Dict[str, Any]]:
     # rna-like: tables[] with source_path + rows
     for t in d.get("tables", []) if isinstance(d.get("tables"), list) else []:
         src = t.get("source_path") or t.get("path")
-        rows = t.get("rows") or t.get("row_count")
+        rows = t.get("rows") if t.get("rows") is not None else t.get("row_count")
         name = t.get("name") or Path(str(src)).name if src else t.get("name")
         if src:
-            out.append({"name": name, "path": src, "manifest_rows": rows, "source": "tables"})
+            out.append({"name": name, "path": src, "manifest_rows": rows, "source": "tables", "sha256": t.get("sha256")})
 
     # interaction-like: items[] with raw_path + raw_rows
     for t in d.get("items", []) if isinstance(d.get("items"), list) else []:
@@ -62,19 +63,37 @@ def tables_from_manifest(manifest_path: Path) -> List[Dict[str, Any]]:
         rows = t.get("raw_rows")
         name = t.get("table") or Path(str(src)).name if src else t.get("table")
         if src:
-            out.append({"name": name, "path": src, "manifest_rows": rows, "source": "items"})
+            out.append({"name": name, "path": src, "manifest_rows": rows, "source": "items", "sha256": t.get("sha256")})
 
     # generic artifacts
     for t in d.get("artifacts", []) if isinstance(d.get("artifacts"), list) else []:
         src = t.get("path")
-        rows = t.get("rows") or t.get("row_count")
+        rows = t.get("rows") if t.get("rows") is not None else t.get("row_count")
         name = t.get("name") or Path(str(src)).name if src else t.get("name")
         if src and any(str(src).endswith(ext) for ext in [".tsv", ".csv"]):
-            out.append({"name": name, "path": src, "manifest_rows": rows, "source": "artifacts"})
+            out.append({"name": name, "path": src, "manifest_rows": rows, "source": "artifacts", "sha256": t.get("sha256")})
+
+    for t in d.get("assets", []) if isinstance(d.get("assets"), list) else []:
+        if isinstance(t, dict):
+            src = t.get("path") or t.get("name")
+            if src and str(src).endswith((".tsv", ".csv")):
+                rows = t.get("rows") if t.get("rows") is not None else t.get("row_count")
+                out.append({"name": t.get("name") or Path(src).name, "path": src,
+                            "manifest_rows": rows, "source": "assets", "sha256": t.get("sha256")})
 
     # de-duplicate by path
     dedup: Dict[str, Dict[str, Any]] = {}
     for item in out:
+        if item.get("sha256") is not None:
+            item["sha256"] = str(item["sha256"]).lower()
+        previous = dedup.get(item["path"])
+        if previous:
+            for key in ("manifest_rows", "sha256"):
+                old, new = previous.get(key), item.get(key)
+                if old is not None and new is not None and old != new:
+                    raise ValueError(f"conflicting {key} for {item['path']}")
+                if new is None:
+                    item[key] = old
         dedup[item["path"]] = item
     return list(dedup.values())
 
@@ -91,6 +110,7 @@ def check_release_assets_mode(
         "product": product,
         "manifest": str(manifest_path),
         "mode": "release_assets",
+        "verification_scope": "metadata_only",
         "assets_checked": 0,
         "asset_issues": 0,
     }
@@ -126,7 +146,7 @@ def check_release_assets_mode(
                 continue
             for asset in release_assets:
                 summary["assets_checked"] += 1
-                if not asset.get("name") or not asset.get("sha256"):
+                if not (asset.get("name") or asset.get("path")) or not asset.get("sha256"):
                     issues.append(
                         {
                             "product": product,
@@ -143,7 +163,7 @@ def check_release_assets_mode(
     if isinstance(d.get("assets"), list):
         for asset in d["assets"]:
             summary["assets_checked"] += 1
-            if not asset.get("name") or not asset.get("sha256"):
+            if not (asset.get("name") or asset.get("path")) or not asset.get("sha256"):
                 issues.append(
                     {
                         "product": product,
@@ -154,6 +174,10 @@ def check_release_assets_mode(
                     }
                 )
                 summary["asset_issues"] += 1
+
+    if summary["assets_checked"] == 0:
+        issues.append({"product": product, "severity": "error", "type": "no_assets_checked", "manifest": str(manifest_path)})
+        summary["asset_issues"] += 1
 
     # optional delivery report validation (interaction)
     delivery_report = latest.get("delivery_report_path")
@@ -204,13 +228,19 @@ def main() -> int:
     checks: List[Dict[str, Any]] = []
     issues: List[Dict[str, Any]] = []
 
-    for p in index.get("products", []):
+    products = index.get("products", [])
+    if not isinstance(products, list) or not products:
+        issues.append({"severity": "error", "type": "no_products"})
+        products = []
+
+    for p in products:
         product = p.get("product")
         latest = p.get("latest", {})
         consistency_mode = latest.get("consistency_mode", "strict_local")
         manifest_rel = latest.get("manifest_path")
         if not manifest_rel:
-            checks.append({"product": product, "status": "skip", "reason": "no manifest_path"})
+            issues.append({"product": product, "severity": "error", "type": "manifest_path_missing"})
+            checks.append({"product": product, "status": "fail", "reason": "no manifest_path"})
             continue
 
         manifest_path = Path(manifest_rel)
@@ -229,14 +259,27 @@ def main() -> int:
             checks.append(check_release_assets_mode(product, latest, manifest_path, issues))
             continue
 
-        tables = tables_from_manifest(manifest_path)
+        if consistency_mode != "strict_local":
+            issues.append({"product": product, "severity": "error", "type": "unknown_consistency_mode", "mode": consistency_mode})
+            continue
+
+        try:
+            tables = tables_from_manifest(manifest_path)
+        except ValueError as exc:
+            issues.append({"product": product, "severity": "error", "type": "manifest_conflict", "detail": str(exc)})
+            continue
         product_summary = {
             "product": product,
             "manifest": manifest_rel,
             "mode": "strict_local",
             "tables_checked": 0,
+            "comparisons_checked": 0,
             "table_issues": 0,
         }
+
+        if not tables:
+            issues.append({"product": product, "severity": "error", "type": "no_tables_checked", "manifest": manifest_rel})
+            product_summary["table_issues"] += 1
 
         for t in tables:
             table_path = Path(t["path"])
@@ -255,9 +298,26 @@ def main() -> int:
                 product_summary["table_issues"] += 1
                 continue
 
+            if t.get("sha256"):
+                digest = hashlib.sha256()
+                with table_path.open("rb") as f:
+                    for chunk in iter(lambda: f.read(1024 * 1024), b""):
+                        digest.update(chunk)
+                got = digest.hexdigest()
+                if got.lower() != str(t["sha256"]).lower():
+                    issues.append({"product": product, "severity": "error", "type": "checksum_mismatch", "path": t["path"]})
+                    product_summary["table_issues"] += 1
+
             actual_rows = count_tsv_rows(table_path)
             manifest_rows = t.get("manifest_rows")
             validation_row_count: Optional[int] = validation_rows.get(t["path"])
+
+            comparisons = sum((bool(t.get("sha256")), isinstance(manifest_rows, int),
+                               isinstance(validation_row_count, int)))
+            product_summary["comparisons_checked"] += comparisons
+            if comparisons == 0:
+                issues.append({"product": product, "severity": "error", "type": "table_expectations_missing", "path": t["path"]})
+                product_summary["table_issues"] += 1
 
             if isinstance(manifest_rows, int) and actual_rows != manifest_rows:
                 issues.append(
@@ -293,7 +353,7 @@ def main() -> int:
         "generated_at_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "index": str(index_path),
         "summary": {
-            "products": len(index.get("products", [])),
+            "products": len(products),
             "checks": len(checks),
             "issues": len(issues),
             "status": "PASS" if len(issues) == 0 else "FAIL",
